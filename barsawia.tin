@@ -23,7 +23,7 @@
 	#variable map_state 0;
 	#variable szukanie_ziol 0;
 	#variable last_room {};
-	#write main.tin
+	#write main.tin;
 	#echo zapisane
 }
 

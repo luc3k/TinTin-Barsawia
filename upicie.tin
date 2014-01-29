@@ -1,7 +1,5 @@
 #CLASS {upicie} OPEN
 
-#SUBSTITUTE {^Jestes {trzezwy|podchmielony|podpity|wstawiony|pijany|schlany|nawalony}.$} {Jestes @upicie{%1}<099>.}  {5}
-
 #FUNCTION {upicie}
 {
 	#if {"%0" == "nawalony"}
@@ -34,8 +32,10 @@
 	};
 	#else
 	{
-		#return %0;
+		#return %0
 	}
 }
+
+#SUBSTITUTE       {^Jestes {trzezwy|podchmielony|podpity|wstawiony|pijany|schlany|nawalony}.$}                                                        {Jestes @upicie{%1}<099>.}  {5}
 
 #CLASS {upicie} CLOSE

@@ -1,8 +1,6 @@
 #CLASS {bezpieczenstwo_zmeczenie} OPEN
 
-#substitute {^Czujesz sie %1 i jestes %2.$} {Czujesz sie @bezpieczenstwo{%1} i jestes @zmeczenie{%2}<099>.}  {4}
-
-#function {bezpieczenstwo}
+#FUNCTION {bezpieczenstwo}
 {
 	#if {"%0" == "bardzo bezpiecznie"}
 	{
@@ -10,11 +8,11 @@
 	};
 	#else
 	{
-		#return %0;
+		#return %0
 	}
 }
 
-#function {zmeczenie}
+#FUNCTION {zmeczenie}
 {
 	#if {"%0" == "calkowicie wycienczony"}
 	{
@@ -58,8 +56,10 @@
 	};
 	#else
 	{
-		#return %0;
+		#return %0
 	}
 }
+
+#SUBSTITUTE       {^Czujesz sie %1 i jestes %2.$}           {Czujesz sie @bezpieczenstwo{%1} i jestes @zmeczenie{%2}<099>.}                                      {4}
 
 #CLASS {bezpieczenstwo_zmeczenie} CLOSE

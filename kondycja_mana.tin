@@ -1,8 +1,6 @@
 #CLASS {kondycja_mana} OPEN
 
-#SUBSTITUTE {^Jestes fizycznie %1, zas mentalnie %2.$} {Jestes fizycznie @kondycja{%1}, zas mentalnie @mana{%2}<099>.}  {5}
-
-#function {kondycja}
+#FUNCTION {kondycja}
 {
 	#if {"%0" == "LEDWO ZYWY"}
 	{
@@ -34,11 +32,11 @@
 	};
 	#else
 	{
-		#return %0;
+		#return %0
 	}
 }
 
-#function {mana}
+#FUNCTION {mana}
 {
 	#if {"%0" == "u kresu sil"}
 	{
@@ -78,8 +76,10 @@
 	};
 	#else
 	{
-		#return %0;
+		#return %0
 	}
 }
+
+#SUBSTITUTE       {^Jestes fizycznie %1, zas mentalnie %2.$}                      {Jestes fizycznie @kondycja{%1}, zas mentalnie @mana{%2}<099>.}                                      {5}
 
 #CLASS {kondycja_mana} CLOSE

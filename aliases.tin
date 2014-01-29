@@ -1,5 +1,82 @@
 #CLASS {aliases} OPEN
 
+#ALIAS {/kolorki}
+{
+	#loop {0} {7} {i}
+	{
+		#showme <${i}08>${i}08 <${i}18>${i}18 <${i}28>${i}28 <${i}38>${i}38 <${i}48>${i}48 <${i}58>${i}58 <${i}68>${i}68 <${i}78>${i}78
+	};
+	#loop {1} {6} {i}
+	{
+		#loop {1} {6} {n}
+		{
+			#switch {$n}
+			{
+				#case {1}
+				{
+					#variable {m_letter} {a}
+				};
+				#case {2}
+				{
+					#variable {m_letter} {b}
+				};
+				#case {3}
+				{
+					#variable {m_letter} {c}
+				};
+				#case {4}
+				{
+					#variable {m_letter} {d}
+				};
+				#case {5}
+				{
+					#variable {m_letter} {e}
+				};
+				#case {6}
+				{
+					#variable {m_letter} {f}
+				}
+			};
+			#switch {$i}
+			{
+				#case {1}
+				{
+					#variable {f_letter} {a}
+				};
+				#case {2}
+				{
+					#variable {f_letter} {b}
+				};
+				#case {3}
+				{
+					#variable {f_letter} {c}
+				};
+				#case {4}
+				{
+					#variable {f_letter} {d}
+				};
+				#case {5}
+				{
+					#variable {f_letter} {e}
+				};
+				#case {6}
+				{
+					#variable {f_letter} {f}
+				}
+			};
+			#showme <${f_letter}${m_letter}a>${f_letter}${m_letter}a <${f_letter}${m_letter}b>${f_letter}${m_letter}b <${f_letter}${m_letter}c>${f_letter}${m_letter}c <${f_letter}${m_letter}d>${f_letter}${m_letter}d <${f_letter}${m_letter}e>${f_letter}${m_letter}e <${f_letter}${m_letter}f>${f_letter}${m_letter}f
+		}
+	}
+}
+{5}
+
+#ALIAS {/mapoff}
+{
+	#variable map_state {0};
+	#map leave
+}
+{5}
+
 #ALIAS {/mapon}
 {
 	#map read ${nazwa_krainy}_map;
@@ -42,11 +119,5 @@
 }
 {5}
 
-#ALIAS {/mapoff}
-{
-	#variable map_state {0}
-	#map leave
-}
-{5}
 
 #CLASS {aliases} CLOSE

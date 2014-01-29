@@ -1,20 +1,8 @@
 #CLASS {actions} OPEN
 
-#ACTION {^Jestes tak zmeczony, ze nie mozesz isc w tym kierunku.$}
-{
-	#map undo
-}
-{5}
-
 #ACTION {Rozprostowujac kosci wstajesz z ziemi.}
 {
 	#variable {sit_state} {0}
-}
-{5}
-
-#ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na {droge|sciezke}.$}
-{
-	#map undo
 }
 {5}
 
@@ -41,7 +29,19 @@
 }
 {5}
 
+#ACTION {^Jestes tak zmeczony, ze nie mozesz isc w tym kierunku.$}
+{
+	#map undo
+}
+{5}
+
 #ACTION {^Nie widzisz zadnego wyjscia prowadzacego na %1.}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na {droge|sciezke}.$}
 {
 	#map undo
 }
@@ -52,5 +52,6 @@
 	#undelay %*
 }
 {5}
+
 
 #CLASS {actions} CLOSE
