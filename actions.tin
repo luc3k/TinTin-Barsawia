@@ -1,13 +1,17 @@
 #CLASS {actions} OPEN
 
-#ACTION {Rozprostowujac kosci wstajesz z ziemi.}
+#ACTION {^Rozprostowujac kosci wstajesz z ziemi.$}
 {
+	#line gag;
+	#echo {<fec>%0<099>};
 	#variable {sit_state} {0}
 }
 {5}
 
-#ACTION {Siadasz na ziemi}
+#ACTION {^Siadasz na ziemi.$}
 {
+	#line gag;
+	#echo {<fec>%0<099>};
 	#variable {sit_state} {1}
 }
 {5}
@@ -16,7 +20,7 @@
 {
 	#variable last_room {%1};
 	#line GAG;
-	#echo {<120>%0<099>};
+	#echo {<aca>%0<099>};
 	#variable enemy_run 0;
 	#if {$map_state == 1}
 	{
@@ -31,18 +35,24 @@
 
 #ACTION {^Jestes tak zmeczony, ze nie mozesz isc w tym kierunku.$}
 {
+	#line gag;
+	#echo {<fab>%0<099>};
 	#map undo
 }
 {5}
 
-#ACTION {^Nie widzisz zadnego wyjscia prowadzacego na %1.}
+#ACTION {^Nie widzisz zadnego wyjscia prowadzacego na %1.$}
 {
+	#line gag;
+	#echo {<fab>Nie widzisz zadnego wyjscia prowadzacego na %1.<099>};
 	#map undo
 }
 {5}
 
 #ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na {droge|sciezke}.$}
 {
+	#line gag;
+	#echo {<fab>Ruszasz razno na <fec>%1<fab>, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na %2.<099>};
 	#map undo
 }
 {5}
