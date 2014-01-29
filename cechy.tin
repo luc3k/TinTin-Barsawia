@@ -4,43 +4,43 @@
 {
 	#if {"%0" == "bezmyslny"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "tepy"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "prymitywny"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "ograniczony"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "pojetny"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "inteligentny"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "bystry"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "rezolutny"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "blyskotliwy"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "genialny"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{
@@ -52,43 +52,43 @@
 {
 	#if {"%0" == "glupi"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "zacofany"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "przyglupi"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "niewyksztalcony"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "wyksztalcony"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "madry"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "uczony"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "oswiecony"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "erudycyjny"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "wszechwiedzacy"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{

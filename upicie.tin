@@ -4,7 +4,7 @@
 {
 	#if {"%0" == "nawalony"}
 	{
-		#return <110>%0<170>[0/6]<099>
+		#return <faa>%0<170>[0/6]<099>
 	};
 	#elseif {"%0" == "schlany"}
 	{
@@ -12,23 +12,23 @@
 	};
 	#elseif {"%0" == "pijany"}
 	{
-		#return <130>%0<170>[2/6]<099>
+		#return <fda>%0<170>[2/6]<099>
 	};
 	#elseif {"%0" == "wstawiony"}
 	{
-		#return <120>%0<170>[3/6]<099>
+		#return <ffa>%0<170>[3/6]<099>
 	};
 	#elseif {"%0" == "podpity"}
 	{
-		#return <120>%0<170>[4/6]<099>
+		#return <dfa>%0<170>[4/6]<099>
 	};
 	#elseif {"%0" == "podchmielony"}
 	{
-		#return <120>%0<170>[5/6]<099>
+		#return <cfa>%0<170>[5/6]<099>
 	};
 	#elseif {"%0" == "trzezwy"}
 	{
-		#return <120>%0<170>[6/6]<099>
+		#return <bfa>%0<170>[6/6]<099>
 	};
 	#else
 	{

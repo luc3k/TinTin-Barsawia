@@ -1,5 +1,5 @@
 #CLASS {mowienie} OPEN
 
-#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy}{ z oddali|do Ciebie|}:%3$}                                           {<160>%1 %2:%3<099>}  {5}
+#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy}{ z oddali|do Ciebie|}:%3$}                                           {<afa>%1 %2%3:<eca>%4<099>}  {5}
 
 #CLASS {mowienie} CLOSE

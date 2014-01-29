@@ -1,9 +1,9 @@
 #CLASS {walka} OPEN
 
-#ACTION {^%1 {w panice wybiega na|kica w panice na} %2.$}
+#ACTION {^%1 {w panice wybiega na|kica w panice na} %3.$}
 {
 	#line gag;
-	#echo {<110>%0<099>};
+	#echo {<ffa>%1 <faa>%2 <efa>%3.<099>};
 	#if {$enemy_run == 1}
 	{
 		%2
@@ -19,14 +19,14 @@
 {
 	#variable enemy_run 1;
 	#line gag;
-	#echo {<110>%0<099>}
+	#echo {<efa>%1 <faa>uciekl ci.<099>}
 }
 {5}
 
 #ACTION {^Zabiles %1 %2.$}
 {
 	#line gag;
-	#echo {<110>%0<099>};
+	#echo {<afa>Zabiles <ffa>%1 %2<099>};
 	#math {liczba_zabitych} {${liczba_zabitych}+1};
 	#math {dzis_zabitych} {${dzis_zabitych}+1};
 	save;
@@ -44,42 +44,42 @@
 
 #FUNCTION {bron}
 {
-	#return <110>%0<099>
+	#return <099>%0<099>
 }
 
 #FUNCTION {jakosc}
 {
-	#return <110>%0<099>
+	#return <099>%0<099>
 }
 
 #FUNCTION {miejsce}
 {
-	#return <110>%0<099>
+	#return <099>%0<099>
 }
 
 #FUNCTION {obrazenia}
 {
-	#return <110>%0<099>
+	#return <099>%0<099>
 }
 
 #FUNCTION {typ}
 {
-	#return <110>%0<099>
+	#return <099>%0<099>
 }
 
 #FUNCTION {wrog}
 {
-	#return <110>%0<099>
+	#return <efa>%0<099>
 }
 
 #SUBSTITUTE       {^%1 %2 %3 cie %4, trafiajac cie w %5.$}                    {@wrog{%1} @jakosc{%2} @typ{%3} cie @bron{%4}, trafiajac Cie w @miejsce{%5}.}                                                    {5}
-#SUBSTITUTE       {^%1 %2 swojego %3 %4 %5, trafiajac go w %6.$}                          {@jakosc{%1} @typ{%2} swojego @bron{%3} @obrazenia{%4} @wrog{%5}, trafiajac go w @miejsce{%6}.}                                                                      {5}
-#SUBSTITUTE       {^%1 nie udaje sie trafic ciebie %2.$}                  {<110>%0<099>}  {5}
-#SUBSTITUTE       {^%1 odchylasz sie do tylu, unikajac ciosu %2.$}                            {<110>%0<099>}  {5}
-#SUBSTITUTE       {^%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.$}                                                  {<110>%0<099>}  {5}
-#SUBSTITUTE       {^%1 wpada w panike!$}  {<110>%0<099>}  {5}
-#SUBSTITUTE       {^Probujesz trafic %1 %2, lecz ten uskakuje przed twoim ciosem.$}                                             {<110>%0<099>}  {5}
-#SUBSTITUTE       {^%1 %2 %3 %4, trafiajac go w %5.$}               {@jakosc{%1} @typ{%2} @wrog{%3} @bron{%4}, trafiajac go w @miejsce{%5}.}                                               {6}
+#SUBSTITUTE       {^%1 %2 swojego %3 %4 %5, trafiajac go w %6.$}                          {@jakosc{%1} @typ{%2}<afa> swojego @bron{%3} @obrazenia{%4} @wrog{%5}<afa>, trafiajac go w @miejsce{%6}<afa>.}                                                                      {5}
+#SUBSTITUTE       {^%1 nie udaje sie trafic ciebie %2.$}                  {<099>%0<099>}  {5}
+#SUBSTITUTE       {^%1 odchylasz sie do tylu, unikajac ciosu %2.$}                            {<099>%0<099>}  {5}
+#SUBSTITUTE       {^%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.$}                                                  {<099>%0<099>}  {5}
+#SUBSTITUTE       {^%1 wpada w panike!$}  {<099>%0<099>}  {5}
+#SUBSTITUTE       {^Probujesz trafic %1 %2, lecz ten uskakuje przed twoim ciosem.$}                                             {<099>%0<099>}  {5}
+#SUBSTITUTE       {^%1 %2 %3 %4, trafiajac go w %5.$}               {@jakosc{%1} @typ{%2} @wrog{%3} @bron{%4}<afa>, trafiajac go w @miejsce{%5}<afa>.}                                               {6}
 #VARIABLE         {dzis_zabitych}  {0}
 #VARIABLE         {enemy_run}  {0}
 

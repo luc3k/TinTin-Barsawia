@@ -1,15 +1,15 @@
 #CLASS {umiejetnosci} OPEN
 
-#SUBSTITUTE       {:{.*}brak praktyki}  {<120>%0<170>[0/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}dobrze}  {<120>%0<170>[6/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}doskonale}  {<120>%0<170>[8/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}ledwo}  {<120>%0<170>[1/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}mistrzowsko}  {<120>%0<170>[10/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}niezle}  {<120>%0<170>[5/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}perfekcyjnie}  {<120>%0<170>[9/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}pobieznie}  {<120>%0<170>[3/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}zadowalajaco}  {<120>%0<170>[4/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}znakomicie}  {<120>%0<170>[7/10]<099>}  {5}
-#SUBSTITUTE       {:{.*}troche}  {<120>%0<170>[2/10]<099>}  {7}
+#SUBSTITUTE       {:{.*}brak praktyki}  {<faa>%0<170>[0/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}ledwo}  {<fba>%0<170>[1/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}troche}  {<fca>%0<170>[2/10]<099>}  {7}
+#SUBSTITUTE       {:{.*}pobieznie}  {<fda>%0<170>[3/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}zadowalajaco}  {<fea>%0<170>[4/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}niezle}  {<ffa>%0<170>[5/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}dobrze}  {<efa>%0<170>[6/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}znakomicie}  {<dfa>%0<170>[7/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}doskonale}  {<cfa>%0<170>[8/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}perfekcyjnie}  {<bfa>%0<170>[9/10]<099>}  {5}
+#SUBSTITUTE       {:{.*}mistrzowsko}  {<afa>%0<170>[10/10]<099>}  {5}
 
 #CLASS {umiejetnosci} CLOSE

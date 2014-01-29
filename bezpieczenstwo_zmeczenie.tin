@@ -4,7 +4,7 @@
 {
 	#if {"%0" == "bardzo bezpiecznie"}
 	{
-		#return <120>%0<170>[1/1]<099>
+		#return <bfa>%0<170>[1/1]<099>
 	};
 	#else
 	{
@@ -16,43 +16,43 @@
 {
 	#if {"%0" == "calkowicie wycienczony"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "wycienczony"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "bardzo wyczerpany"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "wyczerpany"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "nieco wyczerpany"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "bardzo zmeczony"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "zmeczony"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "troche zmeczony"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "wypoczety"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "w pelni wypoczety"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{
