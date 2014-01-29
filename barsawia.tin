@@ -5,7 +5,7 @@
 #VARIABLE         {map_state}  {0}
 #VARIABLE         {last_room}  {}
 #SPLIT 13 1
-#PROMPT           {>}  {Siedzisz: ${sit_state}|Zbieranie ziol: ${szukanie_ziol}|Zabitych: ${liczba_zabitych}|Dzis zabitych:${dzis_zabitych}}{1}
+#PROMPT           {>}  {Siedzisz: @siedzenie|Zbieranie ziol: @zielarz|Zabitych: ${liczba_zabitych}|Dzis zabitych:${dzis_zabitych}}{1}
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
 #PATHDIR          {polnoc}  {poludnie}  {1}
@@ -17,6 +17,29 @@
 #PATHDIR          {wschod}  {zachod}  {2}
 #PATHDIR          {zachod}  {wschod}  {8}
 
+#FUNCTION {siedzenie}
+{
+	#IF {${sit_state} == 1}
+	{
+		return "TAK"
+	};
+	#ELSE
+	{
+		return "NIE"
+	}
+}
+
+#FUNCTION {zielarz}
+{
+	#IF {${szukanie_ziol} == 1}
+	{
+		return "TAK"
+	};
+	#ELSE
+	{
+		return "NIE"
+	}
+}
 
 #EVENT {SESSION DISCONNECTED}
 {
