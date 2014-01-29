@@ -1,0 +1,27 @@
+#CLASS {zielarstwo} OPEN
+
+#ACTION {^Znajdujesz %1 {kwiat|lisc|korzen|lodyge}.$}
+{
+	wloz ziola do sloika;
+	#line GAG;
+	#echo {<120>%0<099>}
+}
+{5}
+
+#ALIAS {/szukaj}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		#variable {szukanie_ziol} {1}
+	};
+	#elseif {${szukanie_ziol} == 1}
+	{
+		#variable {szukanie_ziol} {0}
+	}
+}
+{5}
+
+#SUBSTITUTE       {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny}.$}                                                                                                                                                {<110>%0<099>}  {5}
+#VARIABLE         {szukanie_ziol}  {0}
+
+#CLASS {zielarstwo} CLOSE

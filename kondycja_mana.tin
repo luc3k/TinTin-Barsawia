@@ -1,0 +1,85 @@
+#CLASS {kondycja_mana} OPEN
+
+#SUBSTITUTE {^Jestes fizycznie %1, zas mentalnie %2.$} {Jestes fizycznie @kondycja{%1}, zas mentalnie @mana{%2}<099>.}  {5}
+
+#function {kondycja}
+{
+	#if {"%0" == "LEDWO ZYWY"}
+	{
+		#return <120>%0<170>[0/6]<099>
+	};
+	#elseif {"%0" == "ciezko ranny"}
+	{
+		#return <120>%0<170>[1/6]<099>
+	};
+	#elseif {"%0" == "w zlej kondycji"}
+	{
+		#return <120>%0<170>[2/6]<099>
+	};
+	#elseif {"%0" == "ranny"}
+	{
+		#return <120>%0<170>[3/6]<099>
+	};
+	#elseif {"%0" == "lekko ranny"}
+	{
+		#return <120>%0<170>[4/6]<099>
+	};
+	#elseif {"%0" == "w dobrym stanie"}
+	{
+		#return <120>%0<170>[5/6]<099>
+	};
+	#elseif {"%0" == "w swietnej kondycji"}
+	{
+		#return <120>%0<170>[6/6]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#function {mana}
+{
+	#if {"%0" == "u kresu sil"}
+	{
+		#return <120>%0<170>[0/8]<099>
+	};
+	#elseif {"%0" == "wykonczony"}
+	{
+		#return <120>%0<170>[1/8]<099>
+	};
+	#elseif {"%0" == "wyczerpany"}
+	{
+		#return <120>%0<170>[2/8]<099>
+	};
+	#elseif {"%0" == "w zlej kondycji"}
+	{
+		#return <120>%0<170>[3/8]<099>
+	};
+	#elseif {"%0" == "bardzo zmeczony"}
+	{
+		#return <120>%0<170>[4/8]<099>
+	};
+	#elseif {"%0" == "zmeczony"}
+	{
+		#return <120>%0<170>[5/8]<099>
+	};
+	#elseif {"%0" == "oslabiony"}
+	{
+		#return <120>%0<170>[6/8]<099>
+	};
+	#elseif {"%0" == "lekko oslabiony"}
+	{
+		#return <120>%0<170>[7/8]<099>
+	};
+	#elseif {"%0" == "w pelni sil"}
+	{
+		#return <120>%0<170>[8/8]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#CLASS {kondycja_mana} CLOSE

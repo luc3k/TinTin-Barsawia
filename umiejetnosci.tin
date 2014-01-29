@@ -1,0 +1,15 @@
+#CLASS {umiejetnosci} OPEN
+
+#SUBSTITUTE       {:(.*)brak praktyki}  {<120>%0<170>[0/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)ledwo}  {<120>%0<170>[1/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)troche}  {<120>%0<170>[2/10]<099>}  {7}
+#SUBSTITUTE       {:(.*)pobieznie}  {<120>%0<170>[3/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)zadowalajaco}  {<120>%0<170>[4/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)niezle}  {<120>%0<170>[5/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)dobrze}  {<120>%0<170>[6/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)znakomicie}  {<120>%0<170>[7/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)doskonale}  {<120>%0<170>[8/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)perfekcyjnie}  {<120>%0<170>[9/10]<099>}  {5}
+#SUBSTITUTE       {:(.*)mistrzowsko}  {<120>%0<170>[10/10]<099>}  {5}
+
+#CLASS {umiejetnosci} CLOSE

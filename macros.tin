@@ -1,0 +1,138 @@
+#CLASS {macros} OPEN
+
+#MACRO {\ea}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		w
+	};
+	#else
+	{
+		w;
+		szukaj ziol
+	}
+}
+
+#MACRO {\ec}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		se
+	};
+	#else
+	{
+		se;
+		szukaj ziol
+	}
+}
+
+#MACRO {\ed}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		e
+	};
+	#else
+	{
+		e;
+		szukaj ziol
+	}
+}
+
+#MACRO {\ee}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		ne
+	};
+	#else
+	{
+		ne;
+		szukaj ziol
+	}
+}
+
+#MACRO {\ef}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		d
+	};
+	#else
+	{
+		d;
+		szukaj ziol
+	}
+}
+
+#MACRO {\eq}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		nw
+	};
+	#else
+	{
+		nw;
+		szukaj ziol
+	}
+}
+
+#MACRO {\er}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		u
+	};
+	#else
+	{
+		u;
+		szukaj ziol
+	}
+}
+
+#MACRO {\es}
+{
+	spojrz
+}
+
+#MACRO {\ew}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		n
+	};
+	#else
+	{
+		n;
+		szukaj ziol
+	}
+}
+
+#MACRO {\ex}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		s
+	};
+	#else
+	{
+		s;
+		szukaj ziol
+	}
+}
+
+#MACRO {\ez}
+{
+	#if {$szukanie_ziol == 0}
+	{
+		sw
+	};
+	#else
+	{
+		sw;
+		szukaj ziol
+	}
+}
+
+#CLASS {macros} CLOSE

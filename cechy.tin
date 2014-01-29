@@ -1,0 +1,293 @@
+#CLASS {cechy} OPEN
+
+#substitute {^Jestes %1, %2, %3, %4, %5 i %6.$} {Jestes @sila{%1}, @zrecznosc{%2}, @wytrzymalosc{%3}, @inteligencja{%4}, @madrosc{%5} i @odwaga{%6}} {5}
+
+#function {sila}
+{
+	#if {"%0" == "slabiutki"}
+	{
+		#return <120>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "watly"}
+	{
+		#return <120>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "slabowity"}
+	{
+		#return <120>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "slaby"}
+	{
+		#return <120>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "krzepki"}
+	{
+		#return <120>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "silny"}
+	{
+		#return <120>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "mocny"}
+	{
+		#return <120>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "tegi"}
+	{
+		#return <120>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "potezny"}
+	{
+		#return <120>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "mocarny"}
+	{
+		#return <120>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#function {zrecznosc}
+{
+	#if {"%0" == "nieskoordynowany"}
+	{
+		#return <120>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "niezreczny"}
+	{
+		#return <120>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "nieporadny"}
+	{
+		#return <120>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "niezgrabny"}
+	{
+		#return <120>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "sprawny"}
+	{
+		#return <120>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "zwinny"}
+	{
+		#return <120>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "zreczny"}
+	{
+		#return <120>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "wygimnastykowany"}
+	{
+		#return <120>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "gibki"}
+	{
+		#return <120>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "akrobatyczny"}
+	{
+		#return <120>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#function {odwaga}
+{
+	#if {"%0" == "tchorzliwy"}
+	{
+		#return <120>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "strachliwy"}
+	{
+		#return <120>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "bojazliwy"}
+	{
+		#return <120>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "niepewny"}
+	{
+		#return <120>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "zdecydowany"}
+	{
+		#return <120>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "odwazny"}
+	{
+		#return <120>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "dzielny"}
+	{
+		#return <120>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "nieulekly"}
+	{
+		#return <120>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "nieugiety"}
+	{
+		#return <120>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "nieustraszony"}
+	{
+		#return <120>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#function {inteligencja}
+{
+	#if {"%0" == "bezmyslny"}
+	{
+		#return <120>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "tepy"}
+	{
+		#return <120>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "prymitywny"}
+	{
+		#return <120>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "ograniczony"}
+	{
+		#return <120>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "pojetny"}
+	{
+		#return <120>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "inteligentny"}
+	{
+		#return <120>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "bystry"}
+	{
+		#return <120>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "rezolutny"}
+	{
+		#return <120>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "blyskotliwy"}
+	{
+		#return <120>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "genialny"}
+	{
+		#return <120>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#function {wytrzymalosc}
+{
+	#if {"%0" == "cherlawy"}
+	{
+		#return <120>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "rachityczny"}
+	{
+		#return <120>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "chuchrowaty"}
+	{
+		#return <120>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "mizerny"}
+	{
+		#return <120>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "dobrze zbudowany"}
+	{
+		#return <120>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "wytrzymaly"}
+	{
+		#return <120>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "twardy"}
+	{
+		#return <120>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "zahartowany"}
+	{
+		#return <120>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "muskularny"}
+	{
+		#return <120>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "altetyczny"}
+	{
+		#return <120>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#function {madrosc}
+{
+	#if {"%0" == "glupi"}
+	{
+		#return <120>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "zacofany"}
+	{
+		#return <120>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "przyglupi"}
+	{
+		#return <120>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "niewyksztalcony"}
+	{
+		#return <120>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "wyksztalcony"}
+	{
+		#return <120>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "madry"}
+	{
+		#return <120>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "uczony"}
+	{
+		#return <120>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "oswiecony"}
+	{
+		#return <120>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "erudycyjny"}
+	{
+		#return <120>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "wszechwiedzacy"}
+	{
+		#return <120>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#CLASS {cechy} CLOSE

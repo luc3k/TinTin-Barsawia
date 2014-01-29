@@ -1,0 +1,9 @@
+#CLASS {substitutes} OPEN
+
+#SUBSTITUTE       {Ciezar twego ekwipunku daje ci sie we znaki.}                          {<110>%0<099>}  {5}
+#SUBSTITUTE       {^Masz na sobie %1.$}  {<110>%0<099>}  {5}
+#SUBSTITUTE       {^Masz przy sobie %1.$}   {<110>%0<099>}  {5}
+#SUBSTITUTE       {^{Sa|Jest} tutaj {dwa|trzy|cztery|piec|szesc|siedem|osiem|dziwiec|dziesiec|jedno} widoczn{e|ych} wyjsc{ia|ie|}: %1.$} {<120>%0<099>}  {5}
+#SUBSTITUTE       {{(T|t)ablica ogloszeniowa|(D|d)rogowskaz|tablic(a|e)|tabliczk(a|e|i)|plakat|kartka}} {<110>%0<099>}  {5}
+
+#CLASS {substitutes} CLOSE

@@ -1,0 +1,52 @@
+#CLASS {aliases} OPEN
+
+#ALIAS {/mapon}
+{
+	#map read ${nazwa_krainy}_map;
+	#map goto 1;
+	#map list {$last_room};
+	#map goto {$last_room};
+	#variable map_state {1}
+}
+{5}
+
+#ALIAS {ek}
+{
+	ekwipunek
+}
+{5}
+
+#ALIAS {pr}
+{
+	przeczytaj %1
+}
+{5}
+
+#ALIAS {save}
+{
+	#write main.tin
+}
+{5}
+
+#ALIAS {smap}
+{
+	#map write ${nazwa_krainy}_map
+}
+{5}
+
+#ALIAS {start}
+{
+	d;
+	drzwi;
+	przejdz przez pierwszy portal
+}
+{5}
+
+#ALIAS {/mapoff}
+{
+	#variable map_state {0}
+	#map leave
+}
+{5}
+
+#CLASS {aliases} CLOSE

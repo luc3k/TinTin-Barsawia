@@ -1,0 +1,41 @@
+#CLASS {upicie} OPEN
+
+#SUBSTITUTE {^Jestes {trzezwy|podchmielony|podpity|wstawiony|pijany|schlany|nawalony}.$} {Jestes @upicie{%1}<099>.}  {5}
+
+#FUNCTION {upicie}
+{
+	#if {"%0" == "nawalony"}
+	{
+		#return <110>%0<170>[0/6]<099>
+	};
+	#elseif {"%0" == "schlany"}
+	{
+		#return <fca>%0<170>[1/6]<099>
+	};
+	#elseif {"%0" == "pijany"}
+	{
+		#return <130>%0<170>[2/6]<099>
+	};
+	#elseif {"%0" == "wstawiony"}
+	{
+		#return <120>%0<170>[3/6]<099>
+	};
+	#elseif {"%0" == "podpity"}
+	{
+		#return <120>%0<170>[4/6]<099>
+	};
+	#elseif {"%0" == "podchmielony"}
+	{
+		#return <120>%0<170>[5/6]<099>
+	};
+	#elseif {"%0" == "trzezwy"}
+	{
+		#return <120>%0<170>[6/6]<099>
+	};
+	#else
+	{
+		#return %0;
+	}
+}
+
+#CLASS {upicie} CLOSE
