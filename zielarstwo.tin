@@ -1,10 +1,30 @@
 #CLASS {zielarstwo} OPEN
 
-#ACTION {^Znajdujesz %1 {kwiat|lisc|korzen|lodyge}.$}
+#ACTION {^Znajdujesz {.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b}{.*}$}
 {
+	otworz sloik;
 	wloz ziola do sloika;
+	zamknij sloik;
 	#line GAG;
 	#echo {<afa>%0<099>}
+}
+{5}
+
+#ACTION {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny}.$}
+{
+	#echo <fab>%0<099>;
+	#variable {aktywne_szukanie} {0};
+	#line gag
+}
+{5}
+
+#ALIAS {/sellz}
+{
+	otworz sloik;
+	wez ziola ze sloika;
+	sprzedaj ziola;
+	zamknij sloik;
+	odloz ziola
 }
 {5}
 
@@ -21,7 +41,7 @@
 }
 {5}
 
-#SUBSTITUTE       {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny}.$}                                                                                                                                                {<fab>%0<099>}  {5}
 #VARIABLE         {szukanie_ziol}  {0}
+#VARIABLE         {aktywne_szukanie}  {0}
 
 #CLASS {zielarstwo} CLOSE

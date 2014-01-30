@@ -68,7 +68,11 @@
 			};
 			#showme <${f_letter}${m_letter}a>${f_letter}${m_letter}a <${f_letter}${m_letter}b>${f_letter}${m_letter}b <${f_letter}${m_letter}c>${f_letter}${m_letter}c <${f_letter}${m_letter}d>${f_letter}${m_letter}d <${f_letter}${m_letter}e>${f_letter}${m_letter}e <${f_letter}${m_letter}f>${f_letter}${m_letter}f
 		}
-	}
+	};
+	#unvariable {f_letter};
+	#unvariable {m_letter};
+	#unvariable {i};
+	#unvariable {n}
 }
 {5}
 

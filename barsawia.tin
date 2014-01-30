@@ -5,7 +5,7 @@
 #VARIABLE         {map_state}  {0}
 #VARIABLE         {last_room}  {}
 #SPLIT 13 1
-#PROMPT           {>}  {Siedzisz: @siedzenie|Zbieranie ziol: @zielarz|Zabitych: ${liczba_zabitych}|Dzis zabitych:${dzis_zabitych}}{1}
+#PROMPT           {^> $}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<099>}{1}
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
 #PATHDIR          {polnoc}  {poludnie}  {1}
@@ -21,11 +21,11 @@
 {
 	#IF {${sit_state} == 1}
 	{
-		return "TAK"
+		#return TAK
 	};
 	#ELSE
 	{
-		return "NIE"
+		#return NIE
 	}
 }
 
@@ -33,11 +33,11 @@
 {
 	#IF {${szukanie_ziol} == 1}
 	{
-		return "TAK"
+		#return TAK
 	};
 	#ELSE
 	{
-		return "NIE"
+		#return NIE
 	}
 }
 
@@ -58,6 +58,7 @@
 #class kondycja_mana read kondycja_mana.tin	
 #class macros read macros.tin
 #class mowienie read mowienie.tin
+#class paczki read paczki.tin
 #class substitutes read substitutes.tin
 #class umiejetnosci read umiejetnosci.tin
 #class upicie read upicie.tin

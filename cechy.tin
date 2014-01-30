@@ -100,43 +100,43 @@
 {
 	#if {"%0" == "tchorzliwy"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "strachliwy"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "bojazliwy"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "niepewny"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "zdecydowany"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "odwazny"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "dzielny"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "nieulekly"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "nieugiety"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "nieustraszony"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{
@@ -148,43 +148,43 @@
 {
 	#if {"%0" == "slabiutki"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "watly"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "slabowity"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "slaby"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "krzepki"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "silny"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "mocny"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "tegi"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "potezny"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "mocarny"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{
@@ -196,43 +196,43 @@
 {
 	#if {"%0" == "cherlawy"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "rachityczny"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "chuchrowaty"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "mizerny"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "dobrze zbudowany"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "wytrzymaly"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "twardy"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "zahartowany"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "muskularny"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "altetyczny"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{
@@ -244,43 +244,43 @@
 {
 	#if {"%0" == "nieskoordynowany"}
 	{
-		#return <120>%0<170>[0/9]<099>
+		#return <faa>%0<170>[0/9]<099>
 	};
 	#elseif {"%0" == "niezreczny"}
 	{
-		#return <120>%0<170>[1/9]<099>
+		#return <fba>%0<170>[1/9]<099>
 	};
 	#elseif {"%0" == "nieporadny"}
 	{
-		#return <120>%0<170>[2/9]<099>
+		#return <fca>%0<170>[2/9]<099>
 	};
 	#elseif {"%0" == "niezgrabny"}
 	{
-		#return <120>%0<170>[3/9]<099>
+		#return <fda>%0<170>[3/9]<099>
 	};
 	#elseif {"%0" == "sprawny"}
 	{
-		#return <120>%0<170>[4/9]<099>
+		#return <fea>%0<170>[4/9]<099>
 	};
 	#elseif {"%0" == "zwinny"}
 	{
-		#return <120>%0<170>[5/9]<099>
+		#return <ffa>%0<170>[5/9]<099>
 	};
 	#elseif {"%0" == "zreczny"}
 	{
-		#return <120>%0<170>[6/9]<099>
+		#return <efa>%0<170>[6/9]<099>
 	};
 	#elseif {"%0" == "wygimnastykowany"}
 	{
-		#return <120>%0<170>[7/9]<099>
+		#return <dfa>%0<170>[7/9]<099>
 	};
 	#elseif {"%0" == "gibki"}
 	{
-		#return <120>%0<170>[8/9]<099>
+		#return <cfa>%0<170>[8/9]<099>
 	};
 	#elseif {"%0" == "akrobatyczny"}
 	{
-		#return <120>%0<170>[9/9]<099>
+		#return <bfa>%0<170>[9/9]<099>
 	};
 	#else
 	{

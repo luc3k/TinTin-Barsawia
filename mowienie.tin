@@ -1,5 +1,33 @@
 #CLASS {mowienie} OPEN
 
-#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy}{ z oddali|do Ciebie|}:%3$}                                           {<afa>%1 %2%3:<eca>%4<099>}  {5}
+#ACTION {^%1 przedstawia sie jako:$}
+{
+	#line gag;
+	#echo {<afa>%1 przedstawia sie jako:<099>};
+	#variable {opis_postaci} {%1};
+	#variable {przedstawianie} {1}
+}
+{5}
+
+#EVENT {RECEIVED LINE}
+{
+	#if {$przedstawianie == 1}
+	{
+		#line gag;
+		#echo {<afa>%1<099>};
+		#replace %1 {.} {};
+		#variable {znane.$opis_postaci.nazwa} {%1};
+		#map get roomvnum numer_pokoju;
+		#variable {znane.$opis_postaci.pokoj} {$numer_pokoju};
+		#variable {przedstawianie} {0};
+		#unvariable numer_pokoju;
+		#unvariable przedstawianie;
+		#unvariable opis_postaci
+	}
+}
+
+#SUBSTITUTE       {^%1 przedstawia sie jako: %2$}           {<afa>%1 przedstawia sie jako:<eca>%2<099>}                  {5}
+#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy|odpowiada} do %3:%4$}                                     {<afa>%1 %2 do %3:<eca>%4<099>}      {5}
+#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy|odpowiada}{ z oddali| do Ciebie|}:%4$}                                                      {<afa>%1 %2%3:<eca>%4<099>}  {5}
 
 #CLASS {mowienie} CLOSE
