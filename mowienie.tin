@@ -9,6 +9,16 @@
 }
 {5}
 
+#ALIAS {/showknown}
+{
+	#foreach {$znane[%*]} {name}
+	{
+		#showme $name[pokoj]|$name[nazwa]
+	};
+	#unvariable name
+}
+{5}
+
 #EVENT {RECEIVED LINE}
 {
 	#if {$przedstawianie == 1}
