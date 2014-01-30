@@ -59,6 +59,7 @@
 #class macros read macros.tin
 #class mowienie read mowienie.tin
 #class paczki read paczki.tin
+#class postepy read postepy.tin
 #class substitutes read substitutes.tin
 #class umiejetnosci read umiejetnosci.tin
 #class upicie read upicie.tin
