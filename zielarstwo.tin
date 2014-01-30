@@ -12,7 +12,7 @@
 
 #ACTION {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny}.$}
 {
-	#echo <fab>%0<099>;
+	#echo {<fab>%0<099>};
 	#variable {aktywne_szukanie} {0};
 	#line gag
 }
