@@ -1,5 +1,11 @@
 #CLASS {actions} OPEN
 
+#ACTION {A moze bys najpierw wstal?}
+{
+	#map undo
+}
+{5}
+
 #ACTION {^Rozprostowujac kosci wstajesz z ziemi.$}
 {
 	#line gag;

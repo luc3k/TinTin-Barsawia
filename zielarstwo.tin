@@ -1,7 +1,14 @@
 #CLASS {zielarstwo} OPEN
 
-#ACTION {^Znajdujesz {.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b}{.*}$}
+#ACTION       {^Jestes teraz zajety praca. Musisz wpisac 'przestan' by moc zrobic, to co chcesz.$}
+                                                              {
+																  #map undo
+															  }
+															    {5}
+
+#ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b}{.*}$}
 {
+	#var aktywne_szukanie 0;
 	otworz sloik;
 	wloz ziola do sloika;
 	zamknij sloik;
@@ -35,11 +42,19 @@
 		#variable {szukanie_ziol} {1};
 		#cr
 	};
-	#elseif {${szukanie_ziol} == 1}
+	#elseif {$szukanie_ziol == 1}
 	{
 		#variable {szukanie_ziol} {0};
 		#cr
 	}
+}
+{5}
+
+#ACTION       {^Zaczynasz szukac ziol.$}   
+{
+	#line gag;
+	#echo {<afa>%0<099>};
+	#var aktywne_szukanie 1
 }
 {5}
 
