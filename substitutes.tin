@@ -1,9 +1,13 @@
 #CLASS {substitutes} OPEN
 
-#SUBSTITUTE       {^Ciezar twego ekwipunku daje ci sie we znaki.$}                          {<fea>%0<099>}  {5}
+#SUBSTITUTE       {^Ciezar twego ekwipunku {wadzi ci troche|daje ci sie we znaki}.$}                          {<fea>%0<099>}  {5}
 #SUBSTITUTE       {^Masz na sobie %1.$}  {<afa>Masz na sobie <eca>%1<afa>.<099>}  {5}
 #SUBSTITUTE       {^Masz przy sobie %1.$}   {<afa>Masz przy sobie <eca>%1<afa>.<099>}  {5}
 #SUBSTITUTE       {^{Sa|Jest} tutaj {dwa|trzy|cztery|piec|szesc|siedem|osiem|dziwiec|dziesiec|jedno} widoczn{e|ych} wyjsc{ia|ie|}: %5.$}                                                                                                  {<afa>%1 tutaj %2 widoczne%3 wyjsc%4: <eca>%5<afa>.<099>}  {5}
 #SUBSTITUTE       {{(T|t)ablica ogloszeniowa|(D|d)rogowskaz(ie|)|tablic(a|e)|tabliczk(a|e|i)|plakat|kartka}}                                                                 {<faa>%0<099>}  {5}
+#SUBSTITUTE       {^{Nie otrzymales zadnych nowych listow|Aktualnie nie czeka na Ciebie zadna paczka}.$}                                                               {<afa>%0<099>}  {5}
+#SUBSTITUTE       {{\d} miedzia{ki|ne|nych}{ monet(y|)|}}  {<dba>%0<099>}  {5}
+#SUBSTITUTE       {{\d} zlot{ych|e} monet{y|}}  {<fda>%0<099>}  {5}
+#SUBSTITUTE       {^%1 {podaza|przybywa} {na|z} %4.$}                           {%1 %2 %3 <eca>%4<099>.}  {5}
 
 #CLASS {substitutes} CLOSE

@@ -39,6 +39,6 @@
 
 #SUBSTITUTE       {^%1 przedstawia sie jako: %2$}           {<afa>%1 przedstawia sie jako:<eca>%2<099>}                  {5}
 #SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy|odpowiada} do %3:%4$}                                     {<afa>%1 %2 do %3:<eca>%4<099>}      {5}
-#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy|odpowiada}{ z oddali| do Ciebie|}:%4$}                                                      {<afa>%1 %2%3:<eca>%4<099>}  {5}
+#SUBSTITUTE       {^%1 {mowi|krzyczy|pyta|nuci|mruczy|odpowiada}{ z oddali| do Ciebie| z calych sil|}:%4$}                                                      {<afa>%1 %2%3:<eca>%4<099>}  {5}
 
 #CLASS {mowienie} CLOSE

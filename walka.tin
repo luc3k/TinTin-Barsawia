@@ -76,7 +76,7 @@
 #SUBSTITUTE       {^%1 %2 swojego %3 %4 %5, trafiajac go w %6.$}                          {@jakosc{%1} @typ{%2}<afa> swojego @bron{%3} @obrazenia{%4} @wrog{%5}<afa>, trafiajac go w @miejsce{%6}<afa>.}                                                                      {5}
 #SUBSTITUTE       {^%1 nie udaje sie trafic ciebie %2.$}                  {<099>%0<099>}  {5}
 #SUBSTITUTE       {^%1 odchylasz sie do tylu, unikajac ciosu %2.$}                            {<099>%0<099>}  {5}
-#SUBSTITUTE       {^%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.$}                                                  {<099>%0<099>}  {5}
+#SUBSTITUTE       {^%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.$}                                                  {<efa>%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.<099>}  {5}
 #SUBSTITUTE       {^%1 wpada w panike!$}  {<099>%0<099>}  {5}
 #SUBSTITUTE       {^Probujesz trafic %1 %2, lecz ten uskakuje przed twoim ciosem.$}                                             {<099>%0<099>}  {5}
 #SUBSTITUTE       {^%1 %2 %3 %4, trafiajac go w %5.$}               {@jakosc{%1} @typ{%2} @wrog{%3} @bron{%4}<afa>, trafiajac go w @miejsce{%5}<afa>.}                                               {6}

@@ -37,7 +37,10 @@
 {
 	#line gag;
 	#echo {<fab>%0<099>};
-	#map undo
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
 }
 {5}
 
@@ -45,7 +48,10 @@
 {
 	#line gag;
 	#echo {<fab>Nie widzisz zadnego wyjscia prowadzacego na %1.<099>};
-	#map undo
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
 }
 {5}
 
@@ -53,7 +59,10 @@
 {
 	#line gag;
 	#echo {<fab>Ruszasz razno na <fec>%1<fab>, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na %2.<099>};
-	#map undo
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
 }
 {5}
 
