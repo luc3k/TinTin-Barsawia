@@ -3,21 +3,29 @@
 #SUBSTITUTE       {^\d{.*}Ablakusa, doswiadczonego mysliwego z Vrontok{\s*}za %1$}                                            {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Berta Herghsona{\s*}za %1$}               {<ffa>%0 <afa>Bree, Dom aukcyjny, P:196<099>}                    {5}
 #SUBSTITUTE       {^\d{.*}Biura Pocztowcow w Bystrym Brodzie{\s*}za %1$}                                  {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Biura Poslancow w Brigham{\s*}za %1$}                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Biura Poslancow w Gorach Blekitnych{\s*}za %1$}                                   {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Biura Przesylek w Bree{\s*}za %1$}                      {<ffa>%0 <afa>Bree, P:194<099>}      {5}
+#SUBSTITUTE       {^\d{.*}Boriga Mastmendera{\s*}za %1$}                  {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Broudiego Roppera z Marish{\s*}za %1$}                          {<ffa>%0 <afa>Hobbiton, zielarz, P:360<099>}                   {5}
 #SUBSTITUTE       {^\d{.*}Browaru w Hobbitonie{\s*}za %1$}                    {<ffa>%0 <afa>Hobbiton, P:204<099>}          {5}
+#SUBSTITUTE       {^\d{.*}Caniry z Vivane{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Cukierni 'Lukrecja' w Bezpiwiu{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Domu Poslancow w Michel Delving{\s*}za %1$}                               {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Dela z Kelevine{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Domu Poslancow w Michel Delving{\s*}za %1$}                               {<ffa>%0 <afa>P:990<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Eksimoniusa Dlethora z Vrontok{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Ganiana Farrosha, dowodcy stacjonujacego w Powietrznej Przystani Osmego Legionu{\s*}za %1$}                                                                               {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Garyla{\s*}za %1$}      {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Golebiarza w Tukonie{\s*}za %1$}                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Golebiarza z Edoras{\s*}za %1$}                   {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Gospody 'Pod Rozbrykanym Kucykiem'{\s*}za %1$}                                  {<ffa>%0 <afa>Bree, P:178<099>}      {5}
 #SUBSTITUTE       {^\d{.*}Gospody 'Pod zlamanym zebrem'{\s*}za %1$}                             {<ffa>%0 <afa>P:865<099>}  {5}
 #SUBSTITUTE       {^\d{.*}Grara, kowala z Cardolanu{\s*}za %1$}                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gurgroma Bungroma{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gustava z Kratas{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Hogetha Dorughta z Gor Blekitnych{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Jerrana Jeralisa, Kapitana Statkow Imperium{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Karczmy 'Nad Przystania'{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kompanii Handlowej Gwatora{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kuzni w Kratas{\s*}za %1$}              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kwiaciarni w Krzywych Jamach{\s*}za %1$}                            {<ffa>%0 <afa><099>}  {5}
@@ -25,28 +33,30 @@
 #SUBSTITUTE       {^\d{.*}Magnusa Kanta{\s*}za %1$}             {<ffa>%0 <afa>Bree, piekarz, P:443<099>}               {5}
 #SUBSTITUTE       {^\d{.*}Oddzialu poczty imperialnej w Vivane{\s*}za %1$}                                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Igielniczce{\s*}za %1$}                      {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Piekarni w Wielkim Targu{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Poczty we Vrontok{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Prowizorycznego Urzedu Pocztowego w Khazad-dum{\s*}za %1$}                                              {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Rapiera, wlasciciela 'Pod Przybitym Skrzydlem'{\s*}za %1$}                                              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Rhilli Mirremnor{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Roddyna z Bialych Wzgorz{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Roddyna z Bialych Wzgorz{\s*}za %1$}                        {<ffa>%0 <afa>Michel Delving, P:609<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Sentiego Kolpackela{\s*}za %1$}                   {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Sklepu w Zabiej Lace{\s*}za %1$}                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Stanthosa Krommha{\s*}za %1$}                 {<ffa>%0 <afa>Michel Delving, zlotnik, P:622<099>}                         {5}
 #SUBSTITUTE       {^\d{.*}Tawerny w Powietrznej Przystani{\s*}za %1$}                               {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Tholtina Thaliona{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Tukonskiego Biura Przesylek Pocztowych{\s*}za %1$}                                      {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Tukonskiego Sklepu Wielobranzowego{\s*}za %1$}                                  {<ffa>%0 <afa>Tukon, P:925<099>}       {5}
 #SUBSTITUTE       {^\d{.*}Tyla, wlasciciela karczmy "Pod drewniana tarcza"{\s*}za %1$}                                                {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Edoras{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Tharbadzie{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Varulam Talary, zastepczyni Admiral Tularch{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Vernila z Jerris{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Wojta Zabiej Laki{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Yurgala, soltysa Brigham{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zbrojmistrza w wiosce Kamieniolom{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zielarni w Krzywych Jamach{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zinka Framina, handlarza{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Eksimoniusa Dlethora z Vrontok{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Rapiera, wlasciciela 'Pod Przybitym Skrzydlem'{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Boriga Mastmendera{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Karczmy 'Nad Przystania'{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Edoras{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Biura Poslancow w Brigham{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Tukonskiego Sklepu Wielobranzowego{\s*}za %1$}                        {<ffa>%0 <afa>Tukon, P:925<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Dereka z Dorrath{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Balifa{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 
 #CLASS {paczki} CLOSE

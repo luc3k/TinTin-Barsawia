@@ -1,6 +1,6 @@
 #CLASS {slawa} OPEN
 
-#SUBSTITUTE       {^Jestes zupelnie anonimowy w wielkim swiecie, w ktorymprzyszlo ci zyc$}  {<faa>%0<170>[0/10]<099>}  {5}
+#SUBSTITUTE       {^Jestes zupelnie anonimowy w wielkim swiecie, w ktorym przyszlo ci zyc.$}  {<faa>%0<170>[0/10]<099>}  {5}
 #SUBSTITUTE       {^Poki co malo kto cie kojarzy$}  {<fba>%0<170>[1/10]<099>}  {5}
 #SUBSTITUTE       {^Niewielu jeszcze osobom bylo dane poznac twoje imie.$}  {<fca>%0<170>[2/10]<099>}  {5}
 #SUBSTITUTE       {^Powoli stajesz sie rozpoznawalny w okolicznych wioskach i osadach.$}  {<fda>%0<170>[3/10]<099>}  {5}
