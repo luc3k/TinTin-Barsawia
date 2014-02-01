@@ -1,5 +1,20 @@
 #CLASS {aliases} OPEN
 
+#ALIAS {/goto}
+{
+	#if {%1}
+	{
+		#variable goto_room %1;
+		#cr
+	};
+	#else
+	{
+		#variable goto_room {};
+		#cr
+	}
+}
+{5}
+
 #ALIAS {/kolorki}
 {
 	#loop {0} {7} {i}
