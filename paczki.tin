@@ -58,5 +58,6 @@
 #SUBSTITUTE       {^\d{.*}Zinka Framina, handlarza{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Dereka z Dorrath{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Balifa{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Dowodcy straznicy Thery{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 
 #CLASS {paczki} CLOSE

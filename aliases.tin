@@ -4,9 +4,10 @@
 {
 	#loop {0} {7} {i}
 	{
-		#if {$i != 3 && $i != 6} {
+		#if {$i != 3 && $i != 6}
+		{
 			#showme <${i}07>${i}07 <${i}19>${i}19 <${i}29>${i}29 <${i}39>${i}39 <${i}49>${i}49 <${i}59>${i}59 <${i}69>${i}69 <${i}79>${i}79
-		};
+		}
 	};
 	#loop {1} {6} {i}
 	{
@@ -122,6 +123,18 @@
 	d;
 	drzwi;
 	przejdz przez pierwszy portal
+}
+{5}
+
+#ALIAS {zak}
+{
+	wejdz do zakurzonego dylizansu
+}
+{5}
+
+#ALIAS {ziel}
+{
+	wejdz do zielonego dylizansu
 }
 {5}
 
