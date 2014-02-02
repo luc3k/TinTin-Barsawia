@@ -26,7 +26,9 @@
 #SUBSTITUTE       {^\d{.*}Grara, kowala z Cardolanu{\s*}za %1$}                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gurgroma Bungroma{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gustava z Kratas{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Herbaciarki z Kratas{\s*}za %1$}                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Hogetha Dorughta z Gor Blekitnych{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Imraaga, Ksenomaty z Osmego Legionu Powietrznej Przystani{\s*}za %1$}                                                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Jerrana Jeralisa, Kapitana Statkow Imperium{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Karczmy 'Nad Przystania'{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kompanii Handlowej Gwatora{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
