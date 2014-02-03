@@ -12,4 +12,4 @@
 #SUBSTITUTE       {^Wiesc o twoich czynach roznosi sie szybciej niz moglbys sie spodziewac.$}  {<bfa>%0<170>[9/10]<099>}  {5}
 #SUBSTITUTE       {^Powoli stajesz sie glownym bohaterem ludowych piesni.$}  {<afa>%0<170>[10/10]<099>}  {5}
 
-#CLASS {close} OPEN
+#CLASS {slawa} CLOSE

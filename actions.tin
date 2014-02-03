@@ -6,22 +6,6 @@
 }
 {5}
 
-#ACTION {^Rozprostowujac kosci wstajesz z ziemi.$}
-{
-	#line gag;
-	#echo {<fec>%0<099>};
-	#variable {sit_state} {0}
-}
-{5}
-
-#ACTION {^Siadasz na ziemi.$}
-{
-	#line gag;
-	#echo {<fec>%0<099>};
-	#variable {sit_state} {1}
-}
-{5}
-
 #ACTION {^.: %1 :.$}
 {
 	#variable last_room {%1};
@@ -46,7 +30,7 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	};
+	}
 }
 {5}
 
@@ -57,7 +41,15 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	};
+	}
+}
+{5}
+
+#ACTION {^Rozprostowujac kosci wstajesz z ziemi.$}
+{
+	#line gag;
+	#echo {<fec>%0<099>};
+	#variable {sit_state} {0}
 }
 {5}
 
@@ -68,7 +60,15 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	};
+	}
+}
+{5}
+
+#ACTION {^Siadasz na ziemi.$}
+{
+	#line gag;
+	#echo {<fec>%0<099>};
+	#variable {sit_state} {1}
 }
 {5}
 

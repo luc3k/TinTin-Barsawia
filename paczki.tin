@@ -12,6 +12,7 @@
 #SUBSTITUTE       {^\d{.*}Browaru w Hobbitonie{\s*}za %1$}                    {<ffa>%0 <afa>Hobbiton, P:204<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Caniry z Vivane{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Cukierni 'Lukrecja' w Bezpiwiu{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Cukierni w Vivane{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Dela z Kelevine{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Dereka z Dorrath{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Domu Poslancow w Michel Delving{\s*}za %1$}                               {<ffa>%0 <afa>P:990<099>}  {5}
@@ -48,6 +49,7 @@
 #SUBSTITUTE       {^\d{.*}Sentiego Kolpackela{\s*}za %1$}                   {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Sklepu w Zabiej Lace{\s*}za %1$}                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Stanthosa Krommha{\s*}za %1$}                 {<ffa>%0 <afa>Michel Delving, zlotnik, P:622<099>}                         {5}
+#SUBSTITUTE       {^\d{.*}Szybkiego Cienia{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Tawerny w Powietrznej Przystani{\s*}za %1$}                               {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Tholtina Thaliona{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Tukonskiego Biura Przesylek Pocztowych{\s*}za %1$}                                      {<ffa>%0 <afa><099>}  {5}

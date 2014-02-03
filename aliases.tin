@@ -109,6 +109,59 @@
 }
 {5}
 
+#ALIAS {/reloadall}
+{
+	#class actions kill;
+	#class actions read actions.tin;
+	#class actions write actions.tin;
+	#class aliases kill;
+	#class aliases read aliases.tin;
+	#class aliases write aliases.tin;
+	#class bezpieczenstwo_zmeczenie kill;
+	#class bezpieczenstwo_zmeczenie read bezpieczenstwo_zmeczenie.tin;
+	#class bezpieczenstwo_zmeczenie write bezpieczenstwo_zmeczenie.tin;
+	#class cechy kill;
+	#class cechy read cechy.tin;
+	#class cechy write cechy.tin;
+	#class glod_pragnienie kill;
+	#class glod_pragnienie read glod_pragnienie.tin;
+	#class glod_pragnienie write glod_pragnienie.tin;
+	#class kondycja_mana kill;
+	#class kondycja_mana read kondycja_mana.tin;
+	#class kondycja_mana write kondycja_mana.tin;
+	#class macros kill;
+	#class macros read macros.tin;
+	#class macros write macros.tin;
+	#class mowienie kill;
+	#class mowienie read mowienie.tin;
+	#class mowienie write mowienie.tin;
+	#class paczki kill;
+	#class paczki read paczki.tin;
+	#class paczki write paczki.tin;
+	#class postepy kill;
+	#class postepy read postepy.tin;
+	#nop bez zapisu postepy;
+	#class slawa kill;
+	#class slawa read slawa.tin;
+	#nop bez zapisu slawa;
+	#class substitutes kill;
+	#class substitutes read substitutes.tin;
+	#class substitutes write substitutes.tin;
+	#class umiejetnosci kill;
+	#class umiejetnosci read umiejetnosci.tin;
+	#nop bez zapisu umiejetnosci;
+	#class upicie kill;
+	#class upicie read upicie.tin;
+	#class upicie write upicie.tin;
+	#class walka kill;
+	#class walka read walka.tin;
+	#class walka write walka.tin;
+	#class zielarstwo kill;
+	#class zielarstwo read zielarstwo.tin;
+	#class zielarstwo write zielarstwo.tin
+}
+{5}
+
 #ALIAS {ek}
 {
 	ekwipunek
