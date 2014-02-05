@@ -64,6 +64,17 @@
 }
 {5}
 
+#ACTION {^Probujesz ruszyc na %1, lecz nie widzisz tam zadnej sciezki.$}
+{
+	#line gag;
+	#echo {<fab>Probujesz ruszyc na <fec>%1<fab>, lecz nie widzisz tam zadnej sciezki.<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Siadasz na ziemi.$}
 {
 	#line gag;
