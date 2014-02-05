@@ -64,6 +64,28 @@
 }
 {5}
 
+#ACTION {^Podchodzisz do drewnianych drzwi na %1 z zamiarem przekroczenia ich. Nic z tego, jeden z przechodzacych straznikow powstrzymuje cie.$}
+{
+	#line gag;
+	#echo {<fab>Podchodzisz do drewnianych drzwi na <fec>%1<fab> z zamiarem przekroczenia ich. Nic z tego, jeden z przechodzacych straznikow powstrzymuje cie.<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Nie mozesz tam wejsc{!.}$}
+{
+	#line gag;
+	#echo {<fab>Nie mozesz tam wejsc%1<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Probujesz ruszyc na %1, lecz nie widzisz tam zadnej sciezki.$}
 {
 	#line gag;
