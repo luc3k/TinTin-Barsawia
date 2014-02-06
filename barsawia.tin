@@ -5,7 +5,7 @@
 #VARIABLE         {map_state}  {0}
 #VARIABLE         {last_room}  {}
 #VARIABLE         {goto_room}  {}
-#SPLIT 13 1
+#SPLIT 19 1
 #PROMPT           {^> $}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Idz do: <ffa>${goto_room}<099>}{1}
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}

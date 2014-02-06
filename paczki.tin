@@ -23,7 +23,7 @@
 #SUBSTITUTE       {^\d{.*}Golebiarza w Tukonie{\s*}za %1$}                    {<ffa>%0 <afa>P:884<099>}  {5}
 #SUBSTITUTE       {^\d{.*}Golebiarza z Edoras{\s*}za %1$}                   {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gospody 'Pod Rozbrykanym Kucykiem'{\s*}za %1$}                                  {<ffa>%0 <afa>Bree, P:178<099>}      {5}
-#SUBSTITUTE       {^\d{.*}Gospody 'Pod zlamanym zebrem'{\s*}za %1$}                             {<ffa>%0 <afa>Igielniczka, P:865<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Gospody 'Pod zlamanym zebrem'{\s*}za %1$}                             {<ffa>%0 <afa>Igielniczka, P:865<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Grara, kowala z Cardolanu{\s*}za %1$}                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gurgroma Bungroma{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gustava z Kratas{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
@@ -37,6 +37,7 @@
 #SUBSTITUTE       {^\d{.*}Kwiaciarni w Krzywych Jamach{\s*}za %1$}                            {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Lorgo T'raska, burmistrza Vrontok{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Magnusa Kanta{\s*}za %1$}             {<ffa>%0 <afa>Bree, piekarz, P:443<099>}               {5}
+#SUBSTITUTE       {^\d{.*}Mlynu pod Dorrath{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Nolagarda Kehmisa, Radnego Cechu Jubilerow{\s*}za %1$}                                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Oddzialu poczty imperialnej w Vivane{\s*}za %1$}                                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Igielniczce{\s*}za %1$}                      {<ffa>%0 <afa>P:868<099>}  {5}
@@ -64,6 +65,5 @@
 #SUBSTITUTE       {^\d{.*}Zbrojmistrza w wiosce Kamieniolom{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zielarni w Krzywych Jamach{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zinka Framina, handlarza{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Mlynu pod Dorrath{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 
 #CLASS {paczki} CLOSE

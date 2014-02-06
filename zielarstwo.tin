@@ -58,6 +58,8 @@
 }
 {5}
 
+#SUBSTITUTE       {czerwonawy ostry lisc}   {%0 <afa>(szczaw)<099>}  {5}
+#SUBSTITUTE       {drobny rozowy kwiat}  {%0 <afa>(macierzanka)<099>}   {5}
 #VARIABLE         {aktywne_szukanie}  {0}
 #VARIABLE         {szukanie_ziol}  {0}
 

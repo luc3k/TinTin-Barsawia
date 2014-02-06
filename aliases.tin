@@ -162,6 +162,13 @@
 }
 {5}
 
+#ALIAS {/ubr}
+{
+	zabezpiecz wszystko;
+	naciagnij kaptur
+}
+{5}
+
 #ALIAS {ek}
 {
 	ekwipunek
