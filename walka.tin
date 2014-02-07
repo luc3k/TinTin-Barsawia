@@ -16,10 +16,6 @@
 	{
 		%3
 	};
-	#else
-	{
-		
-	}
 }
 {5}
 
@@ -35,10 +31,6 @@
 		wytnij skore z ciala;
 		wytnij mieso z ciala
 	};
-	#else
-	{
-		
-	}
 }
 {5}
 

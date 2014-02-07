@@ -8,8 +8,11 @@
 	};
 	#else
 	{
-		w;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			w;
+			szukaj ziol
+		}
 	}
 }
 
@@ -21,8 +24,11 @@
 	};
 	#else
 	{
-		se;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			se;
+			szukaj ziol
+		}
 	}
 }
 
@@ -34,8 +40,11 @@
 	};
 	#else
 	{
-		e;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			e;
+			szukaj ziol
+		}
 	}
 }
 
@@ -47,8 +56,11 @@
 	};
 	#else
 	{
-		ne;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			ne;
+			szukaj ziol
+		}
 	}
 }
 
@@ -60,8 +72,11 @@
 	};
 	#else
 	{
-		d;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			d;
+			szukaj ziol
+		}
 	}
 }
 
@@ -73,8 +88,11 @@
 	};
 	#else
 	{
-		nw;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			nw;
+			szukaj ziol
+		}
 	}
 }
 
@@ -86,8 +104,11 @@
 	};
 	#else
 	{
-		u;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			u;
+			szukaj ziol
+		}
 	}
 }
 
@@ -104,8 +125,11 @@
 	};
 	#else
 	{
-		n;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			n;
+			szukaj ziol
+		}
 	}
 }
 
@@ -117,8 +141,11 @@
 	};
 	#else
 	{
-		s;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			s;
+			szukaj ziol
+		}
 	}
 }
 
@@ -130,8 +157,11 @@
 	};
 	#else
 	{
-		sw;
-		szukaj ziol
+		#if {$aktywne_szukanie == 0}
+		{
+			sw;
+			szukaj ziol
+		}
 	}
 }
 

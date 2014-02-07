@@ -20,6 +20,9 @@
 	otworz sloik;
 	wloz ziola do sloika;
 	zamknij sloik;
+	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
+	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
+	save;
 	#line GAG;
 	#echo {<afa>%0<099>}
 }
@@ -58,9 +61,15 @@
 }
 {5}
 
-#SUBSTITUTE       {czerwonawy ostry lisc}   {%0 <afa>(szczaw)<099>}  {5}
-#SUBSTITUTE       {drobny rozowy kwiat}  {%0 <afa>(macierzanka)<099>}   {5}
+#SUBSTITUTE       {bial{y|e|ych} drobn{y|e|ych} \bkwiat{y|ow|}\b}                           {%0 <afa>(rumianek)<099>}  {5}
+#SUBSTITUTE       {bial{y|e|ych} okazal{y|e|ych} \bkorzen{ie|i|}\b}                             {%0 <afa>(biedrzawiec)<099>}   {5}
+#SUBSTITUTE       {czerwonaw{y|e|ych} ostr{y|e|ych} \blisc{ie|i|}\b}                              {%0 <afa>(szczaw)<099>}  {5}
+#SUBSTITUTE       {drobn{y|e|ych} rozow{y|e|ych} \bkwiat{y|ow|}\b}                            {%0 <afa>(macierzanka)<099>}   {5}
+#SUBSTITUTE       {duz{y|e|ych} czerwon{y|e|ych} \bkwiat{y|ow|}\b}  {%0 <afa>(mak)<099>}  {5}
+#SUBSTITUTE       {malutk{i|ie|ich} bial{y|e|ych} \bkwiat{y|ow|}\b}  {%0 <afa>(stokrotka)<099>}  {5}
+#SUBSTITUTE       {podluzn{y|e|ych} cienk{i|ie|ich} \blisc{ie|i|}\b}  {%0 <afa>(trawa)<099>}  {5}
 #VARIABLE         {aktywne_szukanie}  {0}
+#VARIABLE         {dzis_zeb_ziol}  {0}
 #VARIABLE         {szukanie_ziol}  {0}
 
 #CLASS {zielarstwo} CLOSE

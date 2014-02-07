@@ -6,7 +6,7 @@
 #VARIABLE         {last_room}  {}
 #VARIABLE         {goto_room}  {}
 #SPLIT 19 1
-#PROMPT           {^> $}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Idz do: <ffa>${goto_room}<099>}{1}
+#PROMPT           {^> $}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Idz do: <ffa>${goto_room}<099>}{1}
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
 #PATHDIR          {polnoc}  {poludnie}  {1}
@@ -47,8 +47,14 @@
 	#variable map_state 0;
 	#variable szukanie_ziol 0;
 	#variable last_room {};
+	log off;
 	#write main.tin;
 	#echo zapisane
+}
+
+#EVENT {SESSION CONNECTED}
+{
+	log on
 }
 
 #class actions read actions.tin
