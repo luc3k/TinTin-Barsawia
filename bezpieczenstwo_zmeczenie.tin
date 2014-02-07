@@ -4,7 +4,11 @@
 {
 	#if {"%0" == "bardzo bezpiecznie"}
 	{
-		#return <bfa>%0<170>[1/1]<099>
+		#return <bfa>%0<170>[0/1]<099>
+	};
+	#elseif {"%0" == "bardzo przerazony"}
+	{
+		#return <fba>%0<170>[1/1]<099>
 	};
 	#else
 	{

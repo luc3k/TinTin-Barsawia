@@ -169,6 +169,22 @@
 }
 {5}
 
+#ALIAS {/wezm}
+{
+	otworz sakwe;
+	wez monety z sakwy;
+	zamknij sakwe
+}
+{5}
+
+#ALIAS {/wlozm}
+{
+	otworz sakwe;
+	wloz monety do sakwy;
+	zamknij sakwe
+}
+{5}
+
 #ALIAS {ek}
 {
 	ekwipunek

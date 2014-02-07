@@ -15,7 +15,15 @@
 	#if {$map_state == 1}
 	{
 		#map name {%1}
-	};
+	}
+}
+{5}
+
+#ACTION {^Docieraja do ciebie pierwsze promienie wschodzacego slonca. Kierujesz wzrok ku niebu i uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie wlasnie kolejny dzien.$}
+{
+	#line GAG;
+	#echo {<afa>%0<099>};
+	#variable {godzina} {06:00}
 }
 {5}
 
@@ -98,6 +106,14 @@
 	#line gag;
 	#echo {<fec>%0<099>};
 	#variable {sit_state} {1}
+}
+{5}
+
+#ACTION {^Widzisz jak ostatnie promienie zachodzacego slonca nikna za horyzontem. Uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie noc.$}
+{
+	#line GAG;
+	#echo {<bcf>%0<099>};
+	#variable {godzina} {20:00}
 }
 {5}
 

@@ -1,12 +1,11 @@
 #CLASS {barsawia} OPEN
-
 #VARIABLE         {nazwa_krainy}  {barsawia}
 #VARIABLE         {sit_state}  {0}
 #VARIABLE         {map_state}  {0}
 #VARIABLE         {last_room}  {}
 #VARIABLE         {goto_room}  {}
 #SPLIT 19 1
-#PROMPT           {^> $}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Idz do: <ffa>${goto_room}<099>}{1}
+#PROMPT           {^> %1}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Idz do: <ffa>${goto_room}<fff>@remove_text{%1}<099>} {1}
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
 #PATHDIR          {polnoc}  {poludnie}  {1}
@@ -17,6 +16,15 @@
 #PATHDIR          {poludniowy-zachod}  {polnocny-wschod}  {12}
 #PATHDIR          {wschod}  {zachod}  {2}
 #PATHDIR          {zachod}  {wschod}  {8}
+
+#FUNCTION {remove_text}
+{
+	#IF {"%0" != ""}
+	{
+	#showme {%0}
+	};
+	#return |
+}
 
 #FUNCTION {siedzenie}
 {

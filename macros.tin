@@ -11,7 +11,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			w;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -27,7 +34,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			se;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -43,7 +57,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			e;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -59,7 +80,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			ne;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -75,7 +103,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			d;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -91,7 +126,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			nw;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -107,7 +149,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			u;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -128,7 +177,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			n;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -144,7 +200,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			s;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
@@ -160,7 +223,14 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			sw;
-			szukaj ziol
+			#if {$ziolo == {}}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
 		}
 	}
 }
