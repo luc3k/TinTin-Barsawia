@@ -55,7 +55,7 @@
 #SUBSTITUTE       {^\d{.*}Tholtina Thaliona{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Tukonskiego Biura Przesylek Pocztowych{\s*}za %1$}                                      {<ffa>%0 <afa>P:919<099>}  {5}
 #SUBSTITUTE       {^\d{.*}Tukonskiego Sklepu Wielobranzowego{\s*}za %1$}                                  {<ffa>%0 <afa>Tukon, P:925<099>}       {5}
-#SUBSTITUTE       {^\d{.*}Tyla, wlasciciela karczmy "Pod drewniana tarcza"{\s*}za %1$}                                                {<ffa>%0 <afa>Gory Blekitne,P:1974<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Tyla, wlasciciela karczmy "Pod drewniana tarcza"{\s*}za %1$}                                                {<ffa>%0 <afa>Gory Blekitne,P:1974<099>}               {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Edoras{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Hobbitonie{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Tharbadzie{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}

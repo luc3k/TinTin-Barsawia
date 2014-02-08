@@ -5,7 +5,7 @@
 #SUBSTITUTE       {\b\d zl\b}  {<ffa>%0<099>}  {5}
 #SUBSTITUTE       {^%1 {cwaluje|galopuje|nadjezdza} na %3 {na|ze|z} %5.$}                                   {%1 %2 %3 %4 <eca>%5<099>.}  {5}
 #SUBSTITUTE       {^Ciezar twego ekwipunku {wadzi ci troche|daje ci sie we znaki}.$}                                              {<fea>%0<099>}  {5}
-#SUBSTITUTE       {^Jest %1, w %2, %3 dzien miesiaca %4 wedlug Kalendarza Srodziemia. Mamy obecnie %5.{ Zgodnie z Kalendarzem Shire mamy w tej chwili miesiac %6.|}$}                                                                                                                               {<afa>%0<099>}  {5}
+#SUBSTITUTE       {^Masz na plecach zalozony %1, zas przy pasie zaczepiona %2.$}                                          {<afa>Masz na plecach zalozony <099>%1<afa>, zas przy pasie zaczepiona <099>%2<afa>.<099>}                                                                 {5}
 #SUBSTITUTE       {^Masz na sobie %1.$}  {<afa>Masz na sobie<099> %1<afa>.<099>}              {5}
 #SUBSTITUTE       {^Masz przy sobie %1.$}   {<afa>Masz przy sobie<099> %1<afa>.<099>}                {5}
 #SUBSTITUTE       {^Na glowe masz naciagniety %1.$}             {<afa>Na glowe masz naciagniety<099> %1<afa>.<099>}                          {5}
@@ -21,6 +21,6 @@
 #SUBSTITUTE       {^%1 {podazaja|przybywaja|odjezdzaja|nadjezdzaja} {na|z|do|ze} %S.$}                                                {%1 %2 %3 <eca>%4<099>.}  {6}
 #SUBSTITUTE       {^%1 {podaza|przybywa|odjezdza|nadjezdza} {na|z|do|ze} %S.$}                                        {%1 %2 %3 <eca>%4<099>.}  {6}
 #SUBSTITUTE       {{\d*|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} \bzlot{ych|e|a|o}\b{ monet(y|e|a|)|}}                                                                                                    {<ffa>%0<099>}  {6}
-#SUBSTITUTE       {{\d*|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} miedzia{ki|ne|nych|kow|na|k}{ monet(y|e|a|)|}}                                                                                                                       {<cba>%0<099>}  {6}
+#SUBSTITUTE       {{\d*|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} miedzia{ki|ne|nych|kow|na|k}{ monet(y|e|a|)|}}                                                                                                             {<cba>%0<099>}  {6}
 
 #CLASS {substitutes} CLOSE

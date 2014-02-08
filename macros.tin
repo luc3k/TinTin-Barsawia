@@ -11,7 +11,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			w;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -34,7 +34,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			se;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -57,7 +57,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			e;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -80,7 +80,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			ne;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -103,7 +103,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			d;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -126,7 +126,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			nw;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -149,7 +149,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			u;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -177,7 +177,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			n;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -200,7 +200,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			s;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
@@ -223,7 +223,7 @@
 		#if {$aktywne_szukanie == 0}
 		{
 			sw;
-			#if {$ziolo == {}}
+			#if {$ziolo != 1}
 			{
 				szukaj $ziolo
 			};
