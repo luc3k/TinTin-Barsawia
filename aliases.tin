@@ -123,6 +123,9 @@
 	#class cechy kill;
 	#class cechy read cechy.tin;
 	#class cechy write cechy.tin;
+	#class ciezar kill;
+	#class ciezar read ciezar.tin;
+	#class ciezar write ciezar.tin;
 	#class glod_pragnienie kill;
 	#class glod_pragnienie read glod_pragnienie.tin;
 	#class glod_pragnienie write glod_pragnienie.tin;
@@ -231,6 +234,30 @@
 }
 {5}
 
+#ALIAS {/wezb}
+{
+	otworz worek;
+	wez miecz z worka;
+	zamknij worek;
+	dobadz miecza
+}
+{5}
+
+#ALIAS {/wlozb}
+{
+	opusc miecz;
+	otworz worek;
+	wloz miecz do worka;
+	zamknij worek
+}
+{5}
+
+#ALIAS {kk}
+{
+	kondycja wszystkich
+}
+{5}
+
 #ALIAS {save}
 {
 	#write main.tin
@@ -253,13 +280,19 @@
 
 #ALIAS {zak}
 {
-	wejdz do zakurzonego dylizansu
+	/mapoff;
+	/wezm;
+	wejdz do zakurzonego dylizansu;
+	/wlozm
 }
 {5}
 
 #ALIAS {ziel}
 {
-	wejdz do zielonego dylizansu
+	/mapoff;
+	/wezm;
+	wejdz do zielonego dylizansu;
+	/wlozm
 }
 {5}
 
