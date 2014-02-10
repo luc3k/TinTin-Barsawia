@@ -35,9 +35,113 @@ Ustawic szerokosc ekranu na zero w celu zawijania wierszy:
 Mapa sprawnie dziala z chodzeniem np. po keypadzie. Nalezy jednak dodac sobie macra na swoja klawiature.
 
 Nowe aliasy:
+
+`/mapon` 
+
+Proponuje to odpalic zawsze jak jestesmy w jakiejs unikalnej lokacji np. Skrzyzowanie Goscincow itp. To skrypty same ustawia mape w tym miejscu. Alias ten aktywuje mape, uruchamia ja itp. Mapa pojawi sie na gorze podzielonego ekranu.
+
+
+`/mapoff`
+
+Alias do wylaczenia sledzenia na mapie. Przydatne jak np. bladzimy i nie chcemy robic syfu w mapie albo uruchamia sie tez przy wjesciu do dylizansow aliasami `ziel`,`zak`
+
+
 `/zet <drzewo>`
-`/szukaj <ziolo`
+
+Alias ten ustawia informacje jakie drzewo zostaje wlasnie scinane i w zasadzie tyle. Przydatne w ACTIONS do ponownego scinania drzewa.
+
+`/scinanie`
+
+Wyciaga z worka siekiere i ustawia tryb scinania drzew. Pozwala to na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Wpisanie ponownie dezaktywuje tryb i chowa siekiere do worka.
+	
+`/szukaj <ziolo>`
+
+Ustawia tryb szukania ziol tj. przestawia macra na szukanie po wejsciu do lokacji. Pozwala tez na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Dodatkowo ustawia co ma byc szukane np. `/szukaj macierzanki`. Dodatkowo wyciaga sloik z worka. Wpisanie ponownie komendy /szukaj dezaktywuje wszystko i chowa sloik.
+
 `kk`
+
+kondycja wszystkich
+
+`ziel`
+
+wyciagniecie monet z sakiewki, wejscie do zielonego dylizansu, schowanie monet i wylaczenie aktualizacji mapy
+
+
+`zak`
+
+wyciagniecie monet z sakiewki, wejscie do zakurzonego dylizansu, schowanie monet i wylaczenie aktualizacji mapy
+
+`/stop`
+
+Pozwala zatrzymac przemieszczanie po mapie za pomoca `#map find <lokacja>`
+	
+`/goto <numer lokacji>`	
+	
+Aktualizuje prompt o pozycje gdzie sie chcemy udac. Przydatne przy roznoszeniu paczek.
+
+`/kolorki`
+
+Wyswietla wiekszosc kolorow mozliwych do pokazania w TinTin++ lacznie z ich kodami.
+
+`/przydatne`
+
+Wyswietla przydatne komendy na mudzie.
+
+`/reloadall`	
+
+Przeladowywuje wszystkie skrypty poza barsawia.tin i main.tin w celu zapisania ich ladniej i ewentualnej aktualizacji jak jakis zmienilismy w trakcie grania.
+
+`/ubr`
+
+zabezpiecza wszystko oraz naciaga kaptur na glowe
+
+`ek`
+
+komenda ekwipunek
+
+`/wlozm`
+
+otwiera sakiewke i wklada do niej monety
+
+`/wezm`
+
+otwiera sakiewke i wyciaga z niej monety
+
+`log on` oraz `log off`
+
+odpowiednio aktywuje logowanie tego co widzimy do pliku html w katalogu barsawia_logs, domyslnie aktywowane to jest od razu jak sie aktywuje sesja z Barsawia i wylaczane jak sie dezaktywuje
+
+`smap`
+
+zapisuje aktualna mape, sugeruje czesto tego uzywac
+
+`save`
+
+zapisuje aktualnie dodane "w grze" rzeczy do main.tin np. aliasy, ktore potem przeniesie sie do aliases.tin
+
+`start`
+
+alias ten jest przydatny na samym poczatku po przebudzeniu bo wykonuje komendy `d;drzwi;przejdz przez pierwszy portal`
+
+`pr <cos>`
+	
+alias na `przeczytaj cos`
+
+`/drwalh`
+
+Wyswietla komendy jakich sie uzywa przy scinaniu drzew.
+
+`/showknown`
+
+Wyswietla wszystkie poznaje osoby czy to npc czy graczy lacznie z lokacja gdzie byly poznane. (W przypadku jegomoscia z dylizansu lokacja jest bledna, za to dodana jest notka)
+
+`/wezb`
+
+Wyciaga bron z worka i jej dobywa
+
+`/wlozb`
+
+Opuszcza bron i chowa ja do worka
 
 ## Opis plikow:
 
@@ -51,7 +155,7 @@ mapa Barsawii z terenami: Bree, Hobbitonu, Michel Delving, Igielniczki, Tukonu, 
 glowny plik ladujacy ustawienia, ktory mozna zaladowac z jakiegos innego startowego (w innym wypadku moga zniknac klasy po zapisie przez write), zawiera w sobie prompt i pare innych zmiennych w obrebie barsawii
 
 * actions.tin
-wszelkie nieposortowane action/triggery
+wszelkie nieposortowane action/triggery plus aktualizowanie aktualnego czasu w prompt
 
 * aliases.tin
 wszelkie nieposortowane aliasy
@@ -103,7 +207,7 @@ Niektore aliasy sa dostosowane bezposrednio pod moja postac. W przyszlosci moze 
 
 [Skrypty](http://tintin.sourceforge.net/scripts/ "Skrypty")
 
-## Dokumentacja wszystkich komend dostepna takze pod `#help komedna` np. `#help alias`:
+## Dokumentacja wszystkich komend dostepna takze pod `#help komenda` np. `#help alias`:
 
 [Dokumentacja](http://tintin.sourceforge.net/manual/ "Dokumentacja")
 
