@@ -31,7 +31,7 @@
 #SUBSTITUTE       {^\d{.*}Hogetha Dorughta z Gor Blekitnych{\s*}za %1$}                                 {<ffa>%0 <afa>Gory Blekitne, P:1966<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Imraaga, Ksenomaty z Osmego Legionu Powietrznej Przystani{\s*}za %1$}                                                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Jerrana Jeralisa, Kapitana Statkow Imperium{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Karczmy 'Nad Przystania'{\s*}za %1$}                        {<ffa>%0 <afa>Slupki, P:305<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Karczmy 'Nad Przystania'{\s*}za %1$}                        {<ffa>%0 <afa>Slupki, P:305<099>}        {5}
 #SUBSTITUTE       {^\d{.*}Kompanii Handlowej Gwatora{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kuzni w Kratas{\s*}za %1$}              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kwiaciarni w Krzywych Jamach{\s*}za %1$}                            {<ffa>%0 <afa>Krzywe Jamy, P:818<099>}             {5}
@@ -39,6 +39,7 @@
 #SUBSTITUTE       {^\d{.*}Magnusa Kanta{\s*}za %1$}             {<ffa>%0 <afa>Bree, piekarz, P:443<099>}               {5}
 #SUBSTITUTE       {^\d{.*}Mlynu pod Dorrath{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Nolagarda Kehmisa, Radnego Cechu Jubilerow{\s*}za %1$}                                          {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Oddzialu krolewskiej poczty w Wielkim Targu{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Oddzialu poczty imperialnej w Vivane{\s*}za %1$}                                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Igielniczce{\s*}za %1$}                      {<ffa>%0 <afa>Igielniczka, P:868<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Wielkim Targu{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}

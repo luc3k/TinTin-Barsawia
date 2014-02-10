@@ -1,3 +1,5 @@
 #CLASS {ciezar} OPEN
-#SUBSTITUTE       {^Ciezar twego ekwipunku {wadzi ci troche|daje ci sie we znaki|jest dosyc klopotliwy}.$}                                              {<fea>%0<099>}  {5}
+
+#SUBSTITUTE       {^Ciezar twego ekwipunku {wadzi ci troche|daje ci sie we znaki|jest dosyc klopotliwy}.$}                                                                    {<fea>%0<099>}  {5}
+
 #CLASS {ciezar} CLOSE

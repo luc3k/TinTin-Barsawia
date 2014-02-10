@@ -109,6 +109,15 @@
 }
 {5}
 
+#ALIAS {/przydatne}
+{
+	#echo {Przydatne komendy:};
+	#echo {?zglos};
+	#echo {?administracja};
+	#echo {?druzyna}
+}
+{5}
+
 #ALIAS {/reloadall}
 {
 	#class actions kill;
@@ -126,9 +135,15 @@
 	#class ciezar kill;
 	#class ciezar read ciezar.tin;
 	#class ciezar write ciezar.tin;
+	#class drwalstwo kill;
+	#class drwalstwo read drwalstwo.tin;
+	#class drwalstwo write drwalstwo.tin;
 	#class glod_pragnienie kill;
 	#class glod_pragnienie read glod_pragnienie.tin;
 	#class glod_pragnienie write glod_pragnienie.tin;
+	#class jakosc_broni kill;
+	#class jakosc_broni read jakosc_broni.tin;
+	#class jakosc_broni write jakosc_broni.tin;
 	#class kondycja_mana kill;
 	#class kondycja_mana read kondycja_mana.tin;
 	#class kondycja_mana write kondycja_mana.tin;
@@ -231,30 +246,6 @@
 #ALIAS {pr}
 {
 	przeczytaj %1
-}
-{5}
-
-#ALIAS {/wezb}
-{
-	otworz worek;
-	wez miecz z worka;
-	zamknij worek;
-	dobadz miecza
-}
-{5}
-
-#ALIAS {/wlozb}
-{
-	opusc miecz;
-	otworz worek;
-	wloz miecz do worka;
-	zamknij worek
-}
-{5}
-
-#ALIAS {kk}
-{
-	kondycja wszystkich
 }
 {5}
 

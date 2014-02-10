@@ -2,7 +2,18 @@
 
 #ACTION {^Jestes teraz zajety praca. Musisz wpisac 'przestan' by moc zrobic, to co chcesz.$}
 {
-	#map undo
+	#if {$scinanie == 0}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Nie znajdujesz zadnych ziol.}
+{
+	#echo {<fab>%0<099>};
+	#variable {aktywne_szukanie} {0};
+	#line gag
 }
 {5}
 
@@ -28,7 +39,7 @@
 }
 {5}
 
-#ACTION {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol.|Nie znajdujesz zadnych ziol.|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny.|Nie udalo ci sie znalezc niczego interesujacego.}$}
+#ACTION {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol.|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny.|Nie udalo ci sie znalezc niczego interesujacego.}$}
 {
 	#echo {<fab>%0<099>};
 	#variable {aktywne_szukanie} {0};
@@ -57,6 +68,10 @@
 		wez sloik z worka;
 		zamknij worek;
 		#variable {szukanie_ziol} {1};
+		#if {%1}
+		{
+			#variable {ziolo}  {%1}
+		};
 		#cr
 	};
 	#elseif {$szukanie_ziol == 1}
@@ -65,6 +80,7 @@
 		wloz sloik do worka;
 		zamknij worek;
 		#variable {szukanie_ziol} {0};
+		#variable {ziolo}  {1};
 		#cr
 	}
 }
@@ -75,10 +91,15 @@
 #SUBSTITUTE       {{?i}czerwonaw{y|e|ych} ostr{y|e|ych} \blisc{ie|i|}\b}                                  {%0 <afa>(szczaw)<099>}  {5}
 #SUBSTITUTE       {{?i}drobn{y|e|ych} rozow{y|e|ych} \bkwiat{y|ow|}\b}                                {%0 <afa>(macierzanka)<099>}   {5}
 #SUBSTITUTE       {{?i}duz{y|e|ych} czerwon{y|e|ych} \bkwiat{y|ow|}\b}                                {%0 <afa>(mak)<099>}  {5}
+#SUBSTITUTE       {{?i}dzwonkowat{y|e|ych} lepk{i|ie|ich} \bkwiat{y|ow|}\b}                                     {%0 <afa>(dzwonecznik)<099>}   {5}
+#SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrzokrzew kolczasty)<099>}             {5}
 #SUBSTITUTE       {{?i}malutk{i|ie|ich} bial{y|e|ych} \bkwiat{y|ow|}\b}                                 {%0 <afa>(stokrotka)<099>}  {5}
+#SUBSTITUTE       {{?i}masywn{y|e|ych} poskrecan{y|e|ych} \bkorzen{ie|i|}\b}                                      {%0 <afa>(imbir)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} cienk{i|ie|ich} \blisc{ie|i|}\b}                                  {%0 <afa>(trawa)<099>}  {5}
+#SUBSTITUTE       {{?i}podluzn{y|e|ych} lancetowat{y|e|ych} \blisc{ie|i|}\b}                                      {%0 <afa>(babka)<099>}  {5}
 #VARIABLE         {aktywne_szukanie}  {0}
 #VARIABLE         {dzis_zeb_ziol}  {0}
 #VARIABLE         {szukanie_ziol}  {0}
+#VARIABLE         {ziolo}  {1}
 
 #CLASS {zielarstwo} CLOSE

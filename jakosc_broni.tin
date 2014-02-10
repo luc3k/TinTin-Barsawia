@@ -1,0 +1,41 @@
+#CLASS {jakosc_broni} OPEN
+
+#FUNCTION {jakosc_broni}
+{
+	#if {"%0" == "moze peknac w kazdej chwili"}
+	{
+		#return <faa>%0<170>[0/6]<099>
+	};
+	#elseif {"%0" == "wymaga natychmiastowej konserwacji"}
+	{
+		#return <fba>%0<170>[1/6]<099>
+	};
+	#elseif {"%0" == "jest w bardzo zlym stanie"}
+	{
+		#return <fca>%0<170>[2/6]<099>
+	};
+	#elseif {"%0" == "jest w zlym stanie"}
+	{
+		#return <fda>%0<170>[3/6]<099>
+	};
+	#elseif {"%0" == "liczne walki wyryly na niej swoje pietno"}
+	{
+		#return <dfa>%0<170>[4/6]<099>
+	};
+	#elseif {"%0" == "jest w dobrym stanie"}
+	{
+		#return <cfa>%0<170>[5/6]<099>
+	};
+	#elseif {"%0" == "jest w znakomitym stanie"}
+	{
+		#return <bfa>%0<170>[6/6]<099>
+	};
+	#else
+	{
+		#return %0
+	}
+}
+
+#SUBSTITUTE       {^Wyglada na to, ze %1.$}     {Wyglada na to, ze @jakosc_broni{%1}.}             {4}
+
+#CLASS {jakosc_broni} CLOSE

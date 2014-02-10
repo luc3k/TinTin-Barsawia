@@ -6,7 +6,7 @@
 #VARIABLE         {goto_room}  {}
 #VARIABLE         {godzina}  {00:00}
 #SPLIT 19 1
-#PROMPT           {^> %1}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Idz do: <ffa>${goto_room}|<cfa>Godzina:<ffa>$godzina<fff>@remove_text{%1}<099>} {1}
+#PROMPT           {^> %1}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Scinanie: <ffa>@drwal{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Idz do: <ffa>${goto_room}|<cfa>Godzina:<ffa>$godzina<fff>@remove_text{%1}<099>} {1}
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
 #PATHDIR          {polnoc}  {poludnie}  {1}
@@ -30,6 +30,18 @@
 #FUNCTION {siedzenie}
 {
 	#IF {${sit_state} == 1}
+	{
+		#return TAK
+	};
+	#ELSE
+	{
+		#return NIE
+	}
+}
+
+#FUNCTION {drwal}
+{
+	#IF {${scinanie} == 1}
 	{
 		#return TAK
 	};
@@ -71,7 +83,9 @@
 #class bezpieczenstwo_zmeczenie read bezpieczenstwo_zmeczenie.tin
 #class cechy read cechy.tin
 #class ciezar read ciezar.tin
+#class drwalstwo read drwalstwo.tin
 #class glod_pragnienie read glod_pragnienie.tin
+#class jakosc_broni read jakosc_broni.tin
 #class kondycja_mana read kondycja_mana.tin	
 #class macros read macros.tin
 #class mowienie read mowienie.tin
