@@ -68,10 +68,7 @@
 		wez sloik z worka;
 		zamknij worek;
 		#variable {szukanie_ziol} {1};
-		#if {%1}
-		{
-			#variable {ziolo}  {%1}
-		};
+		#regexp {%1} {{[^1]}} {#echo $ziolo;#variable {ziolo}  {%1}};
 		#cr
 	};
 	#elseif {$szukanie_ziol == 1}

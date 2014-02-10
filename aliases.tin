@@ -1,11 +1,5 @@
 #CLASS {aliases} OPEN
 
-#ALIAS {/stop}
-{
-	#undelay %*
-}
-{5}
-
 #ALIAS {/goto}
 {
 	#if {%1}
@@ -183,6 +177,12 @@
 	#class zielarstwo kill;
 	#class zielarstwo read zielarstwo.tin;
 	#class zielarstwo write zielarstwo.tin
+}
+{5}
+
+#ALIAS {/stop}
+{
+	#undelay %*
 }
 {5}
 
