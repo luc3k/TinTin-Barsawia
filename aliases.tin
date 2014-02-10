@@ -1,5 +1,11 @@
 #CLASS {aliases} OPEN
 
+#ALIAS {/stop}
+{
+	#undelay %*
+}
+{5}
+
 #ALIAS {/goto}
 {
 	#if {%1}

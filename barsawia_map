@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 459
+I 1991
 
 L * # # # | # x          
 
@@ -28,7 +28,7 @@ R {    4} {0} {} {Za zagajnikiem} { } {} {} {} {} {} {1.000}
 E {    3} {ne} {ne} {3} {0} {}
 E {    5} {s} {s} {4} {0} {}
 
-R {    5} {0} {} {Na prostej drodze} { } {} {} {} {} {} {1.000}
+R {    5} {0} {} {Na gliniastym trakcie} { } {} {} {} {} {} {1.000}
 E {    4} {n} {n} {1} {0} {}
 E {    7} {se} {se} {6} {0} {}
 
@@ -1967,7 +1967,7 @@ E {  459} {w} {w} {8} {0} {}
 E {  460} {ne} {ne} {3} {0} {}
 E { 2083} {e} {tartak} {2} {0} {}
 
-R {  459} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
+R {  459} {0} {} {W lesie nieopodal Bree} { } {} {} {} {} {} {1.000}
 E {  458} {e} {e} {2} {0} {}
 E {  677} {s} {s} {4} {0} {}
 E {  681} {n} {n} {1} {0} {}
@@ -2723,39 +2723,40 @@ E {  196} {e} {e} {2} {0} {}
 R {  641} {0} {} {Wewnatrz przestronnego sklepu} { } {} {} {} {} {} {1.000}
 E {  170} {s} {s} {4} {0} {}
 
-R {  642} {0} {} {Skalny tunel} { } {} {} {} {} {} {1.000}
+R {  642} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
 E {  454} {sw} {przecisnij sie obok glazu} {12} {0} {}
 E {  643} {se} {se} {6} {0} {}
 E {  644} {d} {d} {32} {0} {}
 E {  643} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 
-R {  643} {0} {} {Mroczna, zimna jaskinia} { } {} {} {} {} {} {1.000}
+R {  643} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
 E {  642} {nw} {nw} {9} {0} {}
 E {  645} {ne} {ne} {3} {0} {}
 E {  651} {se} {se} {6} {0} {}
 E {  642} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E {  645} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R {  644} {0} {} {Ciemne miejsce} { } {} {} {} {} {} {1.000}
+R {  644} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
 E {  642} {u} {u} {16} {0} {}
+E { 2092} {se} {se} {6} {0} {}
 
-R {  645} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
+R {  645} {0} {} {Mroczna, zimna jaskinia} { } {} {} {} {} {} {1.000}
 E {  643} {sw} {sw} {12} {0} {}
 E {  646} {e} {e} {2} {0} {}
 E {  643} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 
-R {  646} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
+R {  646} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
 E {  645} {w} {w} {8} {0} {}
 E {  647} {se} {se} {6} {0} {}
 
-R {  647} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
+R {  647} {0} {} {Mroczna, zimna jaskinia} { } {} {} {} {} {} {1.000}
 E {  646} {nw} {nw} {9} {0} {}
 E {  648} {e} {e} {2} {0} {}
 E {  650} {sw} {sw} {12} {0} {}
 E {  650} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E {  648} {wschod} {wschod} {2} {0} {}
 
-R {  648} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
+R {  648} {0} {} {Skalny tunel} { } {} {} {} {} {} {1.000}
 E {  647} {w} {w} {8} {0} {}
 E {  649} {se} {se} {6} {0} {}
 E {  652} {ne} {ne} {3} {0} {}
@@ -2780,7 +2781,7 @@ R {  651} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
 E {  650} {e} {e} {2} {0} {}
 E {  643} {nw} {nw} {9} {0} {}
 
-R {  652} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
+R {  652} {0} {} {Mroczna, zimna jaskinia} { } {} {} {} {} {} {1.000}
 E {  648} {sw} {sw} {12} {0} {}
 E {  653} {ne} {ne} {3} {0} {}
 E {  654} {s} {s} {4} {0} {}
@@ -2789,7 +2790,7 @@ E {  657} {wschod} {wschod} {2} {0} {}
 E {  648} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E {  654} {poludnie} {poludnie} {4} {0} {}
 
-R {  653} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
+R {  653} {0} {} {Skalny tunel} { } {} {} {} {} {} {1.000}
 E {  652} {sw} {sw} {12} {0} {}
 E {  657} {s} {s} {4} {0} {}
 E {  658} {e} {e} {2} {0} {}
@@ -2806,7 +2807,7 @@ E {  657} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 E {  649} {poludnie} {poludnie} {4} {0} {}
 E {  652} {polnoc} {polnoc} {1} {0} {}
 
-R {  655} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
+R {  655} {0} {} {Ciemna jaskinia} { } {} {} {} {} {} {1.000}
 E {  649} {nw} {nw} {9} {0} {}
 E {  656} {n} {n} {1} {0} {}
 E {  669} {se} {se} {6} {0} {}
@@ -2818,7 +2819,7 @@ E {  649} {w} {w} {8} {0} {}
 E {  654} {nw} {nw} {9} {0} {}
 E {  664} {e} {e} {2} {0} {}
 
-R {  657} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
+R {  657} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
 E {  652} {w} {w} {8} {0} {}
 E {  653} {n} {n} {1} {0} {}
 E {  658} {ne} {ne} {3} {0} {}
@@ -2827,7 +2828,7 @@ E {  654} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E {  652} {zachod} {zachod} {8} {0} {}
 E {  658} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R {  658} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
+R {  658} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
 E {  653} {w} {w} {8} {0} {}
 E {  659} {e} {e} {2} {0} {}
 E {  657} {sw} {sw} {12} {0} {}
@@ -2835,7 +2836,7 @@ E {  657} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E {  653} {zachod} {zachod} {8} {0} {}
 E {  659} {wschod} {wschod} {2} {0} {}
 
-R {  659} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
+R {  659} {0} {} {Skalny tunel} { } {} {} {} {} {} {1.000}
 E {  658} {w} {w} {8} {0} {}
 E {  660} {e} {e} {2} {0} {}
 E {  668} {se} {se} {6} {0} {}
@@ -2843,13 +2844,14 @@ E {  658} {zachod} {zachod} {8} {0} {}
 E {  660} {wschod} {wschod} {2} {0} {}
 E {  668} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 
-R {  660} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
+R {  660} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
 E {  659} {w} {w} {8} {0} {}
 E {  661} {se} {se} {6} {0} {}
 E {  659} {zachod} {zachod} {8} {0} {}
 E {  668} {poludnie} {poludnie} {4} {0} {}
+E {  668} {s} {s} {4} {0} {}
 
-R {  661} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
+R {  661} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
 E {  660} {nw} {nw} {9} {0} {}
 E {  662} {e} {e} {2} {0} {}
 E {  667} {s} {s} {4} {0} {}
@@ -2859,7 +2861,7 @@ E {  667} {poludnie} {poludnie} {4} {0} {}
 E {  674} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E {  662} {wschod} {wschod} {2} {0} {}
 
-R {  662} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
+R {  662} {0} {} {Ciemna jaskinia} { } {} {} {} {} {} {1.000}
 E {  661} {w} {w} {8} {0} {}
 E {  663} {se} {se} {6} {0} {}
 E {  674} {s} {s} {4} {0} {}
@@ -2867,24 +2869,24 @@ E {  667} {sw} {sw} {12} {0} {}
 E {  663} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E {  661} {zachod} {zachod} {8} {0} {}
 
-R {  663} {0} {} {Ciemna jaskinia} { } {} {} {} {} {} {1.000}
+R {  663} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
 E {  662} {nw} {nw} {9} {0} {}
 E {  674} {w} {w} {8} {0} {}
 E {  662} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
-R {  664} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
+R {  664} {0} {} {Ciemna jaskinia} { } {} {} {} {} {} {1.000}
 E {  656} {w} {w} {8} {0} {}
 E {  665} {e} {e} {2} {0} {}
 E {  676} {ne} {ne} {3} {0} {}
 E {  675} {se} {se} {6} {0} {}
 
-R {  665} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
+R {  665} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
 E {  664} {w} {w} {8} {0} {}
 E {  666} {e} {e} {2} {0} {}
 E {  675} {s} {s} {4} {0} {}
 E {  676} {n} {n} {1} {0} {}
 
-R {  666} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
+R {  666} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
 E {  665} {w} {w} {8} {0} {}
 E {  667} {ne} {ne} {3} {0} {}
 E {  673} {e} {e} {2} {0} {}
@@ -2894,7 +2896,7 @@ E {  675} {sw} {sw} {12} {0} {}
 E {  672} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E {  675} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 
-R {  667} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
+R {  667} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
 E {  666} {sw} {sw} {12} {0} {}
 E {  661} {n} {n} {1} {0} {}
 E {  674} {e} {e} {2} {0} {}
@@ -2905,7 +2907,7 @@ E {  661} {polnoc} {polnoc} {1} {0} {}
 E {  668} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E {  673} {poludnie} {poludnie} {4} {0} {}
 
-R {  668} {0} {} {W ciemnej jaskini} { } {} {} {} {} {} {1.000}
+R {  668} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
 E {  661} {e} {e} {2} {0} {}
 E {  659} {nw} {nw} {9} {0} {}
 E {  667} {se} {se} {6} {0} {}
@@ -2914,8 +2916,9 @@ E {  660} {polnoc} {polnoc} {1} {0} {}
 E {  659} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E {  667} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E {  676} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
+E {  660} {n} {n} {1} {0} {}
 
-R {  669} {0} {} {Ciemna jaskinia} { } {} {} {} {} {} {1.000}
+R {  669} {0} {} {Gdzies w jaskiniach} { } {} {} {} {} {} {1.000}
 E {  655} {nw} {nw} {9} {0} {}
 E {  670} {se} {se} {6} {0} {}
 E {  675} {ne} {ne} {3} {0} {}
@@ -2923,7 +2926,7 @@ E {  675} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 E {  670} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E {  655} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
-R {  670} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
+R {  670} {0} {} {Skalny tunel} { } {} {} {} {} {} {1.000}
 E {  669} {nw} {nw} {9} {0} {}
 E {  671} {ne} {ne} {3} {0} {}
 E {  669} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
@@ -2936,21 +2939,21 @@ E {  675} {nw} {nw} {9} {0} {}
 E {  670} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E {  672} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R {  672} {0} {} {Ciemna jaskinia} { } {} {} {} {} {} {1.000}
+R {  672} {0} {} {Skalny tunel} { } {} {} {} {} {} {1.000}
 E {  671} {sw} {sw} {12} {0} {}
 E {  673} {n} {n} {1} {0} {}
 E {  666} {nw} {nw} {9} {0} {}
 E {  666} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E {  671} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 
-R {  673} {0} {} {Tunel podziemny} { } {} {} {} {} {} {1.000}
+R {  673} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
 E {  672} {s} {s} {4} {0} {}
 E {  674} {ne} {ne} {3} {0} {}
 E {  667} {n} {n} {1} {0} {}
 E {  666} {w} {w} {8} {0} {}
 E {  667} {polnoc} {polnoc} {1} {0} {}
 
-R {  674} {0} {} {Podziemny tunel} { } {} {} {} {} {} {1.000}
+R {  674} {0} {} {Mroczna, zimna jaskinia} { } {} {} {} {} {} {1.000}
 E {  673} {sw} {sw} {12} {0} {}
 E {  663} {e} {e} {2} {0} {}
 E {  662} {n} {n} {1} {0} {}
@@ -2974,7 +2977,7 @@ E {  664} {sw} {sw} {12} {0} {}
 E {  666} {se} {se} {6} {0} {}
 E {  668} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R {  677} {0} {} {Gdzies w Chetwood} { } {} {} {} {} {} {1.000}
+R {  677} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
 E {  459} {n} {n} {1} {0} {}
 E {  678} {s} {s} {4} {0} {}
 E {  678} {poludnie} {poludnie} {4} {0} {}
@@ -2994,7 +2997,7 @@ E {  464} {s} {s} {4} {0} {}
 E {  686} {sw} {sw} {12} {0} {}
 E {  686} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 
-R {  681} {0} {} {Las Chet} { } {} {} {} {} {} {1.000}
+R {  681} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
 E {  459} {s} {s} {4} {0} {}
 E {  682} {e} {e} {2} {0} {}
 E {  684} {n} {n} {1} {0} {}
@@ -3008,7 +3011,7 @@ E {  459} {sw} {sw} {12} {0} {}
 E {  684} {nw} {nw} {9} {0} {}
 E {  691} {se} {se} {6} {0} {}
 
-R {  683} {0} {} {Gdzies w Chetwood} { } {} {} {} {} {} {1.000}
+R {  683} {0} {} {Niewielki las} { } {} {} {} {} {} {1.000}
 E {  682} {s} {s} {4} {0} {}
 E {  684} {w} {w} {8} {0} {}
 E {  689} {e} {e} {2} {0} {}
@@ -3016,7 +3019,7 @@ E {  687} {n} {n} {1} {0} {}
 E {  681} {sw} {sw} {12} {0} {}
 E {  685} {nw} {nw} {9} {0} {}
 
-R {  684} {0} {} {W lesie nieopodal Bree} { } {} {} {} {} {} {1.000}
+R {  684} {0} {} {Las Chet} { } {} {} {} {} {} {1.000}
 E {  683} {e} {e} {2} {0} {}
 E {  681} {s} {s} {4} {0} {}
 E {  685} {n} {n} {1} {0} {}
@@ -3024,14 +3027,14 @@ E {  687} {ne} {ne} {3} {0} {}
 E {  682} {se} {se} {6} {0} {}
 E {  687} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R {  685} {0} {} {Gdzies w Chetwood} { } {} {} {} {} {} {1.000}
+R {  685} {0} {} {Niewielki las} { } {} {} {} {} {} {1.000}
 E {  684} {s} {s} {4} {0} {}
 E {  686} {n} {n} {1} {0} {}
 E {  687} {e} {e} {2} {0} {}
 E {  464} {ne} {ne} {3} {0} {}
 E {  683} {se} {se} {6} {0} {}
 
-R {  686} {0} {} {Niewielki las} { } {} {} {} {} {} {1.000}
+R {  686} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
 E {  685} {s} {s} {4} {0} {}
 E {  464} {e} {e} {2} {0} {}
 E {  690} {n} {n} {1} {0} {}
@@ -4995,6 +4998,7 @@ E { 1136} {w} {w} {8} {0} {}
 R { 1136} {0} {} {Sciezka do Newbury} { } {} {} {} {} {} {1.000}
 E { 1135} {e} {e} {2} {0} {}
 E { 1137} {n} {rzeznia} {1} {0} {}
+E { 2103} {w} {dom} {8} {0} {}
 
 R { 1137} {0} {} {W rzezni} {r} {} {} {} {} {} {1.000}
 E { 1136} {s} {wyjscie} {4} {0} {}
@@ -8695,7 +8699,7 @@ E { 2005} {nw} {nw} {9} {0} {}
 E { 2026} {s} {s} {4} {0} {}
 E { 2040} {sw} {sw} {12} {0} {}
 
-R { 2025} {0} {} {W duzym domu} { } {} {} {} {} {} {1.000}
+R { 2025} {0} {} {Uliczka} { } {} {} {} {} {} {1.000}
 E { 1142} {e} {wyjscie} {2} {0} {}
 
 R { 2026} {0} {} {Posrod drzew i krzewow} { } {} {} {} {} {} {1.000}
@@ -9042,6 +9046,68 @@ E {    8} {d} {d} {32} {0} {}
 
 R { 2091} {0} {} {We wraku} { } {} {} {} {} {} {1.000}
 E { 1889} {s} {wyjscie} {4} {0} {}
+
+R { 2092} {0} {} {Ciemne miejsce} { } {} {} {} {} {} {1.000}
+E {  644} {nw} {nw} {9} {0} {}
+E { 2093} {ne} {ne} {3} {0} {}
+
+R { 2093} {0} {} {Ciemne miejsce} { } {} {} {} {} {} {1.000}
+E { 2092} {sw} {sw} {12} {0} {}
+E { 2094} {se} {se} {6} {0} {}
+E { 2099} {ne} {ne} {3} {0} {}
+
+R { 2094} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2093} {nw} {nw} {9} {0} {}
+E { 2095} {s} {s} {4} {0} {}
+E { 2097} {ne} {ne} {3} {0} {}
+E { 2102} {u} {u} {16} {0} {}
+E { 2095} {poludnie} {poludnie} {4} {0} {}
+
+R { 2095} {0} {} {Ciemne miejsce} { } {} {} {} {} {} {1.000}
+E { 2094} {n} {n} {1} {0} {}
+E { 2096} {s} {s} {4} {0} {}
+E { 2094} {polnoc} {polnoc} {1} {0} {}
+E { 2096} {poludnie} {poludnie} {4} {0} {}
+
+R { 2096} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2095} {n} {n} {1} {0} {}
+E { 2095} {polnoc} {polnoc} {1} {0} {}
+
+R { 2097} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2094} {sw} {sw} {12} {0} {}
+E { 2098} {n} {n} {1} {0} {}
+E { 2099} {nw} {nw} {9} {0} {}
+E { 2100} {se} {se} {6} {0} {}
+
+R { 2098} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2097} {s} {s} {4} {0} {}
+E { 2099} {w} {w} {8} {0} {}
+
+R { 2099} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2098} {e} {e} {2} {0} {}
+E { 2093} {sw} {sw} {12} {0} {}
+E { 2097} {se} {se} {6} {0} {}
+
+R { 2100} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2097} {nw} {nw} {9} {0} {}
+E { 2101} {s} {s} {4} {0} {}
+
+R { 2101} {0} {} {Mroczne podziemia} { } {} {} {} {} {} {1.000}
+E { 2100} {n} {n} {1} {0} {}
+
+R { 2102} {0} {} {Mroczna, zimna jaskinia} { } {} {} {} {} {} {1.000}
+E { 2094} {d} {d} {32} {0} {}
+
+R { 2103} {0} {} {Dom rolnikow} { } {} {} {} {} {} {1.000}
+E { 1136} {e} {wyjscie} {2} {0} {}
+E { 2104} {w} {zagroda} {8} {0} {}
+
+R { 2104} {0} {} {Zagroda} { } {} {} {} {} {} {1.000}
+E { 2103} {e} {dom} {2} {0} {}
+E { 2105} {w} {obora} {8} {0} {}
+
+R { 2105} {0} {} {Pobielone nieduze pomieszczenie} { } {} {} {} {} {} {1.000}
+E { 2104} {e} {zagroda} {2} {0} {}
 
 R { 2108} {0} {} {Trakt w poblizu gor} { } {} {} {} {} {} {1.000}
 E { 2109} {nw} {nw} {9} {0} {}

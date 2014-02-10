@@ -320,6 +320,14 @@
 }
 {5}
 
+#ACTION {^Z wyrazem lekkiego zasapania usuwasz ostatnie galezie z danej czesci wstepnie ociosanej %1, lecz dalsza powierzchnia pnia zdaje sie byc nadal obrosnieta.$}
+{
+	#line gag;
+	#echo {<afa>%0<099>};
+	odetnij galezie drzewa
+}
+{5}
+
 #ALIAS {/drwalh}
 {
 	#showme {zbadaj wyreb, zetnij drzewo, odrab konary, odetnij galezie, odgarnij kore, doczysc klode}
@@ -368,6 +376,7 @@
 #SUBSTITUTE       {^Krotkimi, wprawnymi pociagnieciami %1 odcinasz kolejne galezie z pnia wstepnie ociosan{ego|ej} %2.$}                                                                                  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Krytycznym wzrokiem obejmujesz solidnie ociosana klode %1, przypatrujac sie nierownosciom na powierzchni pnia. Nie czekajac dlugo, zaczynasz go doczyszczac.$}                                                                                                                                            {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Lekkim uderzeniem %1 podwazasz rozlegle platy kory, docierajac do glebiej osadzonego wlokna drzewa.$}                                                                                   {<afa>%0<099>}  {5}
+#SUBSTITUTE       {^Niestety, nie posiadasz odpowiedniej wiedzy i umiejetnosci, by sciac to drzewo.$}                                                               {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Niewyobrazalnie silnym wymachem ramion trafiasz %1 w drewno %2, wnikajac w kolejne warstwy pnia rosliny.$}                                                                                        {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Obchodzisz dwukrotnie pien swiezo sciet{ego|ej} %1, ukladajac sobie w myslach plan dalszej pracy. Zaraz potem szybkimi, acz dokladnymi ruchami %2 zabierasz sie za odrabywanie grubych konarow od pnia.$}                                                                                                                                                                                       {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Oto drzewa, rosnace na tym wyrebie, ktora nadaja sie do scinki:$}                                               {<afa>%0<099>}  {5}
