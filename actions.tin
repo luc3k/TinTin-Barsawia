@@ -25,7 +25,8 @@
 	#echo {<afa>%0<099>};
 	#unticker {odswiez_godzine};
 	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {06:00}
+	#variable godzina {06:00};
+	#cr
 }
 {5}
 
@@ -128,7 +129,8 @@
 	#elseif {"%1" == "dziesiata rano"}
 	{
 		#variable godzina {10:00}
-	}
+	};
+	#cr
 }
 {5}
 
@@ -171,7 +173,8 @@
 	#echo {<afa>%0<099>};
 	#unticker {odswiez_godzine};
 	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {05:00}
+	#variable godzina {05:00};
+	#cr
 }
 {5}
 
@@ -181,7 +184,8 @@
 	#echo {<bcf>%0<099>};
 	#unticker {odswiez_godzine};
 	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {21:00}
+	#variable godzina {21:00};
+	#cr
 }
 {5}
 
@@ -246,7 +250,8 @@
 	#echo {<bcf>%0<099>};
 	#unticker {odswiez_godzine};
 	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {20:00}
+	#variable godzina {20:00};
+	#cr
 }
 {5}
 

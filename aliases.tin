@@ -1,11 +1,5 @@
 #CLASS {aliases} OPEN
 
-#ALIAS {zw}
-{
-	zbadaj wyreb
-}
-{5}
-
 #ALIAS {/goto}
 {
 	#if {%1}
@@ -296,6 +290,12 @@
 	/wezm;
 	wejdz do zielonego dylizansu;
 	/wlozm
+}
+{5}
+
+#ALIAS {zw}
+{
+	zbadaj wyreb
 }
 {5}
 

@@ -87,6 +87,7 @@
 #SUBSTITUTE       {{?i}bial{y|e|ych} okazal{y|e|ych} \bkorzen{ie|i|}\b}                                 {%0 <afa>(biedrzawiec)<099>}   {5}
 #SUBSTITUTE       {{?i}czerwonaw{y|e|ych} ostr{y|e|ych} \blisc{ie|i|}\b}                                  {%0 <afa>(szczaw)<099>}  {5}
 #SUBSTITUTE       {{?i}drobn{y|e|ych} rozow{y|e|ych} \bkwiat{y|ow|}\b}                                {%0 <afa>(macierzanka)<099>}   {5}
+#SUBSTITUTE       {{?i}duz{y|e|ych} aromatyczn{y|e|ych} \bowoc{e|ow|}\b}                                  {%0 <afa>(czarnuszka)<099>}  {5}
 #SUBSTITUTE       {{?i}duz{y|e|ych} czerwon{y|e|ych} \bkwiat{y|ow|}\b}                                {%0 <afa>(mak)<099>}  {5}
 #SUBSTITUTE       {{?i}dzwonkowat{y|e|ych} lepk{i|ie|ich} \bkwiat{y|ow|}\b}                                     {%0 <afa>(dzwonecznik)<099>}   {5}
 #SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrzokrzew kolczasty)<099>}             {5}
@@ -94,7 +95,6 @@
 #SUBSTITUTE       {{?i}masywn{y|e|ych} poskrecan{y|e|ych} \bkorzen{ie|i|}\b}                                      {%0 <afa>(imbir)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} cienk{i|ie|ich} \blisc{ie|i|}\b}                                  {%0 <afa>(trawa)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} lancetowat{y|e|ych} \blisc{ie|i|}\b}                                      {%0 <afa>(babka)<099>}  {5}
-#SUBSTITUTE       {{?i}duz{y|e|ych} aromatyczn{y|e|ych} \bowoc{e|ow|}\b}   {%0 <afa>(czarnuszka)<099>}  {5}
 #VARIABLE         {aktywne_szukanie}  {0}
 #VARIABLE         {dzis_zeb_ziol}  {0}
 #VARIABLE         {szukanie_ziol}  {0}

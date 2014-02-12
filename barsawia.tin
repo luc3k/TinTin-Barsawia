@@ -73,7 +73,7 @@
 	#variable last_room {};
 	log off;
 	#unticker {odswiez_godzine};
-	#UNVARIABLE         {result}
+	#UNVARIABLE         {result};
 	#write main.tin;
 }
 
