@@ -1,5 +1,11 @@
 #CLASS {aliases} OPEN
 
+#ALIAS {zw}
+{
+	zbadaj wyreb
+}
+{5}
+
 #ALIAS {/goto}
 {
 	#if {%1}

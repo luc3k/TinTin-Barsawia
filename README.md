@@ -30,7 +30,7 @@ Ustawic optymalna wysokosc ekranu, u mnie:
 `opcje wysokosci 20`
 
 Ustawic szerokosc ekranu na zero w celu zawijania wierszy:
-`opcje szerokosci 0`
+`opcje szerokosc 0`
 
 Mapa sprawnie dziala z chodzeniem np. po keypadzie. Nalezy jednak dodac sobie macra na swoja klawiature.
 

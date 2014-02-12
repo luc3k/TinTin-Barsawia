@@ -6,7 +6,6 @@
 #CONFIG           {COMMAND COLOR}  {<078>}
 #CONFIG           {COMMAND ECHO}  {OFF}
 #CONFIG           {CONNECT RETRY}  {15}
-#CONFIG           {DEBUG TELNET}  {OFF}
 #CONFIG           {HISTORY SIZE}  {1000}
 #CONFIG           {LOG}  {HTML}
 #CONFIG           {PACKET PATCH}  {0.00}
