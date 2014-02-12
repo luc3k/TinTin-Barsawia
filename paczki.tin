@@ -54,13 +54,13 @@
 #SUBSTITUTE       {^\d{.*}Stanthosa Krommha{\s*}za %1$}                 {<ffa>%0 <afa>Michel Delving, zlotnik, P:622<099>}                         {5}
 #SUBSTITUTE       {^\d{.*}Szybkiego Cienia{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Tawerny w Powietrznej Przystani{\s*}za %1$}                               {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Tholtina Thaliona{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Tholtina Thaliona{\s*}za %1$}                 {<ffa>%0 <afa>Thorbad, P:1449<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Tukonskiego Biura Przesylek Pocztowych{\s*}za %1$}                                      {<ffa>%0 <afa>Tukon, P:919<099>}       {5}
 #SUBSTITUTE       {^\d{.*}Tukonskiego Sklepu Wielobranzowego{\s*}za %1$}                                  {<ffa>%0 <afa>Tukon, P:925<099>}       {5}
 #SUBSTITUTE       {^\d{.*}Tyla, wlasciciela karczmy "Pod drewniana tarcza"{\s*}za %1$}                                                {<ffa>%0 <afa>Gory Blekitne, P:1974<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Edoras{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Hobbitonie{\s*}za %1$}                              {<ffa>%0 <afa>Hobbiton, P:205<099>}          {5}
-#SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Tharbadzie{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Tharbadzie{\s*}za %1$}                              {<ffa>%0 <afa>Tharbad, P:1448<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Varulam Talary, zastepczyni Admiral Tularch{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Vernila z Jerris{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Wojta Zabiej Laki{\s*}za %1$}                 {<ffa>%0 <afa>Zabia Laka, P:1756<099>}             {5}

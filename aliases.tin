@@ -180,6 +180,12 @@
 }
 {5}
 
+#ALIAS {/ssklep}
+{
+	#map run {1960} {2}
+}
+{5}
+
 #ALIAS {/stop}
 {
 	#undelay %*
@@ -277,6 +283,7 @@
 
 #ALIAS {zak}
 {
+	smap;
 	/mapoff;
 	/wezm;
 	wejdz do zakurzonego dylizansu;
@@ -286,6 +293,7 @@
 
 #ALIAS {ziel}
 {
+	smap;
 	/mapoff;
 	/wezm;
 	wejdz do zielonego dylizansu;
