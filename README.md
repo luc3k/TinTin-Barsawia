@@ -151,7 +151,11 @@ ten plik
 
 * barsawia_map
 
-mapa Barsawii z terenami, wszystkie jak na razie ze soba polaczone: Bree, Hobbitonu, Michel Delving, Igielniczki, Tukonu, Bystrego Brodu, Gor Blekitnych, Newbury, Rivendell, Slupkow, Zabiej Laki, Nad Woda, Krzywych Jam, Bezpiwia, Swierkowego Dworu, Mithlond, Tharbadu, Lond Daer
+mapa Barsawii z terenami Srodziemia: Bree, Hobbitonu, Michel Delving, Igielniczki, Tukonu, Bystrego Brodu, Gor Blekitnych, Newbury, Rivendell, Slupkow, Zabiej Laki, Nad Woda, Krzywych Jam, Bezpiwia, Swierkowego Dworu, Mithlond, Tharbadu, Lond Daer
+
+(na razie Srodziemie i Earthdown sa niepolaczone)
+
+Earthdown: Daiche, Kratas
 
 * barsawia.tin:
 
