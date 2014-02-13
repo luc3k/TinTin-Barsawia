@@ -1,5 +1,71 @@
 #CLASS {actions} OPEN
 
+#ACTION {^Probujesz wejsc do gornej czesci mlyna, ale kilku pracownikow powstrzymuje cie od tego.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Ruszasz pewnie przed siebie i nagle uderzasz w jakas przeszkode. Najwidoczniej korytarz tutaj sie konczy.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Umiesniony zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Zdecydowanym krokiem ruszasz na %1, ale nagle uderzasz w kraty, ktore wydaja przy tym metaliczny dzwiek. Najprawdopodobniej cela jest zamknieta.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Hardy barczysty straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Hardy zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Nie jestes upowazniony by tam wejsc.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Nie jestes uprawniony by moc tam wejsc.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Nie mozesz tam wejsc, gdyz nie jestes jednym z Mieszczan Jerris.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Pewnym krokiem ruszasz podazajac niedokonczonym kawalkiem traktu. Kiedy jednak dochodzisz do miejsca kiedy ow sie urywa wracasz nie widzac innego wyjscia.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Probujesz podazyc na %1, ale brama do stoczni Tor jest zamknieta, a w dodatku pilnuje jej kilku uzbrojonych po zeby straznikow.$}
+{
+	#map undo
+}
+{5}
+
 #ACTION {^.: %1 :.$}
 {
 	#variable last_room {%1};
@@ -36,7 +102,9 @@
 }
 {5}
 
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}, %2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy okres intensywnych deszczy.$}
+Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul wedlug kalendarza Throalu. Mamy okres intensywnych deszczy.
+
+#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy okres intensywnych deszczy.$}
 {
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -366,7 +434,7 @@
 }
 {5}
 
-#ACTION {^Widzisz jak ostatnie promienie zachodzacego slonca nikna za horyzontem. Uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie noc.$}
+#ACTION {^{Widzisz jak ostatnie promienie zachodzacego slonca nikna za horyzontem. Uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie noc.|Jasnoczerwone promienie slonca przepasaja jeszcze chwile swiat podluznymi wstegami, by w migotliwym tancu schowac sie za zachodni horyzont, zaciagajac nad kraine atlasowy plaszcz nocy.}$}
 {
 	#line GAG;
 	#echo {<bcf>%0<099>};
