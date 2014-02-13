@@ -10,7 +10,7 @@
 #SUBSTITUTE       {^\d{.*}Boriga Mastmendera{\s*}za %1$}                  {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Broudiego Roppera z Marish{\s*}za %1$}                          {<ffa>%0 <afa>Hobbiton, zielarz, P:360<099>}                   {5}
 #SUBSTITUTE       {^\d{.*}Browaru w Hobbitonie{\s*}za %1$}                    {<ffa>%0 <afa>Hobbiton, P:204<099>}          {5}
-#SUBSTITUTE       {^\d{.*}Caniry z Vivane{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Caniry z Vivane{\s*}za %1$}               {<ffa>%0 <afa>Vivane, P:3177<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Cukierni 'Lukrecja' w Bezpiwiu{\s*}za %1$}                              {<ffa>%0 <afa>Bezpiwie, P:753<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Cukierni w Vivane{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Dela z Kelevine{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}

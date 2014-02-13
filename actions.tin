@@ -1,77 +1,5 @@
 #CLASS {actions} OPEN
 
-#ACTION {^Nie mozesz tam wejsc!$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Probujesz wejsc do gornej czesci mlyna, ale kilku pracownikow powstrzymuje cie od tego.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Ruszasz pewnie przed siebie i nagle uderzasz w jakas przeszkode. Najwidoczniej korytarz tutaj sie konczy.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Umiesniony zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Zdecydowanym krokiem ruszasz na %1, ale nagle uderzasz w kraty, ktore wydaja przy tym metaliczny dzwiek. Najprawdopodobniej cela jest zamknieta.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Hardy barczysty straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Hardy zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Nie jestes upowazniony by tam wejsc.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Nie jestes uprawniony by moc tam wejsc.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Nie mozesz tam wejsc, gdyz nie jestes jednym z Mieszczan Jerris.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Pewnym krokiem ruszasz podazajac niedokonczonym kawalkiem traktu. Kiedy jednak dochodzisz do miejsca kiedy ow sie urywa wracasz nie widzac innego wyjscia.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^Probujesz podazyc na %1, ale brama do stoczni Tor jest zamknieta, a w dodatku pilnuje jej kilku uzbrojonych po zeby straznikow.$}
-{
-	#map undo
-}
-{5}
-
 #ACTION {^.: %1 :.$}
 {
 	#variable last_room {%1};
@@ -87,13 +15,12 @@
 
 #ACTION {^A moze bys najpierw wstal?$}
 {
-	#map undo
-}
-{5}
-
-#ACTION {^Brama jest zamknieta.$}
-{
-	#map undo
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
 }
 {5}
 
@@ -108,7 +35,27 @@
 }
 {5}
 
-Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul wedlug kalendarza Throalu. Mamy okres intensywnych deszczy.
+#ACTION {^Hardy barczysty straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Hardy zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
 
 #ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy okres intensywnych deszczy.$}
 {
@@ -329,9 +276,58 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 }
 {5}
 
+#ACTION {^Nie jestes upowazniony by tam wejsc.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Nie jestes uprawniony by moc tam wejsc.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Nie mozesz tam wejsc!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Nie mozesz tam wejsc, gdyz nie jestes jednym z Mieszczan Jerris.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Nie mozesz tam wejsc.$}
 {
-	#map undo
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
 }
 {5}
 
@@ -379,6 +375,17 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 }
 {5}
 
+#ACTION {^Pewnym krokiem ruszasz podazajac niedokonczonym kawalkiem traktu. Kiedy jednak dochodzisz do miejsca kiedy ow sie urywa wracasz nie widzac innego wyjscia.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Podazasz za %1 na %2.^}
 {
 	#map move %2
@@ -389,6 +396,17 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 {
 	#line gag;
 	#echo {<fab>Podchodzisz do drewnianych drzwi na <fec>%1<fab> z zamiarem przekroczenia ich. Nic z tego, jeden z przechodzacych straznikow powstrzymuje cie.<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Probujesz podazyc na %1, ale brama do stoczni Tor jest zamknieta, a w dodatku pilnuje jej kilku uzbrojonych po zeby straznikow.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
 	#if {$map_state == 1}
 	{
 		#map undo
@@ -407,9 +425,25 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 }
 {5}
 
+#ACTION {^Probujesz wejsc do gornej czesci mlyna, ale kilku pracownikow powstrzymuje cie od tego.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Przeciez drzwi sa zawarte!$}
 {
-	#map undo
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
 }
 {5}
 
@@ -418,6 +452,17 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 	#line gag;
 	#echo {<fec>%0<099>};
 	#variable {sit_state} {0}
+}
+{5}
+
+#ACTION {^Ruszasz pewnie przed siebie i nagle uderzasz w jakas przeszkode. Najwidoczniej korytarz tutaj sie konczy.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
 }
 {5}
 
@@ -440,6 +485,56 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 }
 {5}
 
+#ACTION {^Spogladasz na %1, jednak szybko zdajesz sobie sprawe, ze zadna ulica tam nie prowadzi, wiec warto poszukac innej drogi w gaszczu budynkow.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Umiesniony zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Zagladasz do polnocnego pomieszczenia, widzisz tam jednak tylko kurz i porozwalane meble. Ze zniecheceniem cofasz sie do przedsionka.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Zdecydowanym krokiem ruszasz na %1, ale nagle uderzasz w kraty, ktore wydaja przy tym metaliczny dzwiek. Najprawdopodobniej cela jest zamknieta.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^{Jestes tak zmeczony, ze nie mozesz isc w tym kierunku|Niestety brama jest zamknieta. Nie mozesz zatem podazyc w tym kierunku}.$}
+{
+	#undelay %*
+}
+{5}
+
 #ACTION {^{Widzisz jak ostatnie promienie zachodzacego slonca nikna za horyzontem. Uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie noc.|Jasnoczerwone promienie slonca przepasaja jeszcze chwile swiat podluznymi wstegami, by w migotliwym tancu schowac sie za zachodni horyzont, zaciagajac nad kraine atlasowy plaszcz nocy.}$}
 {
 	#line GAG;
@@ -448,18 +543,6 @@ Jest piata nad ranem, przed wschodem slonca, Mittlen, 4 dzien miesiaca Doddul we
 	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
 	#variable godzina {20:00};
 	#cr
-}
-{5}
-
-#ACTION {^Zagladasz do polnocnego pomieszczenia, widzisz tam jednak tylko kurz i porozwalane meble. Ze zniecheceniem cofasz sie do przedsionka.$}
-{
-	#map undo
-}
-{5}
-
-#ACTION {^{Jestes tak zmeczony, ze nie mozesz isc w tym kierunku|Niestety brama jest zamknieta. Nie mozesz zatem podazyc w tym kierunku}.$}
-{
-	#undelay %*
 }
 {5}
 
