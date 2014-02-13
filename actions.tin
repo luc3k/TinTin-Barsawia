@@ -1,5 +1,11 @@
 #CLASS {actions} OPEN
 
+#ACTION {^Nie mozesz tam wejsc!$}
+{
+	#map undo
+}
+{5}
+
 #ACTION {^Probujesz wejsc do gornej czesci mlyna, ale kilku pracownikow powstrzymuje cie od tego.$}
 {
 	#map undo
