@@ -57,7 +57,7 @@
 }
 {5}
 
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy okres intensywnych deszczy.$}
+#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej}.$}
 {
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -353,6 +353,17 @@
 }
 {5}
 
+#ACTION {^Nie zwracajac na nic uwagi ruszasz szybko w strone wrot, by po chwili uderzyc w nie z calej sily glowa... to chyba nie byl najlepszy pomysl...$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Nikle promienie slonca przebijaja sie z trudem przez splatane galezie drzew. Zaczyna sie nowy dzien.$}
 {
 	#line GAG;
@@ -496,6 +507,17 @@
 }
 {5}
 
+#ACTION {^Stawiasz niewyraznie kroki na %1, lecz niestety geste zarosla okazuja sie nie do przejscia.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Umiesniony zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
 {
 	#line gag;
@@ -519,6 +541,17 @@
 {5}
 
 #ACTION {^Zdecydowanym krokiem ruszasz na %1, ale nagle uderzasz w kraty, ktore wydaja przy tym metaliczny dzwiek. Najprawdopodobniej cela jest zamknieta.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^{Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku.$}}
 {
 	#line gag;
 	#echo {<fab>%0<099>};

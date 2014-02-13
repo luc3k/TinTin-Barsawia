@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 175
+I 176
 
 L * # # # | # x          
 
@@ -1914,7 +1914,7 @@ E {  444} {w} {w} {8} {0} {}
 R {  446} {0} {} {Niewielkie pomieszczenie wewnatrz chatki} {Sak} {} {} {} {} {} {1.000}
 E {  175} {n} {wyjscie} {1} {0} {}
 
-R {  447} {0} {<aca>} {Gdzies w Chetwood} { } {} {} {} {} {} {1.000}
+R {  447} {0} {<aca>} {W lesie nieopodal Bree} { } {} {} {} {} {} {1.000}
 E {  291} {e} {e} {2} {0} {}
 E {  679} {n} {n} {1} {0} {}
 
