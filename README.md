@@ -155,7 +155,7 @@ mapa Barsawii z terenami Srodziemia: Bree, Hobbitonu, Michel Delving, Igielniczk
 
 (na razie Srodziemie i Earthdown sa niepolaczone)
 
-Earthdown: Daiche, Kratas
+Earthdown: Daiche, Kratas, Kelevine, Jerris
 
 * barsawia.tin:
 
