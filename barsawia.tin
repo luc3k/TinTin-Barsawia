@@ -77,6 +77,11 @@
 	#write main.tin;
 }
 
+#EVENT {MAP ENTER ROOM}
+{
+	#map map 180x50 map.txt a
+}
+
 #EVENT {SESSION CONNECTED}
 {
 	log on

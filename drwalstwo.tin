@@ -437,6 +437,9 @@
 #SUBSTITUTE       {^Wymierzonym cieciem %1 odcinasz duzy kawal kory, przebijajac takze pierwsze wlokna drzewnego lyka.$}                                                                                  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Zaczynasz rozgladac sie wokol siebie, przeszukujac dokladnie otaczajacy cie teren. Rozgarniasz zarosla i krzewy, probujac znalezc drzewa nadajace sie do scinki.$}                                                                                                                                                {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Zamaszystymi ruchami swych ramion odrabowujesz %1 grube konary od pnia swiezo sciet{ego|ej} %2.$}                                                                               {<afa>%0<099>}  {5}
+#SUBSTITUTE       {{?i}lepkolistna lipa o sciemnialej korze}                      {%0 <afa>()<099>}  {5}
+#SUBSTITUTE       {{?i}pochylona osika o lepkiej korze}                 {%0 <afa>(1 zl 28 sr 9 md)<099>}       {5}
+#SUBSTITUTE       {{?i}zielonkawokora wierzba o wiotkich lisciach}                            {%0 <afa>(22 sr 4 md)<099>}  {5}
 #VARIABLE         {drzewo}  {0}
 #VARIABLE         {dzis_sc_drzew}  {0}
 #VARIABLE         {scinanie}  {0}

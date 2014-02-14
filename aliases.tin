@@ -92,6 +92,12 @@
 }
 {5}
 
+#ALIAS {/kuzu}
+{
+	#map run {3409} {1.5}
+}
+{5}
+
 #ALIAS {/mapoff}
 {
 	#variable map_state {0};
@@ -114,7 +120,8 @@
 	#echo {Przydatne komendy:};
 	#echo {?zglos};
 	#echo {?administracja};
-	#echo {?druzyna}
+	#echo {?druzyna};
+	#echo {?napoje}
 }
 {5}
 
@@ -269,9 +276,21 @@
 }
 {5}
 
+#ALIAS {pzs}
+{
+	pociagnij za sznur
+}
+{5}
+
 #ALIAS {save}
 {
 	#write main.tin
+}
+{5}
+
+#ALIAS {sk}
+{
+	sprzedaj klode
 }
 {5}
 
@@ -286,6 +305,12 @@
 	d;
 	drzwi;
 	przejdz przez pierwszy portal
+}
+{5}
+
+#ALIAS {uwb}
+{
+	uderz w brame
 }
 {5}
 
@@ -312,6 +337,12 @@
 #ALIAS {zw}
 {
 	zbadaj wyreb
+}
+{5}
+
+#ALIAS {zww}
+{
+	zapukaj we wrota
 }
 {5}
 
