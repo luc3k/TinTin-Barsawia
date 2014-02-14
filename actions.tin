@@ -414,6 +414,17 @@
 }
 {5}
 
+#ACTION {^Probujesz otworzyc masywne, drewniane drzwi prowadzace do oberzy, jednak te nie chca ustapic. Chyba bedziesz musial sie don dobijac.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Probujesz podazyc na %1, ale brama do stoczni Tor jest zamknieta, a w dodatku pilnuje jej kilku uzbrojonych po zeby straznikow.$}
 {
 	#line gag;

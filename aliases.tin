@@ -121,7 +121,8 @@
 	#echo {?zglos};
 	#echo {?administracja};
 	#echo {?druzyna};
-	#echo {?napoje}
+	#echo {?napoje};
+	#echo {gfpomoc}
 }
 {5}
 
@@ -305,6 +306,14 @@
 	d;
 	drzwi;
 	przejdz przez pierwszy portal
+}
+{5}
+
+#ALIAS {start2}
+{
+	d;
+	drzwi;
+	przejdz przez drugi portal
 }
 {5}
 
