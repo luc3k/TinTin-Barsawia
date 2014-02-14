@@ -88,6 +88,13 @@
 }
 {5}
 
+#ACTION {^Nieumiejetne uderzenie %1 zeslizguje sie po pniu klody %2, rabiac w zakrzywiony fragment drewna. Pod wplywem ciosu spora drzazga odlamuje sie od rosliny i z ogromna predkoscia wzlatuje w powietrze, trafiajac cie bolesnie w szyje!$}
+{
+	#line gag;
+	#echo {<afa>%0<099>}
+}
+{5}
+
 #ACTION {^Ostatnie fragmenty kory z tej czesci klody %1 spadaja na ziemie. Nieco dalej jednak wciaz przylega ona do pnia rosliny.$}
 {
 	#line gag;
@@ -107,10 +114,12 @@
 #ACTION {^Ostatnie kawalki poszarpanych konarow i zniszczonej korowiny solidnie ociosanej klody %1 spadaja na ziemie. Kloda zostala calkowicie ociosana.$}
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
-	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};save;
+	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>KONIEC SCINANIA!<099>}
+	#echo {<faa>KONIEC SCINANIA!<099>};
+	#cr
 }
 {5}
 
@@ -133,10 +142,12 @@
 #ACTION {^Ostatnimi ruchami rak dzierzacych %1 doczyszczasz solidnie ociosana klode %2, konczac prace nad powalona kloda.$}
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
-	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};save;
+	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>KONIEC SCINANIA!<099>}
+	#echo {<faa>KONIEC SCINANIA!<099>};
+	#cr
 }
 {5}
 
@@ -199,10 +210,12 @@
 #ACTION {^Sprawnymi pociagnieciami %1 ostatecznie doczyszczasz powierzchnie solidnie ociosanej klody %2.$}
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
-	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};save;
+	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>KONIEC SCINANIA!<099>}
+	#echo {<faa>KONIEC SCINANIA!<099>};
+	#cr
 }
 {5}
 
@@ -297,10 +310,12 @@
 #ACTION {^Wraz ze spadajacymi na lesne runo, ostatnimi fragmentami konarow i upartej kory konczysz prace nad solidnie ociosana %1.$}
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
-	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};save;
+	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>KONIEC SCINANIA!<099>}
+	#echo {<faa>KONIEC SCINANIA!<099>};
+	#cr
 }
 {5}
 
@@ -423,7 +438,7 @@
 #SUBSTITUTE       {^Zaczynasz rozgladac sie wokol siebie, przeszukujac dokladnie otaczajacy cie teren. Rozgarniasz zarosla i krzewy, probujac znalezc drzewa nadajace sie do scinki.$}                                                                                                                                                {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Zamaszystymi ruchami swych ramion odrabowujesz %1 grube konary od pnia swiezo sciet{ego|ej} %2.$}                                                                               {<afa>%0<099>}  {5}
 #VARIABLE         {drzewo}  {0}
-#VARIABLE         {scinanie}  {0}
 #VARIABLE         {dzis_sc_drzew}  {0}
+#VARIABLE         {scinanie}  {0}
 
 #CLASS {drwalstwo} CLOSE

@@ -155,7 +155,7 @@ ten plik
 
 mapa Barsawii z terenami Srodziemia: Bree, Hobbitonu, Michel Delving, Igielniczki, Tukonu, Bystrego Brodu, Gor Blekitnych, Newbury, Rivendell, Slupkow, Zabiej Laki, Nad Woda, Krzywych Jam, Bezpiwia, Swierkowego Dworu, Mithlond, Tharbadu, Lond Daer
 
-(na razie Srodziemie i Earthdown sa niepolaczone)
+Polaczenie jest przez fregate z Lond Daer do Daiche
 
 Earthdown: Daiche, Kratas, Kelevine, Jerris, Vivane
 

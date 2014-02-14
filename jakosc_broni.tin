@@ -18,7 +18,7 @@
 	{
 		#return <fda>%0<170>[3/6]<099>
 	};
-	#elseif {"%0" == "liczne walki wyryly na niej swoje pietno"}
+	#elseif {"%0" == "liczne walki wyryly na n{iej|im} swoje pietno"}
 	{
 		#return <dfa>%0<170>[4/6]<099>
 	};

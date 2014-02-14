@@ -255,6 +255,14 @@
 }
 {5}
 
+#ALIAS {pow}
+{
+	#format rpl {%n} {%0.};
+	powiedz $rpl;
+	#unvariable rpl
+}
+{5}
+
 #ALIAS {pr}
 {
 	przeczytaj %1
