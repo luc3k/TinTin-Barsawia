@@ -36,19 +36,13 @@
 
 #ALIAS {/wezb}
 {
-	otworz worek;
-	wez miecz z worka;
-	zamknij worek;
-	dobadz miecza
+	dobadz topora z pierwszego temblaka
 }
 {5}
 
 #ALIAS {/wlozb}
 {
-	opusc miecz;
-	otworz worek;
-	wloz miecz do worka;
-	zamknij worek
+	wloz topor do pierwszego temblaka
 }
 {5}
 

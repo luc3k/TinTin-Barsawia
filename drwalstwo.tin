@@ -362,14 +362,13 @@
 	#if {$scinanie == 0}
 	{
 		#variable scinanie 1;
-		dobadz siekiery z temblaka;
+		dobadz siekiery z drugiego temblaka;
 		#cr
 	};
 	#elseif {$scinanie == 1}
 	{
 		#variable scinanie 0;
-		opusc siekiere;
-		wloz siekiere do temblaka;
+		wloz siekiere do drugiego temblaka;
 		#cr
 	}
 }

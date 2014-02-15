@@ -1,5 +1,10 @@
 #CLASS {ciezar} OPEN
 
-#SUBSTITUTE       {^Ciezar twego ekwipunku {wadzi ci troche|daje ci sie we znaki|jest dosyc klopotliwy}.$}                                                                    {<fea>%0<099>}  {5}
+#SUBSTITUTE       {^Ciezar twego ekwipunku daje ci sie we znaki.$}                            {<dfa>%0<170>[2/6]<099>}  {5}
+#SUBSTITUTE       {^Ciezar twego ekwipunku jest dosyc klopotliwy.$}                             {<fda>%0<170>[3/6]<099>}  {5}
+#SUBSTITUTE       {^Ciezar twego ekwipunku wadzi ci troche.$}                       {<cfa>%0<170>[1/6]<099>}  {5}
+#SUBSTITUTE       {^Twoj ekwipunek jest niemilosiernie ciezki.$}                          {<fba>%0<170>[5/6]<099>}  {5}
+#SUBSTITUTE       {^Twoj ekwipunek jest wyjatkowo ciezki.$}                     {<fca>%0<170>[4/6]<099>}  {5}
+#SUBSTITUTE       {^Twoj ekwipunek prawie przygniata cie do ziemi.$}                              {<faa>%0<170>[6/6]<099>}  {5}
 
 #CLASS {ciezar} CLOSE
