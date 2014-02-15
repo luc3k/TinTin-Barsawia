@@ -1,5 +1,11 @@
 #CLASS {aliases} OPEN
 
+#ALIAS {/barak}
+{
+	#map run {2606} {1.5}
+}
+{5}
+
 #ALIAS {/goto}
 {
 	#if {%1}
@@ -101,7 +107,8 @@
 #ALIAS {/mapoff}
 {
 	#variable map_state {0};
-	#map leave
+	#map leave;
+	#showme {Mapa nieaktywna} 3
 }
 {5}
 
@@ -111,7 +118,8 @@
 	#map goto 1;
 	#map list {$last_room};
 	#map goto {$last_room};
-	#variable map_state {1}
+	#variable map_state {1};
+	#showme {Mapa aktywna} 3
 }
 {5}
 
@@ -224,9 +232,29 @@
 }
 {5}
 
+#ALIAS {/woda}
+{
+	#if {$scinanie == 1}
+	{
+		/scinanie
+	};
+	zamow wode;
+	wychyl kubek do dna;
+	zwroc kubek;
+	stan
+}
+{5}
+
 #ALIAS {ek}
 {
 	ekwipunek
+}
+{5}
+
+#ALIAS {kpz}
+{
+	kup przepustke;
+	zadzwon dzwoneczkiem
 }
 {5}
 
@@ -278,6 +306,18 @@
 }
 {5}
 
+#ALIAS {prz}
+{
+	przedstaw sie straznikowi
+}
+{5}
+
+#ALIAS {psz}
+{
+	pociagnij sznurek
+}
+{5}
+
 #ALIAS {pzs}
 {
 	pociagnij za sznur
@@ -318,9 +358,21 @@
 }
 {5}
 
+#ALIAS {udw}
+{
+	uderz w brame
+}
+{5}
+
 #ALIAS {uwb}
 {
 	uderz w brame
+}
+{5}
+
+#ALIAS {wk}
+{
+	wez klode
 }
 {5}
 
@@ -331,6 +383,12 @@
 	/wezm;
 	wejdz do zakurzonego dylizansu;
 	/wlozm
+}
+{5}
+
+#ALIAS {zdz}
+{
+	zadzwon dzwoneczkiem
 }
 {5}
 

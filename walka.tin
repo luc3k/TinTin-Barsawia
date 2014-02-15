@@ -36,13 +36,13 @@
 
 #ALIAS {/wezb}
 {
-	dobadz topora z pierwszego temblaka
+	dobadz ciemnego topora z pierwszego temblaka
 }
 {5}
 
 #ALIAS {/wlozb}
 {
-	wloz topor do pierwszego temblaka
+	wloz ciemny topor do pierwszego temblaka
 }
 {5}
 

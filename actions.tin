@@ -24,6 +24,17 @@
 }
 {5}
 
+#ACTION {^Barczysty umiesniony straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Docieraja do ciebie pierwsze promienie wschodzacego slonca. Kierujesz wzrok ku niebu i uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie wlasnie kolejny dzien.$}
 {
 	#line GAG;
@@ -57,7 +68,7 @@
 }
 {5}
 
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa}.$}
+#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy}.$}
 {
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -529,6 +540,17 @@
 }
 {5}
 
+#ACTION {^Tabliczka w drzwiach piekarni i zalegajaca wewnatrz ciemnosc zmuszaja cie do wyczekania na poranek, kiedy to wiekszosc zakladow w tym barwnym miescie rozpoczyna swoje tetniace handlem zycie.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Umiesniony zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
 {
 	#line gag;
@@ -552,6 +574,17 @@
 {5}
 
 #ACTION {^Zagladasz do polnocnego pomieszczenia, widzisz tam jednak tylko kurz i porozwalane meble. Ze zniecheceniem cofasz sie do przedsionka.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Zalegajace wewnatrz kuzni ciemnosci i zamkniete drzwi kaza ci czekac do poranka, kiedy to wiekszosc zakladow w tym miescie otwiera swoje progi dla klientow.$}
 {
 	#line gag;
 	#echo {<fab>%0<099>};
