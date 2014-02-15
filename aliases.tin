@@ -122,7 +122,8 @@
 	#echo {?administracja};
 	#echo {?druzyna};
 	#echo {?napoje};
-	#echo {gfpomoc}
+	#echo {gfpomoc};
+	#echp (?pokrowce)
 }
 {5}
 

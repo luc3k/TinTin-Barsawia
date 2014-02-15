@@ -362,19 +362,14 @@
 	#if {$scinanie == 0}
 	{
 		#variable scinanie 1;
-		otworz worek;
-		wyjmij siekiere z worka;
-		dobadz siekiery;
-		zamknij worek;
+		dobadz siekiery z temblaka;
 		#cr
 	};
 	#elseif {$scinanie == 1}
 	{
 		#variable scinanie 0;
-		otworz worek;
 		opusc siekiere;
-		wloz siekiere do worka;
-		zamknij worek;
+		wloz siekiere do temblaka;
 		#cr
 	}
 }
