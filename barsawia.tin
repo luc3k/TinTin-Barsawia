@@ -34,7 +34,7 @@
 {
 	#IF {${sit_state} == 1}
 	{
-		#return TAK
+		#return <faa>TAK
 	};
 	#ELSE
 	{
@@ -46,7 +46,7 @@
 {
 	#IF {${scinanie} == 1}
 	{
-		#return TAK
+		#return <faa>TAK
 	};
 	#ELSE
 	{
@@ -58,7 +58,7 @@
 {
 	#IF {${szukanie_ziol} == 1}
 	{
-		#return TAK
+		#return <faa>TAK
 	};
 	#ELSE
 	{
@@ -77,15 +77,20 @@
 	#write main.tin;
 }
 
-#EVENT {MAP ENTER ROOM}
-{
-	#map map 180x50 map.txt a
-}
+#nop #EVENT {MAP ENTER ROOM}
+#nop {
+#nop 	#map map 180x50 map.txt a
+#nop }
 
 #EVENT {SESSION CONNECTED}
 {
 	log on
 }
+
+#nop #EVENT {PROGRAM TERMINATION}
+#nop {
+#nop 	save
+#nop }
 
 #class actions read actions.tin
 #class aliases read aliases.tin

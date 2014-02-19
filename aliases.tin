@@ -292,14 +292,6 @@
 }
 {5}
 
-#ALIAS {pow}
-{
-	#format rpl {%n} {%0.};
-	powiedz $rpl;
-	#unvariable rpl
-}
-{5}
-
 #ALIAS {pr}
 {
 	przeczytaj %1
@@ -330,12 +322,6 @@
 }
 {5}
 
-#ALIAS {sk}
-{
-	sprzedaj klode
-}
-{5}
-
 #ALIAS {smap}
 {
 	#map write ${nazwa_krainy}_map
@@ -358,21 +344,9 @@
 }
 {5}
 
-#ALIAS {udw}
-{
-	uderz w brame
-}
-{5}
-
 #ALIAS {uwb}
 {
 	uderz w brame
-}
-{5}
-
-#ALIAS {wk}
-{
-	wez klode
 }
 {5}
 
@@ -399,12 +373,6 @@
 	/wezm;
 	wejdz do zielonego dylizansu;
 	/wlozm
-}
-{5}
-
-#ALIAS {zw}
-{
-	zbadaj wyreb
 }
 {5}
 

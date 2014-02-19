@@ -381,7 +381,27 @@
 }
 {5}
 
+#ALIAS {sk}
+{
+	sprzedaj klode;
+	/wlozm
+}
+{5}
+
+#ALIAS {wk}
+{
+	wez klode
+}
+{5}
+
+#ALIAS {zw}
+{
+	zbadaj wyreb
+}
+{5}
+
 #SUBSTITUTE       {Trojlistkowe strzepistoskore drzewo, wrebnolistny dab o krepym pniu i czerwonokore drzewo o stozkowatej koronie.}                                                                                              {%0}  {5}
+#SUBSTITUTE       {^Bierzesz oczyszczona klode %1.$}              {<afa>Bierzesz oczyszczona klode <cfa>%1<afa>.<099>}                           {5}
 #SUBSTITUTE       {^Celnym uderzeniem %1 rozcinasz powierzchnie kory, przedzierajac sie przez czesc lyka drzewa.$}                                                                            {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Celnymi uderzeniami %1 przenikasz kolejne warstwy pnia drzewa. Wiory z miazgi, drewna i rdzenia leca na wszystkie strony.$}                                                                                                         {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Celnymi uderzeniami tuz przy pniu odcinasz niepotrzebne konary swiezo sciet{ego|ej} %1.$}                                                                       {<afa>%0<099>}  {5}

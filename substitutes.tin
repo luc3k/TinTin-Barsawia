@@ -2,16 +2,21 @@
 
 #SUBSTITUTE       {\b\d md\b}  {<cba>%0<099>}  {5}
 #SUBSTITUTE       {\b\d sr\b}  {<ddf>%0<099>}  {5}
-#SUBSTITUTE       {\b\d zl\b}  {<ffa>%0<099>}  {5}
+#SUBSTITUTE       {\b{\d+} zl\b}  {<ffa>%0<099>}  {5}
 #SUBSTITUTE       {^%1 {cwaluje|galopuje|nadjezdza} na %3 {na|ze|z} %5.$}                                   {%1 %2 %3 %4 <eca>%5<099>.}  {5}
+#SUBSTITUTE       {^Brama jest zamknieta.$}     {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Chwytasz %1 i umaczasz w nim usta, pijac zen lyczek.$}                                    {<bcf>%0<099>}  {5}
+#SUBSTITUTE       {^Dym ponownie osnuwa postac i po chwili rozwiewa sie, pozostawiajac tylko wspomnienie po tej dziwnej wizycie.$}                                                                                            {<fad>%0<099>}  {5}
 #SUBSTITUTE       {^Konczysz picie wody. Czujesz, ze nasyciles swoje pragnienie.$}                                            {<bcf>%0<099>}  {5}
 #SUBSTITUTE       {^Masz na plecach zalozony %1, zas przy pasie zaczepiona %2.$}                                          {<afa>Masz na plecach zalozony <099>%1<afa>, zas przy pasie zaczepiona <099>%2<afa>.<099>}                                                                 {5}
 #SUBSTITUTE       {^Masz na sobie %1.$}  {<afa>Masz na sobie<099> %1<afa>.<099>}              {5}
 #SUBSTITUTE       {^Masz przy pasie zaczepiona {[^,]+}{, zas przy lewym ramieniu zawieszony|, zas przez prawe ramie przewieszony|, zas przez lewe ramie przewieszony|}{[^.,]+}{, zawierajacy|}{[^.,]+}{. Przy prawym ramieniu zawieszony masz|. Przez prawe ramie przewieszony masz|}{[^,.]+}{, zawierajacy|}{[^.,]+}.$}                                                                                                                                                                                                                                                                                  {<afa>Masz przy pasie zaczepiona <ffa>%1<afa>%2<ffa> %3<afa>%4<ffa>%5<afa>%6<ffa>%7<afa>%8<ffa>%9<afa>.<099>}                                                                                    {5}
 #SUBSTITUTE       {^Masz przy sobie %1.$}   {<afa>Masz przy sobie<099> %1<afa>.<099>}                {5}
 #SUBSTITUTE       {^Na glowe masz naciagniety %1.$}             {<afa>Na glowe masz naciagniety<099> %1<afa>.<099>}                          {5}
+#SUBSTITUTE       {^Nagle, tuz przed toba, z chmury dymu wylania sie wizerunek %1.$}                                              {<fad>Nagle, tuz przed toba, z chmury dymu wylania sie wizerunek <bff>%1<fad>.<099>}                                                           {5}
+#SUBSTITUTE       {^Nie masz wolnej reki, ktora moglbys chwycic %1.$}                               {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Pochylasz sie nad misa fontanny i zaczynasz pic z niej czysta, chlodna wode.$}                                                            {<bcf>%0<099>}  {5}
+#SUBSTITUTE       {^Przy akompaniamencie trzaskow i zgrzytow zelazna krata zostaje podniesiona.$}                                                           {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Rozpoczynasz picie wody {ze|z} {zrodelka|fontanny|strumienia|studni|rzeki|jeziora|strumyka}.$}                                                                            {<bcf>%0<099>}  {5}
 #SUBSTITUTE       {^Trzymasz %1.$}  {<afa>Trzymasz<099> %1<afa>.<099>}         {5}
 #SUBSTITUTE       {^W glebi zrujnowanych pomieszczen dostrzegasz {dwa|trzy|cztery|piec|szesc|siedem|osiem|dziwiec|dziesiec|jedno} wyjsc{ia|ie|}: %4$}                                                                                                               {<afa>W glebi zrujnowanych pomieszczen dostrzegasz %2 wyjsc%3:<eca>%4<afa>.<099>}                                                        {5}

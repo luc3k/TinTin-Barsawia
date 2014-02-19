@@ -25,12 +25,7 @@
 	#echo {<afa>Zabiles <ffa>%1 %2<099>};
 	#math {liczba_zabitych} {${liczba_zabitych}+1};
 	#math {dzis_zabitych} {${dzis_zabitych}+1};
-	save;
-	#if {$2 == "zajaca"}
-	{
-		wytnij skore z ciala;
-		wytnij mieso z ciala
-	}
+	save
 }
 {5}
 
@@ -89,6 +84,7 @@
 #SUBSTITUTE       {^%1 odchylasz sie do tylu, unikajac ciosu %2.$}                            {<afa>%1 odchylasz sie do tylu, unikajac ciosu<efa>%2<099>}                                  {5}
 #SUBSTITUTE       {^%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.$}                                                  {<efa>%1<afa> probuje cie trafic <efa>%2<afa>, lecz tobie udaje sie uniknac tego ciosu.<099>}                                                                    {5}
 #SUBSTITUTE       {^%1 wpada w panike!$}  {<efa>%1<afa> wpada w panike!<099>}          {5}
+#SUBSTITUTE       {^Dobywasz {oburacz|prawa reka} %2 z %3.$}                      {<afa>Dobywasz %1 <099>%2<afa> z <099>%3<afa>.<099>}                           {5}
 #SUBSTITUTE       {^Jestes %1.}  {Jestes @kondycja{%1}.}  {5}
 #SUBSTITUTE       {^Powoli schylasz sie przed ciosem %1.$}                    {<afa>Powoli schylasz sie przed ciosem <efa>%1<099>}                           {5}
 #SUBSTITUTE       {^Probujesz trafic %1 %2, lecz ten uskakuje przed twoim ciosem.$}                                             {<fab>Probujesz trafic <efa>%1 %2<fab>, lecz ten uskakuje przed twoim ciosem.<099>}                                                          {5}
