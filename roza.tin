@@ -26,6 +26,7 @@
 	#regexp {$wyjscia} {\bgora\b} {#var roza_u {<aff>u<099>};#replace {wyjscia} {gora} {}};
 	#regexp {$wyjscia} {\bdol\b} {#var roza_d {<aff>d<099>};#replace {wyjscia} {dol} {}};
 	#replace {wyjscia} { ,} {};
+	#replace {wyjscia} {,} {};
 	#nop #echo {<afa>%1 tutaj %2 widoczn%3 wyjsc%4:<aff>%5<afa>.<099>};
 	#showme {|${roza_nw}|${roza_n}|${roza_ne}|} {3};
 	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
@@ -35,15 +36,26 @@
 
 #FUNCTION {aktywnosc_mapy}
 {
-	#IF {${map_state} == 1}
+	#if {${map_state} == 1}
 	{
 		#return <aff>Mapa aktywna<099>
 	};
-	#ELSE
+	#else
 	{
 		#return <faa>Mapa nieaktywna<099>
 	}
 }
 
+#VARIABLE         {roza_d}  {_}
+#VARIABLE         {roza_e}  {__}
+#VARIABLE         {roza_n}  {__}
+#VARIABLE         {roza_ne}  {__}
+#VARIABLE         {roza_nw}  {__}
+#VARIABLE         {roza_s}  {__}
+#VARIABLE         {roza_se}  {__}
+#VARIABLE         {roza_sw}  {__}
+#VARIABLE         {roza_u}  {_}
+#VARIABLE         {roza_w}  {__}
+#VARIABLE         {wyjscia}  { }
 
 #CLASS {roza} CLOSE

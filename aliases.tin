@@ -107,7 +107,7 @@
 #ALIAS {/mapoff}
 {
 	#variable map_state {0};
-	#map leave;
+	#map leave
 }
 {5}
 
@@ -117,7 +117,7 @@
 	#map goto 1;
 	#map list {$last_room};
 	#map goto {$last_room};
-	#variable map_state {1};
+	#variable map_state {1}
 }
 {5}
 
@@ -217,6 +217,21 @@
 }
 {5}
 
+#ALIAS {/uloz}
+{
+	wyjmij siekiere z temblaka;
+	wyjmij ciemny topor z drugiego temblaka;
+	/wlozb;
+	wloz siekiere do drugiego temblaka
+}
+{5}
+
+#ALIAS {/wezk}
+{
+	wez kamienie z plecaka
+}
+{5}
+
 #ALIAS {/wezm}
 {
 	otworz sakwe;
@@ -256,6 +271,12 @@
 {
 	kup przepustke;
 	zadzwon dzwoneczkiem
+}
+{5}
+
+#ALIAS {krzes}
+{
+	krzesaj kamieniem o drugi kamien na lampe
 }
 {5}
 
@@ -329,6 +350,12 @@
 }
 {5}
 
+#ALIAS {st2}
+{
+	start2
+}
+{5}
+
 #ALIAS {start}
 {
 	d;
@@ -351,6 +378,12 @@
 }
 {5}
 
+#ALIAS {zab}
+{
+	zabij %1
+}
+{5}
+
 #ALIAS {zak}
 {
 	smap;
@@ -358,6 +391,18 @@
 	/wezm;
 	wejdz do zakurzonego dylizansu;
 	/wlozm
+}
+{5}
+
+#ALIAS {zas}
+{
+	zastukaj
+}
+{5}
+
+#ALIAS {zaw}
+{
+	zawolaj straz
 }
 {5}
 

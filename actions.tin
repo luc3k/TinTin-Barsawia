@@ -480,7 +480,7 @@
 }
 {5}
 
-#ACTION {^Rozprostowujac kosci wstajesz z ziemi.$}
+#ACTION {^Rozprostowujac kosci wstajesz {z ziemi|od stolu}.$}
 {
 	#line gag;
 	#echo {<fec>%0<099>};
