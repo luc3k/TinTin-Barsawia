@@ -223,6 +223,10 @@ Wszelkie zwiazanei z mowieniem i przedstawianiem sie podmiany tekstu, do tego al
 
 Wszelkie ulatwienia w walce
 
+* roza.tin
+
+Roza wiatrow
+
 Niektore aliasy sa dostosowane bezposrednio pod moja postac. W przyszlosci moze przerobie je na bardziej uniwersalne.
 
 ## Przykladowe skrypty TinTin++ ze strony oficjalnej:
