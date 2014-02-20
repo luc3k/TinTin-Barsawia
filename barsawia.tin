@@ -8,7 +8,7 @@
 #VARIABLE         {logfile}  {barsawia_logs/default.html}
 #VARIABLE         {logging}  {off}
 #SPLIT 19 3
-#PROMPT           {^> %1}  {<cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Scinanie: <ffa>@drwal{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Sciete drzewa: <ffa>${liczba_sc_drzew}<fff>|<cfa>Dzis sciete: <ffa>${dzis_sc_drzew}<fff>|<cfa>Idz do: <ffa>${goto_room}|<cfa>Godzina:<ffa>$godzina<fff>@remove_text{%1}<099>} {1}
+#PROMPT           {^> %1}  {@prompt_f{%0}<fff>@remove_text{%1}<099>} {1}
 
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
@@ -20,6 +20,11 @@
 #PATHDIR          {poludniowy-zachod}  {polnocny-wschod}  {12}
 #PATHDIR          {wschod}  {zachod}  {2}
 #PATHDIR          {zachod}  {wschod}  {8}
+
+#FUNCTION {prompt_f} 
+{
+	#return |${roza_sw}|${roza_s}|${roza_se}| <cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Scinanie: <ffa>@drwal{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>|<cfa>Dzis zabitych: <ffa>${dzis_zabitych}<fff>|<cfa>Zebrane ziola: <ffa>${liczba_zeb_ziol}<fff>|<cfa>Dzis zebranych ziol: <ffa>${dzis_zeb_ziol}<fff>|<cfa>Sciete drzewa: <ffa>${liczba_sc_drzew}<fff>|<cfa>Dzis sciete: <ffa>${dzis_sc_drzew}<fff>|<cfa>Idz do: <ffa>${goto_room}|<cfa>Godzina:<ffa>$godzina;
+}
 
 #FUNCTION {remove_text}
 {
@@ -105,6 +110,7 @@
 #class mowienie read mowienie.tin
 #class paczki read paczki.tin
 #class postepy read postepy.tin
+#class roza read roza.tin
 #class slawa read slawa.tin
 #class substitutes read substitutes.tin
 #class umiejetnosci read umiejetnosci.tin

@@ -31,6 +31,10 @@
 
 #ALIAS {/wezb}
 {
+	#if {$scinanie == 1}
+	{
+		/scinanie
+	};
 	dobadz ciemnego topora z pierwszego temblaka
 }
 {5}

@@ -26,7 +26,6 @@
 #SUBSTITUTE       {^{Juz odbezpieczone|Odbezpieczone}: %2.$}                      {<faa>%1:<099> %2<faa>.<099>}    {5}
 #SUBSTITUTE       {^{Juz zabezpieczone|Zabezpieczone}: %2.$}                      {<afa>%1:<099> %2<afa>.<099>}    {5}
 #SUBSTITUTE       {^{Nie otrzymales zadnych nowych listow|Aktualnie nie czeka na Ciebie zadna paczka}.$}                                                                  {<afa>%0<099>}  {5}
-#SUBSTITUTE       {^{Sa|Jest} tutaj {dwa|trzy|cztery|piec|szesc|siedem|osiem|dziwiec|dziesiec|jedno} widoczn{e|ych} wyjsc{ia|ie|}: %5.$}                                                                                                  {<afa>%1 tutaj %2 widoczn%3 wyjsc%4: <eca>%5<afa>.<099>}                               {5}
 #SUBSTITUTE       {{?i}\b{fontanna|studni(a|e)|zrodelko|rzeka|potok(iem|i|)|strumie(n|nia|ni)|strumy(czek|k)}\b}                                                                          {<bcf>%0<099>}  {5}
 #SUBSTITUTE       {{?i}\b{tablica ogloszeniowa|drogowskaz(ie|em|)|tablic(a|e)|tabliczk(a|e|i)|jadlospis|plakat|pergami(ny|now|n|nami)|slupek|kartk(e|a)|karteczk(a|e)}\b}                                                                                                                                   {<faa>%0<099>}  {5}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} mithrylow{ych}{ monet(y|e|a|)|}}                                                                                                            {<aff>%0<099>}  {5}
