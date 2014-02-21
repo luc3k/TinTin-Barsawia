@@ -13,24 +13,69 @@
 	#variable roza_nw __;
 	#variable roza_ne __;
 	#variable roza_se __;
+	#variable inne {};
 	#variable {wyjscia} {%5};
-	#replace {wyjscia} { i } {, };
-	#regexp {$wyjscia} {\bpolnocny-wschod\b} {#var roza_ne {<aff>ne<099>};#replace {wyjscia} {polnocny-wschod} {}};
-	#regexp {$wyjscia} {\bpoludniowy-wschod\b} {#var roza_se {<aff>se<099>};#replace {wyjscia} {poludniowy-wschod} {}};
-	#regexp {$wyjscia} {\bpolnocny-zachod\b} {#var roza_nw {<aff>nw<099>};#replace {wyjscia} {polnocny-zachod} {}};
-	#regexp {$wyjscia} {\bpoludniowy-zachod\b} {#var roza_sw {<aff>sw<099>};#replace {wyjscia} {poludniowy-zachod} {}};
-	#regexp {$wyjscia} {{[^-]}wschod} {#var roza_e {<aff>e<099>_};#replace {wyjscia} {wschod} {}};
-	#regexp {$wyjscia} {{[^-]}zachod} {#var roza_w {_<aff>w<099>};#replace {wyjscia} {zachod} {}};
-	#regexp {$wyjscia} {\bpolnoc\b} {#var roza_n {_<aff>n<099>};#replace {wyjscia} {polnoc} {}};
-	#regexp {$wyjscia} {\bpoludnie\b} {#var roza_s {_<aff>s<099>};#replace {wyjscia} {poludnie} {}};
-	#regexp {$wyjscia} {\bgora\b} {#var roza_u {<aff>u<099>};#replace {wyjscia} {gora} {}};
-	#regexp {$wyjscia} {\bdol\b} {#var roza_d {<aff>d<099>};#replace {wyjscia} {dol} {}};
-	#replace {wyjscia} { ,} {};
-	#replace {wyjscia} {,} {};
-	#nop #echo {<afa>%1 tutaj %2 widoczn%3 wyjsc%4:<aff>%5<afa>.<099>};
+	#replace {wyjscia} {{ i |, }} {;};
+	#list smtins create {$wyjscia};
+	#foreach {$smtins[]} {wyjscia}
+	{
+		#switch {"$smtins[$wyjscia]"}
+		{
+			#case {"polnoc"}
+			{
+				#variable roza_n {_<aff>n<088>}
+			};
+			#case {"poludnie"}
+			{
+				#variable roza_s {_<aff>s<088>}
+			};
+			#case {"wschod"}
+			{
+				#variable roza_e {<aff>e<088>_}
+			};
+			#case {"zachod"}
+			{
+				#variable roza_w {_<aff>w<088>}
+			};
+			#case {"polnocny-wschod"}
+			{
+				#variable roza_ne {<aff>ne<088>}
+			};
+			#case {"polnocny-zachod"}
+			{
+				#variable roza_nw {<aff>nw<088>}
+			};
+			#case {"poludniowy-wschod"}
+			{
+				#variable roza_se {<aff>se<088>}
+			};
+			#case {"poludniowy-zachod"}
+			{
+				#variable roza_sw {<aff>sw<088>}
+			};
+			#case {"gora"}
+			{
+				#variable roza_u {<aff>u<088>}
+			};
+			#case {"dol"}
+			{
+				#variable roza_d {<aff>d<088>}
+			};
+			#default
+			{
+				#regexp {$inne} {%+} {#variable {inne} {$inne, $smtins[$wyjscia]}};
+				#else
+				{
+					#variable {inne} {$smtins[$wyjscia]}
+				}
+			}
+		}
+	};
+	#list smtins clear;
+	#nop #echo {<afa>%1 tutaj %2 widoczn%3 wyjsc%4:<aff>%5<afa>.<088>};
 	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
 	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
-	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}|<aff>$wyjscia<099>} {2}
+	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}| <aff>$inne<088>} {2}
 }
 {5}
 
@@ -38,14 +83,15 @@
 {
 	#if {${map_state} == 1}
 	{
-		#return <aff>Mapa aktywna<099>
+		#return <aff>Mapa aktywna<088>
 	};
 	#else
 	{
-		#return <faa>Mapa nieaktywna<099>
+		#return <faa>Mapa nieaktywna<088>
 	}
 }
 
+#VARIABLE         {inne}  {}
 #VARIABLE         {roza_d}  {_}
 #VARIABLE         {roza_e}  {__}
 #VARIABLE         {roza_n}  {__}
@@ -57,5 +103,6 @@
 #VARIABLE         {roza_u}  {_}
 #VARIABLE         {roza_w}  {__}
 #VARIABLE         {wyjscia}  { }
+#VARIABLE         {smtins}  {}
 
 #CLASS {roza} CLOSE

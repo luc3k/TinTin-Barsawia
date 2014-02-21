@@ -13,7 +13,7 @@
 #SUBSTITUTE       {^\d{.*}Caniry z Vivane{\s*}za %1$}               {<ffa>%0 <afa>Vivane, P:3177<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Cukierni 'Lukrecja' w Bezpiwiu{\s*}za %1$}                              {<ffa>%0 <afa>Bezpiwie, P:753<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Cukierni w Vivane{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Dela z Kelevine{\s*}za %1$}               {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Dela z Kelevine{\s*}za %1$}               {<ffa>%0 <afa>Kelevine, P:2646<099>}           {5}
 #SUBSTITUTE       {^\d{.*}Dereka z Dorrath{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Domu Poslancow w Michel Delving{\s*}za %1$}                               {<ffa>%0 <afa>Michel Delving, P:990<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Dowodcy straznicy Thery{\s*}za %1$}                       {<ffa>%0 <afa><099>}  {5}
@@ -32,7 +32,7 @@
 #SUBSTITUTE       {^\d{.*}Imraaga, Ksenomaty z Osmego Legionu Powietrznej Przystani{\s*}za %1$}                                                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Jerrana Jeralisa, Kapitana Statkow Imperium{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Karczmy 'Nad Przystania'{\s*}za %1$}                        {<ffa>%0 <afa>Slupki, P:305<099>}        {5}
-#SUBSTITUTE       {^\d{.*}Kompanii Handlowej Gwatora{\s*}za %1$}                          {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Kompanii Handlowej Gwatora{\s*}za %1$}                          {<ffa>%0 <afa>Jerris, P:2841<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Kuzni w Kratas{\s*}za %1$}              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Kwiaciarni w Krzywych Jamach{\s*}za %1$}                            {<ffa>%0 <afa>Krzywe Jamy, P:818<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Lorgo T'raska, burmistrza Vrontok{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}

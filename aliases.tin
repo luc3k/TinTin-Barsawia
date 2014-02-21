@@ -107,7 +107,8 @@
 #ALIAS {/mapoff}
 {
 	#variable map_state {0};
-	#map leave
+	#map leave;
+	#cr
 }
 {5}
 
@@ -117,7 +118,8 @@
 	#map goto 1;
 	#map list {$last_room};
 	#map goto {$last_room};
-	#variable map_state {1}
+	#variable map_state {1};
+	#cr
 }
 {5}
 
