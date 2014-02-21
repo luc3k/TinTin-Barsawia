@@ -1,23 +1,5 @@
 #CLASS {aliases} OPEN
 
-#ALIAS {fon}
-{
-	pij z fontanny
-}
-{5}
-
-#ALIAS {rze}
-{
-	pij z rzeki
-}
-{5}
-
-#ALIAS {stu}
-{
-	pij ze studni
-}
-{5}
-
 #ALIAS {/barak}
 {
 	#map run {2606} {1.5}
@@ -287,6 +269,18 @@
 }
 {5}
 
+#ALIAS {fon}
+{
+	pij z fontanny
+}
+{5}
+
+#ALIAS {jez}
+{
+	pij z jeziorka
+}
+{5}
+
 #ALIAS {kpz}
 {
 	kup przepustke;
@@ -358,6 +352,12 @@
 }
 {5}
 
+#ALIAS {rze}
+{
+	pij z rzeki
+}
+{5}
+
 #ALIAS {save}
 {
 	#write main.tin
@@ -389,6 +389,24 @@
 	d;
 	drzwi;
 	przejdz przez drugi portal
+}
+{5}
+
+#ALIAS {stu}
+{
+	pij ze studni
+}
+{5}
+
+#ALIAS {tre}
+{
+	trenuj
+}
+{5}
+
+#ALIAS {udz}
+{
+	uderz w dzwoneczek
 }
 {5}
 

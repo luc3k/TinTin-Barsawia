@@ -29,13 +29,14 @@
 #SUBSTITUTE       {^{Juz zabezpieczone|Zabezpieczone}: %2.$}                      {<afa>%1:<099> %2<afa>.<099>}    {5}
 #SUBSTITUTE       {^{Nie otrzymales zadnych nowych listow|Aktualnie nie czeka na Ciebie zadna paczka}.$}                                                                  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {{?i}\b{fontanna|studni(a|e)|zrodelko|rzeka|potok(iem|i|)|strumie(n|nia|ni)|strumy(czek|k)}\b}                                                                          {<bcf>%0<099>}  {5}
-#SUBSTITUTE       {{?i}\b{tablica ogloszeniowa|drogowskaz(ie|em|)|tablic(a|e)|ogloszenie|tabliczk(a|e|i)|jadlospis|plakat|pergami(ny|now|n|nami)|slupek|kartk(e|a)|karteczk(a|e)}\b}                                                                                                                                   {<faa>%0<099>}  {5}
+#SUBSTITUTE       {{?i}\b{tablica ogloszeniowa|drogowskaz(ie|em|)|tablic(a|e)|ogloszenie|tabliczk(a|e|i)|jadlospis|plakat|pergami(ny|now|n|nami)|slupek|kartk(e|a)|karteczk(a|e)}\b}                                                                                                                                              {<faa>%0<099>}  {5}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} mithrylow{ych}{ monet(y|e|a|)|}}                                                                                                            {<aff>%0<099>}  {5}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} srebrn{ych|e|a|ikow}{ monet(y|e|a|)|}}                                                                                                                  {<ddf>%0<099>}  {5}
 #SUBSTITUTE       {^%1 {podazaja|przybywaja|odjezdzaja|nadjezdzaja|kica} {na|z|do|ze} %S.$}                                                     {%1 %2 %3 <eca>%4<099>.}  {6}
 #SUBSTITUTE       {^%1 {podaza|przybywa|odjezdza|nadjezdza|kica} {na|z|do|ze} %S.$}                                             {%1 %2 %3 <eca>%4<099>.}  {6}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} \bmiedzia{ki|ne|nych|kow|na|k|kach}\b{ monet(y|e|a|)|}}                                                                                                                                   {<cba>%0<099>}  {6}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} \bzlot{ych|e|a|o}\b{ monet(y|e|a|)|}}                                                                                                                 {<ffa>%0<099>}  {6}
+#SUBSTITUTE       {%S %S \b{krasnolud|wilk|zajac|szop|borsuk|rys|rosomak|sarna|lis|elf|hobbit|dzik|kobieta|mezczyzna|niedzwiedz|tygrys|waz|ropucha|bagniak|dziecko|kot|swistak}\b}                                                                                                                                            {<ead>%0<088>}  {10}
 #SUBSTITUTE       {^%1 daje ci {?!sie}%2.$}     {%1 <faa>daje ci<099> %2.}  {15}
 
 #CLASS {substitutes} CLOSE

@@ -102,7 +102,7 @@
 #VARIABLE         {roza_sw}  {__}
 #VARIABLE         {roza_u}  {_}
 #VARIABLE         {roza_w}  {__}
-#VARIABLE         {wyjscia}  { }
 #VARIABLE         {smtins}  {}
+#VARIABLE         {wyjscia}  { }
 
 #CLASS {roza} CLOSE

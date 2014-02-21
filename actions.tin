@@ -46,6 +46,28 @@
 }
 {5}
 
+#ACTION {^Energiczny piwnooki straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<faa>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Forsowanie zamknietej bramy nie jest rozsadnym pomyslem...$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Hardy barczysty straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
 {
 	#line gag;
@@ -469,6 +491,17 @@
 }
 {5}
 
+#ACTION {^Przechodzenie przez zamknieta brame nie jest najlepszym pomyslem.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Przeciez drzwi sa zawarte!$}
 {
 	#line gag;
@@ -540,6 +573,17 @@
 }
 {5}
 
+#ACTION {^Szukasz wzrokiem latwego zejscia na brzeg na %1 stad, lecz nie widzisz zadnego.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Tabliczka w drzwiach piekarni i zalegajaca wewnatrz ciemnosc zmuszaja cie do wyczekania na poranek, kiedy to wiekszosc zakladow w tym barwnym miescie rozpoczyna swoje tetniace handlem zycie.$}
 {
 	#line gag;
@@ -599,17 +643,6 @@
 {
 	#line gag;
 	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Energiczny piwnooki straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#line gag;
-	#echo {<faa>%0<099>};
 	#if {$map_state == 1}
 	{
 		#map undo
