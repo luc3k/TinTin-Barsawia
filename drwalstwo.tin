@@ -464,5 +464,11 @@
 #VARIABLE         {drzewo}  {0}
 #VARIABLE         {dzis_sc_drzew}  {0}
 #VARIABLE         {scinanie}  {0}
+#SUBSTITUTE       {{?i}brunatnokory kasztan o dloniastopierzastych lisciach}                                  {<ffa>%0 <afa>(21 zl 23 sr)<099>}        {5}
+#SUBSTITUTE       {{?i}krotkoigla jodla o szarobialym pniu}                 {<ffa>%0 <afa>(16 zl 10 sr 2 md)<099>}             {5}
+#SUBSTITUTE       {{?i}strzelista topola o szarobialej korze}                   {<ffa>%0 <afa>(9 zl 6 sr 7 md)<099>}           {5}
+#SUBSTITUTE       {{?i}szarokory jarzab o rozdwojonym pniu}                 {<ffa>%0 <afa>(14 zl 15 sr)<099>}        {5}
+#SUBSTITUTE       {{?i}szorstkokora olsza o jajowatych lisciach}                          {<ffa>%0 <afa>(13 zl 4 sr 2 md)<099>}            {5}
+#SUBSTITUTE       {{?i}trojlistkowy strzepistoskory klon}                   {<ffa>%0 <afa>(14 zl 13 sr)<099>}        {5}
 
 #CLASS {drwalstwo} CLOSE
