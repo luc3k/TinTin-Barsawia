@@ -3,6 +3,8 @@
 #SUBSTITUTE       {\b\d md\b}  {<cba>%0<099>}  {5}
 #SUBSTITUTE       {\b\d sr\b}  {<ddf>%0<099>}  {5}
 #SUBSTITUTE       {\b{\d+} zl\b}  {<ffa>%0<099>}  {5}
+#SUBSTITUTE       {^Szarpiesz energicznie za lniany sznur.$}                      {<afa>%0<088>}  {5}
+#SUBSTITUTE       {^Uderzasz piescia w brame wywolujac niemaly halas.$}                               {<afa>%0<088>}  {5}
 #SUBSTITUTE       {^%1 {cwaluje|galopuje|nadjezdza} na %3 {na|ze|z} %5.$}                                   {%1 %2 %3 %4 <eca>%5<099>.}  {5}
 #SUBSTITUTE       {^Brama jest zamknieta.$}     {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Brama zostaje otwarta.$}      {<afa>%0<099>}  {5}
@@ -36,7 +38,7 @@
 #SUBSTITUTE       {^%1 {podaza|przybywa|odjezdza|nadjezdza|kica} {na|z|do|ze} %S.$}                                             {%1 %2 %3 <eca>%4<099>.}  {6}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} \bmiedzia{ki|ne|nych|kow|na|k|kach}\b{ monet(y|e|a|)|}}                                                                                                                                   {<cba>%0<099>}  {6}
 #SUBSTITUTE       {{\d*|ogromny stos|wiele|dwie|trzy|cztery|piec|szesc|siedem|osiem|dziewiec|dziesiec|jedenascie} \bzlot{ych|e|a|o}\b{ monet(y|e|a|)|}}                                                                                                                 {<ffa>%0<099>}  {6}
-#SUBSTITUTE       {%S %S \b{krasnolud|wilk|zajac|szop|borsuk|rys|rosomak|sarna|lis|elf|hobbit|dzik|kobieta|mezczyzna|niedzwiedz|tygrys|waz|ropucha|bagniak|dziecko|kot|swistak}\b}                                                                                                                                            {<ead>%0<088>}  {10}
+#SUBSTITUTE       {%S %S \b{krasnolud|wilk|zajac|szop|borsuk|rys|rosomak|sarna|lis|elf|elfka|hobbit|dzik|kobieta|mezczyzna|niedzwiedz|tygrys|waz|ropucha|bagniak|dziecko|kot|swistak|przekupka|wartownik|skrang|wietrzniak|marynarz|krasnoludka|hobbitka}\b}                                                                                                                                            {<ead>%0<088>}  {10}
 #SUBSTITUTE       {^%1 daje ci {?!sie}%2.$}     {%1 <faa>daje ci<099> %2.}  {15}
 
 #CLASS {substitutes} CLOSE
