@@ -606,6 +606,17 @@
 }
 {5}
 
+#ACTION {^Energiczny piwnooki straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<faa>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^{Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku.$}}
 {
 	#line gag;
