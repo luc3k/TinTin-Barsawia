@@ -28,7 +28,9 @@
 	#replace {wyjscia} { ,} {};
 	#replace {wyjscia} {,} {};
 	#nop #echo {<afa>%1 tutaj %2 widoczn%3 wyjsc%4:<aff>%5<afa>.<099>};
-	#showme @show_roza{%0}
+	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
+	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
+	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}|<aff>$wyjscia<099>} {2}
 }
 {5}
 
@@ -42,13 +44,6 @@
 	{
 		#return <faa>Mapa nieaktywna<099>
 	}
-}
-
-#FUNCTION {show_roza}
-{
-	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
-	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
-	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}|<aff>$wyjscia<099>} {2}
 }
 
 #VARIABLE         {roza_d}  {_}
