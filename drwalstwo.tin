@@ -453,22 +453,22 @@
 #SUBSTITUTE       {^Wymierzonym cieciem %1 odcinasz duzy kawal kory, przebijajac takze pierwsze wlokna drzewnego lyka.$}                                                                                  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Zaczynasz rozgladac sie wokol siebie, przeszukujac dokladnie otaczajacy cie teren. Rozgarniasz zarosla i krzewy, probujac znalezc drzewa nadajace sie do scinki.$}                                                                                                                                                {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Zamaszystymi ruchami swych ramion odrabowujesz %1 grube konary od pnia swiezo sciet{ego|ej} %2.$}                                                                               {<afa>%0<099>}  {5}
+#SUBSTITUTE       {{?i}brunatnokory kasztan o dloniastopierzastych lisciach}                                      {<ffa>%0 <afa>(21 zl 23 sr)<099>}        {5}
+#SUBSTITUTE       {{?i}krotkoigla jodla o szarobialym pniu}                     {<ffa>%0 <afa>(16 zl 10 sr 2 md)<099>}             {5}
 #SUBSTITUTE       {{?i}lepkolistna lipa o sciemnialej korze}                      {<ffa>%0 <afa>(2 zl 20 sr 7 md)<099>}            {5}
 #SUBSTITUTE       {{?i}pochylona osika o lepkiej korze}                 {<ffa>%0 <afa>(1 zl 28 sr 9 md)<099>}            {5}
 #SUBSTITUTE       {{?i}rdzawokora wykrzywiona sosna}              {<ffa>%0 <afa>(2 zl 30 sr 2 md)<099>}            {5}
 #SUBSTITUTE       {{?i}snieznokora brzoza o spekanym pniu}                    {<ffa>%0 <afa>(16 sr 3 md)<099>}       {5}
 #SUBSTITUTE       {{?i}srebrzystoigly swierk o brazowej korze}                        {<ffa>%0 <afa>(10 zl 15 sr)<099>}        {5}
 #SUBSTITUTE       {{?i}srzebrzystokory buk o purpurowych lisciach}                            {<ffa>%0 <afa>(12 zl 27 sr)<099>}        {5}
+#SUBSTITUTE       {{?i}strzelista topola o szarobialej korze}                       {<ffa>%0 <afa>(9 zl 6 sr 7 md)<099>}           {5}
+#SUBSTITUTE       {{?i}szarokory jarzab o rozdwojonym pniu}                     {<ffa>%0 <afa>(14 zl 15 sr)<099>}        {5}
+#SUBSTITUTE       {{?i}szorstkokora olsza o jajowatych lisciach}                          {<ffa>%0 <afa>(13 zl 4 sr 2 md)<099>}            {5}
+#SUBSTITUTE       {{?i}trojlistkowy strzepistoskory klon}                   {<ffa>%0 <afa>(14 zl 13 sr)<099>}        {5}
 #SUBSTITUTE       {{?i}wrebnolistny dab o krepym pniu}                {<ffa>%0 <afa>(3 zl 38 sr 12 md)<099>}             {5}
 #SUBSTITUTE       {{?i}zielonkawokora wierzba o wiotkich lisciach}                            {<ffa>%0 <afa>(22 sr 4 md)<099>}       {5}
 #VARIABLE         {drzewo}  {0}
 #VARIABLE         {dzis_sc_drzew}  {0}
 #VARIABLE         {scinanie}  {0}
-#SUBSTITUTE       {{?i}brunatnokory kasztan o dloniastopierzastych lisciach}                                  {<ffa>%0 <afa>(21 zl 23 sr)<099>}        {5}
-#SUBSTITUTE       {{?i}krotkoigla jodla o szarobialym pniu}                 {<ffa>%0 <afa>(16 zl 10 sr 2 md)<099>}             {5}
-#SUBSTITUTE       {{?i}strzelista topola o szarobialej korze}                   {<ffa>%0 <afa>(9 zl 6 sr 7 md)<099>}           {5}
-#SUBSTITUTE       {{?i}szarokory jarzab o rozdwojonym pniu}                 {<ffa>%0 <afa>(14 zl 15 sr)<099>}        {5}
-#SUBSTITUTE       {{?i}szorstkokora olsza o jajowatych lisciach}                          {<ffa>%0 <afa>(13 zl 4 sr 2 md)<099>}            {5}
-#SUBSTITUTE       {{?i}trojlistkowy strzepistoskory klon}                   {<ffa>%0 <afa>(14 zl 13 sr)<099>}        {5}
 
 #CLASS {drwalstwo} CLOSE
