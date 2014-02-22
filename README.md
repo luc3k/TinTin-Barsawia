@@ -153,7 +153,7 @@ ten plik
 
 [Legenda do mapy](https://github.com/luc3k/TinTin-Barsawia/wiki "Legenda")
 
-mapa Barsawii z terenami Srodziemia: Bree, Hobbitonu, Michel Delving, Igielniczki, Tukonu, Bystrego Brodu, Gor Blekitnych, Newbury, Rivendell, Slupkow, Zabiej Laki, Nad Woda, Krzywych Jam, Bezpiwia, Swierkowego Dworu, Mithlond, Tharbadu, Lond Daer
+mapa Barsawii z terenami Srodziemia: Bree, Hobbitonu, Michel Delving, Igielniczki, Tukonu, Bystrego Brodu, Gor Blekitnych, Newbury, Rivendell, Slupkow, Zabiej Laki, Nad Woda, Krzywych Jam, Bezpiwia, Swierkowego Dworu, Mithlond, Tharbadu, Lond Daer, Neavon, Varahia, Isengard
 
 Polaczenie jest przez fregate z Lond Daer do Daiche
 

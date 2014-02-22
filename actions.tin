@@ -35,6 +35,17 @@
 }
 {5}
 
+#ACTION {^Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Docieraja do ciebie pierwsze promienie wschodzacego slonca. Kierujesz wzrok ku niebu i uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie wlasnie kolejny dzien.$}
 {
 	#line GAG;
@@ -331,6 +342,17 @@
 }
 {5}
 
+#ACTION {^Nie mozesz tam podazyc, gdyz gory okazuja sie w tym miejscu nie do przejscia dla ciebie!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Nie mozesz tam wejsc!$}
 {
 	#line gag;
@@ -387,6 +409,17 @@
 {5}
 
 #ACTION {^Nie zwracajac na nic uwagi ruszasz szybko w strone wrot, by po chwili uderzyc w nie z calej sily glowa... to chyba nie byl najlepszy pomysl...$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Niestety brama jest zamknieta. Nie mozesz zatem podazyc w tym kierunku.$}
 {
 	#line gag;
 	#echo {<fab>%0<099>};
@@ -469,6 +502,17 @@
 }
 {5}
 
+#ACTION {^Probujesz podazyc w tym kierunku lecz w ostatniej chwili cofasz sie i z uwaga spogladasz na podloze.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Probujesz ruszyc na %1, lecz nie widzisz tam zadnej sciezki.$}
 {
 	#line gag;
@@ -532,6 +576,17 @@
 }
 {5}
 
+#ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nie przedrzesz sie przez skalna zapore, obijasz sie nieco o nia i zrezygnowany wracasz z powrotem na sciezke.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na {droge|sciezke}.$}
 {
 	#line gag;
@@ -585,6 +640,17 @@
 {5}
 
 #ACTION {^Tabliczka w drzwiach piekarni i zalegajaca wewnatrz ciemnosc zmuszaja cie do wyczekania na poranek, kiedy to wiekszosc zakladow w tym barwnym miescie rozpoczyna swoje tetniace handlem zycie.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Trudny teren gorski okazuje sie zbyt trudny dla ciebie dla przejscia, przynajmniej na razie nie mozesz tam podazyc.$}
 {
 	#line gag;
 	#echo {<fab>%0<099>};

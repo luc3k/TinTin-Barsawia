@@ -118,6 +118,7 @@
 	#map goto 1;
 	#map list {$last_room};
 	#map goto {$last_room};
+	#map goto {$room_v};
 	#variable map_state {1};
 	#cr
 }
@@ -131,7 +132,8 @@
 	#echo {?druzyna};
 	#echo {?napoje};
 	#echo {gfpomoc};
-	#echo {?pokrowce}
+	#echo {?pokrowce};
+	#echo {?kolczyk}
 }
 {5}
 

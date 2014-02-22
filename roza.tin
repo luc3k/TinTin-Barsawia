@@ -1,8 +1,19 @@
 #CLASS {roza} OPEN
 
+#ACTION {^Wsrod otaczajacego cie monotonnego krajobrazu z trudem dostrzegasz {dwa|trzy|cztery|piec|szesc|siedem|osiem|dziwiec|dziesiec|jedno} wyjsc{ia|ie|}: %3.$}
+{
+	roza_fun {%3}
+}
+{5}
+
 #ACTION {^{Sa|Jest} tutaj {dwa|trzy|cztery|piec|szesc|siedem|osiem|dziwiec|dziesiec|jedno} widoczn{e|ych} wyjsc{ia|ie|}:%5.$}
 {
-	#line GAG;
+	roza_fun {%5}
+}
+{5}
+
+#ALIAS {roza_fun}
+{
 	#variable roza_d _;
 	#variable roza_u _;
 	#variable roza_s __;
@@ -14,7 +25,7 @@
 	#variable roza_ne __;
 	#variable roza_se __;
 	#variable inne {};
-	#variable {wyjscia} {%5};
+	#variable {wyjscia} {%1};
 	#replace {wyjscia} {{ i |, }} {;};
 	#list smtins create {$wyjscia};
 	#foreach {$smtins[]} {wyjscia}
@@ -72,10 +83,9 @@
 		}
 	};
 	#list smtins clear;
-	#nop #echo {<afa>%1 tutaj %2 widoczn%3 wyjsc%4:<aff>%5<afa>.<088>};
 	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
-	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
-	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}| <aff>$inne<088>} {2}
+	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}| <aff>$inne<088>} {2};
+	#line GAG
 }
 {5}
 

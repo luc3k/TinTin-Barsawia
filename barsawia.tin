@@ -82,10 +82,15 @@
 	#write main.tin;
 }
 
-#nop #EVENT {MAP ENTER ROOM}
-#nop {
+#EVENT {MAP ENTER ROOM}
+{
+	#if {${map_state} == 1}
+	{
+		#map get roomvnum room_v;
+		#write main.tin;
+	};
 #nop 	#map map 180x50 map.txt a
-#nop }
+}
 
 #EVENT {SESSION CONNECTED}
 {
