@@ -116,9 +116,15 @@
 {
 	#map read ${nazwa_krainy}_map;
 	#map goto 1;
-	#map list {$last_room};
-	#map goto {$last_room};
-	#map goto {$room_v};
+	#if {&{room_v}}
+	{
+		#map goto {$room_v}
+	};
+	#else
+	{
+		#map list {$last_room};
+		#map goto {$last_room}
+	};
 	#variable map_state {1};
 	#cr
 }

@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 5076
+I 4669
 
 L * # # # | # x          
 
@@ -20358,39 +20358,39 @@ E { 4743} {se} {se} {6} {0} {}
 R { 4742} {0} {} {Dunlandzkie laki} { } {} {} {} {} {} {1.000}
 E { 4741} {ne} {ne} {3} {0} {}
 
-R { 4743} {0} {} {Nizinne tereny} { } {} {} {} {} {} {1.000}
+R { 4743} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} {} {1.000}
 E { 4741} {nw} {nw} {9} {0} {}
 E { 4744} {se} {se} {6} {0} {}
 
-R { 4744} {0} {} {Na rowninnej lace} { } {} {} {} {} {} {1.000}
+R { 4744} {0} {} {Nizinne tereny} { } {} {} {} {} {} {1.000}
 E { 4743} {nw} {nw} {9} {0} {}
 E { 4745} {se} {se} {6} {0} {}
 
-R { 4745} {0} {} {Posrod niezmierzonych lak} { } {} {} {} {} {} {1.000}
+R { 4745} {0} {} {Na rowninnej lace} { } {} {} {} {} {} {1.000}
 E { 4744} {nw} {nw} {9} {0} {}
 E { 4746} {se} {se} {6} {0} {}
 
-R { 4746} {0} {} {Pastwiska Dunlandu} { } {} {} {} {} {} {1.000}
+R { 4746} {0} {} {Na rowninnej lace} { } {} {} {} {} {} {1.000}
 E { 4745} {nw} {nw} {9} {0} {}
 E { 4747} {se} {se} {6} {0} {}
 
-R { 4747} {0} {} {Rowniny Dunlandu} { } {} {} {} {} {} {1.000}
+R { 4747} {0} {} {Pastwiska Dunlandu} { } {} {} {} {} {} {1.000}
 E { 4746} {nw} {nw} {9} {0} {}
 E { 4748} {se} {se} {6} {0} {}
 
-R { 4748} {0} {} {Wsrod trawiastych lak i pastwisk} { } {} {} {} {} {} {1.000}
+R { 4748} {0} {} {Pastwiska Dunlandu} { } {} {} {} {} {} {1.000}
 E { 4747} {nw} {nw} {9} {0} {}
 E { 4749} {se} {se} {6} {0} {}
 
-R { 4749} {0} {} {Rowniny Dunlandu} { } {} {} {} {} {} {1.000}
+R { 4749} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} {} {1.000}
 E { 4748} {nw} {nw} {9} {0} {}
 E { 4750} {se} {se} {6} {0} {}
 
-R { 4750} {0} {} {Na rozciagajacej sie az po horyzont rowninie} { } {} {} {} {} {} {1.000}
+R { 4750} {0} {} {Posrod niezmierzonych lak} { } {} {} {} {} {} {1.000}
 E { 4749} {nw} {nw} {9} {0} {}
 E { 4751} {se} {se} {6} {0} {}
 
-R { 4751} {0} {} {Nizinne tereny} { } {} {} {} {} {} {1.000}
+R { 4751} {0} {} {Niewielkie wzniesienie} { } {} {} {} {} {} {1.000}
 E { 4750} {nw} {nw} {9} {0} {}
 E { 4752} {se} {se} {6} {0} {}
 
@@ -20398,19 +20398,19 @@ R { 4752} {0} {} {Wsrod trawiastych lak i pastwisk} { } {} {} {} {} {} {1.000}
 E { 4751} {nw} {nw} {9} {0} {}
 E { 4753} {se} {se} {6} {0} {}
 
-R { 4753} {0} {} {Na rozleglych lakach} { } {} {} {} {} {} {1.000}
+R { 4753} {0} {} {Na rozciagajacej sie az po horyzont rowninie} { } {} {} {} {} {} {1.000}
 E { 4752} {nw} {nw} {9} {0} {}
 E { 4754} {se} {se} {6} {0} {}
 
-R { 4754} {0} {} {Na rozciagajacej sie az po horyzont rowninie} { } {} {} {} {} {} {1.000}
+R { 4754} {0} {} {Nizinne tereny} { } {} {} {} {} {} {1.000}
 E { 4753} {nw} {nw} {9} {0} {}
 E { 4755} {se} {se} {6} {0} {}
 
-R { 4755} {0} {} {Na rozleglych lakach} { } {} {} {} {} {} {1.000}
+R { 4755} {0} {} {Niewielkie wzniesienie} { } {} {} {} {} {} {1.000}
 E { 4754} {nw} {nw} {9} {0} {}
 E { 4756} {se} {se} {6} {0} {}
 
-R { 4756} {0} {} {Rowniny Dunlandu} { } {} {} {} {} {} {1.000}
+R { 4756} {0} {} {Pastwiska Dunlandu} { } {} {} {} {} {} {1.000}
 E { 4755} {nw} {nw} {9} {0} {}
 E { 4757} {w} {w} {8} {0} {}
 
@@ -20418,15 +20418,15 @@ R { 4757} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} 
 E { 4756} {e} {e} {2} {0} {}
 E { 4758} {w} {w} {8} {0} {}
 
-R { 4758} {0} {} {Na rowninnej lace} { } {} {} {} {} {} {1.000}
+R { 4758} {0} {} {Dunlandzkie laki} { } {} {} {} {} {} {1.000}
 E { 4757} {e} {e} {2} {0} {}
 E { 4759} {w} {w} {8} {0} {}
 
-R { 4759} {0} {} {Dunlandzkie laki} { } {} {} {} {} {} {1.000}
+R { 4759} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} {} {1.000}
 E { 4758} {e} {e} {2} {0} {}
 E { 4760} {w} {w} {8} {0} {}
 
-R { 4760} {0} {} {Na rowninnej lace} { } {} {} {} {} {} {1.000}
+R { 4760} {0} {} {Na rozleglych lakach} { } {} {} {} {} {} {1.000}
 E { 4759} {e} {e} {2} {0} {}
 E { 4761} {w} {w} {8} {0} {}
 
@@ -20434,7 +20434,7 @@ R { 4761} {0} {} {Niewielkie wzniesienie} { } {} {} {} {} {} {1.000}
 E { 4760} {e} {e} {2} {0} {}
 E { 4762} {w} {w} {8} {0} {}
 
-R { 4762} {0} {} {Na rozleglych lakach} { } {} {} {} {} {} {1.000}
+R { 4762} {0} {} {Posrod niezmierzonych lak} { } {} {} {} {} {} {1.000}
 E { 4761} {e} {e} {2} {0} {}
 E { 4763} {w} {w} {8} {0} {}
 
@@ -20442,7 +20442,7 @@ R { 4763} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} 
 E { 4762} {e} {e} {2} {0} {}
 E { 4764} {w} {w} {8} {0} {}
 
-R { 4764} {0} {} {Rowniny Dunlandu} { } {} {} {} {} {} {1.000}
+R { 4764} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} {} {1.000}
 E { 4763} {e} {e} {2} {0} {}
 E { 4765} {w} {w} {8} {0} {}
 
@@ -20450,24 +20450,24 @@ R { 4765} {0} {} {Na rozciagajacej sie az po horyzont rowninie} { } {} {} {} {} 
 E { 4764} {e} {e} {2} {0} {}
 E { 4766} {w} {w} {8} {0} {}
 
-R { 4766} {0} {} {Wsrod trawiastych lak i pastwisk} { } {} {} {} {} {} {1.000}
+R { 4766} {0} {} {Posrod niezmierzonych lak} { } {} {} {} {} {} {1.000}
 E { 4765} {e} {e} {2} {0} {}
 E { 4767} {s} {s} {4} {0} {}
 
-R { 4767} {0} {} {Na rowninnej lace} { } {} {} {} {} {} {1.000}
+R { 4767} {0} {} {Miedzy malymi pagorkami dunlandzkiej rowniny} { } {} {} {} {} {} {1.000}
 E { 4766} {n} {n} {1} {0} {}
 E { 4768} {e} {e} {2} {0} {}
 
-R { 4768} {0} {} {Na rozleglych lakach} { } {} {} {} {} {} {1.000}
+R { 4768} {0} {} {Nizinne tereny} { } {} {} {} {} {} {1.000}
 E { 4767} {w} {w} {8} {0} {}
 E { 4769} {se} {se} {6} {0} {}
 
-R { 4769} {0} {} {Pastwiska Dunlandu} { } {} {} {} {} {} {1.000}
+R { 4769} {0} {} {Nizinne tereny} { } {} {} {} {} {} {1.000}
 E { 4768} {nw} {nw} {9} {0} {}
 E { 4770} {sw} {sw} {12} {0} {}
 E { 4771} {w} {w} {8} {0} {}
 
-R { 4770} {0} {} {Dunlandzkie laki} { } {} {} {} {} {} {1.000}
+R { 4770} {0} {} {Pastwiska Dunlandu} { } {} {} {} {} {} {1.000}
 E { 4769} {ne} {ne} {3} {0} {}
 E { 4771} {n} {n} {1} {0} {}
 E { 4772} {nw} {nw} {9} {0} {}
@@ -21274,7 +21274,7 @@ R { 4963} {0} {} {Posrod lak i wrzosowisk} { } {} {} {} {} {} {1.000}
 E { 4962} {ne} {ne} {3} {0} {}
 E { 4964} {sw} {sw} {12} {0} {}
 
-R { 4964} {0} {} {Na podniszczonej drodze} { } {} {} {} {} {} {1.000}
+R { 4964} {0} {} {Na wijacym sie miedzy lakami goscincu} { } {} {} {} {} {} {1.000}
 E { 4963} {ne} {ne} {3} {0} {}
 E { 4965} {se} {se} {6} {0} {}
 
@@ -21485,6 +21485,7 @@ E { 5016} {e} {e} {2} {0} {}
 
 R { 5016} {0} {} {Posrod rownin} { } {} {} {} {} {} {1.000}
 E { 5015} {w} {w} {8} {0} {}
+E { 5125} {e} {e} {2} {0} {}
 
 R { 5017} {0} {} {Ubity trakt} { } {} {} {} {} {} {1.000}
 E { 5014} {s} {s} {4} {0} {}
@@ -21517,7 +21518,7 @@ E { 5024} {e} {e} {2} {0} {}
 R { 5024} {0} {} {Sciezka posrod lak} { } {} {} {} {} {} {1.000}
 E { 5023} {w} {w} {8} {0} {}
 E { 5025} {n} {n} {1} {0} {}
-E { 5080} {ne} {ne} {3} {0} {}
+E { 5124} {ne} {ne} {3} {0} {}
 
 R { 5025} {0} {} {Ubita droga} { } {} {} {} {} {} {1.000}
 E { 5024} {s} {s} {4} {0} {}
@@ -21750,7 +21751,7 @@ E { 5080} {sw} {sw} {12} {0} {}
 
 R { 5080} {8} {} {} { } {} {} {} {} {} {1.000}
 E { 5079} {ne} {ne} {3} {0} {}
-E { 5024} {sw} {sw} {12} {0} {}
+E { 5124} {sw} {sw} {12} {0} {}
 
 R { 5081} {0} {} {Gdzies w Isengardzie} { } {} {} {} {} {} {1.000}
 E { 5078} {se} {se} {6} {0} {}
@@ -21964,3 +21965,14 @@ E { 5090} {n} {n} {1} {0} {}
 E { 5092} {ne} {ne} {3} {0} {}
 E { 5122} {se} {se} {6} {0} {}
 E { 5093} {s} {s} {4} {0} {}
+
+R { 5124} {8} {} {} { } {} {} {} {} {} {1.000}
+E { 5080} {ne} {ne} {3} {0} {}
+E { 5024} {sw} {sw} {12} {0} {}
+
+R { 5125} {0} {} {Rowniny} { } {} {} {} {} {} {1.000}
+E { 5016} {w} {w} {8} {0} {}
+E { 5126} {e} {e} {2} {0} {}
+
+R { 5126} {0} {} {Posrod rownin} { } {} {} {} {} {} {1.000}
+E { 5125} {w} {w} {8} {0} {}
