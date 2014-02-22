@@ -87,20 +87,19 @@
 	#if {${map_state} == 1}
 	{
 		#map get roomvnum room_v;
-		#write main.tin;
+		#nop 	#map map 180x50 map.txt a;
 	};
-#nop 	#map map 180x50 map.txt a
+}
+
+#EVENT {SESSION TIMED OUT}
+{
+	#echo {SESSION TIMED OUT}
 }
 
 #EVENT {SESSION CONNECTED}
 {
 	log on
 }
-
-#nop #EVENT {PROGRAM TERMINATION}
-#nop {
-#nop 	save
-#nop }
 
 #class actions read actions.tin
 #class aliases read aliases.tin
