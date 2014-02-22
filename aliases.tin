@@ -115,13 +115,13 @@
 #ALIAS {/mapon}
 {
 	#map read ${nazwa_krainy}_map;
-	#map goto 1;
 	#if {&{room_v}}
 	{
 		#map goto {$room_v}
 	};
 	#else
 	{
+		#map goto 1;
 		#map list {$last_room};
 		#map goto {$last_room}
 	};
