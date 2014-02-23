@@ -1,16 +1,5 @@
 #CLASS {actions} OPEN
 
-#ACTION {^Dalsze przejscie blokuje Ci jakas potezna sila, tak jakby wola wiezy sprzeciwiala sie tobie. Coz moze skrywac Isengard dla nieproszonych gosci? Moze lepiej zrezygnowac i nie denerwowac poteznego Majara...$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
 #ACTION {^.: %1 :.$}
 {
 	#variable last_room {%1};
@@ -47,6 +36,17 @@
 {5}
 
 #ACTION {^Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
+#ACTION {^Dalsze przejscie blokuje Ci jakas potezna sila, tak jakby wola wiezy sprzeciwiala sie tobie. Coz moze skrywac Isengard dla nieproszonych gosci? Moze lepiej zrezygnowac i nie denerwowac poteznego Majara...$}
 {
 	#line gag;
 	#echo {<fab>%0<099>};

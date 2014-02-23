@@ -83,7 +83,7 @@
 		}
 	};
 	#list smtins clear;
-	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}} {3};
+	#showme {|${roza_nw}|${roza_n}|${roza_ne}| @aktywnosc_mapy{%0}|<cfa>Idz do: <ffa>${goto_room}|<cfa>Godzina:<ffa>$godzina<088>} {3};
 	#showme {|${roza_w}|${roza_u}${roza_d}|${roza_e}| <aff>$inne<088>} {2};
 	#line GAG
 }
