@@ -160,6 +160,9 @@
 	#class ciezar kill;
 	#class ciezar read ciezar.tin;
 	#class ciezar write ciezar.tin;
+	#class czas kill;
+	#class czas read czas.tin;
+	#class czas write czas.tin;
 	#class drwalstwo kill;
 	#class drwalstwo read drwalstwo.tin;
 	#class drwalstwo write drwalstwo.tin;

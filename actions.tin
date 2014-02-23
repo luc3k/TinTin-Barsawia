@@ -1,5 +1,17 @@
 #CLASS {actions} OPEN
 
+#ACTION {^%1 zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
+	#undelay %*
+}
+{5}
+
 #ACTION {^.: %1 :.$}
 {
 	#variable last_room {%1};
@@ -24,449 +36,10 @@
 }
 {5}
 
-#ACTION {^Barczysty umiesniony straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Dalsze przejscie blokuje Ci jakas potezna sila, tak jakby wola wiezy sprzeciwiala sie tobie. Coz moze skrywac Isengard dla nieproszonych gosci? Moze lepiej zrezygnowac i nie denerwowac poteznego Majara...$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Docieraja do ciebie pierwsze promienie wschodzacego slonca. Kierujesz wzrok ku niebu i uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie wlasnie kolejny dzien.$}
-{
-	#line GAG;
-	#echo {<afa>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {06:00};
-	#cr
-}
-{5}
-
-#ACTION {^Energiczny piwnooki straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#line gag;
-	#echo {<faa>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Forsowanie zamknietej bramy nie jest rozsadnym pomyslem...$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Hardy barczysty straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Hardy zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy}.$}
-{
-	#line gag;
-	#echo {<afa>%0<099>};
-	#if {"%1" == "jedenasta w poludnie"}
-	{
-		#variable godzina {11:00}
-	};
-	#elseif {"%1" == "dwunasta w poludnie"}
-	{
-		#variable godzina {12:00}
-	};
-	#elseif {"%1" == "trzynasta w poludnie"}
-	{
-		#variable godzina {13:00}
-	};
-	#elseif {"%1" == "czternasta w poludnie"}
-	{
-		#variable godzina {14:00}
-	};
-	#elseif {"%1" == "pietnasta po poludniu"}
-	{
-		#variable godzina {15:00}
-	};
-	#elseif {"%1" == "szesnasta po poludniu"}
-	{
-		#variable godzina {16:00}
-	};
-	#elseif {"%1" == "siedemnasta wieczor"}
-	{
-		#variable godzina {17:00}
-	};
-	#elseif {"%1" == "osiemnasta wieczor"}
-	{
-		#variable godzina {18:00}
-	};
-	#elseif {"%1" == "dziewietnasta wieczor"}
-	{
-		#variable godzina {19:00}
-	};
-	#elseif {"%1" == "dwudziesta poznym wieczorem"}
-	{
-		#variable godzina {20:00}
-	};
-	#elseif {"%1" == "dwudziesta pierwsza poznym wieczorem"}
-	{
-		#variable godzina {21:00}
-	};
-	#elseif {"%1" == "dwudziesta druga w nocy"}
-	{
-		#variable godzina {22:00}
-	};
-	#elseif {"%1" == "dwudziesta trzecia w nocy"}
-	{
-		#variable godzina {23:00}
-	};
-	#elseif {"%1" == "polnoc"}
-	{
-		#variable godzina {00:00}
-	};
-	#elseif {"%1" == "pierwsza w nocy"}
-	{
-		#variable godzina {01:00}
-	};
-	#elseif {"%1" == "druga w nocy"}
-	{
-		#variable godzina {02:00}
-	};
-	#elseif {"%1" == "trzecia w nocy"}
-	{
-		#variable godzina {03:00}
-	};
-	#elseif {"%1" == "czwarta nad ranem"}
-	{
-		#variable godzina {04:00}
-	};
-	#elseif {"%1" == "piata nad ranem"}
-	{
-		#variable godzina {05:00}
-	};
-	#elseif {"%1" == "szosta nad ranem"}
-	{
-		#variable godzina {06:00}
-	};
-	#elseif {"%1" == "siodma nad ranem"}
-	{
-		#variable godzina {07:00}
-	};
-	#elseif {"%1" == "osma nad ranem"}
-	{
-		#variable godzina {08:00}
-	};
-	#elseif {"%1" == "dziewiata rano"}
-	{
-		#variable godzina {09:00}
-	};
-	#elseif {"%1" == "dziesiata rano"}
-	{
-		#variable godzina {10:00}
-	};
-	#cr
-}
-{5}
-
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{w|we} %2, %3 dzien miesiaca %4 wedlug Kalendarza Srodziemia. Mamy obecnie %5.{ Zgodnie z Kalendarzem Shire mamy w tej chwili miesiac %6.|}$}
-{
-	#line gag;
-	#echo {<afa>%0<099>};
-	#if {"%1" == "jedenasta w poludnie"}
-	{
-		#variable godzina {11:00}
-	};
-	#elseif {"%1" == "dwunasta w poludnie"}
-	{
-		#variable godzina {12:00}
-	};
-	#elseif {"%1" == "trzynasta w poludnie"}
-	{
-		#variable godzina {13:00}
-	};
-	#elseif {"%1" == "czternasta w poludnie"}
-	{
-		#variable godzina {14:00}
-	};
-	#elseif {"%1" == "pietnasta po poludniu"}
-	{
-		#variable godzina {15:00}
-	};
-	#elseif {"%1" == "szesnasta po poludniu"}
-	{
-		#variable godzina {16:00}
-	};
-	#elseif {"%1" == "siedemnasta wieczor"}
-	{
-		#variable godzina {17:00}
-	};
-	#elseif {"%1" == "osiemnasta wieczor"}
-	{
-		#variable godzina {18:00}
-	};
-	#elseif {"%1" == "dziewietnasta wieczor"}
-	{
-		#variable godzina {19:00}
-	};
-	#elseif {"%1" == "dwudziesta poznym wieczorem"}
-	{
-		#variable godzina {20:00}
-	};
-	#elseif {"%1" == "dwudziesta pierwsza poznym wieczorem"}
-	{
-		#variable godzina {21:00}
-	};
-	#elseif {"%1" == "dwudziesta druga w nocy"}
-	{
-		#variable godzina {22:00}
-	};
-	#elseif {"%1" == "dwudziesta trzecia w nocy"}
-	{
-		#variable godzina {23:00}
-	};
-	#elseif {"%1" == "polnoc"}
-	{
-		#variable godzina {00:00}
-	};
-	#elseif {"%1" == "pierwsza w nocy"}
-	{
-		#variable godzina {01:00}
-	};
-	#elseif {"%1" == "druga w nocy"}
-	{
-		#variable godzina {02:00}
-	};
-	#elseif {"%1" == "trzecia w nocy"}
-	{
-		#variable godzina {03:00}
-	};
-	#elseif {"%1" == "czwarta nad ranem"}
-	{
-		#variable godzina {04:00}
-	};
-	#elseif {"%1" == "piata nad ranem"}
-	{
-		#variable godzina {05:00}
-	};
-	#elseif {"%1" == "szosta nad ranem"}
-	{
-		#variable godzina {06:00}
-	};
-	#elseif {"%1" == "siodma nad ranem"}
-	{
-		#variable godzina {07:00}
-	};
-	#elseif {"%1" == "osma nad ranem"}
-	{
-		#variable godzina {08:00}
-	};
-	#elseif {"%1" == "dziewiata rano"}
-	{
-		#variable godzina {09:00}
-	};
-	#elseif {"%1" == "dziesiata rano"}
-	{
-		#variable godzina {10:00}
-	};
-	#cr
-}
-{5}
-
-#ACTION {^Jestes tak zmeczony, ze nie mozesz isc w tym kierunku.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie jestes upowazniony by tam wejsc.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie jestes uprawniony by moc tam wejsc.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie mozesz tam podazyc, gdyz gory okazuja sie w tym miejscu nie do przejscia dla ciebie!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie mozesz tam wejsc!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie mozesz tam wejsc, gdyz nie jestes jednym z Mieszczan Jerris.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie mozesz tam wejsc.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie mozesz tam wejsc{!.}$}
-{
-	#line gag;
-	#echo {<fab>Nie mozesz tam wejsc%1<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
 #ACTION {^Nie widzisz zadnego wyjscia prowadzacego na %1.$}
 {
 	#line gag;
 	#echo {<fab>Nie widzisz zadnego wyjscia prowadzacego na %1.<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nie zwracajac na nic uwagi ruszasz szybko w strone wrot, by po chwili uderzyc w nie z calej sily glowa... to chyba nie byl najlepszy pomysl...$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Niestety brama jest zamknieta. Nie mozesz zatem podazyc w tym kierunku.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Nikle promienie slonca przebijaja sie z trudem przez splatane galezie drzew. Zaczyna sie nowy dzien.$}
-{
-	#line GAG;
-	#echo {<afa>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {05:00};
-	#cr
-}
-{5}
-
-#ACTION {^Panujacy tu polmrok przechodzi w ponura czern. Milczacy las ozywa glosami nocnych drapiezcow.$}
-{
-	#line GAG;
-	#echo {<bcf>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {19:00};
-	#cr
-}
-{5}
-
-#ACTION {^Pewnym krokiem ruszasz podazajac niedokonczonym kawalkiem traktu. Kiedy jednak dochodzisz do miejsca kiedy ow sie urywa wracasz nie widzac innego wyjscia.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
 	#if {$map_state == 1}
 	{
 		#map undo
@@ -513,17 +86,6 @@
 }
 {5}
 
-#ACTION {^Probujesz podazyc w tym kierunku lecz w ostatniej chwili cofasz sie i z uwaga spogladasz na podloze.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
 #ACTION {^Probujesz ruszyc na %1, lecz nie widzisz tam zadnej sciezki.$}
 {
 	#line gag;
@@ -535,66 +97,12 @@
 }
 {5}
 
-#ACTION {^Probujesz wejsc do gornej czesci mlyna, ale kilku pracownikow powstrzymuje cie od tego.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Przechodzenie przez zamknieta brame nie jest najlepszym pomyslem.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Przeciez drzwi sa zawarte!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Rozprostowujac kosci wstajesz {z ziemi|od stolu}.$}
+#ACTION {^Rozprostowujac kosci wstajesz {z ziemi|od stolu|z brzegu fontanny}.$}
 {
 	#line gag;
 	#echo {<fec>%0<099>};
-	#variable {sit_state} {0}
-}
-{5}
-
-#ACTION {^Ruszasz pewnie przed siebie i nagle uderzasz w jakas przeszkode. Najwidoczniej korytarz tutaj sie konczy.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nie przedrzesz sie przez skalna zapore, obijasz sie nieco o nia i zrezygnowany wracasz z powrotem na sciezke.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
+	#variable {sit_state} {0};
+	#cr
 }
 {5}
 
@@ -605,15 +113,17 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	}
+	};
+	#undelay %*
 }
 {5}
 
-#ACTION {^Siadasz na ziemi.$}
+#ACTION {^Siadasz na {ziemi|brzegu fontanny}.$}
 {
 	#line gag;
 	#echo {<fec>%0<099>};
-	#variable {sit_state} {1}
+	#variable {sit_state} {1};
+	#cr
 }
 {5}
 
@@ -624,7 +134,8 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	}
+	};
+	#undelay %*
 }
 {5}
 
@@ -635,7 +146,8 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	}
+	};
+	#undelay %*
 }
 {5}
 
@@ -646,73 +158,8 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	}
-}
-{5}
-
-#ACTION {^Tabliczka w drzwiach piekarni i zalegajaca wewnatrz ciemnosc zmuszaja cie do wyczekania na poranek, kiedy to wiekszosc zakladow w tym barwnym miescie rozpoczyna swoje tetniace handlem zycie.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Trudny teren gorski okazuje sie zbyt trudny dla ciebie dla przejscia, przynajmniej na razie nie mozesz tam podazyc.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Umiesniony zwinny straznik zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Wschodni horyzont jasnieje nagle, a niesmialo wychylajace sie znad jego krawedzi slonce, obdarza swiat zlocistymi wstegami, ktore swym migotliwym tancem oznajmiaja nadejscie nowego dnia.$}
-{
-	#line GAG;
-	#echo {<afa>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {07:00};
-	#cr
-}
-{5}
-
-#ACTION {^Zagladasz do polnocnego pomieszczenia, widzisz tam jednak tylko kurz i porozwalane meble. Ze zniecheceniem cofasz sie do przedsionka.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
-}
-{5}
-
-#ACTION {^Zalegajace wewnatrz kuzni ciemnosci i zamkniete drzwi kaza ci czekac do poranka, kiedy to wiekszosc zakladow w tym miescie otwiera swoje progi dla klientow.$}
-{
-	#line gag;
-	#echo {<fab>%0<099>};
-	#if {$map_state == 1}
-	{
-		#map undo
-	}
+	};
+	#undelay %*
 }
 {5}
 
@@ -723,35 +170,20 @@
 	#if {$map_state == 1}
 	{
 		#map undo
-	}
+	};
+	#undelay %*
 }
 {5}
 
-#ACTION {^{Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku.$}}
+#ACTION {^{Nie jestes uprawniony by moc tam wejsc|Nie jestes upowazniony by tam wejsc|Jestes tak zmeczony, ze nie mozesz isc w tym kierunku|Nie mozesz tam podazyc, gdyz gory okazuja sie w tym miejscu nie do przejscia dla ciebie|Nie mozesz tam wejsc|Nie zwracajac na nic uwagi ruszasz szybko w strone wrot, by po chwili uderzyc w nie z calej sily glowa... to chyba nie byl najlepszy pomysl..|Niestety brama jest zamknieta. Nie mozesz zatem podazyc w tym kierunku|Pewnym krokiem ruszasz podazajac niedokonczonym kawalkiem traktu. Kiedy jednak dochodzisz do miejsca kiedy ow sie urywa wracasz nie widzac innego wyjscia|Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku|Zalegajace wewnatrz kuzni ciemnosci i zamkniete drzwi kaza ci czekac do poranka, kiedy to wiekszosc zakladow w tym miescie otwiera swoje progi dla klientow|Zagladasz do polnocnego pomieszczenia, widzisz tam jednak tylko kurz i porozwalane meble. Ze zniecheceniem cofasz sie do przedsionka|Trudny teren gorski okazuje sie zbyt trudny dla ciebie dla przejscia, przynajmniej na razie nie mozesz tam podazyc|Tabliczka w drzwiach piekarni i zalegajaca wewnatrz ciemnosc zmuszaja cie do wyczekania na poranek, kiedy to wiekszosc zakladow w tym barwnym miescie rozpoczyna swoje tetniace handlem zycie|Ruszasz pewnie przed siebie i nagle uderzasz w jakas przeszkode. Najwidoczniej korytarz tutaj sie konczy|Przeciez drzwi sa zawarte|Przechodzenie przez zamknieta brame nie jest najlepszym pomyslem|Czy aby na pewno chcesz wejsc na tamte tereny? Moze sie to okazac dla ciebie smiertelna przygoda, a powrot moze nie byc tak latwy jak ci sie wydaje. Potwierdz przez ponowne wybranie kierunku|Probujesz wejsc do gornej czesci mlyna, ale kilku pracownikow powstrzymuje cie od tego|Probujesz podazyc w tym kierunku lecz w ostatniej chwili cofasz sie i z uwaga spogladasz na podloze|Dalsze przejscie blokuje Ci jakas potezna sila, tak jakby wola wiezy sprzeciwiala sie tobie. Coz moze skrywac Isengard dla nieproszonych gosci? Moze lepiej zrezygnowac i nie denerwowac poteznego Majara..|Forsowanie zamknietej bramy nie jest rozsadnym pomyslem..|Nie mozesz tam wejsc, gdyz nie jestes jednym z Mieszczan Jerris}{.!}$}
 {
 	#line gag;
 	#echo {<fab>%0<099>};
 	#if {$map_state == 1}
 	{
 		#map undo
-	}
-}
-{5}
-
-#ACTION {^{Jestes tak zmeczony, ze nie mozesz isc w tym kierunku|Niestety brama jest zamknieta. Nie mozesz zatem podazyc w tym kierunku}.$}
-{
+	};
 	#undelay %*
-}
-{5}
-
-#ACTION {^{Widzisz jak ostatnie promienie zachodzacego slonca nikna za horyzontem. Uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie noc.|Jasnoczerwone promienie slonca przepasaja jeszcze chwile swiat podluznymi wstegami, by w migotliwym tancu schowac sie za zachodni horyzont, zaciagajac nad kraine atlasowy plaszcz nocy.}$}
-{
-	#line GAG;
-	#echo {<bcf>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
-	#variable godzina {20:00};
-	#cr
 }
 {5}
 

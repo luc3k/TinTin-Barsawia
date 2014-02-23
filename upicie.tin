@@ -36,6 +36,6 @@
 	}
 }
 
-#SUBSTITUTE       {^Jestes {trzezwy|podchmielony|podpity|wstawiony|pijany|schlany|nawalony}.$}                                                        {Jestes @upicie{%1}<099>.}  {5}
+#SUBSTITUTE       {^Jestes {trzezwy|podchmielony|podpity|wstawiony|pijany|schlany|nawalony}{%+|}.$}                                                             {Jestes @upicie{%1}%2<099>.}   {5}
 
 #CLASS {upicie} CLOSE

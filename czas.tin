@@ -1,0 +1,179 @@
+#CLASS {czas} OPEN
+
+#ACTION {^Docieraja do ciebie pierwsze promienie wschodzacego slonca. Kierujesz wzrok ku niebu i uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie wlasnie kolejny dzien.$}
+{
+	#line GAG;
+	#echo {<afa>%0<099>};
+	#unticker {odswiez_godzine};
+	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	#variable godzina {06:00};
+	#cr
+}
+{5}
+
+#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy|okres pierwszych chlodow}.$}
+{
+	#line gag;
+	#echo {<afa>%0<099>};
+	update_godzina %1;
+	#cr
+}
+{5}
+
+#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{w|we} %2, %3 dzien miesiaca %4 wedlug Kalendarza Srodziemia. Mamy obecnie %5.{ Zgodnie z Kalendarzem Shire mamy w tej chwili miesiac %6.|}$}
+{
+	#line gag;
+	#echo {<afa>%0<099>};
+	update_godzina %1;
+	#cr
+}
+{5}
+
+#ACTION {^Nikle promienie slonca przebijaja sie z trudem przez splatane galezie drzew. Zaczyna sie nowy dzien.$}
+{
+	#line GAG;
+	#echo {<afa>%0<099>};
+	#unticker {odswiez_godzine};
+	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	#variable godzina {05:00};
+	#cr
+}
+{5}
+
+#ACTION {^Panujacy tu polmrok przechodzi w ponura czern. Milczacy las ozywa glosami nocnych drapiezcow.$}
+{
+	#line GAG;
+	#echo {<bcf>%0<099>};
+	#unticker {odswiez_godzine};
+	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	#variable godzina {19:00};
+	#cr
+}
+{5}
+
+#ACTION {^Wschodni horyzont jasnieje nagle, a niesmialo wychylajace sie znad jego krawedzi slonce, obdarza swiat zlocistymi wstegami, ktore swym migotliwym tancem oznajmiaja nadejscie nowego dnia.$}
+{
+	#line GAG;
+	#echo {<afa>%0<099>};
+	#unticker {odswiez_godzine};
+	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	#variable godzina {07:00};
+	#cr
+}
+{5}
+
+#ACTION {^{Widzisz jak ostatnie promienie zachodzacego slonca nikna za horyzontem. Uswiadamiasz sobie, ze w Srodziemiu rozpoczyna sie noc.|Jasnoczerwone promienie slonca przepasaja jeszcze chwile swiat podluznymi wstegami, by w migotliwym tancu schowac sie za zachodni horyzont, zaciagajac nad kraine atlasowy plaszcz nocy.}$}
+{
+	#line GAG;
+	#echo {<bcf>%0<099>};
+	#unticker {odswiez_godzine};
+	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	#variable godzina {20:00};
+	#cr
+}
+{5}
+
+#ALIAS {update_godzina}
+{
+	#if {"%1" == "jedenasta w poludnie"}
+	{
+		#variable godzina {11:00}
+	};
+	#elseif {"%1" == "dwunasta w poludnie"}
+	{
+		#variable godzina {12:00}
+	};
+	#elseif {"%1" == "trzynasta w poludnie"}
+	{
+		#variable godzina {13:00}
+	};
+	#elseif {"%1" == "czternasta w poludnie"}
+	{
+		#variable godzina {14:00}
+	};
+	#elseif {"%1" == "pietnasta po poludniu"}
+	{
+		#variable godzina {15:00}
+	};
+	#elseif {"%1" == "szesnasta po poludniu"}
+	{
+		#variable godzina {16:00}
+	};
+	#elseif {"%1" == "siedemnasta wieczor"}
+	{
+		#variable godzina {17:00}
+	};
+	#elseif {"%1" == "osiemnasta wieczor"}
+	{
+		#variable godzina {18:00}
+	};
+	#elseif {"%1" == "dziewietnasta wieczor"}
+	{
+		#variable godzina {19:00}
+	};
+	#elseif {"%1" == "dwudziesta poznym wieczorem"}
+	{
+		#variable godzina {20:00}
+	};
+	#elseif {"%1" == "dwudziesta pierwsza poznym wieczorem"}
+	{
+		#variable godzina {21:00}
+	};
+	#elseif {"%1" == "dwudziesta druga w nocy"}
+	{
+		#variable godzina {22:00}
+	};
+	#elseif {"%1" == "dwudziesta trzecia w nocy"}
+	{
+		#variable godzina {23:00}
+	};
+	#elseif {"%1" == "polnoc"}
+	{
+		#variable godzina {00:00}
+	};
+	#elseif {"%1" == "pierwsza w nocy"}
+	{
+		#variable godzina {01:00}
+	};
+	#elseif {"%1" == "druga w nocy"}
+	{
+		#variable godzina {02:00}
+	};
+	#elseif {"%1" == "trzecia w nocy"}
+	{
+		#variable godzina {03:00}
+	};
+	#elseif {"%1" == "czwarta nad ranem"}
+	{
+		#variable godzina {04:00}
+	};
+	#elseif {"%1" == "piata nad ranem"}
+	{
+		#variable godzina {05:00}
+	};
+	#elseif {"%1" == "szosta nad ranem"}
+	{
+		#variable godzina {06:00}
+	};
+	#elseif {"%1" == "siodma nad ranem"}
+	{
+		#variable godzina {07:00}
+	};
+	#elseif {"%1" == "osma nad ranem"}
+	{
+		#variable godzina {08:00}
+	};
+	#elseif {"%1" == "dziewiata rano"}
+	{
+		#variable godzina {09:00}
+	};
+	#elseif {"%1" == "dziesiata rano"}
+	{
+		#variable godzina {10:00}
+	};
+	#cr
+}
+{5}
+
+
+#CLASS {czas} CLOSE
