@@ -12,6 +12,10 @@ Wersja dla windowsa/lnuxa [TinTin++](http://tintin.sourceforge.net/download.php 
 
 [TinTin-Barsawia](https://github.com/luc3k/TinTin-Barsawia/archive/master.zip "TinTin-Barsawia")
 
+## Przykladowy ekran w wersji z tmux:
+
+![TinTin++ Barsawia](https://raw2.github.com/luc3k/TinTin-Barsawia/master/example.png "TinTin++ Barsawia")
+
 ## Uruchamianie TinTin++ z moimi skryptami:
 
 W katalogu glownym, w ktorym sa trzymane wszystkie skrypty proponuje utworzyc dodatkowy plik np. `main.tin`. Zalozenie jest takie zeby w tym pliku byly trzymane wszystkie domyslne ustawienia TinTina. Przykladowy plik `main.tin` znajduje sie pod nazwa `main_exmaple.tin`. Zawiera on 2 macra logowania dla klawiszy F1 i F3 (Na macu fn+f1 i fn+F3). Pierwszy docelowo loguje sie na podana postac, a drugi na podane konto po e-mailu. Wartosci w <> nalezy zmienic na swoje dane i zmienic nazwe na `main.tin`. Potem niech zostanie uruchomiony TinTin++ z nim np. `./tt++ main.tin`.
