@@ -21,6 +21,8 @@ Nastepnie po wcisnieciu klawisza F1 powinnismy sprawnie alogowac sie na postac. 
 
 Domyslnie wszystkie komendy TinTin++ zaczynaja sie za pomoca znaczka `#`. Mozna to jednak zmienic w `#CONFIG           {TINTIN CHAR}  {#}`
 
+Druga opcja na uruchomienie TinTin++ to uruchomienie go za pomoca skryptu `tintin_example.tin`. Wymagany jest jednak tmux i tail do poprawnego dzialania. Skrypt mozna umiescic gdzie sie chce, wazne zeby w nim zmienic linijke `TINTINDIR=sciezka_do_katalogu_z_main_tin` na np. `TINTINDIR=~/tintin` jesli tam sa skrypty.
+
 # Podstawowe informacje:
 
 W mudzie nalezy wylaczyc domyslne kolory:
