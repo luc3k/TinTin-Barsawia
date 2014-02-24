@@ -130,6 +130,19 @@
 }
 {5}
 
+#ALIAS {/monety}
+{
+	#echo {Wartosci monet:};
+	#echo {Miedz:          1 miedziana  1 miedziak};
+	#echo {Srebro:          1 srebrna 10 miedziakow};
+	#echo {Zloto:          1 zlota 100 miedziakow};
+	#echo {Ziemia:          1 brunatna 1000 miedziakow};
+	#echo {Woda:            1 blekitna 1000 miedziakow};
+	#echo {Ogien:           1 skrzaca 10000 miedziakow};
+	#echo {Powietrze:       1 krysztalowa 10000 miedziakow}
+}
+{5}
+
 #ALIAS {/przydatne}
 {
 	#echo {Przydatne komendy:};

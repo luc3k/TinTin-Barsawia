@@ -13,6 +13,7 @@ if [ $(tmux -L ${TSERVER} ls 2>/dev/null | grep -c "^${TSESSION}:") != 0 ]; then
 else
 	echo "Session ${TSESSION} does not exist. Creating."
 	cd ${TINTINDIR}
+	echo "" > log.log
 	tmux -L ${TSERVER} new -d -s ${TSESSION} "tt++ -G main.tin"
 	tmux -L ${TSERVER} source-file tmux.conf
 	tmux -L ${TSERVER} split-window -t ${TSESSION} -h -l 80 "tail -f -q -n 100 map.txt"

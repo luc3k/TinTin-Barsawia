@@ -28,9 +28,9 @@
 #ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b}{.*}$}
 {
 	#variable aktywne_szukanie 0;
-	otworz sloik;
-	wloz ziola do sloika;
-	zamknij sloik;
+	otworz woreczek;
+	wloz ziola do woreczka;
+	zamknij woreczek;
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
 	save;
@@ -49,13 +49,9 @@
 
 #ALIAS {/sellz}
 {
-	otworz worek;
-	wez sloik z worka;
-	otworz sloik;
-	wez ziola ze sloika;
-	zamknij sloik;
-	wloz sloik do worka;
-	zamknij worek;
+	otworz woreczek;
+	wez ziola z woreczka;
+	zamknij woreczek;
 	sprzedaj ziola
 }
 {5}
@@ -64,18 +60,12 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		otworz worek;
-		wez sloik z worka;
-		zamknij worek;
 		#variable {szukanie_ziol} {1};
 		#regexp {%1} {{[^1]}} {#echo $ziolo;#variable {ziolo}  {%1}};
 		#cr
 	};
 	#elseif {$szukanie_ziol == 1}
 	{
-		otworz worek;
-		wloz sloik do worka;
-		zamknij worek;
 		#variable {szukanie_ziol} {0};
 		#variable {ziolo}  {1};
 		#cr
@@ -85,10 +75,10 @@
 
 #ALIAS {/troff}
 {
-	otworz sloik;
-	wez trawe ze sloika;
+	otworz woreczek;
+	wez trawe z woreczka;
 	odloz trawe;
-	zamknij sloik
+	zamknij woreczek
 }
 {5}
 
