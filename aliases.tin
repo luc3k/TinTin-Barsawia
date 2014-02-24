@@ -324,7 +324,7 @@
 	{
 		#if {"$logging" != "on"}
 		{
-			#format {logfile} {${nazwa_krainy}_logs/%t.html} {%d-%m-%Y};
+			#format {logfile} {${nazwa_krainy}_logs/%t.log} {%d-%m-%Y};
 			#log append $logfile;
 			#variable logging on
 		};
