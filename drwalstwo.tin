@@ -3,7 +3,7 @@
 #ACTION {^%1 z danej czesci wstepnie ociosan{ego|ej} %2 usuwasz ostatnie galezie, ktore momentalnie spadaja na ziemie, szeleszczac przy tym donosnie.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -11,7 +11,7 @@
 #ACTION {^Celnym ciosem %1 trafiasz tuz przy pniu swiezo sciet{ego|y|ej|a} %2, odcinajac ostatni gruby konar rosliny.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -19,7 +19,7 @@
 #ACTION {^Czujesz, jak robota posunela sie naprzod. Najgrubsze konary swiezo sciet{ego|y|ej} %1 zostaly odrabane, teraz naszedl czas na nieco mniejsze galezie.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -27,7 +27,7 @@
 #ACTION {^Dokladnie oczyszczasz solidnie ociosana klode %1 za pomoca %2, jednak kloda jest na tyle dluga, ze podobna prace trzeba wykonac takze w innych czesciach rosliny.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -35,7 +35,7 @@
 #ACTION {^Dokladnym uderzeniem %1 odwalasz ostatni konar z pnia swiezo sciet{ego|y|ej} %2. W tej czesci rosliny jest juz czysto, jednak dalej wciaz widac grube galezie, sterczace z wnetrza drewna.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -43,7 +43,7 @@
 #ACTION {^Dokladnymi ciosami %1 upewniasz sie, ze klin w pniu %2 jest dostatecznie rozlegly. Lekkim pchnieciem ramion wprawiasz rosline w ruch, po czym odbiegasz na bok kilka metrow. Drzewo przez chwile skrzypi przerazliwie, po czym zwala sie z hukiem na ziemie!$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -51,7 +51,7 @@
 #ACTION {^Dokladnymi pociagnieciami %1 podwazasz kore klody %2, usuwajac ja z tej czesci rosliny. Dalej jednak wciaz pokrywa ona pien.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -59,7 +59,7 @@
 #ACTION {^Energicznymi ruchami %1 odwalasz ostatnie kawalki kory z klody %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -67,7 +67,7 @@
 #ACTION {^Konczysz odgarniac kore z klody %1, a ostatni jej kawalek wlasnie spada na lesne poszycie.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -75,7 +75,7 @@
 #ACTION {^Mocnym uderzeniem %1 rozbijasz ostatni stabilny punkt rdzenia %2. Roslina lamie pozostale fragmenty drewna, przekrzywia sie i z ogluszajacym szumem spada na ziemie, wzbijajac przy tym tumany kurzu!$}
 {
 	#line gag;
-	#echo {<afa>Mocnym uderzeniem <efa>%1<afa> rozbijasz ostatni stabilny punkt rdzenia <efa>%2<afa>. Roslina lamie pozostale fragmenty drewna, przekrzywia sie i z ogluszajacym szumem spada na ziemie, wzbijajac przy tym tumany kurzu!<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -83,7 +83,7 @@
 #ACTION {^Naglym szarpnieciem sciegien wyrzucasz przed siebie %1, trafiajac w wylom w %2. Roslina jednak nie upada, gdyz jej pien jest na to zbyt szeroki i wymaga jeszcze podciecia.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
 	zetnij $drzewo
 }
 {5}
@@ -91,14 +91,14 @@
 #ACTION {^Nieumiejetne uderzenie %1 zeslizguje sie po pniu klody %2, rabiac w zakrzywiony fragment drewna. Pod wplywem ciosu spora drzazga odlamuje sie od rosliny i z ogromna predkoscia wzlatuje w powietrze, trafiajac cie bolesnie w szyje!$}
 {
 	#line gag;
-	#echo {<afa>%0<099>}
+	#echo {<faa>%0<099>}
 }
 {5}
 
 #ACTION {^Ostatnie fragmenty kory z tej czesci klody %1 spadaja na ziemie. Nieco dalej jednak wciaz przylega ona do pnia rosliny.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -106,7 +106,7 @@
 #ACTION {^Ostatnie fragmenty upartej kory i konarow solidnie ociosanej klody %1 spadaja na ziemie. Nieco dalej pien jednak wciaz wymaga doczyszczenia.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -115,6 +115,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	#math {drzewa[%1][ilosc]} {${drzewa[%1][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -126,7 +127,7 @@
 #ACTION {^Ostatnie pociagniecia %1 koncza ten etap ociosywania wstepnie ociosan{ego|ej} %2. Roslina pozbawiona jest mniejszych galezi.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -134,7 +135,7 @@
 #ACTION {^Ostatnim uderzeniem %1 konczysz wyrabywanie klinu w %2. Nagle drzewo zaczyna przerazliwie skrzypiec, po czym przekrzywia sie i z hukiem zwala sie na ziemie!$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -143,6 +144,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	#math {drzewa[%2][ilosc]} {${drzewa[%2][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -154,7 +156,7 @@
 #ACTION {^Ostatnimi uderzeniami %1 konczysz usuwanie grubych konarow z pnia swiezo sciet{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -162,7 +164,7 @@
 #ACTION {^Poteznym zamachem swych ramion odcinasz %1 gruby konar swiezo sciet{ego|ej} %2. W tej czesci rosliny nie ma juz innych, duzych galezi, jednak nieco dalej wciaz jeszcze stercza one z pnia drzewa.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -170,7 +172,7 @@
 #ACTION {^Przesuwasz dokladnie ostrzem %1 po powierzchni solidnie ociosanej klody %2, doczyszczajac te czesc pnia.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -178,7 +180,7 @@
 #ACTION {^Silnym pociagnieciem %1 rozszczepiasz spory kawal drewna, oczyszczajac ta czesc swiezo sciet{ego|ej} %2 z grubych konarow.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -186,7 +188,7 @@
 #ACTION {^Silnym szarpnieciem %1 rozwarstwiasz ostatnie niezbedne fragmenty rdzenia rosliny. Ta jednak nie porusza sie. Gdy juz wydaje sie, ze trzeba bedzie poprawic spartaczona robote, drzewo raptownie przekrzywia sie i zwala na ziemie, czyniac przy tym niezwykly tumult!$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -194,7 +196,7 @@
 #ACTION {^Silnymi uderzeniami %1 docierasz klinem do rdzenia drzewa, jednak pien rosliny jest zbyt rozlegly, by jeden wylom mogl zwalic cala rosline na ziemie. Konieczne jest sciecie drzewa jeszcze z innej strony.$}
 {
 	#line gag;
-	#echo {<afa>Silnymi uderzeniami <efa>%1<afa> docierasz klinem do rdzenia drzewa, jednak pien rosliny jest zbyt rozlegly, by jeden wylom mogl zwalic cala rosline na ziemie. Konieczne jest sciecie drzewa jeszcze z innej strony.<099>};
+	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
 	zetnij $drzewo
 }
 {5}
@@ -202,7 +204,7 @@
 #ACTION {^Skorkowaciale kawalki pokrywy klody %1 spadaja na ziemie, odwalone %2 z tej czesci rosliny.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -211,6 +213,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	#math {drzewa[%2][ilosc]} {${drzewa[%2][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -222,7 +225,7 @@
 #ACTION {^Sprawnymi ruchami rak dzierzacych %1 usuwasz ostatnie galezie z pnia wstepnie ociosane{go|j} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -230,7 +233,7 @@
 #ACTION {^Szybkimi pociagnieciami %1 odcinasz ostatnie galezie z pnia wstepnie ociosane{go|j} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -238,7 +241,7 @@
 #ACTION {^Szybkimi pociagnieciami %1 usuwasz ostatnie fragmenty kory, pokrywajace klode %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -246,7 +249,7 @@
 #ACTION {^Szybkimi pociagnieciami %1, uzywanego niczym hebel, doczyszczasz ta czesc solidnie ociosanej klody %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -254,7 +257,7 @@
 #ACTION {^Szybkimi ruchami rak trzymajacych %1 usuwasz spora czesc galezi przytwierdzonych do wstepnie ociosan{ego|ej} %2. Wciaz jednak sa miejsca, ktore wymagaja oczyszczenia z pedow.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -262,7 +265,7 @@
 #ACTION {^Szybkimi ruchami trzymajacych %1 rak odwalasz ostatnie kawaly kory z tej czesci klody %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -270,7 +273,7 @@
 #ACTION {^Wkladajac cala sile w uderzenie trafiasz %1 w klin powstaly w %2, spodziewajac sie upadku scinanego drzewa. Te jednak wciaz stoi, co sprawia, ze trzeba je podciac z innej strony.$}
 {
 	#line gag;
-	#echo {<afa>Wkladajac cala sile w uderzenie trafiasz <efa>%1<afa> w klin powstaly w <efa>%2<afa>, spodziewajac sie upadku scinanego drzewa. Te jednak wciaz stoi, co sprawia, ze trzeba je podciac z innej strony.<099>};
+	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
 	zetnij $drzewo
 }
 {5}
@@ -278,7 +281,7 @@
 #ACTION {^Wprawnym ruchem swych dloni, dzierzacych %1 odcinasz ostatni konar w tej czesci swiezo sciet{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
 	odrab konary drzewa
 }
 {5}
@@ -286,7 +289,7 @@
 #ACTION {^Wprawnymi pociagnieciami %1 usuwasz wszystkie mniejsze galezie obrastajace ta czesc wstepnie ociosan{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -294,7 +297,7 @@
 #ACTION {^Wprawnymi ruchami %1 podwazasz ostatnie kawalki kory, ktore odpryskuja od klody %2, spadajac na lesne poszycie.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
 	doczysc klode
 }
 {5}
@@ -302,15 +305,16 @@
 #ACTION {^Wraz z dokladnym uderzeniem %1 odrabujesz ostatni spory konar swiezo sciet{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
 
-#ACTION {^Wraz ze spadajacymi na lesne runo, ostatnimi fragmentami konarow i upartej kory konczysz prace nad solidnie ociosana %1.$}
+#ACTION {^Wraz ze spadajacymi na lesne runo, ostatnimi fragmentami konarow i upartej kory konczysz prace nad solidnie ociosana kloda %1.$}
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
+	#math {drzewa[%1][ilosc]} {${drzewa[%1][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -322,7 +326,7 @@
 #ACTION {^Z dokladnego wymachu trafiasz %1 w sam srodek wylomu w %2, rozbijajac ostatnie wlokna rdzenia. Roslina jednak nie przelamuje sie, nadal wymagajac podciecia w innych miejscach wokol pnia.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
 	zetnij $drzewo
 }
 {5}
@@ -330,7 +334,7 @@
 #ACTION {^Z lekkiego wymachu %1 scinasz ostatnie galezie sterczace samotnie z wstepnie ociosan{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
 	odgarnij kore klody
 }
 {5}
@@ -338,7 +342,7 @@
 #ACTION {^Z wyrazem lekkiego zasapania usuwasz ostatnie galezie z danej czesci wstepnie ociosanego %1, lecz dalsza powierzchnia pnia zdaje sie byc nadal obrosnieta.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -346,7 +350,7 @@
 #ACTION {^Z wyrazem lekkiego zasapania usuwasz ostatnie galezie z danej czesci wstepnie ociosanej %1, lecz dalsza powierzchnia pnia zdaje sie byc nadal obrosnieta.$}
 {
 	#line gag;
-	#echo {<afa>%0<099>};
+	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
 	odetnij galezie drzewa
 }
 {5}
@@ -377,7 +381,7 @@
 #ALIAS {/zet}
 {
 	zetnij %1;
-	#variable drzewo %1
+	#variable drzewo {%1}
 }
 {5}
 
@@ -400,7 +404,6 @@
 }
 {5}
 
-#SUBSTITUTE       {Trojlistkowe strzepistoskore drzewo, wrebnolistny dab o krepym pniu i czerwonokore drzewo o stozkowatej koronie.}                                                                                              {%0}  {5}
 #SUBSTITUTE       {^Bierzesz oczyszczona klode %1.$}              {<afa>Bierzesz oczyszczona klode <cfa>%1<afa>.<099>}                           {5}
 #SUBSTITUTE       {^Celnym uderzeniem %1 rozcinasz powierzchnie kory, przedzierajac sie przez czesc lyka drzewa.$}                                                                            {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Celnymi uderzeniami %1 przenikasz kolejne warstwy pnia drzewa. Wiory z miazgi, drewna i rdzenia leca na wszystkie strony.$}                                                                                                         {<afa>%0<099>}  {5}
@@ -413,9 +416,11 @@
 #SUBSTITUTE       {^Krotkimi, wprawnymi pociagnieciami %1 odcinasz kolejne galezie z pnia wstepnie ociosan{ego|ej} %2.$}                                                                                  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Krytycznym wzrokiem obejmujesz solidnie ociosana klode %1, przypatrujac sie nierownosciom na powierzchni pnia. Nie czekajac dlugo, zaczynasz go doczyszczac.$}                                                                                                                                            {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Lekkim uderzeniem %1 podwazasz rozlegle platy kory, docierajac do glebiej osadzonego wlokna drzewa.$}                                                                                   {<afa>%0<099>}  {5}
+#SUBSTITUTE       {^Nagle slyszysz suchy trzask wysoko nad toba. Unosisz glowe w momencie, gdy dluga galaz spada wprost na ciebie! Instynktownie odskakujesz na bok, unikajac smiertelnego ciosu w czaszke, jednak konar mocno obciera twoje ramiona i bark.$}                                                                                                                                                                                                                        {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Nie ma potrzeby zebys ponownie sprawdzal to miejsce.$}                                    {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Niestety, nie posiadasz odpowiedniej wiedzy i umiejetnosci, by sciac to drzewo.$}                                                               {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Niestety, zadne z widocznych tu drzew nie jest godne twojej uwagi.$}                                                  {<faa>%0<099>}  {5}
+#SUBSTITUTE       {^Nieumiejetne uderzenie %1 zeslizguje sie po pniu solidnie ociosanej klody %2, rabiac w zakrzywiony fragment drewna. Pod wplywem ciosu spora drzazga odlamuje sie od rosliny i z ogromna predkoscia wzlatuje w powietrze, trafiajac cie bolesnie w glowe!$}                                                                                                                                                                                                                                        {<faa>%0<088>}  {5}
 #SUBSTITUTE       {^Niewyobrazalnie silnym wymachem ramion trafiasz %1 w drewno %2, wnikajac w kolejne warstwy pnia rosliny.$}                                                                                        {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Obchodzisz dwukrotnie pien swiezo sciet{ego|ej} %1, ukladajac sobie w myslach plan dalszej pracy. Zaraz potem szybkimi, acz dokladnymi ruchami %2 zabierasz sie za odrabywanie grubych konarow od pnia.$}                                                                                                                                                                                       {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Oto drzewa, rosnace na tym wyrebie, ktora nadaja sie do scinki:$}                                               {<afa>%0<099>}  {5}
@@ -454,8 +459,10 @@
 #SUBSTITUTE       {^Zaczynasz rozgladac sie wokol siebie, przeszukujac dokladnie otaczajacy cie teren. Rozgarniasz zarosla i krzewy, probujac znalezc drzewa nadajace sie do scinki.$}                                                                                                                                                {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Zamaszystymi ruchami swych ramion odrabowujesz %1 grube konary od pnia swiezo sciet{ego|ej} %2.$}                                                                               {<afa>%0<099>}  {5}
 #SUBSTITUTE       {{?i}brunatnokory kasztan o dloniastopierzastych lisciach}                                      {<ffa>%0 <afa>(21 zl 23 sr)<099>}        {5}
+#SUBSTITUTE       {{?i}czerwonokory modrzew o stozkowatej koronie}                            {<ffa>%0 <afa>(18 zl 4 sr 9 md)<099>}            {5}
 #SUBSTITUTE       {{?i}krotkoigla jodla o szarobialym pniu}                     {<ffa>%0 <afa>(16 zl 10 sr 2 md)<099>}             {5}
 #SUBSTITUTE       {{?i}lepkolistna lipa o sciemnialej korze}                      {<ffa>%0 <afa>(2 zl 20 sr 7 md)<099>}            {5}
+#SUBSTITUTE       {{?i}pierzastolistny jesion o bruzdowanej korze}                            {<ffa>%0 <afa>(15 zl 4 sr 3 md)<099>}            {5}
 #SUBSTITUTE       {{?i}pochylona osika o lepkiej korze}                 {<ffa>%0 <afa>(1 zl 28 sr 9 md)<099>}            {5}
 #SUBSTITUTE       {{?i}rdzawokora wykrzywiona sosna}              {<ffa>%0 <afa>(2 zl 30 sr 2 md)<099>}            {5}
 #SUBSTITUTE       {{?i}snieznokora brzoza o spekanym pniu}                    {<ffa>%0 <afa>(16 sr 3 md)<099>}       {5}

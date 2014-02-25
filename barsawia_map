@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 2606
+I 2662
 
 L * # # # | # x          
 
@@ -11222,15 +11222,21 @@ E { 2596} {ne} {ne} {3} {0} {}
 E { 2598} {nw} {nw} {9} {0} {}
 E { 2599} {s} {s} {4} {0} {}
 E { 2600} {n} {n} {1} {0} {}
+E { 2599} {poludnie} {poludnie} {4} {0} {}
+E { 2598} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 2598} {0} {} {Na trakcie} { } {} {} {} {} {} {1.000}
 E { 2597} {se} {se} {6} {0} {}
 E { 2659} {nw} {nw} {9} {0} {}
+E { 2597} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 2659} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 2599} {0} {} {Na trakcie} { } {} {} {} {} {} {1.000}
 E { 2597} {n} {n} {1} {0} {}
 E { 2601} {se} {se} {6} {0} {}
 E { 2602} {sw} {sw} {12} {0} {}
+E { 2601} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 2597} {polnoc} {polnoc} {1} {0} {}
 
 R { 2600} {0} {} {Opuszczony dom} { } {} {} {} {} {} {1.000}
 E { 2597} {s} {wyjscie} {4} {0} {}
@@ -11239,6 +11245,8 @@ R { 2601} {0} {<fba>} {Pod brama osady} {pzs} {} {} {} {} {} {1.000}
 E { 2599} {nw} {nw} {9} {0} {}
 E { 2603} {e} {e} {2} {0} {}
 E { 2635} {s} {s} {4} {0} {}
+E { 2603} {wschod} {wschod} {2} {0} {}
+E { 2599} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 2602} {0} {} {Na trakcie} { } {} {} {} {} {} {1.000}
 E { 2599} {ne} {ne} {3} {0} {}
@@ -11247,11 +11255,15 @@ E { 2610} {sw} {sw} {12} {0} {}
 R { 2603} {0} {} {Sciezka pod lasem} { } {} {} {} {} {} {1.000}
 E { 2601} {w} {w} {8} {0} {}
 E { 2604} {e} {e} {2} {0} {}
+E { 2604} {wschod} {wschod} {2} {0} {}
+E { 2601} {zachod} {zachod} {8} {0} {}
 
 R { 2604} {0} {} {Sciezka pod lasem} { } {} {} {} {} {} {1.000}
 E { 2603} {w} {w} {8} {0} {}
 E { 2605} {n} {n} {1} {0} {}
 E { 2608} {e} {e} {2} {0} {}
+E { 2608} {wschod} {wschod} {2} {0} {}
+E { 2603} {zachod} {zachod} {8} {0} {}
 
 R { 2605} {0} {} {Tartak} { } {} {} {} {} {} {1.000}
 E { 2604} {s} {s} {4} {0} {}
@@ -11270,6 +11282,8 @@ E { 2609} {ne} {ne} {3} {0} {}
 E { 2929} {s} {s} {4} {0} {}
 E { 2931} {e} {e} {2} {0} {}
 E { 2930} {se} {se} {6} {0} {}
+E { 2931} {wschod} {wschod} {2} {0} {}
+E { 2604} {zachod} {zachod} {8} {0} {}
 
 R { 2609} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 2608} {sw} {sw} {12} {0} {}
@@ -11382,7 +11396,7 @@ R { 2634} {0} {} {Trakt w dolinie} { } {} {} {} {} {} {1.000}
 E { 2633} {se} {se} {6} {0} {}
 E { 2932} {w} {w} {8} {0} {}
 
-R { 2635} {0} {<fba>} {Uliczka w osadzie} {pzs} {} {} {} {} {} {1.000}
+R { 2635} {0} {<fba>} {Pod brama osady} {pzs} {} {} {} {} {} {1.000}
 E { 2601} {n} {n} {1} {0} {}
 E { 2636} {u} {u} {16} {0} {}
 E { 2637} {s} {s} {4} {0} {}
@@ -11481,6 +11495,8 @@ E { 2654} {e} {wyjscie} {2} {0} {}
 R { 2659} {0} {} {Trakt wsrod pol} { } {} {} {} {} {} {1.000}
 E { 2598} {se} {se} {6} {0} {}
 E { 2661} {n} {n} {1} {0} {}
+E { 2598} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 2661} {polnoc} {polnoc} {1} {0} {}
 
 R { 2660} {0} {} {Niewielka kuchnia} { } {} {} {} {} {} {1.000}
 E { 2654} {n} {sala} {1} {0} {}
@@ -11488,10 +11504,13 @@ E { 2654} {n} {sala} {1} {0} {}
 R { 2661} {0} {} {Trakt wsrod pol} { } {} {} {} {} {} {1.000}
 E { 2659} {s} {s} {4} {0} {}
 E { 2662} {nw} {nw} {9} {0} {}
+E { 2659} {poludnie} {poludnie} {4} {0} {}
+E { 2662} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 2662} {0} {} {Trakt wsrod pustkowi} { } {} {} {} {} {} {1.000}
 E { 2661} {se} {se} {6} {0} {}
 E { 2663} {nw} {nw} {9} {0} {}
+E { 2661} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 
 R { 2663} {0} {} {Trakt wsrod pustkowi} { } {} {} {} {} {} {1.000}
 E { 2662} {se} {se} {6} {0} {}
@@ -12316,7 +12335,7 @@ R { 2857} {0} {} {Ulica we wschodniej czesci Jerris} { } {} {} {} {} {} {1.000}
 E { 2856} {w} {w} {8} {0} {}
 E { 2858} {e} {e} {2} {0} {}
 
-R { 2858} {0} {} {Ulica przy wschodniej bramie} { } {} {} {} {} {} {1.000}
+R { 2858} {0} {<fca>} {Ulica przy wschodniej bramie} {prz} {} {} {} {} {} {1.000}
 E { 2857} {w} {w} {8} {0} {}
 E { 2859} {e} {e} {2} {0} {}
 
@@ -12623,12 +12642,14 @@ R { 2929} {0} {<aca>} {Wyrab} {tre} {} {} {} {} {} {1.000}
 E { 2608} {n} {n} {1} {0} {}
 E { 2930} {e} {e} {2} {0} {}
 E { 2931} {ne} {ne} {3} {0} {}
+E { 2930} {wschod} {wschod} {2} {0} {}
 
 R { 2930} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 2929} {w} {w} {8} {0} {}
 E { 2931} {n} {n} {1} {0} {}
 E { 2608} {nw} {nw} {9} {0} {}
 E { 3815} {sw} {sw} {12} {0} {}
+E { 2929} {zachod} {zachod} {8} {0} {}
 
 R { 2931} {0} {<aca>} {Lesna sciezka} { } {} {} {} {} {} {1.000}
 E { 2930} {s} {s} {4} {0} {}
@@ -12638,6 +12659,8 @@ E { 2929} {sw} {sw} {12} {0} {}
 E { 3305} {e} {e} {2} {0} {}
 E { 3306} {ne} {ne} {3} {0} {}
 E { 3306} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
+E { 3305} {wschod} {wschod} {2} {0} {}
+E { 2608} {zachod} {zachod} {8} {0} {}
 
 R { 2932} {0} {} {Trakt w dolinie} { } {} {} {} {} {} {1.000}
 E { 2634} {e} {e} {2} {0} {}
@@ -14223,6 +14246,8 @@ E { 3305} {nw} {nw} {9} {0} {}
 E { 3309} {s} {s} {4} {0} {}
 E { 3820} {w} {w} {8} {0} {}
 E { 3820} {zachod} {zachod} {8} {0} {}
+E { 3309} {poludnie} {poludnie} {4} {0} {}
+E { 3305} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 3305} {0} {<aca>} {Lesna sciezka} { } {} {} {} {} {} {1.000}
 E { 2931} {w} {w} {8} {0} {}
@@ -14230,6 +14255,8 @@ E { 3306} {n} {n} {1} {0} {}
 E { 2609} {nw} {nw} {9} {0} {}
 E { 3304} {se} {se} {6} {0} {}
 E { 2609} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
+E { 3304} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 2931} {zachod} {zachod} {8} {0} {}
 
 R { 3306} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 3305} {s} {s} {4} {0} {}
@@ -14323,6 +14350,8 @@ R { 3324} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3309} {n} {n} {1} {0} {}
 E { 3325} {sw} {sw} {12} {0} {}
 E { 3908} {e} {e} {2} {0} {}
+E { 3325} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
+E { 3309} {polnoc} {polnoc} {1} {0} {}
 
 R { 3325} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3324} {ne} {ne} {3} {0} {}
@@ -14330,6 +14359,8 @@ E { 3326} {sw} {sw} {12} {0} {}
 E { 3334} {se} {se} {6} {0} {}
 E { 3827} {e} {e} {2} {0} {}
 E { 3334} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 3827} {wschod} {wschod} {2} {0} {}
+E { 3324} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
 R { 3326} {0} {<aca>} {Na skraju lasu} { } {} {} {} {} {} {1.000}
 E { 3325} {ne} {ne} {3} {0} {}
@@ -14364,6 +14395,8 @@ E { 3331} {w} {w} {8} {0} {}
 E { 3333} {nw} {nw} {9} {0} {}
 E { 3821} {e} {e} {2} {0} {}
 E { 3934} {ne} {ne} {3} {0} {}
+E { 3821} {wschod} {wschod} {2} {0} {}
+E { 3934} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
 R { 3333} {0} {<aca>} {Las iglasty} { } {} {} {} {} {} {1.000}
 E { 3332} {se} {se} {6} {0} {}
@@ -16452,16 +16485,22 @@ E { 3304} {wschod} {wschod} {2} {0} {}
 R { 3821} {0} {<bee>} {U wejscia do starej kopalni} { } {} {} {} {} {} {1.000}
 E { 3332} {w} {w} {8} {0} {}
 E { 3822} {e} {e} {2} {0} {}
+E { 3822} {wschod} {wschod} {2} {0} {}
+E { 3332} {zachod} {zachod} {8} {0} {}
 
 R { 3822} {0} {<bee>} {Szeroki korytarz} { } {} {} {} {} {} {1.000}
 E { 3821} {w} {w} {8} {0} {}
 E { 3823} {e} {e} {2} {0} {}
+E { 3823} {wschod} {wschod} {2} {0} {}
+E { 3821} {zachod} {zachod} {8} {0} {}
 
 R { 3823} {0} {<bee>} {Rozwidlenie korytarza} { } {} {} {} {} {} {1.000}
 E { 3822} {w} {w} {8} {0} {}
 E { 3824} {e} {e} {2} {0} {}
 E { 4285} {n} {n} {1} {0} {}
 E { 4286} {se} {se} {6} {0} {}
+E { 4286} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 3822} {zachod} {zachod} {8} {0} {}
 
 R { 3824} {0} {<bee>} {Szeroki korytarz w kopalni} { } {} {} {} {} {} {1.000}
 E { 3823} {w} {w} {8} {0} {}
@@ -16480,6 +16519,8 @@ E { 3825} {w} {w} {8} {0} {}
 R { 3827} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3325} {w} {w} {8} {0} {}
 E { 3909} {e} {e} {2} {0} {}
+E { 3909} {wschod} {wschod} {2} {0} {}
+E { 3325} {zachod} {zachod} {8} {0} {}
 
 R { 3828} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3309} {w} {w} {8} {0} {}
@@ -16859,11 +16900,15 @@ E { 3324} {w} {w} {8} {0} {}
 R { 3909} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3827} {w} {w} {8} {0} {}
 E { 3910} {se} {se} {6} {0} {}
+E { 3910} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 3827} {zachod} {zachod} {8} {0} {}
 
 R { 3910} {0} {<aca>} {Las iglasty} { } {} {} {} {} {} {1.000}
 E { 3909} {nw} {nw} {9} {0} {}
 E { 3911} {w} {w} {8} {0} {}
 E { 3934} {se} {se} {6} {0} {}
+E { 3934} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 3909} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 3911} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3910} {e} {e} {2} {0} {}
@@ -16977,6 +17022,8 @@ R { 3934} {0} {<aca>} {Las iglasty} { } {} {} {} {} {} {1.000}
 E { 3931} {e} {e} {2} {0} {}
 E { 3910} {nw} {nw} {9} {0} {}
 E { 3332} {sw} {sw} {12} {0} {}
+E { 3332} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
+E { 3910} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 3935} {0} {} {Ksiaznica Towarzystwa Alchemicznego} { } {} {} {} {} {} {1.000}
 E { 2925} {e} {e} {2} {0} {}
@@ -18279,28 +18326,29 @@ E { 4241} {e} {e} {2} {0} {}
 R { 4243} {0} {} {Posepny las} { } {} {} {} {} {} {1.000}
 E { 4241} {se} {se} {6} {0} {}
 
-R { 4244} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
+R { 4244} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
 E { 3979} {e} {e} {2} {0} {}
 E { 4245} {nw} {nw} {9} {0} {}
 E { 4259} {sw} {sw} {12} {0} {}
+E { 4259} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 
-R { 4245} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
+R { 4245} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
 E { 4244} {se} {se} {6} {0} {}
 E { 4246} {w} {w} {8} {0} {}
 E { 4256} {s} {s} {4} {0} {}
 E { 4258} {sw} {sw} {12} {0} {}
 
-R { 4246} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
+R { 4246} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
 E { 4245} {e} {e} {2} {0} {}
 E { 4247} {w} {w} {8} {0} {}
 E { 4255} {sw} {sw} {12} {0} {}
 
-R { 4247} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
+R { 4247} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
 E { 4246} {e} {e} {2} {0} {}
 E { 4248} {w} {w} {8} {0} {}
 E { 4254} {sw} {sw} {12} {0} {}
 
-R { 4248} {0} {<aca>} {W lesie} { } {} {} {} {} {} {1.000}
+R { 4248} {0} {<aca>} {Wsrod brzoz} { } {} {} {} {} {} {1.000}
 E { 4247} {e} {e} {2} {0} {}
 E { 4249} {w} {w} {8} {0} {}
 E { 4255} {se} {se} {6} {0} {}
@@ -18310,73 +18358,77 @@ R { 4249} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
 E { 4248} {e} {e} {2} {0} {}
 E { 4250} {n} {n} {1} {0} {}
 E { 4283} {sw} {sw} {12} {0} {}
+E { 4283} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 
-R { 4250} {0} {<aca>} {Wsrod brzoz} { } {} {} {} {} {} {1.000}
+R { 4250} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4249} {s} {s} {4} {0} {}
 E { 4251} {sw} {sw} {12} {0} {}
 E { 4251} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E { 4248} {se} {se} {6} {0} {}
 
-R { 4251} {0} {<aca>} {Wsrod brzoz} { } {} {} {} {} {} {1.000}
+R { 4251} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4250} {ne} {ne} {3} {0} {}
 E { 4252} {w} {w} {8} {0} {}
 E { 4253} {se} {se} {6} {0} {}
 E { 4250} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R { 4252} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
+R { 4252} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4251} {e} {e} {2} {0} {}
 
-R { 4253} {0} {<aca>} {Wsrod brzoz} { } {} {} {} {} {} {1.000}
+R { 4253} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4251} {nw} {nw} {9} {0} {}
 E { 4254} {e} {e} {2} {0} {}
 E { 4274} {se} {se} {6} {0} {}
 
-R { 4254} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4254} {0} {<aca>} {Wsrod brzoz} { } {} {} {} {} {} {1.000}
 E { 4253} {w} {w} {8} {0} {}
 E { 4247} {ne} {ne} {3} {0} {}
 E { 4277} {sw} {sw} {12} {0} {}
 
-R { 4255} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
+R { 4255} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
 E { 4248} {nw} {nw} {9} {0} {}
 E { 4246} {ne} {ne} {3} {0} {}
 E { 4275} {s} {s} {4} {0} {}
 
-R { 4256} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
+R { 4256} {0} {<aca>} {W lesie} { } {} {} {} {} {} {1.000}
 E { 4245} {n} {n} {1} {0} {}
 E { 4257} {sw} {sw} {12} {0} {}
 
-R { 4257} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4257} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
 E { 4256} {ne} {ne} {3} {0} {}
 E { 4260} {sw} {sw} {12} {0} {}
 
-R { 4258} {0} {<aca>} {W lesie} { } {} {} {} {} {} {1.000}
+R { 4258} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4245} {ne} {ne} {3} {0} {}
 E { 4259} {se} {se} {6} {0} {}
 
-R { 4259} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
+R { 4259} {0} {<aca>} {Na niewielkim wzniesieniu} { } {} {} {} {} {} {1.000}
 E { 4258} {nw} {nw} {9} {0} {}
 E { 4244} {ne} {ne} {3} {0} {}
+E { 4244} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R { 4260} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4260} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
 E { 4257} {ne} {ne} {3} {0} {}
 E { 4261} {s} {s} {4} {0} {}
+E { 4261} {poludnie} {poludnie} {4} {0} {}
 
-R { 4261} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4261} {0} {<aca>} {Na niewielkim wzniesieniu} { } {} {} {} {} {} {1.000}
 E { 4260} {n} {n} {1} {0} {}
 E { 4262} {e} {e} {2} {0} {}
 E { 4268} {se} {se} {6} {0} {}
 E { 4269} {sw} {sw} {12} {0} {}
 E { 4270} {w} {w} {8} {0} {}
+E { 4260} {polnoc} {polnoc} {1} {0} {}
 
-R { 4262} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
+R { 4262} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4261} {w} {w} {8} {0} {}
 E { 4263} {ne} {ne} {3} {0} {}
 E { 4264} {e} {e} {2} {0} {}
 
-R { 4263} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
+R { 4263} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4262} {sw} {sw} {12} {0} {}
 
-R { 4264} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4264} {0} {<aca>} {Na niewielkim wzniesieniu} { } {} {} {} {} {} {1.000}
 E { 4262} {w} {w} {8} {0} {}
 E { 4265} {se} {se} {6} {0} {}
 E { 4268} {sw} {sw} {12} {0} {}
@@ -18387,20 +18439,20 @@ E { 4264} {nw} {nw} {9} {0} {}
 E { 3975} {e} {e} {2} {0} {}
 E { 4266} {n} {n} {1} {0} {}
 
-R { 4266} {0} {<aca>} {Na niewielkim wzniesieniu} { } {} {} {} {} {} {1.000}
+R { 4266} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
 E { 4265} {s} {s} {4} {0} {}
 E { 4267} {sw} {sw} {12} {0} {}
 
-R { 4267} {0} {<aca>} {W lesie} { } {} {} {} {} {} {1.000}
+R { 4267} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
 E { 4266} {ne} {ne} {3} {0} {}
 E { 4268} {w} {w} {8} {0} {}
 
-R { 4268} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4268} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
 E { 4267} {e} {e} {2} {0} {}
 E { 4264} {ne} {ne} {3} {0} {}
 E { 4261} {nw} {nw} {9} {0} {}
 
-R { 4269} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
+R { 4269} {0} {<aca>} {Na niewielkim wzniesieniu} { } {} {} {} {} {} {1.000}
 E { 4261} {ne} {ne} {3} {0} {}
 
 R { 4270} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
@@ -18408,15 +18460,17 @@ E { 4261} {e} {e} {2} {0} {}
 E { 4271} {se} {se} {6} {0} {}
 E { 4272} {w} {w} {8} {0} {}
 E { 4281} {nw} {nw} {9} {0} {}
+E { 4271} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 
-R { 4271} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4271} {0} {<aca>} {Wsrod brzoz} { } {} {} {} {} {} {1.000}
 E { 4270} {nw} {nw} {9} {0} {}
+E { 4270} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
-R { 4272} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
+R { 4272} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4270} {e} {e} {2} {0} {}
 E { 4273} {ne} {ne} {3} {0} {}
 
-R { 4273} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4273} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4272} {sw} {sw} {12} {0} {}
 E { 4274} {n} {n} {1} {0} {}
 
@@ -18425,50 +18479,51 @@ E { 4273} {s} {s} {4} {0} {}
 E { 4275} {e} {e} {2} {0} {}
 E { 4253} {nw} {nw} {9} {0} {}
 
-R { 4275} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4275} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4274} {w} {w} {8} {0} {}
 E { 4255} {n} {n} {1} {0} {}
 E { 4276} {se} {se} {6} {0} {}
 
-R { 4276} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4276} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4275} {nw} {nw} {9} {0} {}
 E { 4264} {se} {se} {6} {0} {}
 
-R { 4277} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4277} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4254} {ne} {ne} {3} {0} {}
 E { 4278} {sw} {sw} {12} {0} {}
 
-R { 4278} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
+R { 4278} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4277} {ne} {ne} {3} {0} {}
 E { 4279} {sw} {sw} {12} {0} {}
 
-R { 4279} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
+R { 4279} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4278} {ne} {ne} {3} {0} {}
 E { 4280} {e} {e} {2} {0} {}
 E { 4280} {wschod} {wschod} {2} {0} {}
 
-R { 4280} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
+R { 4280} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4279} {w} {w} {8} {0} {}
 E { 4281} {ne} {ne} {3} {0} {}
 E { 4279} {zachod} {zachod} {8} {0} {}
 
-R { 4281} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
+R { 4281} {0} {<aca>} {Debowy zagajnik} { } {} {} {} {} {} {1.000}
 E { 4280} {sw} {sw} {12} {0} {}
 E { 4270} {se} {se} {6} {0} {}
 E { 4282} {nw} {nw} {9} {0} {}
 
-R { 4282} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4282} {0} {<aca>} {W lesie} { } {} {} {} {} {} {1.000}
 E { 4281} {se} {se} {6} {0} {}
 E { 4283} {n} {n} {1} {0} {}
 E { 4283} {polnoc} {polnoc} {1} {0} {}
 
-R { 4283} {0} {<aca>} {Bukowy las} { } {} {} {} {} {} {1.000}
+R { 4283} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4282} {s} {s} {4} {0} {}
 E { 4284} {sw} {sw} {12} {0} {}
 E { 4249} {ne} {ne} {3} {0} {}
 E { 4282} {poludnie} {poludnie} {4} {0} {}
+E { 4249} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R { 4284} {0} {<aca>} {W niewielkiej kotlinie} { } {} {} {} {} {} {1.000}
+R { 4284} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
 E { 4283} {ne} {ne} {3} {0} {}
 
 R { 4285} {0} {<bee>} {Sklad kruszcu} { } {} {} {} {} {} {1.000}
@@ -18477,14 +18532,19 @@ E { 3823} {s} {s} {4} {0} {}
 R { 4286} {0} {<bee>} {Luk korytarza} { } {} {} {} {} {} {1.000}
 E { 3823} {nw} {nw} {9} {0} {}
 E { 4287} {sw} {sw} {12} {0} {}
+E { 4287} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
+E { 3823} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 4287} {0} {<bee>} {Nieduza grota} { } {} {} {} {} {} {1.000}
 E { 4286} {ne} {ne} {3} {0} {}
 E { 4288} {se} {se} {6} {0} {}
 E { 4289} {nw} {nw} {9} {0} {}
+E { 4288} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 4286} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
 R { 4288} {0} {<bee>} {Zawalony korytarz} { } {} {} {} {} {} {1.000}
 E { 4287} {nw} {nw} {9} {0} {}
+E { 4287} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 4289} {0} {<bee>} {Owalna komora} { } {} {} {} {} {} {1.000}
 E { 4287} {se} {se} {6} {0} {}

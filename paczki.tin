@@ -14,7 +14,7 @@
 #SUBSTITUTE       {^\d{.*}Cukierni 'Lukrecja' w Bezpiwiu{\s*}za %1$}                              {<ffa>%0 <afa>Bezpiwie, P:753<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Cukierni w Vivane{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Dela z Kelevine{\s*}za %1$}               {<ffa>%0 <afa>Kelevine, P:2646<099>}           {5}
-#SUBSTITUTE       {^\d{.*}Dereka z Dorrath{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Dereka z Dorrath{\s*}za %1$}                {<ffa>%0 <afa>Dorrath, P:3381<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Domu Poslancow w Michel Delving{\s*}za %1$}                               {<ffa>%0 <afa>Michel Delving, P:990<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Dowodcy straznicy Thery{\s*}za %1$}                       {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Eksimoniusa Dlethora z Vrontok{\s*}za %1$}                              {<ffa>%0 <afa><099>}  {5}

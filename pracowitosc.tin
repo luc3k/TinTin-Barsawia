@@ -1,0 +1,49 @@
+#CLASS pracowitosc {OPEN}
+
+#FUNCTION {pracowitosc}
+{
+	#if {"%0" == ", ktora w zyciu sie nie napracowala"}
+	{
+		#return <faa>%0<170>[0/8]<099>
+	};
+	#elseif {"%0" == " o lekko naznaczonych praca dloniach"}
+	{
+		#return <fba>%0<170>[1/8]<099>
+	};
+	#elseif {"%0" == ", ktorej praca wycisnela pietno na dloniach"}
+	{
+		#return <fca>%0<170>[2/8]<099>
+	};
+	#elseif {"%0" == " o zahartowanym ciezka praca ciele"}
+	{
+		#return <fda>%0<170>[3/8]<099>
+	};
+	#elseif {"%0" == ", dla ktorej zadna praca nie jest trudna"}
+	{
+		#return <ffa>%0<170>[4/8]<099>
+	};
+	#elseif {"%0" == " niezwykle wytrwala w pracy"}
+	{
+		#return <efa>%0<170>[5/8]<099>
+	};
+	#elseif {"%0" == ", ktorej ogromna pracowitosc budzi podziw"}
+	{
+		#return <dfa>%0<170>[6/8]<099>
+	};
+	#elseif {"%0" == ", ktora nie ugnie sie pod ciezarem zadnej pracy"}
+	{
+		#return <cfa>%0<170>[7/8]<099>
+	};
+	#elseif {"%0" == ", ktora dzieki swej pracowitosci stala sie mistrzem w swym fachu"}
+	{
+		#return <bfa>%0<170>[8/8]<099>
+	};
+	#else
+	{
+		#return %0
+	}
+}
+
+#SUBSTITUTE       {^Jestes osoba@pracowitosc{%1}.$}                                                             {Jestes osoba@pracowitosc{%1}<099>.}   {5}
+
+#CLASS pracowitosc {CLOSE}

@@ -1,5 +1,15 @@
 #CLASS {actions} OPEN
 
+#ACTION {%1 podazasz na %2.$}
+{
+	#if {$map_state == 1}
+	{
+#nop warunek, ze jak %2 nie jest kierunkiem to mapoff
+		#map move %2
+	}
+}
+{5}
+
 #ACTION {^%1 zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
 {
 	#line gag;

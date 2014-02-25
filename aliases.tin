@@ -6,6 +6,12 @@
 }
 {5}
 
+#ALIAS {/findroom}
+{
+	#map goto {$last_room}
+}
+{5}
+
 #ALIAS {/goto}
 {
 	#if {%1}
@@ -182,6 +188,9 @@
 	#class glod_pragnienie kill;
 	#class glod_pragnienie read glod_pragnienie.tin;
 	#class glod_pragnienie write glod_pragnienie.tin;
+		#class gornictwo kill;
+	#class gornictwo read gornictwo.tin;
+		#class gornictwo write gornictwo.tin;
 	#class jakosc_broni kill;
 	#class jakosc_broni read jakosc_broni.tin;
 	#class jakosc_broni write jakosc_broni.tin;
@@ -200,6 +209,8 @@
 	#class postepy kill;
 	#class postepy read postepy.tin;
 	#nop bez zapisu postepy;
+	#class pracowitosc kill;
+	#class pracowitosc read pracowitosc.tin #class pracowitosc write pracowitosc.tin;
 	#class roza kill;
 	#class roza read roza.tin;
 	#class roza write roza.tin;
@@ -239,7 +250,8 @@
 #ALIAS {/ubr}
 {
 	zabezpiecz wszystko;
-	naciagnij kaptur
+	naciagnij kaptur;
+	/wlk
 }
 {5}
 
@@ -263,6 +275,13 @@
 	otworz sakwe;
 	wez monety z sakwy;
 	zamknij sakwe
+}
+{5}
+
+#ALIAS {/wlk}
+{
+	umiesc kolczyk w lewym uchu;
+	umiesc drugi kolczyk w prawym uchu
 }
 {5}
 
@@ -354,7 +373,7 @@
 
 #ALIAS {pr}
 {
-	przeczytaj %1
+	przeczytaj %0
 }
 {5}
 

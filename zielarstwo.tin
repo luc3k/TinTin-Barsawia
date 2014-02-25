@@ -25,7 +25,7 @@
 }
 {5}
 
-#ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b}{.*}$}
+#ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b|\bgrzyba\b}{.*}.$}
 {
 	#variable aktywne_szukanie 0;
 	otworz woreczek;
@@ -33,6 +33,7 @@
 	zamknij woreczek;
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
+	#math {ziola[%1%2%3%4][ilosc]} {${ziola[%1%2%3%4][ilosc]}+1};
 	save;
 	#line GAG;
 	#echo {<afa>%0<099>}
