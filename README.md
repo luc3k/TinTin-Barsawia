@@ -205,6 +205,10 @@ Dostosowane do klawiatury Macbooka
 
 Wszelkie ulatwienia dla drwali
 
+* gornictwo.tin
+
+Wszelkie ulatwienia dla gornikow
+
 * zielarstwo.tin
 
 Wszelkie ulatwienia dla drwali jak np. nazwy ziol itp.
@@ -216,6 +220,10 @@ Lista dostepnych paczek z biur pocztowych z ich lokalizacja P (w oparciu o mape 
 * umiejetnosci.tin
 
 Kolorki i poziomy dla umiejetnosci dla komendy um
+
+* pracowitosc.tin
+
+Informacja o pracowitosci po ocenieniu siebie `ocen siebie`
 
 * jakosc_broni.tin
 
