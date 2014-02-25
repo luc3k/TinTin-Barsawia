@@ -56,11 +56,11 @@ Alias do wylaczenia sledzenia na mapie. Przydatne jak np. bladzimy i nie chcemy 
 
 Alias ten ustawia informacje jakie drzewo zostaje wlasnie scinane i w zasadzie tyle. Przydatne w ACTIONS do ponownego scinania drzewa.
 
-`/scinanie`
+`/drwal`
 
 Wyciaga z worka siekiere i ustawia tryb scinania drzew. Pozwala to na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Wpisanie ponownie dezaktywuje tryb i chowa siekiere do worka.
 	
-`/szukaj <ziolo>`
+`/zielarz <ziolo>`
 
 Ustawia tryb szukania ziol tj. przestawia macra na szukanie po wejsciu do lokacji. Pozwala tez na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Dodatkowo ustawia co ma byc szukane np. `/szukaj macierzanki`. Dodatkowo wyciaga sloik z worka. Wpisanie ponownie komendy /szukaj dezaktywuje wszystko i chowa sloik.
 

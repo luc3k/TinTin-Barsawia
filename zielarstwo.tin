@@ -1,14 +1,5 @@
 #CLASS {zielarstwo} OPEN
 
-#ACTION {^Jestes teraz zajety praca. Musisz wpisac 'przestan' by moc zrobic, to co chcesz.$}
-{
-	#if {$scinanie == 0}
-	{
-		#map undo
-	}
-}
-{5}
-
 #ACTION {^Nie znajdujesz zadnych ziol.}
 {
 	#echo {<fab>%0<099>};
@@ -57,7 +48,16 @@
 }
 {5}
 
-#ALIAS {/szukaj}
+#ALIAS {/troff}
+{
+	otworz woreczek;
+	wez trawe z woreczka;
+	odloz trawe;
+	zamknij woreczek
+}
+{5}
+
+#ALIAS {/zielarz}
 {
 	#if {$szukanie_ziol == 0}
 	{
@@ -71,15 +71,6 @@
 		#variable {ziolo}  {1};
 		#cr
 	}
-}
-{5}
-
-#ALIAS {/troff}
-{
-	otworz woreczek;
-	wez trawe z woreczka;
-	odloz trawe;
-	zamknij woreczek
 }
 {5}
 

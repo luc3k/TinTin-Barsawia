@@ -188,9 +188,9 @@
 	#class glod_pragnienie kill;
 	#class glod_pragnienie read glod_pragnienie.tin;
 	#class glod_pragnienie write glod_pragnienie.tin;
-		#class gornictwo kill;
+	#class gornictwo kill;
 	#class gornictwo read gornictwo.tin;
-		#class gornictwo write gornictwo.tin;
+	#class gornictwo write gornictwo.tin;
 	#class jakosc_broni kill;
 	#class jakosc_broni read jakosc_broni.tin;
 	#class jakosc_broni write jakosc_broni.tin;
@@ -331,12 +331,6 @@
 }
 {5}
 
-#ALIAS {krzes}
-{
-	krzesaj kamieniem o drugi kamien na lampe
-}
-{5}
-
 #ALIAS {log}
 {
 	#if {"%0" == "on"}
@@ -380,6 +374,12 @@
 #ALIAS {prz}
 {
 	przedstaw sie straznikowi
+}
+{5}
+
+#ALIAS {psch}
+{
+	popros o wydanie schowka
 }
 {5}
 

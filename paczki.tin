@@ -1,7 +1,7 @@
 #CLASS {paczki} OPEN
 
 #SUBSTITUTE       {^\d{.*}Ablakusa, doswiadczonego mysliwego z Vrontok{\s*}za %1$}                                            {<ffa>%0 <afa>Vrontok, P:3598<099>}          {5}
-#SUBSTITUTE       {^\d{.*}Balifa{\s*}za %1$}      {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Balifa{\s*}za %1$}      {<ffa>%0 <afa>Poludnie od Jerris, P:5142<099>}                     {5}
 #SUBSTITUTE       {^\d{.*}Berta Herghsona{\s*}za %1$}               {<ffa>%0 <afa>Bree, Dom aukcyjny, P:196<099>}                    {5}
 #SUBSTITUTE       {^\d{.*}Biura Pocztowcow w Bystrym Brodzie{\s*}za %1$}                                  {<ffa>%0 <afa>Bystry Brod, P:509<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Biura Poslancow w Brigham{\s*}za %1$}                         {<ffa>%0 <afa><099>}  {5}
@@ -26,7 +26,7 @@
 #SUBSTITUTE       {^\d{.*}Gospody 'Pod zlamanym zebrem'{\s*}za %1$}                             {<ffa>%0 <afa>Igielniczka, P:865<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Grara, kowala z Cardolanu{\s*}za %1$}                         {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Gurgroma Bungroma{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Gustava z Kratas{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Gustava z Kratas{\s*}za %1$}                {<ffa>%0 <afa>Kratas, P:2497<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Herbaciarki z Kratas{\s*}za %1$}                    {<ffa>%0 <afa>Kratas, P:2515<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Hogetha Dorughta z Gor Blekitnych{\s*}za %1$}                                 {<ffa>%0 <afa>Gory Blekitne, P:1966<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Imraaga, Ksenomaty z Osmego Legionu Powietrznej Przystani{\s*}za %1$}                                                         {<ffa>%0 <afa><099>}  {5}
@@ -38,11 +38,11 @@
 #SUBSTITUTE       {^\d{.*}Lorgo T'raska, burmistrza Vrontok{\s*}za %1$}                                 {<ffa>%0 <afa>Vrontok, P:3523<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Magnusa Kanta{\s*}za %1$}             {<ffa>%0 <afa>Bree, piekarz, P:443<099>}               {5}
 #SUBSTITUTE       {^\d{.*}Mlynu pod Dorrath{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Nolagarda Kehmisa, Radnego Cechu Jubilerow{\s*}za %1$}                                          {<ffa>%0 <afa>P:4211<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Nolagarda Kehmisa, Radnego Cechu Jubilerow{\s*}za %1$}                                          {<ffa>%0 <afa>Wielki Targ, P:4211<099>}              {5}
 #SUBSTITUTE       {^\d{.*}Oddzialu krolewskiej poczty w Wielkim Targu{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Oddzialu poczty imperialnej w Vivane{\s*}za %1$}                                    {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Igielniczce{\s*}za %1$}                      {<ffa>%0 <afa>Igielniczka, P:868<099>}             {5}
-#SUBSTITUTE       {^\d{.*}Piekarni w Wielkim Targu{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Piekarni w Wielkim Targu{\s*}za %1$}                        {<ffa>%0 <afa>Wielki Targ, P:4109<099>}              {5}
 #SUBSTITUTE       {^\d{.*}Poczty we Vrontok{\s*}za %1$}                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Prowizorycznego Urzedu Pocztowego w Khazad-dum{\s*}za %1$}                                              {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Rapiera, wlasciciela 'Pod Przybitym Skrzydlem'{\s*}za %1$}                                              {<ffa>%0 <afa>P:3504<099>}  {5}
@@ -62,11 +62,11 @@
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Hobbitonie{\s*}za %1$}                              {<ffa>%0 <afa>Hobbiton, P:205<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Urzedu Pocztowego w Tharbadzie{\s*}za %1$}                              {<ffa>%0 <afa>Tharbad, P:1448<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Varulam Talary, zastepczyni Admiral Tularch{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
-#SUBSTITUTE       {^\d{.*}Vernila z Jerris{\s*}za %1$}                {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Vernila z Jerris{\s*}za %1$}                {<ffa>%0 <afa>Jerris, P:2870<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Wojta Zabiej Laki{\s*}za %1$}                 {<ffa>%0 <afa>Zabia Laka, P:1756<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Yurgala, soltysa Brigham{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zbrojmistrza w wiosce Kamieniolom{\s*}za %1$}                                 {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Zielarni w Krzywych Jamach{\s*}za %1$}                          {<ffa>%0 <afa>Krzywe Jamy, P:801<099>}             {5}
-#SUBSTITUTE       {^\d{.*}Zinka Framina, handlarza{\s*}za %1$}                        {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Zinka Framina, handlarza{\s*}za %1$}                        {<ffa>%0 <afa>Jerris, P:2837<099>}         {5}
 
 #CLASS {paczki} CLOSE

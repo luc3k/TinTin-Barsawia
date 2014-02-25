@@ -1,3 +1,92 @@
 #CLASS {gornictwo} OPEN
 
+#ACTION {^Przestajesz kuc.$}
+{
+	#variable wykopywanie 0;
+	#line gag;
+	#echo {<faa>%0<088>}
+}
+{5}
+
+#ACTION {^Zaczynasz kuc %1 sciane.$}
+{
+	#variable wykopywanie 1;
+	#line gag;
+	#echo {<afa>%0<088>}
+}
+{5}
+
+#ALIAS {/gornik}
+{
+	#if {$kilof == 0}
+	{
+		#variable kilof 1;
+		#nop dobadz kilofa z drugiego temblaka;
+		otworz plecak;
+		wez kilof z plecaka;
+		dobadz kilofa;
+		zamknij plecak;
+		#cr
+	};
+	#elseif {$kilof == 1}
+	{
+		#variable kilof 0;
+		#nop wloz kilof do drugiego temblaka;
+		otworz plecak;
+		wloz kilof do plecaka;
+		zamknij plecak;
+		#cr
+	}
+}
+{5}
+
+#ALIAS {/gornikh}
+{
+	#showme {Potrzebne: };
+	#showme {stemple (klody), lampa, olej do lampy, krzesiwo do rozpalania lampy, kilof i owalny przejrzysty krysztal od Balifa do znajdowania urobku};
+	#showme {3 stemple podtrzymaja kopalnie, nie mniej};
+	#showme {stempluj stemplem};
+	#showme {zbliz krysztal do polnocnej sciany};
+	#showme {kuj polnocna sciane};
+	#showme {kj polnocna};
+	#showme {zkr polnocnej};
+	#showme {Czarna brylka to wegiel.};
+	#showme {Ciemnoczerwona to Zelazo};
+	#showme {Jasnoczerwona to miedz};
+	#showme {Jasnoniebieska, bardzo zadko spotykana to orichalk};
+	#showme {srebrzysta to srebro}
+}
+{5}
+
+#ALIAS {kj}
+{
+	kuj %1 sciane
+}
+{5}
+
+#ALIAS {krzes}
+{
+	otworz plecak;
+	wez krzemien z plecaka;
+	wez sztylet z plecaka;
+	krzesaj krzemieniem o sztylet na lampe;
+	wloz krzemien do plecaka;
+	wloz sztylet do plecaka;
+	zamknij plecak
+}
+{5}
+
+#ALIAS {zkr}
+{
+	otworz plecak;
+	wez krysztal z plecaka;
+	zbliz krysztal do %1 sciany;
+	wloz krysztal do plecaka;
+	zamknij plecak
+}
+{5}
+
+#SUBSTITUTE       {^Blade iskry poruszaja sie leniwie wewnatrz krysztalu.$}                                     {<faa>%0[BRAK KRUSZCA]<088>}   {5}
+#VARIABLE         {kilof}  {0}
+
 #CLASS {gornictwo} CLOSE

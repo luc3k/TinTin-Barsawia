@@ -34,15 +34,15 @@
 {
 	#if {$scinanie == 1}
 	{
-		/scinanie
+		/drwal
 	};
-	dobadz ciemnego topora z pierwszego temblaka
+	dobadz topora z pierwszego temblaka
 }
 {5}
 
 #ALIAS {/wlozb}
 {
-	wloz ciemny topor do pierwszego temblaka
+	wloz topor do pierwszego temblaka
 }
 {5}
 

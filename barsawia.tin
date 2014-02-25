@@ -23,7 +23,7 @@
 
 #FUNCTION {prompt_f} 
 {
-	#return |${roza_sw}|${roza_s}|${roza_se}| <cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Scinanie: <ffa>@drwal{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>/<ffa>${dzis_zabitych}<fff>|<cfa>Ziola: <ffa>${liczba_zeb_ziol}<fff>/<ffa>${dzis_zeb_ziol}<fff>|<cfa>Drzewa: <ffa>${liczba_sc_drzew}<fff>/<ffa>${dzis_sc_drzew}<fff>;
+	#return |${roza_sw}|${roza_s}|${roza_se}| <cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Gornik:<ffa>@gornik{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Scinanie drzew: <ffa>@drwal{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>/<ffa>${dzis_zabitych}<fff>|<cfa>Ziola: <ffa>${liczba_zeb_ziol}<fff>/<ffa>${dzis_zeb_ziol}<fff>|<cfa>Drzewa: <ffa>${liczba_sc_drzew}<fff>/<ffa>${dzis_sc_drzew}<fff>;
 }
 
 #FUNCTION {remove_text}
@@ -38,6 +38,18 @@
 #FUNCTION {siedzenie}
 {
 	#IF {${sit_state} == 1}
+	{
+		#return <faa>TAK
+	};
+	#ELSE
+	{
+		#return NIE
+	}
+}
+
+#FUNCTION {gornik}
+{
+	#IF {${kilof} == 1}
 	{
 		#return <faa>TAK
 	};

@@ -4,8 +4,14 @@
 {
 	#if {$map_state == 1}
 	{
-#nop warunek, ze jak %2 nie jest kierunkiem to mapoff
-		#map move %2
+		#if {%2 == {wschod|zachod|gore|polnoc|poludnie|dol|polnocny-wschod|polnocny-zachod|poludniowy-wschod|poludniowy-zachod}}
+		{
+			#map move %2
+		};
+		#else
+		{
+			/mapoff
+		}
 	}
 }
 {5}
@@ -46,6 +52,15 @@
 }
 {5}
 
+#ACTION {^Jestes teraz zajety praca. Musisz wpisac 'przestan' by moc zrobic, to co chcesz.$}
+{
+	#if {{$scinanie == 0} || {$wykopywanie == 0}}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Nie widzisz zadnego wyjscia prowadzacego na %1.$}
 {
 	#line gag;
@@ -57,9 +72,19 @@
 }
 {5}
 
-#ACTION {^Podazasz za %1 na %2.^}
+#ACTION {^Podazasz za %1 na %2.$}
 {
-	#map move %2
+	#if {$map_state == 1}
+	{
+		#if {%2 == {wschod|zachod|gore|polnoc|poludnie|dol|polnocny-wschod|polnocny-zachod|poludniowy-wschod|poludniowy-zachod}}
+		{
+			#map move %2
+		};
+		#else
+		{
+			/mapoff
+		}
+	}
 }
 {5}
 
@@ -116,6 +141,22 @@
 }
 {5}
 
+#ACTION {^Ruszasz cwalem za %1 na %2.$}
+{
+	#if {$map_state == 1}
+	{
+		#if {%2 == {wschod|zachod|gore|polnoc|poludnie|dol|polnocny-wschod|polnocny-zachod|poludniowy-wschod|poludniowy-zachod}}
+		{
+			#map move %2
+		};
+		#else
+		{
+			/mapoff
+		}
+	}
+}
+{5}
+
 #ACTION {^Ruszasz razno na %1, jednak szybko zdajesz sobie sprawe, ze nigdzie tamtedy nie dotrzesz, zrezygnowany wracasz z powrotem na {droge|sciezke}.$}
 {
 	#line gag;
@@ -162,6 +203,18 @@
 {5}
 
 #ACTION {^Szukasz wzrokiem latwego zejscia na brzeg na %1 stad, lecz nie widzisz zadnego.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
+	#undelay %*
+}
+{5}
+
+#ACTION {^Zadzierasz glowa i patrzysz w %1, lecz nie widzisz zadnego sposobu by tam sie udac.$}
 {
 	#line gag;
 	#echo {<fab>%0<099>};

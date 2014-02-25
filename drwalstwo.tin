@@ -355,26 +355,33 @@
 }
 {5}
 
-#ALIAS {/drwalh}
-{
-	#showme {zbadaj wyreb, zetnij drzewo, odrab konary, odetnij galezie, odgarnij kore, doczysc klode}
-}
-{5}
-
-#ALIAS {/scinanie}
+#ALIAS {/drwal}
 {
 	#if {$scinanie == 0}
 	{
 		#variable scinanie 1;
-		dobadz siekiery z drugiego temblaka;
+		#nop dobadz siekiery z drugiego temblaka;
+		otworz plecak;
+		wez siekiere z plecaka;
+		dobadz siekiery;
+		zamknij plecak;
 		#cr
 	};
 	#elseif {$scinanie == 1}
 	{
 		#variable scinanie 0;
-		wloz siekiere do drugiego temblaka;
+		#nop wloz siekiere do drugiego temblaka;
+		otworz plecak;
+		wloz siekiere do plecaka;
+		zamknij plecak;
 		#cr
 	}
+}
+{5}
+
+#ALIAS {/drwalh}
+{
+	#showme {zbadaj wyreb, zetnij drzewo, odrab konary, odetnij galezie, odgarnij kore, doczysc klode}
 }
 {5}
 
