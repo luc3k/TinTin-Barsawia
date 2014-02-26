@@ -118,6 +118,7 @@
 #class postepy read postepy.tin
 #class pracowitosc read pracowitosc.tin
 #class roza read roza.tin
+#class skutecznosc_broni read skutecznosc_broni.tin
 #class slawa read slawa.tin
 #class substitutes read substitutes.tin
 #class umiejetnosci read umiejetnosci.tin

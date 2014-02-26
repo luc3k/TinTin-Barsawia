@@ -214,6 +214,9 @@
 	#class roza kill;
 	#class roza read roza.tin;
 	#class roza write roza.tin;
+	#class skutecznosc_broni kill;
+	#class skutecznosc_broni read skutecznosc_broni.tin;
+	#class skutecznosc_broni write skutecznosc_broni.tin;
 	#class slawa kill;
 	#class slawa read slawa.tin;
 	#nop bez zapisu slawa;

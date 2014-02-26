@@ -90,11 +90,11 @@
 #SUBSTITUTE       {^%1 probuje cie trafic %2, lecz tobie udaje sie uniknac tego ciosu.$}                                                  {<efa>%1<afa> probuje cie trafic <efa>%2<afa>, lecz tobie udaje sie uniknac tego ciosu.<099>}                                                                    {5}
 #SUBSTITUTE       {^%1 wpada w panike!$}  {<efa>%1<afa> wpada w panike!<099>}          {5}
 #SUBSTITUTE       {^Dobywasz {oburacz|prawa reka} %2 z %3.$}                      {<afa>Dobywasz %1 <099>%2<afa> z <099>%3<afa>.<099>}                           {5}
-#SUBSTITUTE       {^Jestes %1.}  {Jestes @kondycja{%1}.}  {5}
 #SUBSTITUTE       {^Ospale odskakujesz od %1, unikajac jego ciosu.$}                              {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^Powoli schylasz sie przed ciosem %1.$}                    {<afa>Powoli schylasz sie przed ciosem <efa>%1<099>}                           {5}
 #SUBSTITUTE       {^Probujesz trafic %1 %2, lecz ten uskakuje przed twoim ciosem.$}                                             {<fab>Probujesz trafic <efa>%1 %2<fab>, lecz ten uskakuje przed twoim ciosem.<099>}                                                          {5}
 #SUBSTITUTE       {^Przechylajac sie na prawo ospale unikasz %1.$}                            {<afa>Przechylajac sie na prawo ospale unikasz <efa>%1<099>}                                   {5}
+#SUBSTITUTE       {^{Jestes|Zdaje sie byc} %2.}         {%1 @kondycja{%2}.}  {5}
 #SUBSTITUTE       {^%1 %2 %3 %4, trafiajac go w %5.$}               {@jakosc{%1} @typ{%2} @wrog{%3} @bron{%4}<afa>, trafiajac go w @miejsce{%5}<afa>.}                                                         {6}
 #VARIABLE         {dzis_zabitych}  {0}
 #VARIABLE         {enemy_run}  {0}

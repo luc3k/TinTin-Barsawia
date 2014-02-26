@@ -58,9 +58,47 @@
 }
 {5}
 
-#ALIAS {kj}
+#ALIAS {/kuj}
 {
-	kuj %1 sciane
+	#switch {"%1"}
+	{
+		#case {"n"}
+		{
+			kuj polnocna sciane
+		};
+		#case {"s"}
+		{
+			kuj poludniowa sciane
+		};
+		#case {"e"}
+		{
+			kuj wschodnia sciane
+		};
+		#case {"w"}
+		{
+			kuj zachodnia sciane
+		};
+		#case {"ne"}
+		{
+			kuj polnocno-wschodnia sciane
+		};
+		#case {"se"}
+		{
+			kuj poludniowo-wschodnia sciane
+		};
+		#case {"nw"}
+		{
+			kuj polnocno-zachodnia sciane
+		};
+		#case {"sw"}
+		{
+			kuj poludniowo-zachodnia sciane
+		};
+		#default
+		{
+			#showme {Zly parametr}
+		}
+	}
 }
 {5}
 
@@ -68,10 +106,10 @@
 {
 	otworz plecak;
 	wez krzemien z plecaka;
-	wez sztylet z plecaka;
+	wez sztylet z pochwy;
 	krzesaj krzemieniem o sztylet na lampe;
 	wloz krzemien do plecaka;
-	wloz sztylet do plecaka;
+	wloz sztylet do pochwy;
 	zamknij plecak
 }
 {5}
@@ -80,7 +118,45 @@
 {
 	otworz plecak;
 	wez krysztal z plecaka;
-	zbliz krysztal do %1 sciany;
+	#switch {"%1"}
+	{
+		#case {"n"}
+		{
+			zbliz krysztal do polnocnej sciany
+		};
+		#case {"s"}
+		{
+			zbliz krysztal do poludniowej sciany
+		};
+		#case {"e"}
+		{
+			zbliz krysztal do wschodniej sciany
+		};
+		#case {"w"}
+		{
+			zbliz krysztal do zachodniej sciany
+		};
+		#case {"ne"}
+		{
+			zbliz krysztal do polnocno-wschodniej sciany
+		};
+		#case {"se"}
+		{
+			zbliz krysztal do poludniowo-wschodniej sciany
+		};
+		#case {"nw"}
+		{
+			zbliz krysztal do polnocno-zachodniej sciany
+		};
+		#case {"sw"}
+		{
+			zbliz krysztal do poludniowo-zachodniej sciany
+		};
+		#default
+		{
+			#showme {Zly parametr}
+		}
+	};
 	wloz krysztal do plecaka;
 	zamknij plecak
 }

@@ -54,9 +54,12 @@
 
 #ACTION {^Jestes teraz zajety praca. Musisz wpisac 'przestan' by moc zrobic, to co chcesz.$}
 {
-	#if {{$scinanie == 0} || {$wykopywanie == 0}}
+	#if {$scinanie == 0}
 	{
-		#map undo
+		#if {$wykopywanie == 0}
+		{
+			#map undo
+		}
 	}
 }
 {5}
