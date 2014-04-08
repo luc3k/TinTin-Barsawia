@@ -19,9 +19,13 @@
 #ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b|\bgrzyba\b}{.*}.$}
 {
 	#variable aktywne_szukanie 0;
-	otworz woreczek;
-	wloz ziola do woreczka;
-	zamknij woreczek;
+	#regexp {%1%2%3%4} {podluzny cienki lisc} {odloz podluzny cienki lisc};
+	#else
+	{
+		otworz woreczek;
+		wloz ziola do woreczka;
+		zamknij woreczek
+	};
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
 	#math {ziola[%1%2%3%4][ilosc]} {${ziola[%1%2%3%4][ilosc]}+1};
@@ -81,7 +85,7 @@
 #SUBSTITUTE       {{?i}duz{y|e|ych} aromatyczn{y|e|ych} \bowoc{e|ow|}\b}                                  {%0 <afa>(czarnuszka)<099>}  {5}
 #SUBSTITUTE       {{?i}duz{y|e|ych} czerwon{y|e|ych} \bkwiat{y|ow|}\b}                                {%0 <afa>(mak)<099>}  {5}
 #SUBSTITUTE       {{?i}dzwonkowat{y|e|ych} lepk{i|ie|ich} \bkwiat{y|ow|}\b}                                     {%0 <afa>(dzwonecznik)<099>}   {5}
-#SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrzokrzew kolczasty)<099>}             {5}
+#SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrokrzew kolczasty)<099>}             {5}
 #SUBSTITUTE       {{?i}malutk{i|ie|ich} bial{y|e|ych} \bkwiat{y|ow|}\b}                                 {%0 <afa>(stokrotka)<099>}  {5}
 #SUBSTITUTE       {{?i}masywn{y|e|ych} poskrecan{y|e|ych} \bkorzen{ie|i|}\b}                                      {%0 <afa>(imbir)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} cienk{i|ie|ich} \blisc{ie|i|}\b}                                  {%0 <afa>(trawa)<099>}  {5}
