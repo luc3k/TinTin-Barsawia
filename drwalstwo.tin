@@ -4,7 +4,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -12,7 +15,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -20,7 +26,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -28,7 +37,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -36,7 +48,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -44,7 +59,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -52,7 +70,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -60,7 +81,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -68,7 +92,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -76,7 +103,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -84,7 +114,10 @@
 {
 	#line gag;
 	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	zetnij $drzewo
+	#if {$automatyzm == 1}
+	{
+		zetnij $drzewo
+	}
 }
 {5}
 
@@ -99,7 +132,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -107,7 +143,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -128,7 +167,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -136,7 +178,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -157,7 +202,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -165,7 +213,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -173,7 +224,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -181,7 +235,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -189,7 +246,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -197,7 +257,10 @@
 {
 	#line gag;
 	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	zetnij $drzewo
+	#if {$automatyzm == 1}
+	{
+		zetnij $drzewo
+	}
 }
 {5}
 
@@ -205,7 +268,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -226,7 +292,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -234,7 +303,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -242,7 +314,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -250,7 +325,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -258,7 +336,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -266,7 +347,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -274,7 +358,10 @@
 {
 	#line gag;
 	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	zetnij $drzewo
+	#if {$automatyzm == 1}
+	{
+		zetnij $drzewo
+	}
 }
 {5}
 
@@ -282,7 +369,10 @@
 {
 	#line gag;
 	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	odrab konary drzewa
+	#if {$automatyzm == 1}
+	{
+		odrab konary drzewa
+	}
 }
 {5}
 
@@ -290,7 +380,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -298,7 +391,10 @@
 {
 	#line gag;
 	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	doczysc klode
+	#if {$automatyzm == 1}
+	{
+		doczysc klode
+	}
 }
 {5}
 
@@ -306,7 +402,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -327,7 +426,10 @@
 {
 	#line gag;
 	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	zetnij $drzewo
+	#if {$automatyzm == 1}
+	{
+		zetnij $drzewo
+	}
 }
 {5}
 
@@ -335,7 +437,10 @@
 {
 	#line gag;
 	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	odgarnij kore klody
+	#if {$automatyzm == 1}
+	{
+		odgarnij kore klody
+	}
 }
 {5}
 
@@ -343,7 +448,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 
@@ -351,7 +459,10 @@
 {
 	#line gag;
 	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	odetnij galezie drzewa
+	#if {$automatyzm == 1}
+	{
+		odetnij galezie drzewa
+	}
 }
 {5}
 

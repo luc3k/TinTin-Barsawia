@@ -4,23 +4,24 @@
 {
 	#line GAG;
 	#echo {<afa>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	ticker_odswiez_godzine;
 	#variable godzina {06:00};
 	#cr
 }
 {5}
 
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}%2, %3 dzien miesiaca %4 wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy|okres pierwszych chlodow}.$}
+#ACTION {^Jest {.*}, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{Harsa|Mittlen|Manet}, %4 dzien miesiaca {Veltom} wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy|okres pierwszych chlodow}.$}
 {
+	#nop kolejne dni ;
+	#nop Jest jedenasta w poludnie, Manet, 23 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy. #line gag;
 	#line gag;
 	#echo {<afa>%0<099>};
-	update_godzina %1;
+	update_godzina {%1};
 	#cr
 }
 {5}
 
-#ACTION {^Jest %1, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{w|we} %2, %3 dzien miesiaca %4 wedlug Kalendarza Srodziemia. Mamy obecnie %5.{ Zgodnie z Kalendarzem Shire mamy w tej chwili miesiac %6.|}$}
+#ACTION {^Jest {.*}, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{w|we} %4, %5 dzien miesiaca %6 wedlug Kalendarza Srodziemia. Mamy obecnie %7.$}
 {
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -33,8 +34,7 @@
 {
 	#line GAG;
 	#echo {<afa>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	ticker_odswiez_godzine;
 	#variable godzina {05:00};
 	#cr
 }
@@ -44,8 +44,7 @@
 {
 	#line GAG;
 	#echo {<bcf>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	ticker_odswiez_godzine;
 	#variable godzina {19:00};
 	#cr
 }
@@ -55,8 +54,7 @@
 {
 	#line GAG;
 	#echo {<afa>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	ticker_odswiez_godzine;
 	#variable godzina {07:00};
 	#cr
 }
@@ -66,110 +64,123 @@
 {
 	#line GAG;
 	#echo {<bcf>%0<099>};
-	#unticker {odswiez_godzine};
-	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120};
+	ticker_odswiez_godzine;
 	#variable godzina {20:00};
 	#cr
 }
 {5}
 
+#ALIAS {ticker_odsiez_godzine}
+{
+	#unticker {odswiez_godzine};
+	#ticker {odswiez_godzine} {#if {"$godzina" == "10:00"}{#variable godzina {11:00}};#elseif {"$godzina" == "11:00"}{#variable godzina {12:00}};#elseif {"$godzina" == "12:00"}{#variable godzina {13:00}};#elseif {"$godzina" == "13:00"}{#variable godzina {14:00}};#elseif {"$godzina" == "14:00"}{#variable godzina {15:00}};#elseif {"$godzina" == "15:00"}{#variable godzina {16:00}};#elseif {"$godzina" == "16:00"}{#variable godzina {17:00}};#elseif {"$godzina" == "17:00"}{#variable godzina {18:00}};#elseif {"$godzina" == "18:00"}{#variable godzina {19:00}};#elseif {"$godzina" == "19:00"}{#variable godzina {20:00}};#elseif {"$godzina" == "20:00"}{#variable godzina {21:00}};#elseif {"$godzina" == "21:00"}{#variable godzina {22:00}};#elseif {"$godzina" == "22:00"}{#variable godzina {23:00}};#elseif {"$godzina" == "23:00"}{#variable godzina {00:00}};#elseif {"$godzina" == "00:00"}{#variable godzina {01:00}};#elseif {"$godzina" == "01:00"}{#variable godzina {02:00}};#elseif {"$godzina" == "02:00"}{#variable godzina {03:00}};#elseif {"$godzina" == "03:00"}{#variable godzina {04:00}};#elseif {"$godzina" == "04:00"}{#variable godzina {05:00}};#elseif {"$godzina" == "05:00"}{#variable godzina {06:00}};#elseif {"$godzina" == "06:00"}{#variable godzina {07:00}};#elseif {"$godzina" == "07:00"}{#variable godzina {08:00}};#elseif {"$godzina" == "08:00"}{#variable godzina {09:00}};#elseif {"$godzina" == "09:00"}{#variable godzina {10:00}};} {120}
+}
+{5}
+
 #ALIAS {update_godzina}
 {
-	#if {"%1" == "jedenasta w poludnie"}
+	#switch {"%1"}
 	{
-		#variable godzina {11:00}
-	};
-	#elseif {"%1" == "dwunasta w poludnie"}
-	{
-		#variable godzina {12:00}
-	};
-	#elseif {"%1" == "trzynasta w poludnie"}
-	{
-		#variable godzina {13:00}
-	};
-	#elseif {"%1" == "czternasta w poludnie"}
-	{
-		#variable godzina {14:00}
-	};
-	#elseif {"%1" == "pietnasta po poludniu"}
-	{
-		#variable godzina {15:00}
-	};
-	#elseif {"%1" == "szesnasta po poludniu"}
-	{
-		#variable godzina {16:00}
-	};
-	#elseif {"%1" == "siedemnasta wieczor"}
-	{
-		#variable godzina {17:00}
-	};
-	#elseif {"%1" == "osiemnasta wieczor"}
-	{
-		#variable godzina {18:00}
-	};
-	#elseif {"%1" == "dziewietnasta wieczor"}
-	{
-		#variable godzina {19:00}
-	};
-	#elseif {"%1" == "dwudziesta poznym wieczorem"}
-	{
-		#variable godzina {20:00}
-	};
-	#elseif {"%1" == "dwudziesta pierwsza poznym wieczorem"}
-	{
-		#variable godzina {21:00}
-	};
-	#elseif {"%1" == "dwudziesta druga w nocy"}
-	{
-		#variable godzina {22:00}
-	};
-	#elseif {"%1" == "dwudziesta trzecia w nocy"}
-	{
-		#variable godzina {23:00}
-	};
-	#elseif {"%1" == "polnoc"}
-	{
-		#variable godzina {00:00}
-	};
-	#elseif {"%1" == "pierwsza w nocy"}
-	{
-		#variable godzina {01:00}
-	};
-	#elseif {"%1" == "druga w nocy"}
-	{
-		#variable godzina {02:00}
-	};
-	#elseif {"%1" == "trzecia w nocy"}
-	{
-		#variable godzina {03:00}
-	};
-	#elseif {"%1" == "czwarta nad ranem"}
-	{
-		#variable godzina {04:00}
-	};
-	#elseif {"%1" == "piata nad ranem"}
-	{
-		#variable godzina {05:00}
-	};
-	#elseif {"%1" == "szosta nad ranem"}
-	{
-		#variable godzina {06:00}
-	};
-	#elseif {"%1" == "siodma nad ranem"}
-	{
-		#variable godzina {07:00}
-	};
-	#elseif {"%1" == "osma nad ranem"}
-	{
-		#variable godzina {08:00}
-	};
-	#elseif {"%1" == "dziewiata rano"}
-	{
-		#variable godzina {09:00}
-	};
-	#elseif {"%1" == "dziesiata rano"}
-	{
-		#variable godzina {10:00}
+		#case {"jedenasta w poludnie"}
+		{
+			#variable godzina {11:00}
+		};
+		#case {"dwunasta w poludnie"}
+		{
+			#variable godzina {12:00}
+		};
+		#case {"trzynasta w poludnie"}
+		{
+			#variable godzina {13:00}
+		};
+		#case {"czternasta w poludnie"}
+		{
+			#variable godzina {14:00}
+		};
+		#case {"pietnasta po poludniu"}
+		{
+			#variable godzina {15:00}
+		};
+		#case {"szesnasta po poludniu"}
+		{
+			#variable godzina {16:00}
+		};
+		#case {"siedemnasta wieczor"}
+		{
+			#variable godzina {17:00}
+		};
+		#case {"osiemnasta wieczor"}
+		{
+			#variable godzina {18:00}
+		};
+		#case {"dziewietnasta wieczor"}
+		{
+			#variable godzina {19:00}
+		};
+		#case {"dwudziesta poznym wieczorem"}
+		{
+			#variable godzina {20:00}
+		};
+		#case {"dwudziesta pierwsza poznym wieczorem"}
+		{
+			#variable godzina {21:00}
+		};
+		#case {"dwudziesta druga w nocy"}
+		{
+			#variable godzina {22:00}
+		};
+		#case {"dwudziesta trzecia w nocy"}
+		{
+			#variable godzina {23:00}
+		};
+		#case {"polnoc"}
+		{
+			#variable godzina {00:00}
+		};
+		#case {"pierwsza w nocy"}
+		{
+			#variable godzina {01:00}
+		};
+		#case {"druga w nocy"}
+		{
+			#variable godzina {02:00}
+		};
+		#case {"trzecia w nocy"}
+		{
+			#variable godzina {03:00}
+		};
+		#case {"czwarta nad ranem"}
+		{
+			#variable godzina {04:00}
+		};
+		#case {"piata nad ranem"}
+		{
+			#variable godzina {05:00}
+		};
+		#case {"piata w nocy"}
+		{
+			#variable godzina {05:00}
+		};
+		#case {"szosta nad ranem"}
+		{
+			#variable godzina {06:00}
+		};
+		#case {"siodma nad ranem"}
+		{
+			#variable godzina {07:00}
+		};
+		#case {"osma nad ranem"}
+		{
+			#variable godzina {08:00}
+		};
+		#case {"dziewiata rano"}
+		{
+			#variable godzina {09:00}
+		};
+		#case {"dziesiata rano"}
+		{
+			#variable godzina {10:00}
+		}
 	};
 	#cr
 }

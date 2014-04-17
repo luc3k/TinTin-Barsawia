@@ -14,7 +14,10 @@
 	#echo {<ffa>%1 <faa>%2 <efa>%3.<099>};
 	#if {$enemy_run == 1}
 	{
-		%3
+		#if {$automatyzm == 1}
+		{
+			%3
+		}
 	}
 }
 {5}

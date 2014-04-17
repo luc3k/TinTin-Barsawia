@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 2606
+I 3858
 
 L * # # # | # x          
 
@@ -11297,6 +11297,7 @@ E { 2931} {wschod} {wschod} {2} {0} {}
 E { 2604} {zachod} {zachod} {8} {0} {}
 E { 2931} {przemknij na e} {przemknij na e} {2} {0} {}
 E { 2604} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2929} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2609} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 2608} {sw} {sw} {12} {0} {}
@@ -12669,6 +12670,8 @@ E { 2608} {n} {n} {1} {0} {}
 E { 2930} {e} {e} {2} {0} {}
 E { 2931} {ne} {ne} {3} {0} {}
 E { 2930} {wschod} {wschod} {2} {0} {}
+E { 2608} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2930} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2930} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 2929} {w} {w} {8} {0} {}
@@ -12678,6 +12681,7 @@ E { 3815} {sw} {sw} {12} {0} {}
 E { 2929} {zachod} {zachod} {8} {0} {}
 E { 3815} {przemknij na sw} {przemknij na sw} {12} {0} {}
 E { 2931} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2929} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2931} {0} {<aca>} {Lesna sciezka} { } {} {} {} {} {} {1.000}
 E { 2930} {s} {s} {4} {0} {}
@@ -12692,6 +12696,7 @@ E { 2608} {zachod} {zachod} {8} {0} {}
 E { 2930} {przemknij na s} {przemknij na s} {4} {0} {}
 E { 2609} {przemknij na n} {przemknij na n} {1} {0} {}
 E { 2608} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3305} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2932} {0} {} {Trakt w dolinie} { } {} {} {} {} {} {1.000}
 E { 2634} {e} {e} {2} {0} {}
@@ -14281,6 +14286,7 @@ E { 3820} {zachod} {zachod} {8} {0} {}
 E { 3309} {poludnie} {poludnie} {4} {0} {}
 E { 3305} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E { 3309} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 3305} {przemknij na nw} {przemknij na nw} {9} {0} {}
 
 R { 3305} {0} {<aca>} {Lesna sciezka} { } {} {} {} {} {} {1.000}
 E { 2931} {w} {w} {8} {0} {}
@@ -14290,6 +14296,8 @@ E { 3304} {se} {se} {6} {0} {}
 E { 2609} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E { 3304} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E { 2931} {zachod} {zachod} {8} {0} {}
+E { 2931} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3304} {przemknij na se} {przemknij na se} {6} {0} {}
 
 R { 3306} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 3305} {s} {s} {4} {0} {}
@@ -14302,6 +14310,8 @@ E { 3882} {wschod} {wschod} {2} {0} {}
 E { 2931} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E { 3307} {polnoc} {polnoc} {1} {0} {}
 E { 3308} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
+E { 3307} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 3882} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 3307} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 3306} {s} {s} {4} {0} {}
@@ -14312,6 +14322,8 @@ E { 2609} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E { 3306} {poludnie} {poludnie} {4} {0} {}
 E { 3308} {zachod} {zachod} {8} {0} {}
 E { 3834} {przemknij na ne} {przemknij na ne} {3} {0} {}
+E { 3308} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3306} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 3308} {0} {<aca>} {Wyrab} { } {} {} {} {} {} {1.000}
 E { 2609} {s} {s} {4} {0} {}
@@ -14321,6 +14333,7 @@ E { 2609} {poludnie} {poludnie} {4} {0} {}
 E { 3306} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E { 2609} {przemknij na s} {przemknij na s} {4} {0} {}
 E { 3307} {wschod} {wschod} {2} {0} {}
+E { 3307} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 3309} {0} {<bcf>} {Lesna sciezka} {bec} {} {} {} {} {} {1.000}
 E { 3304} {n} {n} {1} {0} {}
@@ -14332,6 +14345,7 @@ E { 3304} {polnoc} {polnoc} {1} {0} {}
 E { 3304} {przemknij na n} {przemknij na n} {1} {0} {}
 E { 3828} {przemknij na e} {przemknij na e} {2} {0} {}
 E { 3819} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3324} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 3310} {0} {} {Fregata "Skrzydla smoka"} { } {} {} {} {} {} {1.000}
 E { 2304} {w} {zejdz ze statku} {8} {0} {}
@@ -14394,6 +14408,8 @@ E { 3325} {sw} {sw} {12} {0} {}
 E { 3908} {e} {e} {2} {0} {}
 E { 3325} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E { 3309} {polnoc} {polnoc} {1} {0} {}
+E { 3309} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 3325} {przemknij na sw} {przemknij na sw} {12} {0} {}
 
 R { 3325} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3324} {ne} {ne} {3} {0} {}
@@ -14403,11 +14419,16 @@ E { 3827} {e} {e} {2} {0} {}
 E { 3334} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E { 3827} {wschod} {wschod} {2} {0} {}
 E { 3324} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
+E { 3324} {przemknij na ne} {przemknij na ne} {3} {0} {}
+E { 3326} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 3827} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 3326} {0} {<aca>} {Na skraju lasu} { } {} {} {} {} {} {1.000}
 E { 3325} {ne} {ne} {3} {0} {}
 E { 3327} {n} {n} {1} {0} {}
 E { 3328} {se} {se} {6} {0} {}
+E { 3325} {przemknij na ne} {przemknij na ne} {3} {0} {}
+E { 3328} {przemknij na se} {przemknij na se} {6} {0} {}
 
 R { 3327} {0} {<aca>} {Na skraju lasu} { } {} {} {} {} {} {1.000}
 E { 3326} {s} {s} {4} {0} {}
@@ -14416,17 +14437,21 @@ R { 3328} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3326} {nw} {nw} {9} {0} {}
 E { 3329} {e} {e} {2} {0} {}
 E { 3329} {wschod} {wschod} {2} {0} {}
+E { 3326} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 3329} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 3329} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3328} {w} {w} {8} {0} {}
-E { 3330} {s} {s} {4} {0} {}
 E { 3911} {ne} {ne} {3} {0} {}
 E { 3328} {zachod} {zachod} {8} {0} {}
+E { 3328} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3330} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 3911} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 3330} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
-E { 3329} {n} {n} {1} {0} {}
 E { 3331} {e} {e} {2} {0} {}
 E { 3333} {ne} {ne} {3} {0} {}
+E { 3329} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 3331} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3330} {w} {w} {8} {0} {}
@@ -16572,9 +16597,11 @@ E { 3825} {w} {w} {8} {0} {}
 
 R { 3827} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3325} {w} {w} {8} {0} {}
-E { 3909} {e} {e} {2} {0} {}
 E { 3909} {wschod} {wschod} {2} {0} {}
 E { 3325} {zachod} {zachod} {8} {0} {}
+E { 3325} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3909} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 3909} {e} {e} {2} {0} {}
 
 R { 3828} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3309} {w} {w} {8} {0} {}
@@ -16846,13 +16873,14 @@ E { 3875} {ne} {ne} {3} {0} {}
 
 R { 3877} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3873} {n} {n} {1} {0} {}
-E { 3878} {w} {w} {8} {0} {}
+E { 3878} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 3878} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
-E { 3877} {e} {e} {2} {0} {}
 E { 3833} {se} {se} {6} {0} {}
 E { 3879} {w} {w} {8} {0} {}
 E { 3879} {zachod} {zachod} {8} {0} {}
+E { 3879} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3877} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 3879} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3878} {e} {e} {2} {0} {}
@@ -16860,6 +16888,8 @@ E { 3880} {s} {s} {4} {0} {}
 E { 3882} {nw} {nw} {9} {0} {}
 E { 3880} {poludnie} {poludnie} {4} {0} {}
 E { 3878} {wschod} {wschod} {2} {0} {}
+E { 3882} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 3878} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 3880} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3879} {n} {n} {1} {0} {}
@@ -16875,6 +16905,8 @@ R { 3882} {0} {<aca>} {Las} { } {} {} {} {} {} {1.000}
 E { 3879} {se} {se} {6} {0} {}
 E { 3306} {w} {w} {8} {0} {}
 E { 3306} {zachod} {zachod} {8} {0} {}
+E { 3306} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3879} {przemknij na se} {przemknij na se} {6} {0} {}
 
 R { 3883} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3855} {nw} {nw} {9} {0} {}
@@ -16996,22 +17028,26 @@ E { 3831} {se} {se} {6} {0} {}
 E { 3324} {w} {w} {8} {0} {}
 
 R { 3909} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
-E { 3827} {w} {w} {8} {0} {}
-E { 3910} {se} {se} {6} {0} {}
 E { 3910} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E { 3827} {zachod} {zachod} {8} {0} {}
+E { 3827} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 3910} {przemknij na se} {przemknij na se} {6} {0} {}
+E { 3910} {se} {se} {6} {0} {}
+E { 3827} {w} {w} {8} {0} {}
 
 R { 3910} {0} {<aca>} {Las iglasty} { } {} {} {} {} {} {1.000}
-E { 3909} {nw} {nw} {9} {0} {}
 E { 3911} {w} {w} {8} {0} {}
 E { 3934} {se} {se} {6} {0} {}
 E { 3934} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 E { 3909} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
+E { 3909} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 3909} {nw} {nw} {9} {0} {}
 
 R { 3911} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3910} {e} {e} {2} {0} {}
 E { 3329} {sw} {sw} {12} {0} {}
 E { 3912} {se} {se} {6} {0} {}
+E { 3329} {przemknij na sw} {przemknij na sw} {12} {0} {}
 
 R { 3912} {0} {<aca>} {Las iglasty} { } {} {} {} {} {} {1.000}
 E { 3911} {nw} {nw} {9} {0} {}

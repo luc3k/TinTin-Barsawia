@@ -29,6 +29,9 @@ Druga opcja na uruchomienie TinTin++ to uruchomienie go za pomoca skryptu `tinti
 
 # Podstawowe informacje:
 
+Jesli chcesz aby czesc rzeczy dziala sie automatycznie jak np. pogon to zmien linijke `#VARIABLE         {automatyzm}  {0}`
+na `#VARIABLE         {automatyzm}  {1}` w pliku main.tin
+
 W mudzie nalezy wylaczyc domyslne kolory:
 `opcje kolorki wylacz`
 

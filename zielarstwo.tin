@@ -22,9 +22,12 @@
 	#regexp {%1%2%3%4} {podluzny cienki lisc} {odloz podluzny cienki lisc};
 	#else
 	{
-		otworz woreczek;
-		wloz ziola do woreczka;
-		zamknij woreczek
+		#if {$automatyzm == 1}
+		{
+			otworz woreczek;
+			wloz ziola do woreczka;
+			zamknij woreczek
+		}
 	};
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
