@@ -30,10 +30,10 @@ Druga opcja na uruchomienie TinTin++ to uruchomienie go za pomoca skryptu `tinti
 # Podstawowe informacje:
 
 W mudzie nalezy wylaczyc domyslne kolory:
-`opcje kolorki off`
+`opcje kolorki wylacz`
 
 Ustawic optymalna wysokosc ekranu, u mnie:
-`opcje wysokosci 20`
+`opcje wysokosc 20`
 
 Ustawic szerokosc ekranu na zero w celu zawijania wierszy:
 `opcje szerokosc 0`

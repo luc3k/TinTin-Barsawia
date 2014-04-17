@@ -4,7 +4,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		w
+		#if {$ukrywanie == 1}
+		{
+			przemknij na w
+		};
+		#else
+		{
+			w
+		}
 	};
 	#else
 	{
@@ -27,7 +34,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		se
+		#if {$ukrywanie == 1}
+		{
+			przemknij na se
+		};
+		#else
+		{
+			se
+		}
 	};
 	#else
 	{
@@ -50,7 +64,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		e
+		#if {$ukrywanie == 1}
+		{
+			przemknij na e
+		};
+		#else
+		{
+			e
+		}
 	};
 	#else
 	{
@@ -73,7 +94,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		ne
+		#if {$ukrywanie == 1}
+		{
+			przemknij na ne
+		};
+		#else
+		{
+			ne
+		}
 	};
 	#else
 	{
@@ -96,7 +124,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		d
+		#if {$ukrywanie == 1}
+		{
+			przemknij na d
+		};
+		#else
+		{
+			d
+		}
 	};
 	#else
 	{
@@ -119,7 +154,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		nw
+		#if {$ukrywanie == 1}
+		{
+			przemknij na nw
+		};
+		#else
+		{
+			nw
+		}
 	};
 	#else
 	{
@@ -142,7 +184,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		u
+		#if {$ukrywanie == 1}
+		{
+			przemknij na u
+		};
+		#else
+		{
+			u
+		}
 	};
 	#else
 	{
@@ -170,7 +219,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		n
+		#if {$ukrywanie == 1}
+		{
+			przemknij na n
+		};
+		#else
+		{
+			n
+		}
 	};
 	#else
 	{
@@ -193,7 +249,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		s
+		#if {$ukrywanie == 1}
+		{
+			przemknij na s
+		};
+		#else
+		{
+			s
+		}
 	};
 	#else
 	{
@@ -216,7 +279,14 @@
 {
 	#if {$szukanie_ziol == 0}
 	{
-		sw
+		#if {$ukrywanie == 1}
+		{
+			przemknij na sw
+		};
+		#else
+		{
+			sw
+		}
 	};
 	#else
 	{

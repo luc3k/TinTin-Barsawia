@@ -85,7 +85,7 @@
 #SUBSTITUTE       {{?i}duz{y|e|ych} aromatyczn{y|e|ych} \bowoc{e|ow|}\b}                                  {%0 <afa>(czarnuszka)<099>}  {5}
 #SUBSTITUTE       {{?i}duz{y|e|ych} czerwon{y|e|ych} \bkwiat{y|ow|}\b}                                {%0 <afa>(mak)<099>}  {5}
 #SUBSTITUTE       {{?i}dzwonkowat{y|e|ych} lepk{i|ie|ich} \bkwiat{y|ow|}\b}                                     {%0 <afa>(dzwonecznik)<099>}   {5}
-#SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrokrzew kolczasty)<099>}             {5}
+#SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrokrzew kolczasty)<099>}            {5}
 #SUBSTITUTE       {{?i}malutk{i|ie|ich} bial{y|e|ych} \bkwiat{y|ow|}\b}                                 {%0 <afa>(stokrotka)<099>}  {5}
 #SUBSTITUTE       {{?i}masywn{y|e|ych} poskrecan{y|e|ych} \bkorzen{ie|i|}\b}                                      {%0 <afa>(imbir)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} cienk{i|ie|ich} \blisc{ie|i|}\b}                                  {%0 <afa>(trawa)<099>}  {5}
