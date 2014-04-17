@@ -21,6 +21,28 @@
 #PATHDIR          {wschod}  {zachod}  {2}
 #PATHDIR          {zachod}  {wschod}  {8}
 
+#PATHDIR          {przemknij na gore}  {przemknij na dol}  {16}
+#PATHDIR          {przemknij na dol}  {przemknij na gore}  {32}
+#PATHDIR          {przemknij na polnoc}  {przemknij na poludnie}  {1}
+#PATHDIR          {przemknij na polnocny-wschod}  {przemknij na poludniowy-zachod}  {3}
+#PATHDIR          {przemknij na polnocny-zachod}  {przemknij na poludniowy-wschod}  {9}
+#PATHDIR          {przemknij na poludnie}  {przemknij na polnoc}  {4}
+#PATHDIR          {przemknij na poludniowy-wschod}  {przemknij na polnocny-zachod}  {6}
+#PATHDIR          {przemknij na poludniowy-zachod}  {przemknij na polnocny-wschod}  {12}
+#PATHDIR          {przemknij na wschod}  {przemknij na zachod}  {2}
+#PATHDIR          {przemknij na zachod}  {przemknij na wschod}  {8}
+
+#PATHDIR          {przemknij na n}  {przemknij na d}  {16}
+#PATHDIR          {przemknij na d}  {przemknij na u}  {32}
+#PATHDIR          {przemknij na n}  {przemknij na s}  {1}
+#PATHDIR          {przemknij na ne}  {przemknij na sw}  {3}
+#PATHDIR          {przemknij na nw}  {przemknij na se}  {9}
+#PATHDIR          {przemknij na s}  {przemknij na n}  {4}
+#PATHDIR          {przemknij na se}  {przemknij na nw}  {6}
+#PATHDIR          {przemknij na sw}  {przemknij na ne}  {12}
+#PATHDIR          {przemknij na e}  {przemknij na w}  {2}
+#PATHDIR          {przemknij na w}  {przemknij na e}  {8}
+
 #FUNCTION {prompt_f} 
 {
 	#return |${roza_sw}|${roza_s}|${roza_se}| <cfa>Siedzisz: <ffa>@siedzenie{%0}<fff>|<cfa>Gornik:<ffa>@gornik{%0}<fff>|<cfa>Zbieranie ziol: <ffa>@zielarz{%0}<fff>|<cfa>Scinanie drzew: <ffa>@drwal{%0}<fff>|<cfa>Zabitych: <ffa>${liczba_zabitych}<fff>/<ffa>${dzis_zabitych}<fff>|<cfa>Ziola: <ffa>${liczba_zeb_ziol}<fff>/<ffa>${dzis_zeb_ziol}<fff>|<cfa>Drzewa: <ffa>${liczba_sc_drzew}<fff>/<ffa>${dzis_sc_drzew}<fff>;
