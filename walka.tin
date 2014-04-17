@@ -1,10 +1,10 @@
 #CLASS {walka} OPEN
 
-#ACTION {^%1 uciekl ci.$}
+#ACTION {^%1 uciekl{a|} ci.$}
 {
 	#variable enemy_run 1;
 	#line gag;
-	#echo {<efa>%1 <faa>uciekl ci.<099>}
+	#echo {<efa>%1 <faa>uciekl%2 ci.<099>}
 }
 {5}
 

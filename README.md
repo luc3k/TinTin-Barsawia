@@ -166,7 +166,7 @@ mapa Barsawii z terenami Srodziemia: Bree, Hobbitonu, Michel Delving, Igielniczk
 
 Polaczenie jest przez fregate z Lond Daer do Daiche
 
-Earthdown: Daiche, Kratas, Kelevine, Jerris, Vivane, Straznica, Dorrath, Alkloon, Klasztor, Vrontok, Zajazd, Przewoz, Wielki Targ, Tadrin, Ethine
+Earthdown: Daiche, Kratas, Kelevine, Jerris, Vivane, Straznica, Dorrath, Alkloon, Klasztor, Vrontok, Zajazd, Przewoz, Wielki Targ, Tadrin, Ethine, Powietrzna przystan
 
 * barsawia.tin:
 

@@ -6,7 +6,15 @@
 	{
 		#return <faa>%0<170>[0/6]<099>
 	};
+	#elseif {"%0" == "LEDWO ZYWA"}
+	{
+		#return <fba>%0<170>[0/6]<099>
+	};
 	#elseif {"%0" == "ciezko ranny"}
+	{
+		#return <fba>%0<170>[1/6]<099>
+	};
+	#elseif {"%0" == "ciezko ranna"}
 	{
 		#return <fba>%0<170>[1/6]<099>
 	};
@@ -18,7 +26,15 @@
 	{
 		#return <fda>%0<170>[3/6]<099>
 	};
+	#elseif {"%0" == "ranna"}
+	{
+		#return <fda>%0<170>[3/6]<099>
+	};
 	#elseif {"%0" == "lekko ranny"}
+	{
+		#return <dfa>%0<170>[4/6]<099>
+	};
+	#elseif {"%0" == "lekko ranna"}
 	{
 		#return <dfa>%0<170>[4/6]<099>
 	};
