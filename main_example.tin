@@ -43,5 +43,3 @@
 #PATHDIR          {sw}  {ne}  {12}
 #PATHDIR          {u}  {d}  {16}
 #PATHDIR          {w}  {e}  {8}
-
-#VARIABLE         {automatyzm}  {0}

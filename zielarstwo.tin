@@ -19,16 +19,14 @@
 #ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b|\bgrzyba\b}{.*}.$}
 {
 	#variable aktywne_szukanie 0;
-	#regexp {%1%2%3%4} {podluzny cienki lisc} {odloz podluzny cienki lisc};
-	#else
-	{
-		#if {$automatyzm == 1}
-		{
-			otworz woreczek;
-			wloz ziola do woreczka;
-			zamknij woreczek
-		}
-	};
+#nop dac to pod bind	#regexp {%1%2%3%4} {podluzny cienki lisc} {odloz podluzny cienki lisc};
+#nop	#else
+#nop	{
+#nop dac to pod bind
+#nop			otworz woreczek;
+#nop			wloz ziola do woreczka;
+#nop			zamknij woreczek
+#nop	};
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
 	#math {ziola[%1%2%3%4][ilosc]} {${ziola[%1%2%3%4][ilosc]}+1};

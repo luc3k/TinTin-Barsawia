@@ -9,3 +9,6 @@ TODO:
 	#nop Jest jedenasta w poludnie, Manet, 23 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy. #line gag;
 	#nop Jest osma nad ranem, po wschodzie slonca, Deva, 27 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy.;
 #nop Jest druga w nocy, Sonet, 28 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy.
+
+
+byle akcje automatyczne jak pogon, scinanie drzew, chowanie ziol po znalezieniu (razem z usunieciem trawy jesli podniesiona) do jednego binda w stylu alt+costam
