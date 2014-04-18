@@ -105,7 +105,7 @@
 		};
 		#default
 		{
-			#showme {Zly parametr}
+			#echo {<faa>Zly parametr<088>}
 		}
 	}
 }
@@ -163,7 +163,7 @@
 		};
 		#default
 		{
-			#showme {Zly parametr}
+			#echo {<faa>Zly parametr<088>}
 		}
 	};
 	wloz krysztal do plecaka;
@@ -171,9 +171,9 @@
 }
 {5}
 
-#SUBSTITUTE       {Gdy zblizasz krysztal do sciany migoczace iskry wewnatrz stapiaja sie w wirujacy krag blasku, dajac znak o bliskosci mineralow.}                                                                                                             {<afa>%0<088>}  {5}
-#SUBSTITUTE       {Gdy zblizasz krysztal do sciany migoczace iskry wewnatrz wyraznie przyspieszaja, dajac znak o bliskosci mineralow.}                                                                                                {<afa>%0<088>}  {5}
 #SUBSTITUTE       {^Blade iskry poruszaja sie leniwie wewnatrz krysztalu.$}                                     {<faa>%0[BRAK KRUSZCA]<088>}   {5}
+#SUBSTITUTE       {^Gdy zblizasz krysztal do sciany migoczace iskry wewnatrz stapiaja sie w wirujacy krag blasku, dajac znak o bliskosci mineralow.$}                                                                                                               {<afa>%0<088>}  {5}
+#SUBSTITUTE       {^Gdy zblizasz krysztal do sciany migoczace iskry wewnatrz wyraznie przyspieszaja, dajac znak o bliskosci mineralow.$}                                                                                                  {<afa>%0<088>}  {5}
 #SUBSTITUTE       {^Strop zabezpieczony jest stemplami.$}                   {<afa>%0<088>}  {5}
 #VARIABLE         {gornik_komenda}  {spojrz}
 #VARIABLE         {kilof}  {0}

@@ -45,6 +45,8 @@
 
 #ACTION {^Jestes tak zmeczony, ze nie mozesz przemykac sie w tym kierunku.$}
 {
+	#line gag;
+	#echo {<fab>%0<099>};
 	#map undo
 }
 {5}

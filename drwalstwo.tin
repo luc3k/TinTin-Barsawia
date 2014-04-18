@@ -132,8 +132,8 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wk][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wk};
+	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
+	#variable wyrab_komenda {wez klode};
 	#variable wyrab_trwa 1;
 	#cr
 }
@@ -165,8 +165,8 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wk][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wk};
+	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
+	#variable wyrab_komenda {wez klode};
 	#variable wyrab_trwa 1;
 	#cr
 }
@@ -243,8 +243,8 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wk][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wk};
+	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
+	#variable wyrab_komenda {wez klode};
 	#variable wyrab_trwa 1;
 	#cr
 }
@@ -357,8 +357,8 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wk][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wk};
+	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
+	#variable wyrab_komenda {wez klode};
 	#variable wyrab_trwa 1;
 	#cr
 }

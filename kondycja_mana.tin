@@ -2,19 +2,11 @@
 
 #FUNCTION {kondycja}
 {
-	#if {"%0" == "LEDWO ZYWY"}
+	#if {"%0" == "LEDWO ZYW{Y|A}"}
 	{
 		#return <faa>%0<170>[0/6]<099>
 	};
-	#elseif {"%0" == "LEDWO ZYWA"}
-	{
-		#return <fba>%0<170>[0/6]<099>
-	};
-	#elseif {"%0" == "ciezko ranny"}
-	{
-		#return <fba>%0<170>[1/6]<099>
-	};
-	#elseif {"%0" == "ciezko ranna"}
+	#elseif {"%0" == "ciezko rann{y|a}"}
 	{
 		#return <fba>%0<170>[1/6]<099>
 	};
@@ -22,19 +14,11 @@
 	{
 		#return <fca>%0<170>[2/6]<099>
 	};
-	#elseif {"%0" == "ranny"}
+	#elseif {"%0" == "rann{y|a}"}
 	{
 		#return <fda>%0<170>[3/6]<099>
 	};
-	#elseif {"%0" == "ranna"}
-	{
-		#return <fda>%0<170>[3/6]<099>
-	};
-	#elseif {"%0" == "lekko ranny"}
-	{
-		#return <dfa>%0<170>[4/6]<099>
-	};
-	#elseif {"%0" == "lekko ranna"}
+	#elseif {"%0" == "lekko rann{y|a}"}
 	{
 		#return <dfa>%0<170>[4/6]<099>
 	};
@@ -58,11 +42,11 @@
 	{
 		#return <faa>%0<170>[0/8]<099>
 	};
-	#elseif {"%0" == "wykonczony"}
+	#elseif {"%0" == "wykonczon{y|a}"}
 	{
 		#return <fba>%0<170>[1/8]<099>
 	};
-	#elseif {"%0" == "wyczerpany"}
+	#elseif {"%0" == "wyczerpan{y|a}"}
 	{
 		#return <fca>%0<170>[2/8]<099>
 	};
@@ -70,19 +54,19 @@
 	{
 		#return <fda>%0<170>[3/8]<099>
 	};
-	#elseif {"%0" == "bardzo zmeczony"}
+	#elseif {"%0" == "bardzo zmeczon{y|a}"}
 	{
 		#return <ffa>%0<170>[4/8]<099>
 	};
-	#elseif {"%0" == "zmeczony"}
+	#elseif {"%0" == "zmeczon{y|a}"}
 	{
 		#return <efa>%0<170>[5/8]<099>
 	};
-	#elseif {"%0" == "oslabiony"}
+	#elseif {"%0" == "oslabion{y|a}"}
 	{
 		#return <dfa>%0<170>[6/8]<099>
 	};
-	#elseif {"%0" == "lekko oslabiony"}
+	#elseif {"%0" == "lekko oslabion{y|a}"}
 	{
 		#return <cfa>%0<170>[7/8]<099>
 	};

@@ -2,31 +2,31 @@
 
 #FUNCTION {upicie}
 {
-	#if {"%0" == "nawalony"}
+	#if {"%0" == "nawalon{y|a}"}
 	{
 		#return <faa>%0<170>[0/6]<099>
 	};
-	#elseif {"%0" == "schlany"}
+	#elseif {"%0" == "schlan{y|a}"}
 	{
 		#return <fca>%0<170>[1/6]<099>
 	};
-	#elseif {"%0" == "pijany"}
+	#elseif {"%0" == "pijan{y|a}"}
 	{
 		#return <fda>%0<170>[2/6]<099>
 	};
-	#elseif {"%0" == "wstawiony"}
+	#elseif {"%0" == "wstawion{y|a}"}
 	{
 		#return <ffa>%0<170>[3/6]<099>
 	};
-	#elseif {"%0" == "podpity"}
+	#elseif {"%0" == "podpit{y|a}"}
 	{
 		#return <dfa>%0<170>[4/6]<099>
 	};
-	#elseif {"%0" == "podchmielony"}
+	#elseif {"%0" == "podchmielon{y|a}"}
 	{
 		#return <cfa>%0<170>[5/6]<099>
 	};
-	#elseif {"%0" == "trzezwy"}
+	#elseif {"%0" == "trzezw{y|a}"}
 	{
 		#return <bfa>%0<170>[6/6]<099>
 	};
@@ -36,6 +36,6 @@
 	}
 }
 
-#SUBSTITUTE       {^Jestes {trzezwy|podchmielony|podpity|wstawiony|pijany|schlany|nawalony}{%+|}.$}                                                             {Jestes @upicie{%1}%2<099>.}   {5}
+#SUBSTITUTE       {^Jestes {trzezw(y|a)|podchmielon(y|a)|podpit(y|a)|wstawion(y|a)|pijan(y|a)|schlan(y|a)|nawalon(y|a)}{%+|}.$}                                                                                         {Jestes @upicie{%1}%3<099>.}   {5}
 
 #CLASS {upicie} CLOSE

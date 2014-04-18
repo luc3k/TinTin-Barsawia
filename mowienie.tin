@@ -87,7 +87,7 @@
 }
 {5}
 
-#ALIAS {/showknown}
+#ALIAS {/znane}
 {
 	#foreach {$znane[]} {name}
 	{

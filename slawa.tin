@@ -1,15 +1,15 @@
 #CLASS {slawa} OPEN
 
-#SUBSTITUTE       {^Jestes zupelnie anonimowy w wielkim swiecie, w ktorym przyszlo ci zyc.$}  {<faa>%0<170>[0/10]<099>}  {5}
+#SUBSTITUTE       {^Jestes zupelnie anonimow{y|a} w wielkim swiecie, w ktorym przyszlo ci zyc.$}  {<faa>%0<170>[0/10]<099>}  {5}
 #SUBSTITUTE       {^Poki co malo kto cie kojarzy$}  {<fba>%0<170>[1/10]<099>}  {5}
 #SUBSTITUTE       {^Niewielu jeszcze osobom bylo dane poznac twoje imie.$}  {<fca>%0<170>[2/10]<099>}  {5}
-#SUBSTITUTE       {^Powoli stajesz sie rozpoznawalny w okolicznych wioskach i osadach.$}  {<fda>%0<170>[3/10]<099>}  {5}
-#SUBSTITUTE       {^Nad swa rozpoznawalnoscia bedziesz musial jeszcze dlugo i ciezko pracowac.$}  {<fea>%0<170>[4/10]<099>}  {5}
-#SUBSTITUTE       {^Wykonales juz kilka donioslych zlecen$}  {<ffa>%0<170>[5/10]<099>}  {5}
+#SUBSTITUTE       {^Powoli stajesz sie rozpoznawaln{y|a} w okolicznych wioskach i osadach.$}  {<fda>%0<170>[3/10]<099>}  {5}
+#SUBSTITUTE       {^Nad swa rozpoznawalnoscia bedziesz musia{l|la} jeszcze dlugo i ciezko pracowac.$}  {<fea>%0<170>[4/10]<099>}  {5}
+#SUBSTITUTE       {^Wykonal{es|as} juz kilka donioslych zlecen$}  {<ffa>%0<170>[5/10]<099>}  {5}
 #SUBSTITUTE       {^Jestes kims, kto wiele juz przeszedl, a twe imie wielu osobom nie jest obce$}  {<efa>%0<170>[6/10]<099>}  {5}
 #SUBSTITUTE       {^Wszedzie gdzie sie zjawiasz, czyjes problemy wkrotce znikaja$}  {<dfa>%0<170>[7/10]<099>}  {5}
 #SUBSTITUTE       {^Wiesc o twojej niezawodnosci obiegla juz szeroko pobliskie krainy$}  {<cfa>%0<170>[8/10]<099>}  {5}
-#SUBSTITUTE       {^Wiesc o twoich czynach roznosi sie szybciej niz moglbys sie spodziewac.$}  {<bfa>%0<170>[9/10]<099>}  {5}
-#SUBSTITUTE       {^Powoli stajesz sie glownym bohaterem ludowych piesni.$}  {<afa>%0<170>[10/10]<099>}  {5}
+#SUBSTITUTE       {^Wiesc o twoich czynach roznosi sie szybciej niz mogl{a|}bys sie spodziewac.$}  {<bfa>%0<170>[9/10]<099>}  {5}
+#SUBSTITUTE       {^Powoli stajesz sie glown{ym|a} bohater{em|ka} ludowych piesni.$}  {<afa>%0<170>[10/10]<099>}  {5}
 
 #CLASS {slawa} CLOSE

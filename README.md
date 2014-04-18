@@ -137,7 +137,7 @@ alias na `przeczytaj cos`
 
 Wyswietla komendy jakich sie uzywa przy scinaniu drzew.
 
-`/showknown`
+`/znane`
 
 Wyswietla wszystkie poznaje osoby czy to npc czy graczy lacznie z lokacja gdzie byly poznane. (W przypadku jegomoscia z dylizansu lokacja jest bledna, za to dodana jest notka)
 

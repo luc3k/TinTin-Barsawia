@@ -1,11 +1,5 @@
 #CLASS {aliases} OPEN
 
-#ALIAS {/barak}
-{
-	#map run {2606} {1.5}
-}
-{5}
-
 #ALIAS {/findroom}
 {
 	#map goto {$last_room}
@@ -107,12 +101,6 @@
 #ALIAS {/konto}
 {
 	#variable postacie[$nazwa_postaci][konta][%1] 1
-}
-{5}
-
-#ALIAS {/kuzu}
-{
-	#map run {3409} {1.5}
 }
 {5}
 
@@ -247,18 +235,12 @@
 }
 {5}
 
-#ALIAS {/sells}
+#ALIAS {/sps}
 {
 	otworz plecak;
 	wez skory z plecaka;
 	sprzedaj skory;
 	zamknij plecak
-}
-{5}
-
-#ALIAS {/ssklep}
-{
-	#map run {1960} {2}
 }
 {5}
 

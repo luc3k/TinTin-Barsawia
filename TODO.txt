@@ -2,10 +2,3 @@ poziomy:
 porownania sily, porownania wytrzymalosci, porownania zrecznosci
 
 dlugosci brody, dlugosci wasow, dlugosci wlosow, dobrego charakteru, zarostu, zlego charakteru, postaci, walecznosci, zardzewienia, urody kobiet, urody mezczyzn, strachu, kaca, trwalosci unikatow, trwalosci broni i zbroi, trwalosci unikatow, jakosci wykonania zbroi, jakosci zbroi
-
-
-TODO:
-	#nop kolejne dni ;
-	#nop Jest jedenasta w poludnie, Manet, 23 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy. #line gag;
-	#nop Jest osma nad ranem, po wschodzie slonca, Deva, 27 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy.;
-#nop Jest druga w nocy, Sonet, 28 dzien miesiaca Veltom wedlug kalendarza Throalu. Mamy pore ostatnich deszczy.

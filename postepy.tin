@@ -1,15 +1,15 @@
 #CLASS {postepy} OPEN
 
-#SUBSTITUTE       {^Nie poczyniles zadnych postepow, od kiedy sie przebudziles.$}  {<faa>%0<170>[0/25]<099>}  {5}
-#SUBSTITUTE       {^Wyglada na to, ze nie nauczyles sie dzis jeszcze niczego znaczacego.$}  {<fba>%0<170>[1/25]<099>}  {5}
-#SUBSTITUTE       {^Jak do tej pory wyciagnales niewiele przydatnych wnioskow z dzisiejszego dnia.$}  {<fca>%0<170>[2/25]<099>}  {5}
+#SUBSTITUTE       {^Nie poczynil{es|as} zadnych postepow, od kiedy sie przebudzil{es|as}.$}  {<faa>%0<170>[0/25]<099>}  {5}
+#SUBSTITUTE       {^Wyglada na to, ze nie nauczyl{es|as} sie dzis jeszcze niczego znaczacego.$}  {<fba>%0<170>[1/25]<099>}  {5}
+#SUBSTITUTE       {^Jak do tej pory wyciagnal{es|as} niewiele przydatnych wnioskow z dzisiejszego dnia.$}  {<fca>%0<170>[2/25]<099>}  {5}
 #SUBSTITUTE       {^Niewykluczone, ze po dzisiejszym dniu zostanie ci w glowie cos nowego.$}  {<fda>%0<170>[3/25]<099>}  {5}
 #SUBSTITUTE       {^Wydaje ci sie, ze ten dzien przyniosl ci juz odrobine nowych doswiadczen.$}  {<fea>%0<170>[4/25]<099>}  {5}
-#SUBSTITUTE       {^Chyba przyswoiles juz dzis kilka nowych umiejetnosci.$}  {<ffa>%0<170>[5/25]<099>}  {5}
+#SUBSTITUTE       {^Chyba przyswoil{es|as} juz dzis kilka nowych umiejetnosci.$}  {<ffa>%0<170>[5/25]<099>}  {5}
 #SUBSTITUTE       {^Masz powody przypuszczac, ze jakas czesc nabytych dzis doswiadczen zaowocuje w przyszlosci.$}  {<eea>%0<170>[6/25]<099>}  {5}
-#SUBSTITUTE       {^Jak narazie nauczyles sie dzis paru rzeczy, ktore powinny jeszcze kiedys ci sie przydac.$}  {<eeb>%0<170>[7/25]<099>}  {5}
-#SUBSTITUTE       {^Nabyte dzis doswiadczenia uczynily cie nieco lepszym poszukiwaczem przygod.$}  {<eec>%0<170>[8/25]<099>}  {5}
-#SUBSTITUTE       {^Z pewnoscia przyswoiles dzis troche wiedzy przydatnej w podrozach.$}  {<eed>%0<170>[9/25]<099>}  {5}
+#SUBSTITUTE       {^Jak narazie nauczyl{es|as} sie dzis paru rzeczy, ktore powinny jeszcze kiedys ci sie przydac.$}  {<eeb>%0<170>[7/25]<099>}  {5}
+#SUBSTITUTE       {^Nabyte dzis doswiadczenia uczynily cie nieco lepsz{ym|a} poszukiwacz{em|ka} przygod.$}  {<eec>%0<170>[8/25]<099>}  {5}
+#SUBSTITUTE       {^Z pewnoscia przyswoil{es|as} dzis troche wiedzy przydatnej w podrozach.$}  {<eed>%0<170>[9/25]<099>}  {5}
 #SUBSTITUTE       {^Ciezar ostatnich przezyc wywarl na tobie pozytywne zmiany.$}  {<eee>%0<170>[10/25]<099>}  {5}
 #SUBSTITUTE       {^Ostatnie przejscia zaowocowaly u ciebie spora iloscia nowej wiedzy.$}  {<eef>%0<170>[11/25]<099>}  {5}
 #SUBSTITUTE       {^Wnioski wyciagniete z ostatnich przygod znaczaco zasilaja pule twoich doswiadczen.$}  {<faa>%0<170>[12/25]<099>}  {5}
@@ -17,14 +17,14 @@
 #SUBSTITUTE       {^Ostatnie wydarzenia okazaly sie dla ciebie sposobnoscia do nabycia wielu nieznanych ci wczesniej umiejetnosci.$}  {<bdf>%0<170>[14/25]<099>}  {5}
 #SUBSTITUTE       {^Mnogosc twoich ostatnich przezyc wiele cie nauczyla.$}  {<bcf>%0<170>[15/25]<099>}  {5}
 #SUBSTITUTE       {^Twoje ostatnie przejscia obfitowaly w nowe doswiadczenia.$}  {<bbf>%0<170>[16/25]<099>}  {5}
-#SUBSTITUTE       {^Z cala pewnoscia mocno rozwinales ostatnio swoje umiejetnosci.$}  {<bce>%0<170>[17/25]<099>}  {5}
+#SUBSTITUTE       {^Z cala pewnoscia mocno rozwin{ales|elas} ostatnio swoje umiejetnosci.$}  {<bce>%0<170>[17/25]<099>}  {5}
 #SUBSTITUTE       {^Twoje niedawne przygody przyprawily cie o bardzo wiele nowych doswiadczen.$}  {<bcd>%0<170>[18/25]<099>}  {5}
-#SUBSTITUTE       {^Podczas swojej niedawnej wedrowki zdobyles mnostwo nowej wiedzy.$}  {<bcc>%0<170>[19/25]<099>}  {5}
+#SUBSTITUTE       {^Podczas swojej niedawnej wedrowki zdobyl{es|as} mnostwo nowej wiedzy.$}  {<bcc>%0<170>[19/25]<099>}  {5}
 #SUBSTITUTE       {^Dokonane przez ciebie ostatnio wyczyny pozostawily trwaly slad wsrod twoich doswiadczen.$}  {<bcb>%0<170>[20/25]<099>}  {5}
 #SUBSTITUTE       {^Liczne ostatnio przygody odbily sie bardzo mocno na twoich doswiadczeniach.$}  {<bca>%0<170>[21/25]<099>}  {5}
-#SUBSTITUTE       {^Sciezka, ktora podazales ostatnimi czasy uczyla cie czegos nowego na kazdym kroku.$}  {<bda>%0<170>[22/25]<099>}  {5}
-#SUBSTITUTE       {^Nabyles mnostwo nowych umiejetnosci podczas ostatnich przygod.$}  {<bea>%0<170>[23/25]<099>}  {5}
-#SUBSTITUTE       {^Minione wydarzenia, ktorych byles glownym aktorem, wywarly ogromne zmiany na twoim doswiadczeniu.$}  {<aea>%0<170>[24/25]<099>}  {5}
-#SUBSTITUTE       {^Ogrom doswiadczen, jakich nabyles podczas ostatnich przygod jest wrecz nie do opisania.$}  {<afa>%0<170>[25/25]<099>}  {5}
+#SUBSTITUTE       {^Sciezka, ktora podazal{es|as} ostatnimi czasy uczyla cie czegos nowego na kazdym kroku.$}  {<bda>%0<170>[22/25]<099>}  {5}
+#SUBSTITUTE       {^Nabyl{es|as} mnostwo nowych umiejetnosci podczas ostatnich przygod.$}  {<bea>%0<170>[23/25]<099>}  {5}
+#SUBSTITUTE       {^Minione wydarzenia, ktorych byl{es|as} glown{ym|a} aktor{em|ka}, wywarly ogromne zmiany na twoim doswiadczeniu.$}  {<aea>%0<170>[24/25]<099>}  {5}
+#SUBSTITUTE       {^Ogrom doswiadczen, jakich nabyl{es|as} podczas ostatnich przygod jest wrecz nie do opisania.$}  {<afa>%0<170>[25/25]<099>}  {5}
 
 #CLASS {postepy} CLOSE

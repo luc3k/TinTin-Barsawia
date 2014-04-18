@@ -2,43 +2,43 @@
 
 #FUNCTION {inteligencja}
 {
-	#if {"%0" == "bezmyslny"}
+	#if {"%0" == "bezmysln{y|a}"}
 	{
 		#return <faa>%0<170>[0/9]<099>
 	};
-	#elseif {"%0" == "tepy"}
+	#elseif {"%0" == "tep{y|a}"}
 	{
 		#return <fba>%0<170>[1/9]<099>
 	};
-	#elseif {"%0" == "prymitywny"}
+	#elseif {"%0" == "prymitywn{y|a}"}
 	{
 		#return <fca>%0<170>[2/9]<099>
 	};
-	#elseif {"%0" == "ograniczony"}
+	#elseif {"%0" == "ograniczon{y|a}"}
 	{
 		#return <fda>%0<170>[3/9]<099>
 	};
-	#elseif {"%0" == "pojetny"}
+	#elseif {"%0" == "pojetn{y|a}"}
 	{
 		#return <fea>%0<170>[4/9]<099>
 	};
-	#elseif {"%0" == "inteligentny"}
+	#elseif {"%0" == "inteligentn{y|a}"}
 	{
 		#return <ffa>%0<170>[5/9]<099>
 	};
-	#elseif {"%0" == "bystry"}
+	#elseif {"%0" == "bystr{y|a}"}
 	{
 		#return <efa>%0<170>[6/9]<099>
 	};
-	#elseif {"%0" == "rezolutny"}
+	#elseif {"%0" == "rezolutn{y|a}"}
 	{
 		#return <dfa>%0<170>[7/9]<099>
 	};
-	#elseif {"%0" == "blyskotliwy"}
+	#elseif {"%0" == "blyskotliw{y|a}"}
 	{
 		#return <cfa>%0<170>[8/9]<099>
 	};
-	#elseif {"%0" == "genialny"}
+	#elseif {"%0" == "genialn{y|a}"}
 	{
 		#return <bfa>%0<170>[9/9]<099>
 	};
@@ -50,43 +50,43 @@
 
 #FUNCTION {madrosc}
 {
-	#if {"%0" == "glupi"}
+	#if {"%0" == "glupi{a|}"}
 	{
 		#return <faa>%0<170>[0/9]<099>
 	};
-	#elseif {"%0" == "zacofany"}
+	#elseif {"%0" == "zacofan{y|a}"}
 	{
 		#return <fba>%0<170>[1/9]<099>
 	};
-	#elseif {"%0" == "przyglupi"}
+	#elseif {"%0" == "przyglupi{a|}"}
 	{
 		#return <fca>%0<170>[2/9]<099>
 	};
-	#elseif {"%0" == "niewyksztalcony"}
+	#elseif {"%0" == "niewyksztalcon{y|a}"}
 	{
 		#return <fda>%0<170>[3/9]<099>
 	};
-	#elseif {"%0" == "wyksztalcony"}
+	#elseif {"%0" == "wyksztalcon{y|a}"}
 	{
 		#return <fea>%0<170>[4/9]<099>
 	};
-	#elseif {"%0" == "madry"}
+	#elseif {"%0" == "madr{y|a}"}
 	{
 		#return <ffa>%0<170>[5/9]<099>
 	};
-	#elseif {"%0" == "uczony"}
+	#elseif {"%0" == "uczon{y|a}"}
 	{
 		#return <efa>%0<170>[6/9]<099>
 	};
-	#elseif {"%0" == "oswiecony"}
+	#elseif {"%0" == "oswiecon{y|a}"}
 	{
 		#return <dfa>%0<170>[7/9]<099>
 	};
-	#elseif {"%0" == "erudycyjny"}
+	#elseif {"%0" == "erudycyjn{y|a}"}
 	{
 		#return <cfa>%0<170>[8/9]<099>
 	};
-	#elseif {"%0" == "wszechwiedzacy"}
+	#elseif {"%0" == "wszechwiedzac{y|a}"}
 	{
 		#return <bfa>%0<170>[9/9]<099>
 	};
@@ -98,43 +98,43 @@
 
 #FUNCTION {odwaga}
 {
-	#if {"%0" == "tchorzliwy"}
+	#if {"%0" == "tchorzliw{y|a}"}
 	{
 		#return <faa>%0<170>[0/9]<099>
 	};
-	#elseif {"%0" == "strachliwy"}
+	#elseif {"%0" == "strachliw{y|a}"}
 	{
 		#return <fba>%0<170>[1/9]<099>
 	};
-	#elseif {"%0" == "bojazliwy"}
+	#elseif {"%0" == "bojazliw{y|a}"}
 	{
 		#return <fca>%0<170>[2/9]<099>
 	};
-	#elseif {"%0" == "niepewny"}
+	#elseif {"%0" == "niepewn{y|a}"}
 	{
 		#return <fda>%0<170>[3/9]<099>
 	};
-	#elseif {"%0" == "zdecydowany"}
+	#elseif {"%0" == "zdecydowan{y|a}"}
 	{
 		#return <fea>%0<170>[4/9]<099>
 	};
-	#elseif {"%0" == "odwazny"}
+	#elseif {"%0" == "odwazn{y|a}"}
 	{
 		#return <ffa>%0<170>[5/9]<099>
 	};
-	#elseif {"%0" == "dzielny"}
+	#elseif {"%0" == "dzieln{y|a}"}
 	{
 		#return <efa>%0<170>[6/9]<099>
 	};
-	#elseif {"%0" == "nieulekly"}
+	#elseif {"%0" == "nieulekl{y|a}"}
 	{
 		#return <dfa>%0<170>[7/9]<099>
 	};
-	#elseif {"%0" == "nieugiety"}
+	#elseif {"%0" == "nieugiet{y|a}"}
 	{
 		#return <cfa>%0<170>[8/9]<099>
 	};
-	#elseif {"%0" == "nieustraszony"}
+	#elseif {"%0" == "nieustraszon{y|a}"}
 	{
 		#return <bfa>%0<170>[9/9]<099>
 	};
@@ -146,43 +146,43 @@
 
 #FUNCTION {sila}
 {
-	#if {"%0" == "slabiutki"}
+	#if {"%0" == "slabiutk{i|a}"}
 	{
 		#return <faa>%0<170>[0/9]<099>
 	};
-	#elseif {"%0" == "watly"}
+	#elseif {"%0" == "watl{y|a}"}
 	{
 		#return <fba>%0<170>[1/9]<099>
 	};
-	#elseif {"%0" == "slabowity"}
+	#elseif {"%0" == "slabowit{y|a}"}
 	{
 		#return <fca>%0<170>[2/9]<099>
 	};
-	#elseif {"%0" == "slaby"}
+	#elseif {"%0" == "slab{y|a}"}
 	{
 		#return <fda>%0<170>[3/9]<099>
 	};
-	#elseif {"%0" == "krzepki"}
+	#elseif {"%0" == "krzepk{i|a}"}
 	{
 		#return <fea>%0<170>[4/9]<099>
 	};
-	#elseif {"%0" == "silny"}
+	#elseif {"%0" == "siln{y|a}"}
 	{
 		#return <ffa>%0<170>[5/9]<099>
 	};
-	#elseif {"%0" == "mocny"}
+	#elseif {"%0" == "mocn{y|a}"}
 	{
 		#return <efa>%0<170>[6/9]<099>
 	};
-	#elseif {"%0" == "tegi"}
+	#elseif {"%0" == "teg{i|a}"}
 	{
 		#return <dfa>%0<170>[7/9]<099>
 	};
-	#elseif {"%0" == "potezny"}
+	#elseif {"%0" == "potezn{y|a}"}
 	{
 		#return <cfa>%0<170>[8/9]<099>
 	};
-	#elseif {"%0" == "mocarny"}
+	#elseif {"%0" == "mocarn{y|a}"}
 	{
 		#return <bfa>%0<170>[9/9]<099>
 	};
@@ -194,43 +194,43 @@
 
 #FUNCTION {wytrzymalosc}
 {
-	#if {"%0" == "cherlawy"}
+	#if {"%0" == "cherlaw{y|a}"}
 	{
 		#return <faa>%0<170>[0/9]<099>
 	};
-	#elseif {"%0" == "rachityczny"}
+	#elseif {"%0" == "rachityczn{y|a}"}
 	{
 		#return <fba>%0<170>[1/9]<099>
 	};
-	#elseif {"%0" == "chuchrowaty"}
+	#elseif {"%0" == "chuchrowat{y|a}"}
 	{
 		#return <fca>%0<170>[2/9]<099>
 	};
-	#elseif {"%0" == "mizerny"}
+	#elseif {"%0" == "mizern{y|a}"}
 	{
 		#return <fda>%0<170>[3/9]<099>
 	};
-	#elseif {"%0" == "dobrze zbudowany"}
+	#elseif {"%0" == "dobrze zbudowan{y|a}"}
 	{
 		#return <fea>%0<170>[4/9]<099>
 	};
-	#elseif {"%0" == "wytrzymaly"}
+	#elseif {"%0" == "wytrzymal{y|a}"}
 	{
 		#return <ffa>%0<170>[5/9]<099>
 	};
-	#elseif {"%0" == "twardy"}
+	#elseif {"%0" == "tward{y|a}"}
 	{
 		#return <efa>%0<170>[6/9]<099>
 	};
-	#elseif {"%0" == "zahartowany"}
+	#elseif {"%0" == "zahartowan{y|a}"}
 	{
 		#return <dfa>%0<170>[7/9]<099>
 	};
-	#elseif {"%0" == "muskularny"}
+	#elseif {"%0" == "muskularn{y|a}"}
 	{
 		#return <cfa>%0<170>[8/9]<099>
 	};
-	#elseif {"%0" == "altetyczny"}
+	#elseif {"%0" == "altetyczn{y|a}"}
 	{
 		#return <bfa>%0<170>[9/9]<099>
 	};
@@ -242,43 +242,43 @@
 
 #FUNCTION {zrecznosc}
 {
-	#if {"%0" == "nieskoordynowany"}
+	#if {"%0" == "nieskoordynowan{y|a}"}
 	{
 		#return <faa>%0<170>[0/9]<099>
 	};
-	#elseif {"%0" == "niezreczny"}
+	#elseif {"%0" == "niezreczn{y|a}"}
 	{
 		#return <fba>%0<170>[1/9]<099>
 	};
-	#elseif {"%0" == "nieporadny"}
+	#elseif {"%0" == "nieporadn{y|a}"}
 	{
 		#return <fca>%0<170>[2/9]<099>
 	};
-	#elseif {"%0" == "niezgrabny"}
+	#elseif {"%0" == "niezgrabn{y|a}"}
 	{
 		#return <fda>%0<170>[3/9]<099>
 	};
-	#elseif {"%0" == "sprawny"}
+	#elseif {"%0" == "sprawn{y|a}"}
 	{
 		#return <fea>%0<170>[4/9]<099>
 	};
-	#elseif {"%0" == "zwinny"}
+	#elseif {"%0" == "zwinn{y|a}"}
 	{
 		#return <ffa>%0<170>[5/9]<099>
 	};
-	#elseif {"%0" == "zreczny"}
+	#elseif {"%0" == "zreczn{y|a}"}
 	{
 		#return <efa>%0<170>[6/9]<099>
 	};
-	#elseif {"%0" == "wygimnastykowany"}
+	#elseif {"%0" == "wygimnastykowan{y|a}"}
 	{
 		#return <dfa>%0<170>[7/9]<099>
 	};
-	#elseif {"%0" == "gibki"}
+	#elseif {"%0" == "gibk{i|a}"}
 	{
 		#return <cfa>%0<170>[8/9]<099>
 	};
-	#elseif {"%0" == "akrobatyczny"}
+	#elseif {"%0" == "akrobatyczn{y|a}"}
 	{
 		#return <bfa>%0<170>[9/9]<099>
 	};

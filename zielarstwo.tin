@@ -42,6 +42,15 @@
 }
 {5}
 
+#ALIAS {/otraw}
+{
+	otworz woreczek;
+	wez trawe z woreczka;
+	odloz trawe;
+	zamknij woreczek
+}
+{5}
+
 #ALIAS {/schowajz}
 {
 	otworz woreczek;
@@ -50,21 +59,12 @@
 }
 {5}
 
-#ALIAS {/sellz}
+#ALIAS {/spz}
 {
 	otworz woreczek;
 	wez ziola z woreczka;
 	zamknij woreczek;
 	sprzedaj ziola
-}
-{5}
-
-#ALIAS {/troff}
-{
-	otworz woreczek;
-	wez trawe z woreczka;
-	odloz trawe;
-	zamknij woreczek
 }
 {5}
 
