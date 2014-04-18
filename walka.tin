@@ -78,27 +78,43 @@
 }
 {5}
 
+#ALIAS {/d}
+{
+	dzgnij %1 sztyletem
+}
+{5}
+
 #ALIAS {/schowajs}
 {
-	otworz plecak;
-	wloz skore do plecaka;
-	zamknij plecak
+	#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+	otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	wloz skore do $dopelniacz;
+	zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	#unvariable dopelniacz
 }
 {5}
 
-#ALIAS {/wezb}
+#ALIAS {/sps}
 {
-	#if {$scinanie == 1}
+	#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+	otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	wez skory z $dopelniacz;
+	sprzedaj skory;
+	zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	#unvariable dopelniacz
+}
+{5}
+
+#ALIAS {/u}
+{
+	#if {$ukrywanie == 1}
 	{
-		/drwal
+		ujawnij sie
 	};
-	dobadz topora z pierwszego temblaka
-}
-{5}
-
-#ALIAS {/wlozb}
-{
-	wloz topor do pierwszego temblaka
+	#else
+	{
+		ukryj sie
+	}
 }
 {5}
 

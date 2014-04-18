@@ -143,6 +143,39 @@
 }
 {5}
 
+#ALIAS {/poj}
+{
+	#variable postacie[$nazwa_postaci][glowny_pojemnik] %1;
+	save;
+	/pojemniki
+}
+{5}
+
+#ALIAS {/pojemniki}
+{
+	#echo {<afa>Ustawione pojemniki:<088>};
+	#echo {<afa>Pojemnik glowny:<bcf> ${postacie[$nazwa_postaci][glowny_pojemnik]}<088>};
+	#echo {<afa>Pojemnik na monety:<bcf> ${postacie[$nazwa_postaci][pojemnik_monety]}<088>};
+	#echo {<afa>Pojemnik na ziola:<bcf> ${postacie[$nazwa_postaci][pojemnik_ziola]}<088>}
+}
+{5}
+
+#ALIAS {/pojm}
+{
+	#variable postacie[$nazwa_postaci][pojemnik_monety] %1;
+	save;
+	/pojemniki
+}
+{5}
+
+#ALIAS {/pojz}
+{
+	#variable postacie[$nazwa_postaci][pojemnik_ziola] %1;
+	save;
+	/pojemniki
+}
+{5}
+
 #ALIAS {/przydatne}
 {
 	#echo {Przydatne komendy:};
@@ -235,15 +268,6 @@
 }
 {5}
 
-#ALIAS {/sps}
-{
-	otworz plecak;
-	wez skory z plecaka;
-	sprzedaj skory;
-	zamknij plecak
-}
-{5}
-
 #ALIAS {/stop}
 {
 	#undelay %*
@@ -253,17 +277,7 @@
 #ALIAS {/ubr}
 {
 	zabezpiecz wszystko;
-	naciagnij kaptur;
-	/wlk
-}
-{5}
-
-#ALIAS {/uloz}
-{
-	wyjmij siekiere z temblaka;
-	wyjmij ciemny topor z drugiego temblaka;
-	/wlozb;
-	wloz siekiere do drugiego temblaka
+	naciagnij kaptur
 }
 {5}
 
@@ -275,15 +289,20 @@
 
 #ALIAS {/wezk}
 {
-	wez kamienie z plecaka
+	#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+	wez kamienie z $dopelniacz;
+	#unvariable dopelniacz
 }
 {5}
 
 #ALIAS {/wezm}
 {
-	otworz sakwe;
-	wez monety z sakwy;
-	zamknij sakwe
+	#regexp {${postacie[$nazwa_postaci][pojemnik_monety]}} {sakwa} {#variable biernik sakwe;#variable dopelniacz sakwy};
+	otworz $biernik;
+	wez monety z $dopelniacz;
+	zamknij $biernik;
+	#unvariable dopelniacz;
+	#unvariable biernik
 }
 {5}
 
@@ -296,9 +315,18 @@
 
 #ALIAS {/wlozm}
 {
-	otworz sakwe;
-	wloz monety do sakwy;
-	zamknij sakwe
+	#regexp {${postacie[$nazwa_postaci][pojemnik_monety]}} {sakwa} {#variable biernik sakwe;#variable dopelniacz sakwy};
+	otworz $biernik;
+	wloz monety do $dopelniacz;
+	zamknij $biernik;
+	#unvariable dopelniacz;
+	#unvariable biernik
+}
+{5}
+
+#ALIAS {/wmc}
+{
+	wez monety z %1 ciala
 }
 {5}
 
@@ -370,7 +398,7 @@
 		};
 		#else
 		{
-			#showme You are already logging.
+			#echo Logowanie jest juz aktywne.
 		}
 	};
 	#elseif {"%0" == "off"}
@@ -382,12 +410,12 @@
 		};
 		#else
 		{
-			#showme You are not logging.
+			#echo Logowanie nie jest aktywne.
 		}
 	};
 	#else
 	{
-		#showme Turn logging on or off?
+		#echo Wlaczyc logowanie czy wylaczyc?
 	}
 }
 {5}
@@ -483,12 +511,6 @@
 #ALIAS {uwb}
 {
 	uderz w brame
-}
-{5}
-
-#ALIAS {wmc}
-{
-	wez monety z %1 ciala
 }
 {5}
 

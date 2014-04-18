@@ -44,27 +44,33 @@
 
 #ALIAS {/otraw}
 {
-	otworz woreczek;
-	wez trawe z woreczka;
+	#regexp {${postacie[$nazwa_postaci][pojemnik_ziola]}} {woreczek} {#variable dopelniacz woreczka};
+	otworz ${postacie[$nazwa_postaci][pojemnik_ziola]};
+	wez trawe z $dopelniacz;
 	odloz trawe;
-	zamknij woreczek
+	zamknij ${postacie[$nazwa_postaci][pojemnik_ziola]};
+	#unvariable dopelniacz
 }
 {5}
 
 #ALIAS {/schowajz}
 {
-	otworz woreczek;
-	wloz ziola do woreczka;
-	zamknij woreczek
+	#regexp {${postacie[$nazwa_postaci][pojemnik_ziola]}} {woreczek} {#variable dopelniacz woreczka};
+	otworz ${postacie[$nazwa_postaci][pojemnik_ziola]};
+	wloz ziola do $dopelniacz;
+	zamknij ${postacie[$nazwa_postaci][pojemnik_ziola]};
+	#unvariable dopelniacz
 }
 {5}
 
 #ALIAS {/spz}
 {
-	otworz woreczek;
-	wez ziola z woreczka;
-	zamknij woreczek;
-	sprzedaj ziola
+	#regexp {${postacie[$nazwa_postaci][pojemnik_ziola]}} {woreczek} {#variable dopelniacz woreczka};
+	otworz ${postacie[$nazwa_postaci][pojemnik_ziola]};
+	wez ziola z $dopelniacz;
+	zamknij ${postacie[$nazwa_postaci][pojemnik_ziola]};
+	sprzedaj ziola;
+	#unvariable dopelniacz
 }
 {5}
 

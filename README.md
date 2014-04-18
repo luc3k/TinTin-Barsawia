@@ -141,13 +141,21 @@ Wyswietla komendy jakich sie uzywa przy scinaniu drzew.
 
 Wyswietla wszystkie poznaje osoby czy to npc czy graczy lacznie z lokacja gdzie byly poznane. (W przypadku jegomoscia z dylizansu lokacja jest bledna, za to dodana jest notka)
 
-`/wezb`
+`/pojemniki`
 
-Wyciaga bron z worka i jej dobywa
+Wyswietla ustawione pojemniki
 
-`/wlozb`
+`/poj`
 
-Opuszcza bron i chowa ja do worka
+Ustawia glowny pojemnik
+
+`/pojz`
+
+Ustawia pojemnik na ziola
+
+`/pojm`
+
+Ustawia pojemnik na monety
 
 ## Opis plikow:
 
