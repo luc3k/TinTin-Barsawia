@@ -1,5 +1,24 @@
 #CLASS {macros} OPEN
 
+#MACRO {\e1}
+{
+	#if {$enemy_run == 1}
+	{
+		$run_direction;
+		#variable enemy_run 0
+	};
+	#elseif {$znalezione_ziolo == 1}
+	{
+		$zielarska_komenda;
+		#variable znalezione_ziolo 0
+	};
+	#elseif {$wyrab_trwa == 1}
+	{
+		$wyrab_komenda;
+		#variable wyrab_trwa 0
+	}
+}
+
 #MACRO {\ea}
 {
 	#if {$szukanie_ziol == 0}
@@ -152,20 +171,31 @@
 
 #MACRO {\eq}
 {
-	#if {$enemy_run == 1}
+	#if {$szukanie_ziol == 0}
 	{
-		$run_direction;
-		#variable enemy_run 0
+		#if {$ukrywanie == 1}
+		{
+			przemknij na nw
+		};
+		#else
+		{
+			nw
+		}
 	};
-	#elseif {$znalezione_ziolo == 1}
+	#else
 	{
-		$zielarska_komenda;
-		#variable znalezione_ziolo 0
-	};
-	#elseif {$wyrab_trwa == 1}
-	{
-		$wyrab_komenda;
-		#variable wyrab_trwa 0
+		#if {$aktywne_szukanie == 0}
+		{
+			nw;
+			#if {$ziolo != 1}
+			{
+				szukaj $ziolo
+			};
+			#else
+			{
+				szukaj ziol
+			}
+		}
 	}
 }
 
