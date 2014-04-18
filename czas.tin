@@ -10,7 +10,7 @@
 }
 {5}
 
-#ACTION {^Jest {.*}, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{Harsa|Mittlen|Manet|Deva|Sonet}, %4 dzien miesiaca {Veltom|Charassa} wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy|okres pierwszych chlodow|okres przejsciowy pory deszczowej i suchej}.$}
+#ACTION {^Jest {.*}, {po zachodzie slonca, |po wschodzie slonca, |przed wschodem slonca, |}{Harsa|Mittlen|Manet|Deva|Sonet|Quarsi}, %4 dzien miesiaca {Veltom|Charassa} wedlug kalendarza Throalu. Mamy {okres intensywnych deszczy|apogeum pory deszczowej|pozna pore deszczowa|pore ostatnich deszczy|okres pierwszych chlodow|okres przejsciowy pory deszczowej i suchej}.$}
 {
 	#line gag;
 	#echo {<afa>%0<099>};

@@ -126,7 +126,7 @@
 
 #ACTION {^Ostatnie kawalki poszarpanych konarow i zniszczonej korowiny solidnie ociosanej klody %1 spadaja na ziemie. Kloda zostala calkowicie ociosana.$}
 {
-	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
+	#math {postacie[$nazwa_postaci][liczba_sc_drzew]} {${postacie[$nazwa_postaci][liczba_sc_drzew]}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
 	#math {postacie[$nazwa_postaci][drzewa][%1][ilosc]} {${postacie[$nazwa_postaci][drzewa][%1][ilosc]}+1};
 	save;
@@ -159,7 +159,7 @@
 
 #ACTION {^Ostatnimi ruchami rak dzierzacych %1 doczyszczasz solidnie ociosana klode %2, konczac prace nad powalona kloda.$}
 {
-	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
+	#math {postacie[$nazwa_postaci][liczba_sc_drzew]} {${postacie[$nazwa_postaci][liczba_sc_drzew]}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
 	#math {postacie[$nazwa_postaci][drzewa][%2][ilosc]} {${postacie[$nazwa_postaci][drzewa][%2][ilosc]}+1};
 	save;
@@ -237,7 +237,7 @@
 
 #ACTION {^Sprawnymi pociagnieciami %1 ostatecznie doczyszczasz powierzchnie solidnie ociosanej klody %2.$}
 {
-	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
+	#math {postacie[$nazwa_postaci][liczba_sc_drzew]} {${postacie[$nazwa_postaci][liczba_sc_drzew]}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
 	#math {postacie[$nazwa_postaci][drzewa][%2][ilosc]} {${postacie[$nazwa_postaci][drzewa][%2][ilosc]}+1};
 	save;
@@ -351,7 +351,7 @@
 
 #ACTION {^Wraz ze spadajacymi na lesne runo, ostatnimi fragmentami konarow i upartej kory konczysz prace nad solidnie ociosana kloda %1.$}
 {
-	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
+	#math {postacie[$nazwa_postaci][liczba_sc_drzew]} {${postacie[$nazwa_postaci][liczba_sc_drzew]}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
 	#math {postacie[$nazwa_postaci][drzewa][%1][ilosc]} {${postacie[$nazwa_postaci][drzewa][%1][ilosc]}+1};
 	save;
