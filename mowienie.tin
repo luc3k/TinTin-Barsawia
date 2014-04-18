@@ -61,6 +61,19 @@
 }
 {5}
 
+#ACTION {^{Mowisz|Krzyczysz} do %2: %3$}
+{
+	#line GAG;
+	#echo {<afa>%1 do %2:<bff> %3<099>};
+	#format {hour_format} {%t} {%H:%M:%S};
+	#format {log_day_format} {${nazwa_krainy}_logs/tells/%t.log} {%d-%m-%Y};
+	#line log $log_day_format {[$hour_format] <afa>%1 do %2:<bff> %3<099>};
+	#line log log.log {[$hour_format] <afa>%1 do %2:<bff> %3<099>};
+	#unvariable hour_format;
+	#unvariable log_day_format
+}
+{5}
+
 #ACTION {^{Mowisz|Krzyczysz}: %2$}
 {
 	#line GAG;

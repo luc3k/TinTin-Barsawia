@@ -104,6 +104,12 @@
 }
 {5}
 
+#ALIAS {/konto}
+{
+	#variable postacie[$nazwa_postaci][konta][%1] 1
+}
+{5}
+
 #ALIAS {/kuzu}
 {
 	#map run {3409} {1.5}
@@ -234,7 +240,10 @@
 	#class walka write walka.tin;
 	#class zielarstwo kill;
 	#class zielarstwo read zielarstwo.tin;
-	#class zielarstwo write zielarstwo.tin
+	#class zielarstwo write zielarstwo.tin;
+	#nop #class barsawia kill;
+	#nop #class barsawia read barsawia.tin;
+	#nop #class barsawia write barsawia.tin
 }
 {5}
 

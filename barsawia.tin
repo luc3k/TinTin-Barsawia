@@ -12,6 +12,17 @@
 #SPLIT 0 3
 #PROMPT           {^> %1}  {@prompt_f{%0}<fff>@remove_text{%1}<099>} {1}
 
+#PATHDIR          {d}  {u}  {32}
+#PATHDIR          {e}  {w}  {2}
+#PATHDIR          {n}  {s}  {1}
+#PATHDIR          {ne}  {sw}  {3}
+#PATHDIR          {nw}  {se}  {9}
+#PATHDIR          {s}  {n}  {4}
+#PATHDIR          {se}  {nw}  {6}
+#PATHDIR          {sw}  {ne}  {12}
+#PATHDIR          {u}  {d}  {16}
+#PATHDIR          {w}  {e}  {8}
+
 #PATHDIR          {gora}  {dol}  {16}
 #PATHDIR          {dol}  {gora}  {32}
 #PATHDIR          {polnoc}  {poludnie}  {1}
@@ -125,29 +136,32 @@
 	log on
 }
 
-#class actions read actions.tin
-#class aliases read aliases.tin
-#class bezpieczenstwo_zmeczenie read bezpieczenstwo_zmeczenie.tin
-#class cechy read cechy.tin
-#class ciezar read ciezar.tin
-#class czas read czas.tin
-#class drwalstwo read drwalstwo.tin
-#class glod_pragnienie read glod_pragnienie.tin
-#class gornictwo read gornictwo.tin
-#class jakosc_broni read jakosc_broni.tin
-#class kondycja_mana read kondycja_mana.tin	
-#class macros read macros.tin
-#class mowienie read mowienie.tin
-#class paczki read paczki.tin
-#class postepy read postepy.tin
-#class pracowitosc read pracowitosc.tin
-#class roza read roza.tin
-#class skutecznosc_broni read skutecznosc_broni.tin
-#class slawa read slawa.tin
-#class substitutes read substitutes.tin
-#class umiejetnosci read umiejetnosci.tin
-#class upicie read upicie.tin
-#class walka read walka.tin
-#class zielarstwo read zielarstwo.tin
+#alias {read_classes}
+{
+	#class actions read actions.tin;
+	#class aliases read aliases.tin;
+	#class bezpieczenstwo_zmeczenie read bezpieczenstwo_zmeczenie.tin;
+	#class cechy read cechy.tin;
+	#class ciezar read ciezar.tin;
+	#class czas read czas.tin;
+	#class drwalstwo read drwalstwo.tin;
+	#class glod_pragnienie read glod_pragnienie.tin;
+	#class gornictwo read gornictwo.tin;
+	#class jakosc_broni read jakosc_broni.tin;
+	#class kondycja_mana read kondycja_mana.tin;
+	#class macros read macros.tin;
+	#class mowienie read mowienie.tin;
+	#class paczki read paczki.tin;
+	#class postepy read postepy.tin;
+	#class pracowitosc read pracowitosc.tin;
+	#class roza read roza.tin;
+	#class skutecznosc_broni read skutecznosc_broni.tin;
+	#class slawa read slawa.tin;
+	#class substitutes read substitutes.tin;
+	#class umiejetnosci read umiejetnosci.tin;
+	#class upicie read upicie.tin;
+	#class walka read walka.tin;
+	#class zielarstwo read zielarstwo.tin;
+}
 
 #CLASS {barsawia} CLOSE
