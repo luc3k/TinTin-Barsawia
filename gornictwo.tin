@@ -30,20 +30,21 @@
 	#if {$kilof == 0}
 	{
 		#variable kilof 1;
-		#nop dobadz kilofa z drugiego temblaka;
-		otworz plecak;
-		wez kilof z plecaka;
-		dobadz kilofa;
-		zamknij plecak;
+		#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+		otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		wez kilof z $dopelniacz;
+		zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		#unvariable dopelniacz;
 		#cr
 	};
 	#elseif {$kilof == 1}
 	{
 		#variable kilof 0;
-		#nop wloz kilof do drugiego temblaka;
-		otworz plecak;
-		wloz kilof do plecaka;
-		zamknij plecak;
+		#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+		otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		wloz kilof do $dopelniacz;
+		zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		#unvariable dopelniacz;
 		#cr
 	}
 }
@@ -113,20 +114,23 @@
 
 #ALIAS {krzes}
 {
-	otworz plecak;
-	wez krzemien z plecaka;
+	#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+	otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	wez krzemien z $dopelniacz;
 	wez sztylet z pochwy;
 	krzesaj krzemieniem o sztylet na lampe;
-	wloz krzemien do plecaka;
+	wloz krzemien do $dopelniacz;
 	wloz sztylet do pochwy;
-	zamknij plecak
+	zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	#unvariable dopelniacz
 }
 {5}
 
 #ALIAS {zkr}
 {
-	otworz plecak;
-	wez krysztal z plecaka;
+	#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+	otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	wez krysztal z $dopelniacz;
 	#switch {"%1"}
 	{
 		#case {"n"}
@@ -166,8 +170,9 @@
 			#echo {<faa>Zly parametr<088>}
 		}
 	};
-	wloz krysztal do plecaka;
-	zamknij plecak
+	wloz krysztal do $dopelniacz;
+	zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+	#unvariable dopelniacz
 }
 {5}
 

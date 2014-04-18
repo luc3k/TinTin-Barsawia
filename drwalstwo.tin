@@ -405,20 +405,21 @@
 	#if {$scinanie == 0}
 	{
 		#variable scinanie 1;
-		#nop dobadz siekiery z drugiego temblaka;
-		otworz plecak;
-		wez siekiere z plecaka;
-		dobadz siekiery;
-		zamknij plecak;
+		#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+		otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		wez siekiere z $dopelniacz;
+		zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		#unvariable dopelniacz;
 		#cr
 	};
 	#elseif {$scinanie == 1}
 	{
 		#variable scinanie 0;
-		#nop wloz siekiere do drugiego temblaka;
-		otworz plecak;
-		wloz siekiere do plecaka;
-		zamknij plecak;
+		#regexp {${postacie[$nazwa_postaci][glowny_pojemnik]}} {plecak} {#variable dopelniacz plecaka};
+		otworz ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		wloz siekiere do $dopelniacz;
+		zamknij ${postacie[$nazwa_postaci][glowny_pojemnik]};
+		#unvariable dopelniacz;
 		#cr
 	}
 }
