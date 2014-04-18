@@ -2,3 +2,10 @@ poziomy:
 porownania sily, porownania wytrzymalosci, porownania zrecznosci
 
 dlugosci brody, dlugosci wasow, dlugosci wlosow, dobrego charakteru, zarostu, zlego charakteru, postaci, walecznosci, zardzewienia, urody kobiet, urody mezczyzn, strachu, kaca, trwalosci unikatow, trwalosci broni i zbroi, trwalosci unikatow, jakosci wykonania zbroi, jakosci zbroi
+
+
+bind na pogon tylko przy przestawionej zmiennej
+
+poziomy jakości wykonania zbroi - to samo co wywazenie, strach, głód i pragnienie mogą mieć dodatkowo słówko bardzo, przy pozytywnych przymiotnikach jest ono przy wartości lepszej, przy negatywnych przy gorszej dodane.
+
+?tytuly

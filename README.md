@@ -2,6 +2,42 @@
 
 Sa to skrypty dla polskiego muda [Barsawia](http://http://barsawia.pl/ "Barsawia") znajdujacego sie w swiecie z powiesci  J.R.R. Tolkiena oraz swiecie fabularnej gry RPG EarthDawn, Przebudzenie Ziemi.
 
+## Krotki opis mozliwosci:
+
+Wszystko dodawane jest "jak jest potrzebne" czyli np. pojemniki obsluguja tylko odmiane plecaka, sakwy, woreczka jednak latwo mozna dopisac cos innego albo poprosic o dopisanie przeze mnie.
+
+Obsluga pojemnikow z odmiana (sakwy, woreczki, plecaki).
+
+Ulatwienia dla zielarzy.
+
+Ulatwienia dla drwali.
+
+Ulatwienia dla gornikow.
+
+Ulatwienia w walce (dzganie, ukrywanie, przemykanie, wycinanie skor itd.).
+
+Wiele poziomow cech, stanow, zdrowia itd.
+
+Obsluga chodzenia z przemykaniem.
+
+Sporo nowych aliasow.
+
+Aktualizowana mapa z oznaczeniami/kolorami.
+
+Obsluga wielu postaci i zapisywanie ich danych jak zebrane ziola, sciete drzewa, zabici itd.
+
+Zapisywanie zbiorczo wszystkich poznanych osob/npc.
+
+Wsparcie dla mowienia.
+
+Podpowiedzi gdzie nalezy isc z paczka (w oparciu o dodana mape).
+
+Roza wiatrow w chodzeniu.
+
+Nowy prompt z paroma danymi.
+
+Inne :).
+
 ## Pobranie klienta TinTin++:
 
 Wersje dla OS X mozna pobrac za pomoca [Homebrew](http://brew.sh/ "Homebrew") przez komende `brew tintin`
@@ -58,11 +94,11 @@ Alias ten ustawia informacje jakie drzewo zostaje wlasnie scinane i w zasadzie t
 
 `/drwal`
 
-Wyciaga z worka siekiere i ustawia tryb scinania drzew. Pozwala to na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Wpisanie ponownie dezaktywuje tryb i chowa siekiere do worka.
+Ustawia tryb scinania drzew. Pozwala to na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Wpisanie ponownie dezaktywuje tryb.
 	
 `/zielarz <ziolo>`
 
-Ustawia tryb szukania ziol tj. przestawia macra na szukanie po wejsciu do lokacji. Pozwala tez na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Dodatkowo ustawia co ma byc szukane np. `/szukaj macierzanki`. Dodatkowo wyciaga sloik z worka. Wpisanie ponownie komendy /szukaj dezaktywuje wszystko i chowa sloik.
+Ustawia tryb szukania ziol tj. przestawia macra na szukanie po wejsciu do lokacji. Pozwala tez na to, ze w przypadku np. wywolania sie tekstu z "przestan" mapa nie zwariuje. Dodatkowo ustawia co ma byc szukane np. `/zielarz macierzanki`. Wpisanie ponownie komendy /zielarz dezaktywuje wszystko.
 
 `kk`
 
