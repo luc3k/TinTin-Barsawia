@@ -28,7 +28,7 @@
 	};
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
-	#math {ziola[%1%2%3%4][ilosc]} {${ziola[%1%2%3%4][ilosc]}+1};
+	#math {postacie[$nazwa_postaci][ziola][%1%2%3%4][ilosc]} {${postacie[$nazwa_postaci][ziola][%1%2%3%4][ilosc]}+1};
 	save;
 	#echo {<afa>%0<faa>[$zielarska_komenda]<099>}
 }

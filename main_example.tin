@@ -22,8 +22,10 @@
 {
 	#class barsawia read barsawia.tin;
 	#session Barsawia mud.barsawia.pl 23;
-	<nazwa postaci>;
-	<haslo>
+	#var nazwa_postaci {tu_wpisz_nazwe_postaci};
+	#var haslo_postaci {tu_wpisz_swoje_haslo_do_postaci};
+	$nazwa_postaci;
+	$haslo_postaci
 }
 
 #MACRO {\eOR}

@@ -7,6 +7,8 @@
 #VARIABLE         {godzina}  {00:00}
 #VARIABLE         {logfile}  {barsawia_logs/default.html}
 #VARIABLE         {logging}  {off}
+#VARIABLE		  {nazwa_postaci} {}
+#VARIABLE		  {haslo_postaci} {}
 #SPLIT 0 3
 #PROMPT           {^> %1}  {@prompt_f{%0}<fff>@remove_text{%1}<099>} {1}
 

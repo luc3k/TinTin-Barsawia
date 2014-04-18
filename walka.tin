@@ -64,7 +64,7 @@
 	#echo {<afa>Zabiles <cfa>%1 <ffa>%2.<099>};
 	#math {liczba_zabitych} {${liczba_zabitych}+1};
 	#math {dzis_zabitych} {${dzis_zabitych}+1};
-	#math {zabici[%2][ilosc]} {${zabici[%2][ilosc]}+1};
+	#math {postacie[$nazwa_postaci][zabici][%2][ilosc]} {${postacie[$nazwa_postaci][zabici][%2][ilosc]}+1};
 	#variable enemy_run 0;
 	save
 }

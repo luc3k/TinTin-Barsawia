@@ -128,7 +128,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
-	#math {drzewa[%1][ilosc]} {${drzewa[%1][ilosc]}+1};
+	#math {postacie[$nazwa_postaci][drzewa][%1][ilosc]} {${postacie[$nazwa_postaci][drzewa][%1][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -161,7 +161,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
-	#math {drzewa[%2][ilosc]} {${drzewa[%2][ilosc]}+1};
+	#math {postacie[$nazwa_postaci][drzewa][%2][ilosc]} {${postacie[$nazwa_postaci][drzewa][%2][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -239,7 +239,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
-	#math {drzewa[%2][ilosc]} {${drzewa[%2][ilosc]}+1};
+	#math {postacie[$nazwa_postaci][drzewa][%2][ilosc]} {${postacie[$nazwa_postaci][drzewa][%2][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
@@ -353,7 +353,7 @@
 {
 	#math {liczba_sc_drzew} {${liczba_sc_drzew}+1};
 	#math {dzis_sc_drzew} {${dzis_sc_drzew}+1};
-	#math {drzewa[%1][ilosc]} {${drzewa[%1][ilosc]}+1};
+	#math {postacie[$nazwa_postaci][drzewa][%1][ilosc]} {${postacie[$nazwa_postaci][drzewa][%1][ilosc]}+1};
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
