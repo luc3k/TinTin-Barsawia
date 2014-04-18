@@ -152,31 +152,20 @@
 
 #MACRO {\eq}
 {
-	#if {$szukanie_ziol == 0}
+	#if {$enemy_run == 1}
 	{
-		#if {$ukrywanie == 1}
-		{
-			przemknij na nw
-		};
-		#else
-		{
-			nw
-		}
+		$run_direction;
+		#variable enemy_run 0
 	};
-	#else
+	#elseif {$znalezione_ziolo == 1}
 	{
-		#if {$aktywne_szukanie == 0}
-		{
-			nw;
-			#if {$ziolo != 1}
-			{
-				szukaj $ziolo
-			};
-			#else
-			{
-				szukaj ziol
-			}
-		}
+		$zielarska_komenda;
+		#variable znalezione_ziolo 0
+	};
+	#elseif {$wyrab_trwa == 1}
+	{
+		$wyrab_komenda;
+		#variable wyrab_trwa 0
 	}
 }
 

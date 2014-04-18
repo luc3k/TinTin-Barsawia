@@ -11,10 +11,10 @@
 #ACTION {^%1 {w panice wybiega na|kica w panice na} %3.$}
 {
 	#line gag;
-	#echo {<ffa>%1 <faa>%2 <efa>%3.<099>};
+	#echo {<ffa>%1 <faa>%2 <efa>%3.<099><faa>[%3]<099>};
 	#if {$enemy_run == 1}
 	{
-#nop dac tu bind lapiacy %3
+		#variable run_direction {%3}
 	}
 }
 {5}
@@ -26,6 +26,7 @@
 	#math {liczba_zabitych} {${liczba_zabitych}+1};
 	#math {dzis_zabitych} {${dzis_zabitych}+1};
 	#math {zabici[%2][ilosc]} {${zabici[%2][ilosc]}+1};
+	#variable enemy_run 0;
 	save
 }
 {5}
@@ -98,5 +99,6 @@
 #SUBSTITUTE       {^%1 %2 %3 %4, trafiajac go w %5.$}               {@jakosc{%1} @typ{%2} @wrog{%3} @bron{%4}<afa>, trafiajac go w @miejsce{%5}<afa>.}                                                         {6}
 #VARIABLE         {dzis_zabitych}  {0}
 #VARIABLE         {enemy_run}  {0}
+#VARIABLE         {run_direction}  {spojrz}
 
 #CLASS {walka} CLOSE

@@ -2,9 +2,9 @@
 
 #ACTION {^Nie znajdujesz zadnych ziol.}
 {
+	#line gag;
 	#echo {<fab>%0<099>};
-	#variable {aktywne_szukanie} {0};
-	#line gag
+	#variable {aktywne_szukanie} {0}
 }
 {5}
 
@@ -18,29 +18,35 @@
 
 #ACTION {^Znajdujesz {?!sie}{.*}{\bkwiat\b|\blisc\b|\bkorzen\b|\blodyge\b|\bowoc\b|\bgrzyba\b}{.*}.$}
 {
+	#line GAG;
 	#variable aktywne_szukanie 0;
-#nop dac to pod bind	#regexp {%1%2%3%4} {podluzny cienki lisc} {odloz podluzny cienki lisc};
-#nop	#else
-#nop	{
-#nop dac to pod bind
-#nop			otworz woreczek;
-#nop			wloz ziola do woreczka;
-#nop			zamknij woreczek
-#nop	};
+	#variable znalezione_ziolo 1;
+	#regexp {%1%2%3%4} {podluzny cienki lisc} {#var zielarska_komenda {odloz podluzny cienki lisc}};
+	#else
+	{
+		#variable zielarska_komenda /schowajz
+	};
 	#math {liczba_zeb_ziol} {${liczba_zeb_ziol}+1};
 	#math {dzis_zeb_ziol} {${dzis_zeb_ziol}+1};
 	#math {ziola[%1%2%3%4][ilosc]} {${ziola[%1%2%3%4][ilosc]}+1};
 	save;
-	#line GAG;
-	#echo {<afa>%0<099>}
+	#echo {<afa>%0<faa>[$zielarska_komenda]<099>}
 }
 {5}
 
 #ACTION {^{Szukasz wszedzie, ale nie znajdujesz zadnych ziol.|Nie znajdujesz zadnych ziol. Moze poszloby ci lepiej, gdybys zaczekal do wiosny.|Nie udalo ci sie znalezc niczego interesujacego.}$}
 {
+	#line gag;
 	#echo {<fab>%0<099>};
-	#variable {aktywne_szukanie} {0};
-	#line gag
+	#variable {aktywne_szukanie} {0}
+}
+{5}
+
+#ALIAS {/schowajz}
+{
+	otworz woreczek;
+	wloz ziola do woreczka;
+	zamknij woreczek
 }
 {5}
 
@@ -94,6 +100,8 @@
 #VARIABLE         {aktywne_szukanie}  {0}
 #VARIABLE         {dzis_zeb_ziol}  {0}
 #VARIABLE         {szukanie_ziol}  {0}
+#VARIABLE         {zielarska_komenda}  {spojrz}
 #VARIABLE         {ziolo}  {1}
+#VARIABLE         {znalezione_ziolo}  {0}
 
 #CLASS {zielarstwo} CLOSE
