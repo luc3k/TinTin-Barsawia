@@ -14,6 +14,7 @@ else
 	echo "Session ${TSESSION} does not exist. Creating."
 	cd ${TINTINDIR}
 	echo "" > log.log
+	echo "" > map.txt
 	tmux -L ${TSERVER} new -d -s ${TSESSION} "tt++ -G main.tin"
 	tmux -L ${TSERVER} source-file tmux.conf
 	tmux -L ${TSERVER} split-window -t ${TSESSION} -h -l 80 "tail -f -q -n 100 map.txt"

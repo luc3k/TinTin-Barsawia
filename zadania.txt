@@ -98,3 +98,82 @@ Dom burmistrza osady Kelevine
 [20:01:11] Spokojny czarnowlosy krasnolud mowi: Nasi drwale dostali wieksza ochrone, ale to nie pomaga.
 [20:01:14] Spokojny czarnowlosy krasnolud mowi: Kazdy kto pomoze je wytepic zostanie nagrodzony!
 [20:01:16] Spokojny czarnowlosy krasnolud mowi: Przynies mi ich skore, a nie pozalujesz.
+
+
+.: Owalny pokoj w wiezy :.      4469                                                                                            
+Mimo wygod i wspanialosci jakie mozna bylo spotkac przechodzac przez ogromna posiadlosc Garlthika Jednookiego ten pokoj urzadzon│                                     [#]
+o duzo skromniej. Sam wyglad nie zapiera dechu w piersiach, ale widac, iz wlozono w niego wiele duszy i sentymentu do dawnych la│                                     -
+t. Po owalnych scianach porozwieszano jakies skory, stare, lecz piekne egzemplarze broni, obrazy i mapy. Po srodku pomieszczenia│
+, frontem w strone drzwi stoi masywne, rzezbione biurko, a za nim solidne polki z ustawionymi nan ksiegami. Dostrzegasz takze wi│
+ekowy, ceglany kominek, w ktorym wesolo tancza plomienie palonych drewienek. Za szerokimi oknami rozposciera sie widok calego Kr│
+atas, jak i okolic.                                                                                                             │
+Jednooki stary ork.                                                                                                             │
+                                                                                                                                │
+Jednooki stary ork wyglada przez okno podziwiajac przez chwile widoki.                                                          │
+Pytasz jednookiego starego orka o zadanie.                                                                                      │
+                                                                                                                                │
+Jednooki stary ork mamroczy: To mi Myglen cie chyba zeslala chlopcze.                                                           │
+Jednooki stary ork mamroczy: Ten stary kanciarz, kapitan portu w Daiche...                                                      │
+Jednooki stary ork uderza reka w stol.                                                                                          │
+Jednooki stary ork mamroczy: ...znow zalega z...                                                                                │
+Jednooki stary ork krzywi sie z konsternacja.                                                                                   
+Jednooki stary ork zastanawia sie nad czyms intensywnie.                                                                        
+Jednooki stary ork mamroczy: ...oplatami!                                                                                       │
+Jednooki stary ork mamroczy: Nie moge tego dluzej tolerowac!                                                                    
+Jednooki stary ork usmiecha sie pewnie.                                                                                         │
+Jednooki stary ork mamroczy: Powiedz, ze daje mu tydzien!                                                                       │[13:14:52] Jednooki stary ork wstaje po czym mowi: Masz tu oto ten zwoj, przekaz
+Jednooki stary ork mamroczy: On wie co go czeka jesli nie dopelni obowiazku.                                                    │ mu go.
+Jednooki stary ork usmiecha sie msciwie.                                                                                        │
+Jednooki stary ork mamroczy: Inaczej moi ludzie zajma sie nim!                                                                  │
+Jednooki stary ork siada za biurkiem, lapie za pioro i macza je w pojemniczku z tuszem.                                         │
+Jednooki stary ork zaczyna cos pisac na zwoju.                                                                                  │
+Jednooki stary ork konczy pisac, zwija zwoj i zabezpiecza go pieczecia woskowa.                                                 │
+Jednooki stary ork wstaje po czym mowi: Masz tu oto ten zwoj, przekaz mu go.                                                    │
+Jednooki stary ork mamroczy: Lecz nie otwieraj go, gdyz zabezpieczony jest on przed niepowolanymi oczyma.                       │
+                                                                                                                                │
+Przedstawiasz sie wszystkim.                                                                                                    │
+                                                                                                                                │
+Jednooki stary ork przedstawia sie jako:                                                                                        │
+Garlthik Jednooki, Mistrz Zlodziei, Wladca Kratas, Wielki Rajca Miejski, ork.
+
+i isc do 2323 .: Kapitanat portu :. Johann von Anderbait, Kapitan portu, czlowiek.
+
+
+
+potem isc do 2345 i zapytac o oplaty
+
+Podstarzaly zamyslony mezczyzna.                                                                                                │
+                                                                                                                                │
+Pytasz podstarzalego zamyslonego mezczyzne o dlug.                                                                              │
+                                                                                                                                │
+Podstarzaly zamyslony mezczyzna mowi: A co mie ty czepiasz!                                                                     │
+                                                                                                                                │
+Pytasz podstarzalego zamyslonego mezczyzne o dlug.                                                                              │
+                                                                                                                                │                   [ ]               [ ]
+Podstarzaly zamyslony mezczyzna mowi: A co mie ty czepiasz!                                                                     │                    |                 |
+                                                                                                                                │                    |                 |
+Pytasz podstarzalego zamyslonego mezczyzne o zadanie.                                                                           │                   [ ]---[ ]---[ ]---[#]---[ ]
+                                                                                                                                │                                |
+Podstarzaly zamyslony mezczyzna mowi: Nie chce, mam wystarczajaco swojej roboty!                                                │                                |
+                                                                                                                                │                               [ ]
+Nie ma tu nikogo takiego. Zapytaj kogo o co?                                                                                    │                                  \
+                                                                                                                                │                                    \
+Pytasz podstarzalego zamyslonego mezczyzne o oplaty.                                                                            │                                     [ ]
+                                                                                                                                │                                      |
+Podstarzaly zamyslony mezczyzna spoglada na ciebie ze zloscia i cierpieniem w oczach.                                           │                                      |
+Podstarzaly zamyslony mezczyzna mowi jakby do siebie: A mowilem jej, ze poborcy przyjda...                                      │                                     [ ]
+Podstarzaly zamyslony mezczyzna mowi: Tak, wiem. Ale nie mamy z czego zaplacic.                                                 │                                        \
+Podstarzaly zamyslony mezczyzna marszczy brwi jakby z czyms w sobie walczac.                                                    │                                          \
+Podstarzaly zamyslony mezczyzna mowi: Jedyne co mamy do zaoferowania to ryby.                                                   │                                           [ ]---[ ]
+                                                                                                                                │                                                    \
+.: Nad rzeka przy pomoscie :.                                                                                                   │                                                      \
+Wysypany zwirem placyk rozklada sie u brzegu Tylonu, stwarzajac miedzy nim, a drewniana chata przestrzen. Szerokie wody rzeki sz│                                                       [ ]
+emrza delikatnie, saczac swoj nurt ku poludniowemu-wschodowi. W powietrzu unosi sie zapach obrabianych na duzym stole ryb. Ich l│                                                          \
+uski rozsiane po ziemi mienia sie przy kazdym twym ruchu. Na polnocy znajduje sie, ogrodzony drewnianym plotem ogrod, natomiast │
+na wschodzie nieznacznie w glebokie koryto wkracza waski pomost.                                                                ├────────────────────────────────────────────────────────────────────────────────
+Podstarzaly zamyslony mezczyzna.
+
+potem zapytac o ryby
+isc do 2327
+
+potem zapytac o towar
