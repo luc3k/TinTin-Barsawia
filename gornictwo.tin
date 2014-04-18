@@ -8,6 +8,15 @@
 }
 {5}
 
+#ACTION {^Wsrod gruzu dostrzegasz kilka okruchow jakiegos mineralu.$}
+{
+	#line gag;
+	#variable gornik_komenda {wez wszystko};
+	#variable zbieranie_mineralow 1;
+	#echo {<afa>%0<faa>[wez wszystko]<088>}
+}
+{5}
+
 #ACTION {^Zaczynasz kuc %1 sciane.$}
 {
 	#variable wykopywanie 1;
@@ -162,7 +171,13 @@
 }
 {5}
 
+#SUBSTITUTE       {Gdy zblizasz krysztal do sciany migoczace iskry wewnatrz stapiaja sie w wirujacy krag blasku, dajac znak o bliskosci mineralow.}                                                                                                             {<afa>%0<088>}  {5}
+#SUBSTITUTE       {Gdy zblizasz krysztal do sciany migoczace iskry wewnatrz wyraznie przyspieszaja, dajac znak o bliskosci mineralow.}                                                                                                {<afa>%0<088>}  {5}
 #SUBSTITUTE       {^Blade iskry poruszaja sie leniwie wewnatrz krysztalu.$}                                     {<faa>%0[BRAK KRUSZCA]<088>}   {5}
+#SUBSTITUTE       {^Strop zabezpieczony jest stemplami.$}                   {<afa>%0<088>}  {5}
+#VARIABLE         {gornik_komenda}  {spojrz}
 #VARIABLE         {kilof}  {0}
+#VARIABLE         {wykopywanie}  {0}
+#VARIABLE         {zbieranie_mineralow}  {0}
 
 #CLASS {gornictwo} CLOSE

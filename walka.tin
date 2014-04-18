@@ -19,6 +19,45 @@
 }
 {5}
 
+#ACTION {^Atakujac %1 wychodzisz z ukrycia.$}
+{
+	#variable ukrywanie 0
+}
+{5}
+
+#ACTION {^Atakujac sploszonego %1 wychodzisz z ukrycia.$}
+{
+	#variable ukrywanie 0
+}
+{5}
+
+#ACTION {^Chowasz sie najlepiej jak potrafisz.$}
+{
+	#variable ukrywanie 1
+}
+{5}
+
+#ACTION {^Jest tu zbyt trudno sie schowac, wiec jestes widoczny z powrotem.$}
+{
+	#variable ukrywanie 0
+}
+{5}
+
+#ACTION {^Jestes tak zmeczony, ze nie mozesz przemykac sie w tym kierunku.$}
+{
+	#map undo
+}
+{5}
+
+#ACTION {^Wycinasz skore z ciala %1.$}
+{
+	#line gag;
+	#variable wycinka_skor 1;
+	#variable wycinka_komenda /schowajs;
+	#echo {<afa>%0<faa>[/schowajs]<099>}
+}
+{5}
+
 #ACTION {^Zabiles %* %S.$}
 {
 	#line gag;
@@ -28,6 +67,20 @@
 	#math {zabici[%2][ilosc]} {${zabici[%2][ilosc]}+1};
 	#variable enemy_run 0;
 	save
+}
+{5}
+
+#ACTION {^{Wychodzisz z ukrycia.|Nie jestes juz schowany.}$}
+{
+	#variable ukrywanie 0
+}
+{5}
+
+#ALIAS {/schowajs}
+{
+	otworz plecak;
+	wloz skore do plecaka;
+	zamknij plecak
 }
 {5}
 
@@ -100,5 +153,8 @@
 #VARIABLE         {dzis_zabitych}  {0}
 #VARIABLE         {enemy_run}  {0}
 #VARIABLE         {run_direction}  {spojrz}
+#VARIABLE         {ukrywanie}  {0}
+#VARIABLE         {wycinka_komenda}  {spojrz}
+#VARIABLE         {wycinka_skor}  {0}
 
 #CLASS {walka} CLOSE

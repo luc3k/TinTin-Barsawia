@@ -16,6 +16,7 @@
 #SUBSTITUTE       {^Nagle, tuz przed toba, z chmury dymu wylania sie wizerunek %1.$}                                              {<fad>Nagle, tuz przed toba, z chmury dymu wylania sie wizerunek <bff>%1<fad>.<099>}                                                           {5}
 #SUBSTITUTE       {^Nie masz wolnej reki, ktora moglbys chwycic %1.$}                               {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Po chwili brama otwiera sie powoli na cala szerokosc.$}                                     {<afa>%0<088>}  {5}
+#SUBSTITUTE       {^Pochylasz sie nad beczulke i zaczynasz pic wode.$}                                {<bcf>%0<088>}  {5}
 #SUBSTITUTE       {^Pochylasz sie nad misa fontanny i zaczynasz pic z niej czysta, chlodna wode.$}                                                            {<bcf>%0<099>}  {5}
 #SUBSTITUTE       {^Potrzebujesz do tego odpowiednie narzedzia.$}                           {<faa>%0<088>}  {5}
 #SUBSTITUTE       {^Przy akompaniamencie trzaskow i zgrzytow zelazna krata zostaje podniesiona.$}                                                           {<afa>%0<099>}  {5}
