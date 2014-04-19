@@ -4,11 +4,31 @@
 {
 	#if {"%0" == "bardzo bezpiecznie"}
 	{
-		#return <bfa>%0<170>[0/1]<099>
+		#return <bfa>%0<170>[6/6]<099>
+	};
+	#elseif {"%0" == "bezpiecznie"}
+	{
+		#return <cfa>%0<170>[5/6]<099>
+	};
+	#elseif {"%0" == "spokojnie"}
+	{
+		#return <dfa>%0<170>[4/6]<099>
+	};
+	#elseif {"%0" == "nieswojo"}
+	{
+		#return <fda>%0<170>[3/6]<099>
+	};
+	#elseif {"%0" == "nerwowo"}
+	{
+		#return <fca>%0<170>[2/6]<099>
+	};
+	#elseif {"%0" == "przerazon{y|a}"}
+	{
+		#return <fba>%0<170>[1/6]<099>
 	};
 	#elseif {"%0" == "bardzo przerazon{y|a}"}
 	{
-		#return <fba>%0<170>[1/1]<099>
+		#return <faa>%0<170>[0/6]<099>
 	};
 	#else
 	{

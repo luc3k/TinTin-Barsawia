@@ -118,7 +118,7 @@
 	#write main.tin;
 }
 
-#EVENT {MAP ENTER ROOM}{#if {${map_state} == 1}{#map get roomvnum room_v;#map map 80x30 map.txt a;};}
+#EVENT {MAP ENTER ROOM}{#if {${map_state} == 1}{#map get roomvnum postacie[$nazwa_postaci][ustawienia][room_v];save;#map map 80x30 map.txt a;};}
 
 #EVENT {SESSION CONNECTED}
 {

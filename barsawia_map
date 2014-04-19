@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 4253
+I 2794
 
 L * # # # | # x          
 
@@ -18870,7 +18870,7 @@ E { 4249} {ne} {ne} {3} {0} {}
 E { 4282} {poludnie} {poludnie} {4} {0} {}
 E { 4249} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R { 4284} {0} {<aca>} {W mrocznej czesci lasu} { } {} {} {} {} {} {1.000}
+R { 4284} {0} {<aca>} {Wsrod szumiacych lip} { } {} {} {} {} {} {1.000}
 E { 4283} {ne} {ne} {3} {0} {}
 
 R { 4285} {0} {<bee>} {Sklad kruszcu} { } {} {} {} {} {} {1.000}

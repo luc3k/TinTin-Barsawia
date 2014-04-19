@@ -115,9 +115,9 @@
 #ALIAS {/mapon}
 {
 	#map read ${nazwa_krainy}_map;
-	#if {&{room_v}}
+	#if {&{postacie[$nazwa_postaci][ustawienia][room_v]}}
 	{
-		#map goto {$room_v}
+		#map goto ${postacie[$nazwa_postaci][ustawienia][room_v]}
 	};
 	#else
 	{
