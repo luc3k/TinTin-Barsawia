@@ -48,6 +48,54 @@
 	}
 }
 
-#SUBSTITUTE       {^W Twojej ocenie %1 jest %2 oraz %3 jak na ten typ broni.$}                                        {W Twojej ocenie %1 jest @skutecznosc_broni{%2} oraz %3 jak na ten typ broni.}                                                     {5}
+#FUNCTION {wywazenie_broni}
+{
+	#if {"%0" == "zle wywazon{a|y}"}
+	{
+		#return <faa>%0<170>[0/9]<099>
+	};
+	#elseif {"%0" == "mizernie wywazon{a|y}"}
+	{
+		#return <fba>%0<170>[1/9]<099>
+	};
+	#elseif {"%0" == "niespecjalnie wywazon{a|y}"}
+	{
+		#return <fca>%0<170>[2/9]<099>
+	};
+	#elseif {"%0" == "przecietnie wywazon{a|y}"}
+	{
+		#return <fda>%0<170>[3/9]<099>
+	};
+	#elseif {"%0" == "dosc dobrze wywazon{a|y}"}
+	{
+		#return <fea>%0<170>[4/9]<099>
+	};
+	#elseif {"%0" == "dobrze wywazon{a|y}"}
+	{
+		#return <ffa>%0<170>[5/9]<099>
+	};
+	#elseif {"%0" == "bardzo dobrze wywazon{a|y}"}
+	{
+		#return <efa>%0<170>[6/9]<099>
+	};
+	#elseif {"%0" == "perfekcyjnie wywazon{a|y}"}
+	{
+		#return <dfa>%0<170>[7/9]<099>
+	};
+	#elseif {"%0" == "genialnie wywazon{a|y}"}
+	{
+		#return <cfa>%0<170>[8/9]<099>
+	};
+	#elseif {"%0" == "fantastycznie wywazon{a|y}"}
+	{
+		#return <bfa>%0<170>[9/9]<099>
+	};
+	#else
+	{
+		#return %0
+	}
+}
+
+#SUBSTITUTE       {^W Twojej ocenie %1 jest %2 oraz %3 jak na ten typ broni.$}                                        {W Twojej ocenie %1 jest @skutecznosc_broni{%2} oraz @wywazenie_broni{%3} jak na ten typ broni.}                                                                       {5}
 
 #CLASS {skutecznosc_broni} CLOSE
