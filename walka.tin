@@ -169,7 +169,7 @@
 {
 	#switch {"%0"}
 	{
-		#case {"{?i}{szybkim pchnieciem|mizernym cieciem|swietnym pchnieciem|niesamowitym cieciem|genialnym cieciem|slabiutkim pchnieciem|mizernym pchnieciem|silnym cieciem|dosc silnym cieciem|dosyc szybkim cieciem|idealnie wymierzonym cieciem|niezwykle mocnym cieciem|celnym pchnieciem|zaskakujacym cieciem|bardzo silnym pchnieciem|nieoczekiwanie dobrym cieciem|fantastycznym cieciem|szybkim cieciem|mocnym cieciem|bardzo mocnym pchnieciem|niezlym pchnieciem|blyskawicznym cieciem|bardzo mocnym cieciem|dosc zaskakujacym cieciem|dosyc udanym pchnieciem|swietnym pchnieciem|zaskakujacym pchnieciem|prymitywnym cieciem|idealnym cieciem|niezwykle mocnym pchnieciem|bardzo szybkim pchnieciem|niekonwencjonalnym pchnieciem|silnym pchnieciem|niesamowitym pchnieciem|celnym cieciem|mocnym pchnieciem|dosc zaskakujacym pchnieciem|poteznym pchnieciem|niezlym cieciem|wspanialym pchnieciem|dosyc celnym cieciem|powolnym cieciem|dosyc udanym cieciem|starannie wymierzonym cieciem|swietnym cieciem|wspanialym cieciem|bardzo celnym cieciem|bardzo prymitywnym cieciem|bardzo powolnym pchnieciem|kompletnie niecelnym cieciem|kompletnie niecelnym pchnieciem|niekonwencjonalnym cieciem|nieoczekiwanie dobrym pchnieciem|bardzo powolnym cieciem|calkiem niezlym pchnieciem|niecelnym pchnieciem|dosyc silnym pchnieciem|mierzonym cieciem|starannie wymierzonym pchnieciem|slabiusienkim cieciem|bardzo celnym pchnieciem|idealnie wymierzonym pchnieciem|genialnym pchnieciem|bardzo mizernym cieciem|bardzo szybkim cieciem|fantastycznym pchnieciem|bardzo niecelnym pchnieciem|slabiutkim cieciem|nieskoordynowanym cieciem}"}
+		#case {"{?i}{bardzo celnym|bardzo mizernym|bardzo mocnym|bardzo niecelnym|bardzo powolnym|bardzo prymitywnym|bardzo silnym|bardzo szybkim|blyskawicznym|calkiem niezlym|celnym|dosc silnym|dosc zaskakujacym|dosyc celnym|dosyc udanym|dosyc silnym|dosyc szybkim|fantastycznym|fatalnym|genialnym|idealnie wymierzonym|idealnym|kompletnie niecelnym|mierzonym|mizernym|mocnym|niecelnym|niekonwencjonalnym|nieoczekiwanie dobrym|niesamowitym|nieskoordynowanym|niezlym|niezwykle mocnym|poteznym|powolnym|prymitywnym|silnym|slabiusienkim|slabiutkim|starannie wymierzonym|swietnym|szybkim|wspanialym|zaskakujacym} {pchnieciem|uderzeniem|cieciem}"}
 		{
 			#return <afa>%0<099>
 		};
@@ -196,7 +196,7 @@
 		{
 			#return <cfa>%0<170>[1/5]<099>
 		};
-		#case {"{?i}{ledwo muska cie}"}
+		#case {"{?i}{ledwo muska cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa}"}
 		{
 			#return <cfa>%0<170>[1/5]<099>
 		};
@@ -204,7 +204,7 @@
 		{
 			#return <dfa>%0<170>[2/5]<099>
 		};
-		#case {"{?i}{lekko rani cie}"}
+		#case {"{?i}{lekko rani cie|lekko obija cie}"}
 		{
 			#return <dfa>%0<170>[2/5]<099>
 		};
@@ -212,7 +212,7 @@
 		{
 			#return <fca>%0<170>[3/5]<099>
 		};
-		#case {"{?i}{rani cie}"}
+		#case {"{?i}{rani cie|obija cie}"}
 		{
 			#return <fca>%0<170>[3/5]<099>
 		};
@@ -235,11 +235,12 @@
 	}
 }
 
+#SUBSTITUTE       {%1 swoje{go|j} %3 %4 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa} w %6.$}                                                                                                                                                                {@rodzaj_ataku{%1} swoje%2 %3 %4 @rodzaj_obrazen{%5} w %6.}                                  {5}
 #SUBSTITUTE       {^%1 jest %2.}  {%1 jest @kondycja{%2}.}  {5}
 #SUBSTITUTE       {^%1 swoje{go|j} %3 {nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz} %5, trafiajac {go|ja} w %7.$}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {@rodzaj_ataku{%1} swoje%2 %3 @rodzaj_obrazen{%4} %5, trafiajac %6 w %7.}                                                {5}
-#SUBSTITUTE       {^%1 wpada w panike!$}  {<afa>%0<099>}  {5}
-#SUBSTITUTE       {^%1 {ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie} %3, trafiajac cie w %4.$}                                                                      {%1 @rodzaj_obrazen{%2} %3, trafiajac cie w %4.}                       {5}
+#SUBSTITUTE       {^%1 wpada w panike!}  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^%1 {nie udaje sie trafic ciebie} %3.$}                    {%1 @rodzaj_obrazen{%2} %3.}   {5}
+#SUBSTITUTE       {^%1 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa} %3, trafiajac cie w %4.$}                                                                                                                                                                 {%1 @rodzaj_obrazen{%2} %3, trafiajac cie w %4.}                       {5}
 #SUBSTITUTE       {^%1 {probuje cie trafic} %3, lecz tobie udaje sie uniknac tego ciosu.$}                                                    {%1 @rodzaj_obrazen{%2} %3, lecz tobie udaje sie uniknac tego ciosu.}                                            {5}
 #SUBSTITUTE       {^Niezauwazony podkradasz sie do %1 i naglym ruchem wbijasz swoj %2 w plecy, %3.$}                                                              {<afa>Niezauwazony podkradasz sie do %1 i naglym ruchem wbijasz swoj %2 w plecy, %3.<088>}                                                                 {5}
 #SUBSTITUTE       {^Sciskasz mocniej %1 i zaczynasz sie skradac w kierunku %2.$}                                          {<afa>%0<088>}  {5}
