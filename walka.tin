@@ -11,10 +11,25 @@
 #ACTION {^%1 {w panice wybiega na|kica w panice na} %3.$}
 {
 	#line gag;
-	#echo {<ffa>%1 <faa>%2 <efa>%3.<099><faa>[%3]<099>};
-	#if {$enemy_run == 1}
+	#nop possible bug in if conditions so this looks like this for now;
+	#if {&{postacie[$nazwa_postaci][ustawienia][pogon]}}
 	{
-		#variable run_direction {%3}
+		#if {${postacie[$nazwa_postaci][ustawienia][pogon]} == 1}
+		{
+			#echo {<ffa>%1 <faa>%2 <efa>%3.<faa>[%3]<099>};
+			#if {$enemy_run == 1}
+			{
+				#variable run_direction {%3}
+			}
+		};
+		#else
+		{
+			#echo {<ffa>%1 <faa>%2 <efa>%3.<099>}
+		}
+	};
+	#else
+	{
+		#echo {<ffa>%1 <faa>%2 <efa>%3.<099>}
 	}
 }
 {5}
@@ -114,6 +129,30 @@
 	#else
 	{
 		ukryj sie
+	}
+}
+{5}
+
+#ALIAS {/ustawpogon}
+{
+	#nop possible bug in if conditions so this looks like this for now;
+	#if {&{postacie[$nazwa_postaci][ustawienia][pogon]}}
+	{
+		#if {${postacie[$nazwa_postaci][ustawienia][pogon]} == 1}
+		{
+			#variable postacie[$nazwa_postaci][ustawienia][pogon] 0;
+			save
+		};
+		#else
+		{
+			#variable postacie[$nazwa_postaci][ustawienia][pogon] 1;
+			save
+		}
+	};
+	#else
+	{
+		#variable postacie[$nazwa_postaci][ustawienia][pogon] 1;
+		save
 	}
 }
 {5}
