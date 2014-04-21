@@ -7,7 +7,7 @@ CR <178>
 
 F 10
 
-I 90
+I 2704
 
 L * # # # | # x          
 
@@ -861,14 +861,12 @@ E {  171} {s} {wyjscie} {4} {0} {}
 R {  193} {0} {} {Urzad Pocztowy w Bree} {Poc} {} {} {} {} {} {1.000}
 E {  171} {n} {wyjscie} {1} {0} {}
 E {  194} {e} {e} {2} {0} {}
-E {  195} {w} {w} {8} {0} {}
 
 R {  194} {0} {<faa>} {Biuro Przesylek} {Poc} {} {} {} {} {} {1.000}
 E {  193} {w} {w} {8} {0} {}
 
 R {  195} {0} {<faa>} {Zielarnia} {Zie} {} {} {} {} {} {1.000}
 E {  170} {n} {wyjscie} {1} {0} {}
-E {  193} {e} {e} {2} {0} {}
 E { 5162} {w} {w} {8} {0} {}
 
 R {  196} {0} {} {Dom aukcyjny} {Auk} {} {} {} {} {} {1.000}
@@ -1917,7 +1915,7 @@ E {  444} {w} {w} {8} {0} {}
 R {  446} {0} {} {Niewielkie pomieszczenie wewnatrz chatki} {Sak} {} {} {} {} {} {1.000}
 E {  175} {n} {wyjscie} {1} {0} {}
 
-R {  447} {0} {<aca>} {W lesie nieopodal Bree} { } {} {} {} {} {} {1.000}
+R {  447} {0} {<aca>} {Niewielki las} { } {} {} {} {} {} {1.000}
 E {  291} {e} {e} {2} {0} {}
 E {  679} {n} {n} {1} {0} {}
 E {  679} {polnoc} {polnoc} {1} {0} {}
@@ -1980,6 +1978,7 @@ E {  458} {e} {e} {2} {0} {}
 E {  677} {s} {s} {4} {0} {}
 E {  681} {n} {n} {1} {0} {}
 E {  682} {ne} {ne} {3} {0} {}
+E {  681} {polnoc} {polnoc} {1} {0} {}
 
 R {  460} {0} {} {Droga na polnoc od Bree} { } {} {} {} {} {} {1.000}
 E {  458} {sw} {sw} {12} {0} {}
@@ -2351,7 +2350,7 @@ R {  546} {0} {} {Przy ruinach} { } {} {} {} {} {} {1.000}
 E {  545} {e} {e} {2} {0} {}
 E {  547} {n} {n} {1} {0} {}
 
-R {  547} {0} {} {W bramie} { } {} {} {} {} {} {1.000}
+R {  547} {0} {} {Przy ruinach} { } {} {} {} {} {} {1.000}
 E {  546} {s} {s} {4} {0} {}
 E { 2043} {n} {n} {1} {0} {}
 
@@ -2986,7 +2985,7 @@ E {  664} {sw} {sw} {12} {0} {}
 E {  666} {se} {se} {6} {0} {}
 E {  668} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 
-R {  677} {0} {<aca>} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
+R {  677} {0} {<aca>} {Las Chet} { } {} {} {} {} {} {1.000}
 E {  459} {n} {n} {1} {0} {}
 E {  678} {s} {s} {4} {0} {}
 E {  678} {poludnie} {poludnie} {4} {0} {}
@@ -3012,6 +3011,7 @@ E {  459} {s} {s} {4} {0} {}
 E {  682} {e} {e} {2} {0} {}
 E {  684} {n} {n} {1} {0} {}
 E {  683} {ne} {ne} {3} {0} {}
+E {  459} {poludnie} {poludnie} {4} {0} {}
 
 R {  682} {0} {<aca>} {Niewielki las} { } {} {} {} {} {} {1.000}
 E {  681} {w} {w} {8} {0} {}
@@ -8619,7 +8619,7 @@ R { 1991} {0} {} {Las} { } {} {} {} {} {} {1.000}
 E { 1990} {e} {e} {2} {0} {}
 E { 1992} {n} {n} {1} {0} {}
 E { 1998} {s} {s} {4} {0} {}
-E { 1999} {sw} {sw} {12} {0} {}
+E { 5405} {sw} {sw} {12} {0} {}
 
 R { 1992} {0} {} {Na zakrecie} { } {} {} {} {} {} {1.000}
 E { 1990} {se} {se} {6} {0} {}
@@ -8645,11 +8645,12 @@ E { 1997} {w} {wrota} {8} {0} {}
 R { 1997} {0} {} {Ciemne miejsce} { } {} {} {} {} {} {1.000}
 E { 1996} {e} {e} {2} {0} {}
 
-R { 1998} {0} {} {Lesny trakt} { } {} {} {} {} {} {1.000}
+R { 1998} {0} {} {Las} { } {} {} {} {} {} {1.000}
 E { 1991} {n} {n} {1} {0} {}
 
 R { 1999} {0} {} {Las} { } {} {} {} {} {} {1.000}
-E { 1991} {ne} {ne} {3} {0} {}
+E { 5405} {ne} {ne} {3} {0} {}
+E { 5406} {se} {se} {6} {0} {}
 
 R { 2000} {0} {} {Magazyn w zachodniej bramie} { } {} {} {} {} {} {1.000}
 E {   37} {ne} {wyjscie} {3} {0} {}
@@ -8867,7 +8868,7 @@ E { 2009} {w} {w} {8} {0} {}
 R { 2042} {0} {} {Przy laweczce} { } {} {} {} {} {} {1.000}
 E { 2038} {e} {e} {2} {0} {}
 
-R { 2043} {0} {} {Na dziedzincu} { } {} {} {} {} {} {1.000}
+R { 2043} {0} {} {W bramie} { } {} {} {} {} {} {1.000}
 E {  547} {s} {s} {4} {0} {}
 E { 2044} {w} {w} {8} {0} {}
 E { 2045} {e} {e} {2} {0} {}
@@ -9269,7 +9270,7 @@ R { 2123} {0} {} {Poczatek kamiennej sciezki} { } {} {} {} {} {} {1.000}
 E { 2122} {ne} {ne} {3} {0} {}
 E { 2124} {s} {s} {4} {0} {}
 
-R { 2124} {0} {} {Poczatek kamiennej sciezki} { } {} {} {} {} {} {1.000}
+R { 2124} {0} {} {Sciezka posrod kamieni} { } {} {} {} {} {} {1.000}
 E { 2123} {n} {n} {1} {0} {}
 E { 2125} {w} {w} {8} {0} {}
 
@@ -11880,12 +11881,15 @@ E { 2738} {n} {n} {1} {0} {}
 R { 2738} {0} {} {Trakt} { } {} {} {} {} {} {1.000}
 E { 2737} {s} {s} {4} {0} {}
 E { 2739} {n} {n} {1} {0} {}
+E { 2739} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2739} {0} {} {Pod brama Jerris} { } {} {} {} {} {} {1.000}
 E { 2738} {s} {s} {4} {0} {}
 E { 2740} {se} {se} {6} {0} {}
 E { 2742} {sw} {sw} {12} {0} {}
 E { 2744} {n} {n} {1} {0} {}
+E { 2744} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2738} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2740} {0} {} {Sciezka pod murami Jerris} { } {} {} {} {} {} {1.000}
 E { 2739} {nw} {nw} {9} {0} {}
@@ -11907,6 +11911,8 @@ R { 2744} {0} {<fba>} {Ulica przy bramie} {prz} {} {} {} {} {} {1.000}
 E { 2739} {s} {s} {4} {0} {}
 E { 2745} {w} {w} {8} {0} {}
 E { 2747} {n} {n} {1} {0} {}
+E { 2747} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2739} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2745} {0} {} {Mala strozowka} { } {} {} {} {} {} {1.000}
 E { 2744} {e} {e} {2} {0} {}
@@ -11919,22 +11925,32 @@ R { 2747} {0} {} {Ulica Poludniowa} { } {} {} {} {} {} {1.000}
 E { 2744} {s} {s} {4} {0} {}
 E { 2748} {w} {w} {8} {0} {}
 E { 2753} {n} {n} {1} {0} {}
+E { 2753} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2748} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2744} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2748} {0} {} {Ulica Krotka} { } {} {} {} {} {} {1.000}
 E { 2747} {e} {e} {2} {0} {}
 E { 2749} {w} {w} {8} {0} {}
+E { 2747} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2749} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2749} {0} {} {Ulica Krotka} { } {} {} {} {} {} {1.000}
 E { 2748} {e} {e} {2} {0} {}
 E { 2750} {w} {w} {8} {0} {}
+E { 2748} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2750} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2750} {0} {} {Ulica przed sklepem} { } {} {} {} {} {} {1.000}
 E { 2749} {e} {e} {2} {0} {}
 E { 2751} {sw} {sw} {12} {0} {}
 E { 2752} {n} {n} {1} {0} {}
+E { 2749} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2751} {przemknij na sw} {przemknij na sw} {12} {0} {}
 
 R { 2751} {0} {} {Zaulek ulicy} { } {} {} {} {} {} {1.000}
 E { 2750} {ne} {ne} {3} {0} {}
+E { 2750} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2752} {0} {} {Zielarnia} {Zie} {} {} {} {} {} {1.000}
 E { 2750} {s} {s} {4} {0} {}
@@ -11942,11 +11958,15 @@ E { 2750} {s} {s} {4} {0} {}
 R { 2753} {0} {} {Ulica przy poludniowej bramie miasta} { } {} {} {} {} {} {1.000}
 E { 2747} {s} {s} {4} {0} {}
 E { 2754} {n} {n} {1} {0} {}
+E { 2754} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2747} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2754} {0} {} {Ulica Poludniowa} { } {} {} {} {} {} {1.000}
 E { 2753} {s} {s} {4} {0} {}
 E { 2755} {e} {e} {2} {0} {}
 E { 2806} {n} {n} {1} {0} {}
+E { 2806} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2753} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2755} {0} {} {Brukowana uliczka} { } {} {} {} {} {} {1.000}
 E { 2754} {w} {w} {8} {0} {}
@@ -12076,20 +12096,30 @@ R { 2786} {0} {} {Uliczka} { } {} {} {} {} {} {1.000}
 E { 2785} {e} {e} {2} {0} {}
 E { 2787} {n} {n} {1} {0} {}
 E { 2788} {s} {s} {4} {0} {}
+E { 2788} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2787} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2787} {0} {} {Uliczka} { } {} {} {} {} {} {1.000}
 E { 2786} {s} {s} {4} {0} {}
 E { 2836} {n} {n} {1} {0} {}
+E { 2786} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2836} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2788} {0} {} {Uliczka na polnoc od placu} { } {} {} {} {} {} {1.000}
 E { 2786} {n} {n} {1} {0} {}
 E { 2789} {s} {s} {4} {0} {}
+E { 2789} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2786} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2789} {0} {} {Polnocno-wschodnia czesc placu} { } {} {} {} {} {} {1.000}
 E { 2788} {n} {n} {1} {0} {}
 E { 2790} {s} {s} {4} {0} {}
 E { 2794} {w} {w} {8} {0} {}
 E { 2791} {sw} {sw} {12} {0} {}
+E { 2794} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2788} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2791} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2790} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2790} {0} {} {Wschodnia czesc placu} { } {} {} {} {} {} {1.000}
 E { 2789} {n} {n} {1} {0} {}
@@ -12097,6 +12127,8 @@ E { 2791} {w} {w} {8} {0} {}
 E { 2794} {nw} {nw} {9} {0} {}
 E { 2795} {sw} {sw} {12} {0} {}
 E { 2796} {e} {e} {2} {0} {}
+E { 2789} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2795} {przemknij na sw} {przemknij na sw} {12} {0} {}
 
 R { 2791} {0} {<bcf>} {Srodek placu} {fon} {} {} {} {} {} {1.000}
 E { 2790} {e} {e} {2} {0} {}
@@ -12105,6 +12137,8 @@ E { 2794} {n} {n} {1} {0} {}
 E { 2789} {ne} {ne} {3} {0} {}
 E { 2804} {sw} {sw} {12} {0} {}
 E { 2795} {s} {s} {4} {0} {}
+E { 2789} {przemknij na ne} {przemknij na ne} {3} {0} {}
+E { 2792} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2792} {0} {} {Zachodnia czesc placu} { } {} {} {} {} {} {1.000}
 E { 2791} {e} {e} {2} {0} {}
@@ -12113,6 +12147,8 @@ E { 2794} {ne} {ne} {3} {0} {}
 E { 2803} {w} {w} {8} {0} {}
 E { 2804} {s} {s} {4} {0} {}
 E { 2795} {se} {se} {6} {0} {}
+E { 2791} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2804} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2793} {0} {} {Hol ratusza} { } {} {} {} {} {} {1.000}
 E { 2792} {s} {s} {4} {0} {}
@@ -12120,6 +12156,8 @@ E { 2794} {e} {e} {2} {0} {}
 E { 2800} {n} {n} {1} {0} {}
 E { 2801} {nw} {nw} {9} {0} {}
 E { 2802} {w} {w} {8} {0} {}
+E { 2801} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 2794} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2794} {0} {} {Polnocna czesc placu} { } {} {} {} {} {} {1.000}
 E { 2793} {w} {w} {8} {0} {}
@@ -12128,12 +12166,16 @@ E { 2791} {s} {s} {4} {0} {}
 E { 2790} {se} {se} {6} {0} {}
 E { 2792} {sw} {sw} {12} {0} {}
 E { 2799} {n} {n} {1} {0} {}
+E { 2793} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2789} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2795} {0} {} {Poludniowa czesc placu} { } {} {} {} {} {} {1.000}
 E { 2790} {ne} {ne} {3} {0} {}
 E { 2791} {n} {n} {1} {0} {}
 E { 2792} {nw} {nw} {9} {0} {}
 E { 2804} {w} {w} {8} {0} {}
+E { 2790} {przemknij na ne} {przemknij na ne} {3} {0} {}
+E { 2804} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2796} {0} {} {Glowna sala banku} {Ban} {} {} {} {} {} {1.000}
 E { 2790} {w} {w} {8} {0} {}
@@ -12152,13 +12194,12 @@ E { 2794} {s} {s} {4} {0} {}
 R { 2800} {0} {} {Biblioteka} {Bib} {} {} {} {} {} {1.000}
 E { 2793} {s} {s} {4} {0} {}
 
-R { 2801} {0} {} {Las} { } {} {} {} {} {} {1.000}
+R { 2801} {0} {} {Sala obrad Rady Miejskiej Jerris} { } {} {} {} {} {} {1.000}
 E { 2793} {se} {se} {6} {0} {}
-E { 2802} {s} {s} {4} {0} {}
+E { 2793} {przemknij na se} {przemknij na se} {6} {0} {}
 
-R { 2802} {0} {} {Las} { } {} {} {} {} {} {1.000}
+R { 2802} {0} {} {Duza sala} { } {} {} {} {} {} {1.000}
 E { 2793} {e} {e} {2} {0} {}
-E { 2801} {n} {n} {1} {0} {}
 
 R { 2803} {0} {} {Sklep jubilerski} {Jub} {} {} {} {} {} {1.000}
 E { 2792} {e} {wyjscie} {2} {0} {}
@@ -12169,15 +12210,23 @@ E { 2791} {ne} {ne} {3} {0} {}
 E { 2795} {e} {e} {2} {0} {}
 E { 2805} {s} {s} {4} {0} {}
 E { 2818} {w} {w} {8} {0} {}
+E { 2792} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2818} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2795} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2805} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2805} {0} {} {Ulica Poludniowa} { } {} {} {} {} {} {1.000}
 E { 2804} {n} {n} {1} {0} {}
 E { 2806} {s} {s} {4} {0} {}
+E { 2804} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2806} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2806} {0} {} {Ulica Poludniowa} { } {} {} {} {} {} {1.000}
 E { 2805} {n} {n} {1} {0} {}
 E { 2807} {w} {w} {8} {0} {}
 E { 2754} {s} {s} {4} {0} {}
+E { 2805} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2754} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 2807} {0} {} {Plac przed posesja} { } {} {} {} {} {} {1.000}
 E { 2806} {e} {e} {2} {0} {}
@@ -12225,24 +12274,34 @@ E { 2815} {e} {e} {2} {0} {}
 R { 2818} {0} {} {Uliczka w dzielnicy kupieckiej} { } {} {} {} {} {} {1.000}
 E { 2804} {e} {e} {2} {0} {}
 E { 2819} {w} {w} {8} {0} {}
+E { 2804} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2819} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2819} {0} {} {Ulica Adlaren} { } {} {} {} {} {} {1.000}
 E { 2818} {e} {e} {2} {0} {}
 E { 2820} {w} {w} {8} {0} {}
+E { 2818} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2820} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2820} {0} {} {uliczka} { } {} {} {} {} {} {1.000}
 E { 2819} {e} {e} {2} {0} {}
 E { 2821} {w} {w} {8} {0} {}
+E { 2819} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2821} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2821} {0} {} {Skrzyzowanie ulic} { } {} {} {} {} {} {1.000}
 E { 2820} {e} {e} {2} {0} {}
 E { 2822} {n} {n} {1} {0} {}
 E { 2823} {w} {w} {8} {0} {}
+E { 2820} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 2822} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2822} {0} {} {Przed karczma} { } {} {} {} {} {} {1.000}
 E { 2821} {s} {s} {4} {0} {}
 E { 2824} {n} {n} {1} {0} {}
 E { 2827} {e} {e} {2} {0} {}
+E { 2821} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2824} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2823} {0} {<fba>} {Przy bramie} {prz} {} {} {} {} {} {1.000}
 E { 2821} {e} {e} {2} {0} {}
@@ -12252,16 +12311,22 @@ R { 2824} {0} {} {Ulica Adlaren} { } {} {} {} {} {} {1.000}
 E { 2822} {s} {s} {4} {0} {}
 E { 2825} {n} {n} {1} {0} {}
 E { 2829} {e} {e} {2} {0} {}
+E { 2822} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2825} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2825} {0} {} {Ulica Adlaren} { } {} {} {} {} {} {1.000}
 E { 2824} {s} {s} {4} {0} {}
 E { 2826} {ne} {ne} {3} {0} {}
 E { 2830} {e} {szpital} {2} {0} {}
+E { 2824} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2826} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2826} {0} {} {Skrzyzowanie ulic} { } {} {} {} {} {} {1.000}
 E { 2825} {sw} {sw} {12} {0} {}
 E { 2831} {n} {n} {1} {0} {}
 E { 2832} {e} {e} {2} {0} {}
+E { 2825} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2831} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2827} {0} {} {Karczma 'Zlota Waga'} {Gos} {} {} {} {} {} {1.000}
 E { 2822} {w} {drzwi} {8} {0} {}
@@ -12280,6 +12345,8 @@ R { 2831} {0} {} {Obok stajni} { } {} {} {} {} {} {1.000}
 E { 2826} {s} {s} {4} {0} {}
 E { 2910} {n} {n} {1} {0} {}
 E { 2911} {w} {w} {8} {0} {}
+E { 2826} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2910} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2832} {0} {} {Ulica Venny} { } {} {} {} {} {} {1.000}
 E { 2826} {w} {w} {8} {0} {}
@@ -12304,6 +12371,8 @@ E { 2835} {w} {w} {8} {0} {}
 E { 2787} {s} {s} {4} {0} {}
 E { 2837} {nw} {nw} {9} {0} {}
 E { 2838} {ne} {ne} {3} {0} {}
+E { 2787} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2838} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2837} {0} {} {Sklep z roznosciami} {Skl} {} {} {} {} {} {1.000}
 E { 2836} {se} {se} {6} {0} {}
@@ -12312,6 +12381,8 @@ R { 2838} {0} {} {W nieduzej uliczce miasta Jerris} { } {} {} {} {} {} {1.000}
 E { 2836} {sw} {sw} {12} {0} {}
 E { 2844} {se} {se} {6} {0} {}
 E { 2851} {ne} {ne} {3} {0} {}
+E { 2836} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2851} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2839} {0} {} {Przedsionek siedziby kompanii handlowej} { } {} {} {} {} {} {1.000}
 E { 2833} {s} {s} {4} {0} {}
@@ -12363,6 +12434,8 @@ E { 2838} {sw} {sw} {12} {0} {}
 E { 2852} {n} {n} {1} {0} {}
 E { 2854} {e} {e} {2} {0} {}
 E { 2853} {ne} {ne} {3} {0} {}
+E { 2838} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2852} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2852} {0} {} {Plac Targowy} { } {} {} {} {} {} {1.000}
 E { 2851} {s} {s} {4} {0} {}
@@ -12370,6 +12443,9 @@ E { 2853} {e} {e} {2} {0} {}
 E { 2854} {se} {se} {6} {0} {}
 E { 2864} {w} {w} {8} {0} {}
 E { 2865} {n} {n} {1} {0} {}
+E { 2851} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2865} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 2864} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2853} {0} {} {Plac Targowy} { } {} {} {} {} {} {1.000}
 E { 2852} {w} {w} {8} {0} {}
@@ -12424,20 +12500,28 @@ E { 2853} {s} {s} {4} {0} {}
 R { 2864} {0} {} {Przy placyku} { } {} {} {} {} {} {1.000}
 E { 2852} {e} {e} {2} {0} {}
 E { 2884} {w} {w} {8} {0} {}
+E { 2884} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2852} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2865} {0} {} {Uliczka w ubogiej dzielnicy miasta} { } {} {} {} {} {} {1.000}
 E { 2852} {s} {s} {4} {0} {}
 E { 2866} {n} {n} {1} {0} {}
+E { 2852} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2866} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2866} {0} {} {Uliczka w ubogiej dzielnicy miasta} { } {} {} {} {} {} {1.000}
 E { 2865} {s} {s} {4} {0} {}
 E { 2867} {ne} {ne} {3} {0} {}
 E { 2868} {nw} {nw} {9} {0} {}
+E { 2865} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2867} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2867} {0} {} {Ulica polnocna} {} {} {} {} {} {} {1.000}
 E { 2866} {sw} {sw} {12} {0} {}
 E { 2869} {n} {n} {1} {0} {}
 E { 5219} {d} {d} {32} {0} {}
+E { 2866} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2869} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2868} {0} {} {Uliczka w ubogiej dzielnicy miasta} { } {} {} {} {} {} {1.000}
 E { 2866} {se} {se} {6} {0} {}
@@ -12447,15 +12531,18 @@ E { 2896} {sw} {sw} {12} {0} {}
 R { 2869} {0} {} {Ulica polnocna} { } {} {} {} {} {} {1.000}
 E { 2867} {s} {s} {4} {0} {}
 E { 2870} {w} {w} {8} {0} {}
-E { 2871} {e} {e} {2} {0} {}
 E { 2875} {n} {n} {1} {0} {}
+E { 2867} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2870} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2871} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2870} {0} {<faa>} {Sklep z bronia} {BiP} {} {} {} {} {} {1.000}
 E { 2869} {e} {wyjscie} {2} {0} {}
+E { 2869} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2871} {0} {} {Wejscie do garnizonu} { } {} {} {} {} {} {1.000}
-E { 2869} {w} {w} {8} {0} {}
 E { 2872} {n} {n} {1} {0} {}
+E { 2869} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 2872} {0} {} {W glebi garnizonu} { } {} {} {} {} {} {1.000}
 E { 2871} {s} {s} {4} {0} {}
@@ -12510,6 +12597,8 @@ R { 2884} {0} {} {Przed swiatynia} { } {} {} {} {} {} {1.000}
 E { 2864} {e} {e} {2} {0} {}
 E { 2885} {u} {schodki} {16} {0} {}
 E { 2886} {w} {w} {8} {0} {}
+E { 2886} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 2864} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2885} {0} {} {Swiatynia} { } {} {} {} {} {} {1.000}
 E { 2884} {d} {s} {32} {0} {}
@@ -12517,17 +12606,23 @@ E { 2884} {d} {s} {32} {0} {}
 R { 2886} {0} {} {Zakret ulicy} { } {} {} {} {} {} {1.000}
 E { 2884} {e} {e} {2} {0} {}
 E { 2887} {nw} {nw} {9} {0} {}
+E { 2887} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 2884} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 2887} {0} {} {Ulica przy placu} { } {} {} {} {} {} {1.000}
 E { 2886} {se} {se} {6} {0} {}
 E { 2888} {nw} {nw} {9} {0} {}
 E { 5227} {d} {d} {32} {0} {}
+E { 2888} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 2886} {przemknij na se} {przemknij na se} {6} {0} {}
 
 R { 2888} {0} {} {Placyk} { } {} {} {} {} {} {1.000}
 E { 2887} {se} {se} {6} {0} {}
 E { 2889} {ne} {ne} {3} {0} {}
 E { 2890} {nw} {nw} {9} {0} {}
 E { 2899} {sw} {sw} {12} {0} {}
+E { 2899} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2887} {przemknij na se} {przemknij na se} {6} {0} {}
 
 R { 2889} {0} {} {Uliczka w ubogiej dzielnicy miasta} { } {} {} {} {} {} {1.000}
 E { 2888} {sw} {sw} {12} {0} {}
@@ -12571,12 +12666,16 @@ E { 2897} {d} {schodki} {32} {0} {}
 R { 2899} {0} {} {Ulica Rzemieslnicza} { } {} {} {} {} {} {1.000}
 E { 2888} {ne} {ne} {3} {0} {}
 E { 2900} {sw} {sw} {12} {0} {}
+E { 2900} {przemknij na sw} {przemknij na sw} {12} {0} {}
+E { 2888} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2900} {0} {} {Ulica Rzemieslnicza} { } {} {} {} {} {} {1.000}
 E { 2899} {ne} {ne} {3} {0} {}
 E { 2901} {w} {w} {8} {0} {}
 E { 2903} {nw} {nw} {9} {0} {}
 E { 2906} {s} {s} {4} {0} {}
+E { 2906} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2899} {przemknij na ne} {przemknij na ne} {3} {0} {}
 
 R { 2901} {0} {} {Ponury pokoj} {Tat} {} {} {} {} {} {1.000}
 E { 2900} {e} {wyjscie} {2} {0} {}
@@ -12600,6 +12699,8 @@ R { 2906} {0} {} {Ulica Rzemieslnicza} { } {} {} {} {} {} {1.000}
 E { 2900} {n} {n} {1} {0} {}
 E { 2907} {w} {w} {8} {0} {}
 E { 2908} {s} {s} {4} {0} {}
+E { 2908} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2900} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2907} {0} {} {Sklep} {Skl} {} {} {} {} {} {1.000}
 E { 2906} {e} {wyjscie} {2} {0} {}
@@ -12608,6 +12709,8 @@ R { 2908} {0} {} {Uliczka Adlaren} { } {} {} {} {} {} {1.000}
 E { 2906} {n} {n} {1} {0} {}
 E { 2909} {e} {e} {2} {0} {}
 E { 2910} {s} {s} {4} {0} {}
+E { 2910} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2906} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2909} {0} {} {Dlugi korytarz} { } {} {} {} {} {} {1.000}
 E { 2908} {w} {w} {8} {0} {}
@@ -12617,6 +12720,8 @@ E { 5132} {e} {e} {2} {0} {}
 R { 2910} {0} {} {Ulica Adlaren} { } {} {} {} {} {} {1.000}
 E { 2908} {n} {n} {1} {0} {}
 E { 2831} {s} {s} {4} {0} {}
+E { 2831} {przemknij na s} {przemknij na s} {4} {0} {}
+E { 2908} {przemknij na n} {przemknij na n} {1} {0} {}
 
 R { 2911} {0} {} {Przedsionek stajni} {Sta} {} {} {} {} {} {1.000}
 E { 2831} {e} {wyjscie} {2} {0} {}
@@ -14411,13 +14516,14 @@ R { 3313} {8} {} {} { } {} {} {} {} {} {1.000}
 E { 3312} {e} {e} {2} {0} {}
 E { 2165} {w} {w} {8} {0} {}
 
-R { 3314} {0} {} {Lesna sciezka} { } {} {} {} {} {} {1.000}
+R { 3314} {0} {} {Zwirowa droga} { } {} {} {} {} {} {1.000}
 E { 2303} {se} {se} {6} {0} {}
 E { 3315} {n} {n} {1} {0} {}
 
 R { 3315} {0} {} {Gorska sciezka} { } {} {} {} {} {} {1.000}
 E { 3314} {s} {s} {4} {0} {}
 E { 3316} {w} {w} {8} {0} {}
+E { 5417} {se} {se} {6} {0} {}
 
 R { 3316} {0} {} {Na zboczu gory} { } {} {} {} {} {} {1.000}
 E { 3315} {e} {e} {2} {0} {}
@@ -14498,11 +14604,13 @@ E { 3328} {zachod} {zachod} {8} {0} {}
 E { 3328} {przemknij na w} {przemknij na w} {8} {0} {}
 E { 3330} {przemknij na s} {przemknij na s} {4} {0} {}
 E { 3911} {przemknij na ne} {przemknij na ne} {3} {0} {}
+E { 3330} {s} {s} {4} {0} {}
 
 R { 3330} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3331} {e} {e} {2} {0} {}
 E { 3333} {ne} {ne} {3} {0} {}
 E { 3329} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 3329} {n} {n} {1} {0} {}
 
 R { 3331} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3330} {w} {w} {8} {0} {}
@@ -17018,6 +17126,7 @@ R { 3877} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3873} {n} {n} {1} {0} {}
 E { 3878} {przemknij na w} {przemknij na w} {8} {0} {}
 E { 3873} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 3878} {w} {w} {8} {0} {}
 
 R { 3878} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3879} {w} {w} {8} {0} {}
@@ -17026,6 +17135,7 @@ E { 3879} {przemknij na w} {przemknij na w} {8} {0} {}
 E { 3877} {przemknij na e} {przemknij na e} {2} {0} {}
 E { 3833} {przemknij na se} {przemknij na se} {6} {0} {}
 E { 3833} {se} {se} {6} {0} {}
+E { 3877} {e} {e} {2} {0} {}
 
 R { 3879} {0} {<aca>} {Gesty las} { } {} {} {} {} {} {1.000}
 E { 3878} {e} {e} {2} {0} {}
@@ -19229,6 +19339,7 @@ E { 2706} {sw} {sw} {12} {0} {}
 E { 5329} {se} {se} {6} {0} {}
 E { 5150} {przemknij na w} {przemknij na w} {8} {0} {}
 E { 5329} {przemknij na se} {przemknij na se} {6} {0} {}
+E { 5329} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
 
 R { 4345} {0} {} {Waska droga wsrod bagien} { } {} {} {} {} {} {1.000}
 E { 2707} {s} {s} {4} {0} {}
@@ -19251,6 +19362,7 @@ E { 5336} {n} {n} {1} {0} {}
 E { 5298} {nw} {nw} {9} {0} {}
 E { 2708} {przemknij na s} {przemknij na s} {4} {0} {}
 E { 4347} {przemknij na w} {przemknij na w} {8} {0} {}
+E { 4347} {zachod} {zachod} {8} {0} {}
 
 R { 4347} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 2709} {s} {s} {4} {0} {}
@@ -19262,6 +19374,7 @@ E { 5298} {przemknij na n} {przemknij na n} {1} {0} {}
 E { 5298} {n} {n} {1} {0} {}
 E { 2709} {przemknij na s} {przemknij na s} {4} {0} {}
 E { 5336} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
+E { 4346} {wschod} {wschod} {2} {0} {}
 
 R { 4348} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 2709} {n} {n} {1} {0} {}
@@ -22641,6 +22754,7 @@ E { 5145} {zachod} {zachod} {8} {0} {}
 E { 5144} {polnoc} {polnoc} {1} {0} {}
 E { 5145} {przemknij na w} {przemknij na w} {8} {0} {}
 E { 5144} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 5147} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 5147} {0} {} {Bagna} { } {} {} {} {} {} {1.000}
 E { 5146} {w} {w} {8} {0} {}
@@ -22650,6 +22764,8 @@ E { 5144} {nw} {nw} {9} {0} {}
 E { 2706} {ne} {ne} {3} {0} {}
 E { 5144} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 E { 5148} {wschod} {wschod} {2} {0} {}
+E { 5148} {przemknij na e} {przemknij na e} {2} {0} {}
+E { 5146} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 5148} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5147} {w} {w} {8} {0} {}
@@ -22657,6 +22773,7 @@ E { 2706} {n} {n} {1} {0} {}
 E { 2707} {nw} {nw} {9} {0} {}
 E { 2705} {ne} {ne} {3} {0} {}
 E { 5147} {zachod} {zachod} {8} {0} {}
+E { 5147} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 5149} {0} {} {Bagna} { } {} {} {} {} {} {1.000}
 E { 2705} {sw} {sw} {12} {0} {}
@@ -23331,6 +23448,8 @@ E { 4346} {se} {se} {6} {0} {}
 E { 5334} {ne} {ne} {3} {0} {}
 E { 4347} {przemknij na s} {przemknij na s} {4} {0} {}
 E { 4347} {s} {s} {4} {0} {}
+E { 5299} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 5336} {wschod} {wschod} {2} {0} {}
 
 R { 5299} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5298} {s} {s} {4} {0} {}
@@ -23338,6 +23457,9 @@ E { 5300} {n} {n} {1} {0} {}
 E { 5301} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 E { 5334} {e} {e} {2} {0} {}
 E { 5336} {se} {se} {6} {0} {}
+E { 5334} {wschod} {wschod} {2} {0} {}
+E { 5300} {przemknij na n} {przemknij na n} {1} {0} {}
+E { 5298} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 5300} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5299} {s} {s} {4} {0} {}
@@ -23345,6 +23467,7 @@ E { 5301} {e} {e} {2} {0} {}
 E { 5334} {se} {se} {6} {0} {}
 E { 5351} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 E { 5351} {ne} {ne} {3} {0} {}
+E { 5299} {przemknij na s} {przemknij na s} {4} {0} {}
 
 R { 5301} {0} {} {W glebi bagien} { } {} {} {} {} {} {1.000}
 E { 5300} {w} {w} {8} {0} {}
@@ -23353,6 +23476,7 @@ E { 5299} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E { 5334} {poludnie} {poludnie} {4} {0} {}
 E { 5350} {polnocny-wschod} {polnocny-wschod} {3} {0} {}
 E { 5350} {ne} {ne} {3} {0} {}
+E { 5351} {polnoc} {polnoc} {1} {0} {}
 
 R { 5302} {0} {} {Dziwne bagna} { } {} {} {} {} {} {1.000}
 E { 5301} {w} {w} {8} {0} {}
@@ -23370,16 +23494,21 @@ E { 5303} {sw} {sw} {12} {0} {}
 E { 5305} {ne} {ne} {3} {0} {}
 E { 5306} {e} {e} {2} {0} {}
 E { 5353} {w} {w} {8} {0} {}
+E { 5306} {wschod} {wschod} {2} {0} {}
 
 R { 5305} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5304} {sw} {sw} {12} {0} {}
 E { 5306} {s} {s} {4} {0} {}
 E { 5354} {w} {w} {8} {0} {}
+E { 5418} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 5354} {przemknij na w} {przemknij na w} {8} {0} {}
 
 R { 5306} {0} {} {Obrzeza bagien} { } {} {} {} {} {} {1.000}
 E { 5305} {n} {n} {1} {0} {}
 E { 5307} {s} {s} {4} {0} {}
 E { 5304} {w} {w} {8} {0} {}
+E { 5304} {zachod} {zachod} {8} {0} {}
+E { 5418} {wschod} {wschod} {2} {0} {}
 
 R { 5307} {0} {} {Obrzeza bagien} { } {} {} {} {} {} {1.000}
 E { 5306} {n} {n} {1} {0} {}
@@ -23479,6 +23608,7 @@ E { 5328} {w} {w} {8} {0} {}
 R { 5328} {0} {} {Bagna} { } {} {} {} {} {} {1.000}
 E { 5327} {e} {e} {2} {0} {}
 E { 5329} {w} {w} {8} {0} {}
+E { 5329} {zachod} {zachod} {8} {0} {}
 
 R { 5329} {0} {} {Bagna} { } {} {} {} {} {} {1.000}
 E { 5328} {e} {e} {2} {0} {}
@@ -23486,6 +23616,8 @@ E { 2705} {w} {w} {8} {0} {}
 E { 4344} {nw} {nw} {9} {0} {}
 E { 5149} {n} {n} {1} {0} {}
 E { 4344} {przemknij na nw} {przemknij na nw} {9} {0} {}
+E { 4344} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
+E { 5328} {wschod} {wschod} {2} {0} {}
 
 R { 5330} {0} {} {Bagna} { } {} {} {} {} {} {1.000}
 E { 5149} {w} {w} {8} {0} {}
@@ -23514,11 +23646,13 @@ E { 5299} {w} {w} {8} {0} {}
 E { 5298} {sw} {sw} {12} {0} {}
 E { 5336} {s} {s} {4} {0} {}
 E { 5300} {nw} {nw} {9} {0} {}
+E { 5299} {zachod} {zachod} {8} {0} {}
 
 R { 5335} {0} {} {Dziwne bagna} { } {} {} {} {} {} {1.000}
 E { 2708} {sw} {sw} {12} {0} {}
 E { 4346} {w} {w} {8} {0} {}
 E { 5150} {se} {se} {6} {0} {}
+E { 5336} {polnocny-zachod} {polnocny-zachod} {9} {0} {}
 
 R { 5336} {0} {} {Dziwne bagna} { } {} {} {} {} {} {1.000}
 E { 4346} {s} {s} {4} {0} {}
@@ -23527,6 +23661,8 @@ E { 4347} {sw} {sw} {12} {0} {}
 E { 5334} {n} {n} {1} {0} {}
 E { 5299} {nw} {nw} {9} {0} {}
 E { 4347} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
+E { 5335} {poludniowy-wschod} {poludniowy-wschod} {6} {0} {}
+E { 5298} {zachod} {zachod} {8} {0} {}
 
 R { 5337} {0} {} {Obrzeza bagien} { } {} {} {} {} {} {1.000}
 E { 5303} {w} {w} {8} {0} {}
@@ -23592,6 +23728,7 @@ R { 5351} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5300} {poludniowy-zachod} {poludniowy-zachod} {12} {0} {}
 E { 5300} {sw} {sw} {12} {0} {}
 E { 5352} {ne} {ne} {3} {0} {}
+E { 5301} {poludnie} {poludnie} {4} {0} {}
 
 R { 5352} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5351} {sw} {sw} {12} {0} {}
@@ -23605,6 +23742,7 @@ E { 5304} {e} {e} {2} {0} {}
 R { 5354} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
 E { 5353} {sw} {sw} {12} {0} {}
 E { 5305} {e} {e} {2} {0} {}
+E { 5305} {przemknij na e} {przemknij na e} {2} {0} {}
 
 R { 5355} {0} {} {Wieksza sypialnia} { } {} {} {} {} {} {1.000}
 E {  503} {sw} {salon} {12} {0} {}
@@ -23822,3 +23960,67 @@ E { 5400} {ne} {ne} {3} {0} {}
 
 R { 5404} {0} {} {Gdzies posrod lak} { } {} {} {} {} {} {1.000}
 E { 5401} {w} {w} {8} {0} {}
+
+R { 5405} {8} {} {} { } {} {} {} {} {} {1.000}
+E { 1999} {sw} {sw} {12} {0} {}
+E { 1991} {ne} {ne} {3} {0} {}
+
+R { 5406} {0} {} {Las} { } {} {} {} {} {} {1.000}
+E { 1999} {nw} {nw} {9} {0} {}
+E { 5407} {s} {s} {4} {0} {}
+
+R { 5407} {0} {} {Las} { } {} {} {} {} {} {1.000}
+E { 5406} {n} {n} {1} {0} {}
+E { 5408} {sw} {sw} {12} {0} {}
+
+R { 5408} {0} {} {Las} { } {} {} {} {} {} {1.000}
+E { 5407} {ne} {ne} {3} {0} {}
+E { 5409} {se} {se} {6} {0} {}
+
+R { 5409} {0} {} {Lesny trakt} { } {} {} {} {} {} {1.000}
+E { 5408} {nw} {nw} {9} {0} {}
+E { 5410} {s} {s} {4} {0} {}
+
+R { 5410} {0} {} {W lesie} { } {} {} {} {} {} {1.000}
+E { 5409} {n} {n} {1} {0} {}
+E { 5411} {sw} {sw} {12} {0} {}
+E { 5412} {s} {s} {4} {0} {}
+
+R { 5411} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
+E { 5410} {ne} {ne} {3} {0} {}
+E { 5412} {e} {e} {2} {0} {}
+E { 5413} {s} {s} {4} {0} {}
+E { 5414} {se} {se} {6} {0} {}
+
+R { 5412} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
+E { 5411} {w} {w} {8} {0} {}
+E { 5410} {n} {n} {1} {0} {}
+E { 5414} {s} {s} {4} {0} {}
+E { 5413} {sw} {sw} {12} {0} {}
+
+R { 5413} {0} {} {Gdzies w lesie} { } {} {} {} {} {} {1.000}
+E { 5411} {n} {n} {1} {0} {}
+E { 5414} {e} {e} {2} {0} {}
+E { 5412} {ne} {ne} {3} {0} {}
+E { 5415} {s} {s} {4} {0} {}
+
+R { 5414} {0} {} {Lesna sciezka} { } {} {} {} {} {} {1.000}
+E { 5411} {nw} {nw} {9} {0} {}
+E { 5412} {n} {n} {1} {0} {}
+E { 5413} {w} {w} {8} {0} {}
+
+R { 5415} {0} {} {Lesna sciezka} { } {} {} {} {} {} {1.000}
+E { 5413} {n} {n} {1} {0} {}
+E { 5416} {sw} {sw} {12} {0} {}
+
+R { 5416} {0} {} {Lesna sciezka} { } {} {} {} {} {} {1.000}
+E { 5415} {ne} {ne} {3} {0} {}
+E { 5417} {sw} {sw} {12} {0} {}
+
+R { 5417} {0} {} {Lesna sciezka} { } {} {} {} {} {} {1.000}
+E { 5416} {ne} {ne} {3} {0} {}
+E { 3315} {nw} {nw} {9} {0} {}
+
+R { 5418} {0} {} {Granica bagien} { } {} {} {} {} {} {1.000}
+E { 5306} {zachod} {zachod} {8} {0} {}
+E { 5305} {polnocny-zachod} {polnocny-zachod} {9} {0} {}

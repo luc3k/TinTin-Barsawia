@@ -1,23 +1,5 @@
 #CLASS {aliases} OPEN
 
-#ALIAS {mis}
-{
-	napij sie z misy
-}
-{5}
-
-#ALIAS {pzz}
-{
-	pociagnij za sznurek
-}
-{5}
-
-#ALIAS {str}
-{
-	pij ze strumyka
-}
-{5}
-
 #ALIAS {/findroom}
 {
 	#map goto {$last_room}
@@ -438,6 +420,12 @@
 }
 {5}
 
+#ALIAS {mis}
+{
+	napij sie z misy
+}
+{5}
+
 #ALIAS {pr}
 {
 	przeczytaj %0
@@ -465,6 +453,12 @@
 #ALIAS {pzs}
 {
 	pociagnij za sznur
+}
+{5}
+
+#ALIAS {pzz}
+{
+	pociagnij za sznurek
 }
 {5}
 
@@ -505,6 +499,12 @@
 	d;
 	drzwi;
 	przejdz przez drugi portal
+}
+{5}
+
+#ALIAS {str}
+{
+	pij ze strumyka
 }
 {5}
 

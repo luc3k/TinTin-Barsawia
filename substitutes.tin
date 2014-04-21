@@ -4,6 +4,7 @@
 #SUBSTITUTE       {\b\d md\b}  {<cba>%0<099>}  {5}
 #SUBSTITUTE       {\b\d sr\b}  {<ddf>%0<099>}  {5}
 #SUBSTITUTE       {\b{\d+} zl\b}  {<ffa>%0<099>}  {5}
+#SUBSTITUTE       {^  Nie masz nic przy sobie.$}          {<afa>Nie masz nic przy sobie.<088>}           {5}
 #SUBSTITUTE       {^%1 {cwaluje|galopuje|nadjezdza} na %3 {na|ze|z} %5.$}                                   {%1 %2 %3 %4 <eca>%5<099>.}  {5}
 #SUBSTITUTE       {^Brama jest zamknieta.$}     {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Brama zostaje otwarta.$}      {<afa>%0<099>}  {5}
@@ -15,7 +16,6 @@
 #SUBSTITUTE       {^Nagle, tuz przed toba, z chmury dymu wylania sie wizerunek %1.$}                                              {<fad>Nagle, tuz przed toba, z chmury dymu wylania sie wizerunek <bff>%1<fad>.<099>}                                                           {5}
 #SUBSTITUTE       {^Nie masz wolnej reki, ktora moglbys chwycic %1.$}                               {<faa>%0<099>}  {5}
 #SUBSTITUTE       {^Po chwili brama otwiera sie powoli na cala szerokosc.$}                                     {<afa>%0<088>}  {5}
-#SUBSTITUTE       {^  Nie masz nic przy sobie.$}          {<afa>Nie masz nic przy sobie.<088>}  {5}
 #SUBSTITUTE       {^Pochylasz sie nad beczulke i zaczynasz pic wode.$}                                {<bcf>%0<088>}  {5}
 #SUBSTITUTE       {^Pochylasz sie nad misa fontanny i zaczynasz pic z niej czysta, chlodna wode.$}                                                            {<bcf>%0<099>}  {5}
 #SUBSTITUTE       {^Potrzebujesz do tego odpowiednie narzedzia.$}                           {<faa>%0<088>}  {5}
