@@ -1,5 +1,23 @@
 #CLASS {aliases} OPEN
 
+#ALIAS {mis}
+{
+	napij sie z misy
+}
+{5}
+
+#ALIAS {pzz}
+{
+	pociagnij za sznurek
+}
+{5}
+
+#ALIAS {str}
+{
+	pij ze strumyka
+}
+{5}
+
 #ALIAS {/findroom}
 {
 	#map goto {$last_room}

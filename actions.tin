@@ -64,6 +64,22 @@
 }
 {5}
 
+#ACTION {^Masz na sobie %1.$}
+{
+	#line gag;
+	#variable string %1;
+	#replace {string} {, } {;};
+	#replace {string} { i } {;};
+	#echo {<afa>Masz na sobie<099>};
+	#foreach {$string} {eq_item}
+	{
+		#echo {$eq_item}
+	};
+	#unvariable string;
+	#unvariable eq_item
+}
+{5}
+
 #ACTION {^Nie widzisz zadnego wyjscia prowadzacego na %1.$}
 {
 	#line gag;

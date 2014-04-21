@@ -79,7 +79,7 @@
 	#if {$szukanie_ziol == 0}
 	{
 		#variable {szukanie_ziol} {1};
-		#regexp {%1} {{[^1]}} {#echo $ziolo;#variable {ziolo}  {%1}};
+		#regexp {%1} {{[^1]}} {#variable {ziolo}  {%1}};
 		#cr
 	};
 	#elseif {$szukanie_ziol == 1}
@@ -101,7 +101,9 @@
 #SUBSTITUTE       {{?i}koralowoczerwon{y|e|ych} niewielk{i|ie|ich} \bowoc{e|ow|}\b}                                             {%0 <afa>(ostrokrzew kolczasty)<099>}            {5}
 #SUBSTITUTE       {{?i}malutk{i|ie|ich} bial{y|e|ych} \bkwiat{y|ow|}\b}                                 {%0 <afa>(stokrotka)<099>}  {5}
 #SUBSTITUTE       {{?i}masywn{y|e|ych} poskrecan{y|e|ych} \bkorzen{ie|i|}\b}                                      {%0 <afa>(imbir)<099>}  {5}
+#SUBSTITUTE       {{?i}niepozorn{y|e|ych} zolt{y|e|ych} \bkwiat{y|ow|}\b}                                   {%0 <afa>(dziurawiec)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} cienk{i|ie|ich} \blisc{ie|i|}\b}                                  {%0 <afa>(trawa)<099>}  {5}
+#SUBSTITUTE       {{?i}podluzn{y|e|ych} jasnozielon{y|e|ych} \blisc{ie|i|}\b}                                       {%0 <afa>(mieta)<099>}  {5}
 #SUBSTITUTE       {{?i}podluzn{y|e|ych} lancetowat{y|e|ych} \blisc{ie|i|}\b}                                      {%0 <afa>(babka)<099>}  {5}
 #VARIABLE         {aktywne_szukanie}  {0}
 #VARIABLE         {dzis_zeb_ziol}  {0}

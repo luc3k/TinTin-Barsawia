@@ -42,6 +42,14 @@
 }
 {5}
 
+#ACTION {^Nie potrafisz schowac sie jeszcze lepiej.$}
+{
+	#line gag;
+	#echo {<afa>%0<099>};
+	#variable ukrywanie 1
+}
+{5}
+
 #ACTION {^Chowasz sie najlepiej jak potrafisz.$}
 {
 	#line gag;
@@ -62,7 +70,10 @@
 {
 	#line gag;
 	#echo {<fab>%0<099>};
-	#map undo
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
 }
 {5}
 
@@ -175,7 +186,37 @@
 		};
 		#default
 		{
-			#return %0<faa>[BRAK ATAKU]<099>
+			#return <faf>%0<faa>[BRAK ATAKU]<099>
+		}
+	}
+}
+
+#FUNCTION {rodzaj_broni}
+{
+	#switch {"%0"}
+	{
+		#case {"{?i}{czarn}{ym|ego} {matow}{ym|ego} {sztylet}{em|u}"}
+		{
+			#return <afa>%0<099>
+		};
+		#default
+		{
+			#return <faf>%0<faa>[BRAK BRONI]<099>
+		}
+	}
+}
+
+#FUNCTION {rodzaj_miejsca}
+{
+	#switch {"%0"}
+	{
+		#case {"{?i}{bok|glowe|korpus|dlugie cielsko|tulow|nogi|gruba skore|lewe ramie|prawe ramie}"}
+		{
+			#return <afa>%0<099>
+		};
+		#default
+		{
+			#return <faf>%0<faa>[BRAK MIEJSCA]<099>
 		}
 	}
 }
@@ -196,15 +237,15 @@
 		{
 			#return <cfa>%0<170>[1/5]<099>
 		};
-		#case {"{?i}{ledwo muska cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa}"}
+		#case {"{?i}{ledwo muska cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa cie|nieznacznie obija cie}"}
 		{
 			#return <cfa>%0<170>[1/5]<099>
 		};
-		#case {"{?i}{lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz}"}
+		#case {"{?i}{lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|lekko nakluwasz}"}
 		{
 			#return <dfa>%0<170>[2/5]<099>
 		};
-		#case {"{?i}{lekko rani cie|lekko obija cie}"}
+		#case {"{?i}{lekko rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci lekkie obrazenia}"}
 		{
 			#return <dfa>%0<170>[2/5]<099>
 		};
@@ -212,7 +253,7 @@
 		{
 			#return <fca>%0<170>[3/5]<099>
 		};
-		#case {"{?i}{rani cie|obija cie}"}
+		#case {"{?i}{rani cie|obija cie|siniaczy cie}"}
 		{
 			#return <fca>%0<170>[3/5]<099>
 		};
@@ -220,7 +261,7 @@
 		{
 			#return <fba>%0<170>[4/5]<099>
 		};
-		#case {"{?i}{powaznie rani cie}"}
+		#case {"{?i}{powaznie rani cie|zadaje ci spore obrazenia}"}
 		{
 			#return <fba>%0<170>[4/5]<099>
 		};
@@ -230,21 +271,21 @@
 		};
 		#default
 		{
-			#return %0<faa>[BRAK OBRAZEN]<099>
+			#return <faf>%0<faa>[BRAK OBRAZEN]<099>
 		}
 	}
 }
 
-#SUBSTITUTE       {%1 swoje{go|j} %3 %4 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa} w %6.$}                                                                                                                                                                {@rodzaj_ataku{%1} swoje%2 %3 %4 @rodzaj_obrazen{%5} w %6.}                                  {5}
+#SUBSTITUTE       {%1 swoje{go|j} %3 %4 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa cie|nieznacznie obija cie|zadaje ci lekkie obrazenia|siniaczy cie|zadaje ci spore obrazenia} w %6.$}                                                                                                                                                                                                                                                            {@rodzaj_ataku{%1} <afa>swoje%2 %3 %4 @rodzaj_obrazen{%5} <afa>w @rodzaj_miejsca{%6}.}                                                             {5}
+#SUBSTITUTE       {%1 wpada w panike!}  {<afa>%0<099>}  {5}
 #SUBSTITUTE       {^%1 jest %2.}  {%1 jest @kondycja{%2}.}  {5}
-#SUBSTITUTE       {^%1 swoje{go|j} %3 {nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz} %5, trafiajac {go|ja} w %7.$}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {@rodzaj_ataku{%1} swoje%2 %3 @rodzaj_obrazen{%4} %5, trafiajac %6 w %7.}                                                {5}
-#SUBSTITUTE       {^%1 wpada w panike!}  {<afa>%0<099>}  {5}
+#SUBSTITUTE       {^%1 swoje{go|j} %3 {nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz|lekko nakluwasz} %5, trafiajac {go|ja} w %7.$}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         {@rodzaj_ataku{%1} <afa>swoje%2 @rodzaj_broni{%3} @rodzaj_obrazen{%4} %5<afa>, trafiajac %6 w @rodzaj_miejsca{%7}.}                                                                                          {5}
 #SUBSTITUTE       {^%1 {nie udaje sie trafic ciebie} %3.$}                    {%1 @rodzaj_obrazen{%2} %3.}   {5}
-#SUBSTITUTE       {^%1 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa} %3, trafiajac cie w %4.$}                                                                                                                                                                 {%1 @rodzaj_obrazen{%2} %3, trafiajac cie w %4.}                       {5}
-#SUBSTITUTE       {^%1 {probuje cie trafic} %3, lecz tobie udaje sie uniknac tego ciosu.$}                                                    {%1 @rodzaj_obrazen{%2} %3, lecz tobie udaje sie uniknac tego ciosu.}                                            {5}
+#SUBSTITUTE       {^%1 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa cie|nieznacznie obija cie|zadaje ci lekkie obrazenia|siniaczy cie|zadaje ci spore obrazenia} %3, trafiajac cie w %4.$}                                                                                                                                                                                                                                                             {%1 @rodzaj_obrazen{%2} %3<afa>, trafiajac cie w @rodzaj_miejsca{%4}.}                                             {5}
+#SUBSTITUTE       {^%1 {probuje cie trafic} %3, lecz tobie udaje sie uniknac tego ciosu.$}                                                    {%1 @rodzaj_obrazen{%2} %3<afa>, lecz tobie udaje sie uniknac tego ciosu.<099>}                                                      {5}
 #SUBSTITUTE       {^Niezauwazony podkradasz sie do %1 i naglym ruchem wbijasz swoj %2 w plecy, %3.$}                                                              {<afa>Niezauwazony podkradasz sie do %1 i naglym ruchem wbijasz swoj %2 w plecy, %3.<088>}                                                                 {5}
 #SUBSTITUTE       {^Sciskasz mocniej %1 i zaczynasz sie skradac w kierunku %2.$}                                          {<afa>%0<088>}  {5}
-#SUBSTITUTE       {^\b{?i}{nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz}\b}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  {@rodzaj_obrazen{%1}}  {5}
+#SUBSTITUTE       {^{?i}{nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz|lekko nakluwasz} %S %S %S {[^,]+}, trafiajac {ja|go} w {[^.]+}.$}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              {@rodzaj_obrazen{%1} %2 %3 %4 @rodzaj_broni{%5}<afa>, trafiajac %6 w @rodzaj_miejsca{%7}.}                                                                 {5}
 #SUBSTITUTE       {^{Jestes|Zdaje sie byc} %2.}         {%1 @kondycja{%2}.}  {5}
 #VARIABLE         {dzis_zabitych}  {0}
 #VARIABLE         {enemy_run}  {0}

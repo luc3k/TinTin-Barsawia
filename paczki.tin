@@ -18,7 +18,7 @@
 #SUBSTITUTE       {^\d{.*}Domu Poslancow w Michel Delving{\s*}za %1$}                               {<ffa>%0 <afa>Michel Delving, P:990<099>}                {5}
 #SUBSTITUTE       {^\d{.*}Dowodcy straznicy Thery{\s*}za %1$}                       {<ffa>%0 <afa><099>}  {5}
 #SUBSTITUTE       {^\d{.*}Eksimoniusa Dlethora z Vrontok{\s*}za %1$}                              {<ffa>%0 <afa>Vrontok, P:3631<099>}          {5}
-#SUBSTITUTE       {^\d{.*}Ganiana Farrosha, dowodcy stacjonujacego w Powietrznej Przystani Osmego Legionu{\s*}za %1$}                                                                               {<ffa>%0 <afa>P:3608<099>}  {5}
+#SUBSTITUTE       {^\d{.*}Ganiana Farrosha, dowodcy stacjonujacego w Powietrznej Przystani Osmego Legionu{\s*}za %1$}                                                                               {<ffa>%0 <afa>Powietrzna Przystan, P:3608<099>}                      {5}
 #SUBSTITUTE       {^\d{.*}Garyla{\s*}za %1$}      {<ffa>%0 <afa>P:2475<099>}  {5}
 #SUBSTITUTE       {^\d{.*}Golebiarza w Tukonie{\s*}za %1$}                    {<ffa>%0 <afa>Tukon, P:884<099>}       {5}
 #SUBSTITUTE       {^\d{.*}Golebiarza z Edoras{\s*}za %1$}                   {<ffa>%0 <afa><099>}  {5}

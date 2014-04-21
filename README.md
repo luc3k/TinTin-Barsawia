@@ -76,8 +76,8 @@ Ustawic szerokosc ekranu na zero w celu zawijania wierszy:
 
 Mapa sprawnie dziala z chodzeniem np. po keypadzie. Nalezy jednak dodac sobie macra na swoja klawiature.
 
-Dodany jest 1 bind/macro pod alt+1, ktory podpowiada jaka komende nalezy wykonac. Np. przy zbieraniu ziol i ich znalezieniu bedzie to schowanie ich do woreczka. Pojawi sie wtedy [/schowajs] i taka komende mozna recznie wykonac albo wcisnac alt+1.
-Tak samo bindowac mozna pogon za wrogiem. Na wlasna odpowiedzialnosc nalezy wczesniej uzyc aliasu `/ustawpogon` zeby to aktywowac. W celu wylaczenia nalezy go uzyc ponownie. Opcja ta zapisywana jest "per postac" dla kazdej jaka gramy.
+Dodany jest 1 bind/macro pod alt+s, ktory podpowiada jaka komende nalezy wykonac. Np. przy zbieraniu ziol i ich znalezieniu bedzie to schowanie ich do woreczka. Pojawi sie wtedy [/schowajs] i taka komende mozna recznie wykonac albo wcisnac alt+s.
+Tak samo bindowac mozna pogon za wrogiem. Na wlasna odpowiedzialnosc nalezy wczesniej uzyc aliasu `/ustawpogon` zeby to aktywowac. W celu wylaczenia nalezy go uzyc ponownie. Opcja ta zapisywana jest "per postac" dla kazdej jaka gramy. alt+s domyslnie posiada komende spojrz
 
 Nowe aliasy:
 

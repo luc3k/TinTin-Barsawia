@@ -1,34 +1,5 @@
 #CLASS {macros} OPEN
 
-#MACRO {\e1}
-{
-	#if {$enemy_run == 1}
-	{
-		$run_direction;
-		#variable enemy_run 0
-	};
-	#elseif {$znalezione_ziolo == 1}
-	{
-		$zielarska_komenda;
-		#variable znalezione_ziolo 0
-	};
-	#elseif {$wyrab_trwa == 1}
-	{
-		$wyrab_komenda;
-		#variable wyrab_trwa 0
-	};
-	#elseif {$wycinka_skor == 1}
-	{
-		$wycinka_komenda;
-		#variable wycinka_skor 0
-	};
-	#elseif {$zbieranie_mineralow == 1}
-	{
-		$gornik_komenda;
-		#variable zbieranie_mineralow 0
-	}
-}
-
 #MACRO {\ea}
 {
 	#if {$szukanie_ziol == 0}
@@ -241,7 +212,35 @@
 
 #MACRO {\es}
 {
-	spojrz
+	#if {$enemy_run == 1}
+	{
+		$run_direction;
+		#variable enemy_run 0
+	};
+	#elseif {$znalezione_ziolo == 1}
+	{
+		$zielarska_komenda;
+		#variable znalezione_ziolo 0
+	};
+	#elseif {$wyrab_trwa == 1}
+	{
+		$wyrab_komenda;
+		#variable wyrab_trwa 0
+	};
+	#elseif {$wycinka_skor == 1}
+	{
+		$wycinka_komenda;
+		#variable wycinka_skor 0
+	};
+	#elseif {$zbieranie_mineralow == 1}
+	{
+		$gornik_komenda;
+		#variable zbieranie_mineralow 0
+	};
+	#else
+	{
+		spojrz
+	}
 }
 
 #MACRO {\ew}
