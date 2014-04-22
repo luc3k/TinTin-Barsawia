@@ -31,9 +31,9 @@
 #ACTION {^.: %1 :.$}
 {
 	#variable last_room {%1};
+	#variable {komenda} {spojrz};
 	#line GAG;
 	#echo {<aca>%0<099>};
-	#variable enemy_run 0;
 	#if {$map_state == 1}
 	{
 		#map name {%1}

@@ -3,99 +3,88 @@
 #ACTION {^%1 z danej czesci wstepnie ociosan{ego|ej} %2 usuwasz ostatnie galezie, ktore momentalnie spadaja na ziemie, szeleszczac przy tym donosnie.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Celnym ciosem %1 trafiasz tuz przy pniu swiezo sciet{ego|y|ej|a} %2, odcinajac ostatni gruby konar rosliny.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Czujesz, jak robota posunela sie naprzod. Najgrubsze konary swiezo sciet{ego|y|ej} %1 zostaly odrabane, teraz naszedl czas na nieco mniejsze galezie.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Dokladnie oczyszczasz solidnie ociosana klode %1 za pomoca %2, jednak kloda jest na tyle dluga, ze podobna prace trzeba wykonac takze w innych czesciach rosliny.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Dokladnym uderzeniem %1 odwalasz ostatni konar z pnia swiezo sciet{ego|y|ej} %2. W tej czesci rosliny jest juz czysto, jednak dalej wciaz widac grube galezie, sterczace z wnetrza drewna.$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Dokladnymi ciosami %1 upewniasz sie, ze klin w pniu %2 jest dostatecznie rozlegly. Lekkim pchnieciem ramion wprawiasz rosline w ruch, po czym odbiegasz na bok kilka metrow. Drzewo przez chwile skrzypi przerazliwie, po czym zwala sie z hukiem na ziemie!$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Dokladnymi pociagnieciami %1 podwazasz kore klody %2, usuwajac ja z tej czesci rosliny. Dalej jednak wciaz pokrywa ona pien.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Energicznymi ruchami %1 odwalasz ostatnie kawalki kory z klody %2.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Konczysz odgarniac kore z klody %1, a ostatni jej kawalek wlasnie spada na lesne poszycie.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Mocnym uderzeniem %1 rozbijasz ostatni stabilny punkt rdzenia %2. Roslina lamie pozostale fragmenty drewna, przekrzywia sie i z ogluszajacym szumem spada na ziemie, wzbijajac przy tym tumany kurzu!$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Naglym szarpnieciem sciegien wyrzucasz przed siebie %1, trafiajac w wylom w %2. Roslina jednak nie upada, gdyz jej pien jest na to zbyt szeroki i wymaga jeszcze podciecia.$}
 {
 	#line gag;
-	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	#variable wyrab_komenda {zetnij $drzewo};
-	#variable wyrab_trwa 1
+	#variable komenda {zetnij $drzewo};
+	#echo {<faa>[$komenda][1]<afa>%0<099>}
 }
 {5}
 
@@ -109,18 +98,16 @@
 #ACTION {^Ostatnie fragmenty kory z tej czesci klody %1 spadaja na ziemie. Nieco dalej jednak wciaz przylega ona do pnia rosliny.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Ostatnie fragmenty upartej kory i konarow solidnie ociosanej klody %1 spadaja na ziemie. Nieco dalej pien jednak wciaz wymaga doczyszczenia.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
@@ -132,9 +119,9 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wez klode};
-	#variable wyrab_trwa 1;
+	#variable komenda {wez klode};
+	#echo {<faa>[$komenda][6]KONIEC SCINANIA!<099>};
+	;
 	#cr
 }
 {5}
@@ -142,18 +129,16 @@
 #ACTION {^Ostatnie pociagniecia %1 koncza ten etap ociosywania wstepnie ociosan{ego|ej} %2. Roslina pozbawiona jest mniejszych galezi.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Ostatnim uderzeniem %1 konczysz wyrabywanie klinu w %2. Nagle drzewo zaczyna przerazliwie skrzypiec, po czym przekrzywia sie i z hukiem zwala sie na ziemie!$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
@@ -165,9 +150,9 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wez klode};
-	#variable wyrab_trwa 1;
+	#variable komenda {wez klode};
+	#echo {<faa>[$komenda][6]KONIEC SCINANIA!<099>};
+	;
 	#cr
 }
 {5}
@@ -175,63 +160,56 @@
 #ACTION {^Ostatnimi uderzeniami %1 konczysz usuwanie grubych konarow z pnia swiezo sciet{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Poteznym zamachem swych ramion odcinasz %1 gruby konar swiezo sciet{ego|ej} %2. W tej czesci rosliny nie ma juz innych, duzych galezi, jednak nieco dalej wciaz jeszcze stercza one z pnia drzewa.$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Przesuwasz dokladnie ostrzem %1 po powierzchni solidnie ociosanej klody %2, doczyszczajac te czesc pnia.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Silnym pociagnieciem %1 rozszczepiasz spory kawal drewna, oczyszczajac ta czesc swiezo sciet{ego|ej} %2 z grubych konarow.$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Silnym szarpnieciem %1 rozwarstwiasz ostatnie niezbedne fragmenty rdzenia rosliny. Ta jednak nie porusza sie. Gdy juz wydaje sie, ze trzeba bedzie poprawic spartaczona robote, drzewo raptownie przekrzywia sie i zwala na ziemie, czyniac przy tym niezwykly tumult!$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Silnymi uderzeniami %1 docierasz klinem do rdzenia drzewa, jednak pien rosliny jest zbyt rozlegly, by jeden wylom mogl zwalic cala rosline na ziemie. Konieczne jest sciecie drzewa jeszcze z innej strony.$}
 {
 	#line gag;
-	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	#variable wyrab_komenda {zetnij $drzewo};
-	#variable wyrab_trwa 1
+	#variable komenda {zetnij $drzewo};
+	#echo {<faa>[$komenda][1]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Skorkowaciale kawalki pokrywy klody %1 spadaja na ziemie, odwalone %2 z tej czesci rosliny.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
@@ -243,9 +221,9 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wez klode};
-	#variable wyrab_trwa 1;
+	#variable komenda {wez klode};
+	#echo {<faa>[$komenda][6]KONIEC SCINANIA!<099>};
+	;
 	#cr
 }
 {5}
@@ -253,99 +231,88 @@
 #ACTION {^Sprawnymi ruchami rak dzierzacych %1 usuwasz ostatnie galezie z pnia wstepnie ociosane{go|j} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Szybkimi pociagnieciami %1 odcinasz ostatnie galezie z pnia wstepnie ociosane{go|j} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Szybkimi pociagnieciami %1 usuwasz ostatnie fragmenty kory, pokrywajace klode %2.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Szybkimi pociagnieciami %1, uzywanego niczym hebel, doczyszczasz ta czesc solidnie ociosanej klody %2.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Szybkimi ruchami rak trzymajacych %1 usuwasz spora czesc galezi przytwierdzonych do wstepnie ociosan{ego|ej} %2. Wciaz jednak sa miejsca, ktore wymagaja oczyszczenia z pedow.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Szybkimi ruchami trzymajacych %1 rak odwalasz ostatnie kawaly kory z tej czesci klody %2.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Wkladajac cala sile w uderzenie trafiasz %1 w klin powstaly w %2, spodziewajac sie upadku scinanego drzewa. Te jednak wciaz stoi, co sprawia, ze trzeba je podciac z innej strony.$}
 {
 	#line gag;
-	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	#variable wyrab_komenda {zetnij $drzewo};
-	#variable wyrab_trwa 1
+	#variable komenda {zetnij $drzewo};
+	#echo {<faa>[$komenda][1]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Wprawnym ruchem swych dloni, dzierzacych %1 odcinasz ostatni konar w tej czesci swiezo sciet{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odrab konary drzewa][2]<afa>%0<099>};
-	#variable wyrab_komenda {odrab konary drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odrab konary drzewa};
+	#echo {<faa>[$komenda][2]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Wprawnymi pociagnieciami %1 usuwasz wszystkie mniejsze galezie obrastajace ta czesc wstepnie ociosan{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Wprawnymi ruchami %1 podwazasz ostatnie kawalki kory, ktore odpryskuja od klody %2, spadajac na lesne poszycie.$}
 {
 	#line gag;
-	#echo {<faa>[doczysc klode][5]<afa>%0<099>};
-	#variable wyrab_komenda {doczysc klode};
-	#variable wyrab_trwa 1
+	#variable komenda {doczysc klode};
+	#echo {<faa>[$komenda][5]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Wraz z dokladnym uderzeniem %1 odrabujesz ostatni spory konar swiezo sciet{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
@@ -357,9 +324,9 @@
 	save;
 	#line gag;
 	#echo {<afa>%0<099>};
-	#echo {<faa>[wez klode][6]KONIEC SCINANIA!<099>};
-	#variable wyrab_komenda {wez klode};
-	#variable wyrab_trwa 1;
+	#variable komenda {wez klode};
+	#echo {<faa>[$komenda][6]KONIEC SCINANIA!<099>};
+	;
 	#cr
 }
 {5}
@@ -367,36 +334,32 @@
 #ACTION {^Z dokladnego wymachu trafiasz %1 w sam srodek wylomu w %2, rozbijajac ostatnie wlokna rdzenia. Roslina jednak nie przelamuje sie, nadal wymagajac podciecia w innych miejscach wokol pnia.$}
 {
 	#line gag;
-	#echo {<faa>[zetnij $drzewo][1]<afa>%0<099>};
-	#variable wyrab_komenda {zetnij $drzewo};
-	#variable wyrab_trwa 1
+	#variable komenda {zetnij $drzewo};
+	#echo {<faa>[$komenda][1]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Z lekkiego wymachu %1 scinasz ostatnie galezie sterczace samotnie z wstepnie ociosan{ego|ej} %2.$}
 {
 	#line gag;
-	#echo {<faa>[odgarnij kore klody][4]<afa>%0<099>};
-	#variable wyrab_komenda {odgarnij kore klody};
-	#variable wyrab_trwa 1
+	#variable komenda {odgarnij kore klody};
+	#echo {<faa>[$komenda][4]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Z wyrazem lekkiego zasapania usuwasz ostatnie galezie z danej czesci wstepnie ociosanego %1, lecz dalsza powierzchnia pnia zdaje sie byc nadal obrosnieta.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
 #ACTION {^Z wyrazem lekkiego zasapania usuwasz ostatnie galezie z danej czesci wstepnie ociosanej %1, lecz dalsza powierzchnia pnia zdaje sie byc nadal obrosnieta.$}
 {
 	#line gag;
-	#echo {<faa>[odetnij galezie drzewa][3]<afa>%0<099>};
-	#variable wyrab_komenda {odetnij galezie drzewa};
-	#variable wyrab_trwa 1
+	#variable komenda {odetnij galezie drzewa};
+	#echo {<faa>[$komenda][3]<afa>%0<099>}
 }
 {5}
 
@@ -530,7 +493,5 @@
 #VARIABLE         {drzewo}  {0}
 #VARIABLE         {dzis_sc_drzew}  {0}
 #VARIABLE         {scinanie}  {0}
-#VARIABLE         {wyrab_komenda}  {spojrz}
-#VARIABLE         {wyrab_trwa}  {0}
 
 #CLASS {drwalstwo} CLOSE

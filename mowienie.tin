@@ -1,6 +1,6 @@
 #CLASS {mowienie} OPEN
 
-#ACTION {^%1 {mowi|krzyczy|pyta|nuci|mruczy|odpowiada|oznajmia|wola|spiewa|dudni|pokrzykuje|harczy|syczy} do {ciebie|siebie|}:%4$}
+#ACTION {^%1 {mowi|krzyczy|wrzeszczy|pyta|nuci|mruczy|odpowiada|oznajmia|wola|spiewa|dudni|pokrzykuje|harczy|syczy} do {ciebie|siebie|}:%4$}
 {
 	#line GAG;
 	#echo {<afa>%1 %2 do %3:<bcf>%4<099>};
@@ -22,7 +22,7 @@
 }
 {5}
 
-#ACTION {^%1 {mowi|krzyczy|pyta|nuci|mruczy|bulgocze|odpowiada|oznajmia|wola|spiewa|dudni|pokrzykuje|harczy|syczy} do %3:%4$}
+#ACTION {^%1 {mowi|krzyczy|wrzeszczy|pyta|nuci|mruczy|bulgocze|odpowiada|oznajmia|wola|spiewa|dudni|pokrzykuje|harczy|syczy} do %3:%4$}
 {
 	#line GAG;
 	#echo {<afa>%1 %2 do %3:<bcf>%4<099>};
@@ -35,7 +35,7 @@
 }
 {5}
 
-#ACTION {^%1 {mowi|krzyczy|pyta|nuci|mruczy|bulgocze|odpowiada|oznajmia|wola|spiewa|dudni|pokrzykuje|harczy|syczy}{ z oddali| z calych sil| marzycielskim tonem| z irytacja w glosie| z usmiechem| cichym szeptem|}:%4$}
+#ACTION {^%1 {mowi|krzyczy|wrzeszczy|pyta|nuci|mruczy|bulgocze|odpowiada|oznajmia|wola|spiewa|dudni|pokrzykuje|harczy|syczy}{ z oddali| z calych sil| marzycielskim tonem| z irytacja w glosie| z usmiechem| cichym szeptem|}:%4$}
 {
 	#line GAG;
 	#echo {<afa>%1 %2%3:<bcf>%4<099>};
