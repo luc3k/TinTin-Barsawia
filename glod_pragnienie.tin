@@ -26,19 +26,19 @@
 
 #FUNCTION {pragnienie}
 {
-	#if {"%0" == "Chce ci sie bardzo pic"}
+	#if {"%0" == "{?i}{Chce ci sie bardzo pic|bardzo chce mu sie pic}"}
 	{
 		#return <faa>%0<170>[0/3]<099>
 	};
-	#elseif {"%0" == "Chce ci sie pic"}
+	#elseif {"%0" == "{?i}{Chce (ci|mu) sie pic}"}
 	{
 		#return <eba>%0<170>[1/3]<099>
 	};
-	#elseif {"%0" == "Troche chce ci sie pic"}
+	#elseif {"%0" == "{?i}{Troche chce (ci|mu) sie pic}"}
 	{
 		#return <efa>%0<170>[2/3]<099>
 	};
-	#elseif {"%0" == "Nie chce ci sie pic"}
+	#elseif {"%0" == "{?i}{Nie chce (ci|mu) sie pic}"}
 	{
 		#return <bfa>%0<170>[3/3]<099>
 	};
@@ -48,6 +48,7 @@
 	}
 }
 
+#SUBSTITUTE       {^Jest %1 i %2.}  {Jest @glod{%1} i @pragnienie{%2}.}          {5}
 #SUBSTITUTE       {^{Chce ci sie bardzo pic|Chce ci sie pic|Troche chce ci sie pic|Nie chce ci sie pic} i jestes %2.$}                                                                                {@pragnienie{%1} i jestes @glod{%2}.}            {5}
 
 #CLASS {glod_pragnienie} CLOSE

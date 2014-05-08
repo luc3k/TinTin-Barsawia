@@ -191,6 +191,7 @@
 
 #ALIAS {/reloadall}
 {
+	#variable temp_nazwa $nazwa_postaci;
 	#class actions kill;
 	#class actions read actions.tin;
 	#class actions write actions.tin;
@@ -264,7 +265,9 @@
 	#class zielarstwo write zielarstwo.tin;
 	#nop #class barsawia kill;
 	#nop #class barsawia read barsawia.tin;
-	#nop #class barsawia write barsawia.tin
+	#nop #class barsawia write barsawia.tin;
+	#variable nazwa_postaci $temp_nazwa;
+	#unvariable temp_nazwa
 }
 {5}
 
@@ -346,6 +349,12 @@
 #ALIAS {/wyt}
 {
 	wytnij skore z %1 ciala
+}
+{5}
+
+#ALIAS {SZC}
+{
+	przecisnij sie przez szczeline
 }
 {5}
 

@@ -90,6 +90,17 @@
 }
 {5}
 
+#ALIAS {/ziola}
+{
+	#echo {<afa>W swoich podrozach znalazles:<099>};
+	#foreach {${postacie[$nazwa_postaci][ziola][]}} {ziola_item}
+	{
+		#showme {$ziola_item w liczbie ${postacie[$nazwa_postaci][ziola][$ziola_item][ilosc]} sztuk}
+	};
+	#unvariable ziola_item
+}
+{5}
+
 #SUBSTITUTE       {{?i}bial{y|e|ych} drobn{y|e|ych} \bkwiat{y|ow|}\b}                               {%0 <afa>(rumianek)<099>}  {5}
 #SUBSTITUTE       {{?i}bial{y|e|ych} okazal{y|e|ych} \bkorzen{ie|i|}\b}                                 {%0 <afa>(biedrzawiec)<099>}   {5}
 #SUBSTITUTE       {{?i}czerwonaw{y|e|ych} ostr{y|e|ych} \blisc{ie|i|}\b}                                  {%0 <afa>(szczaw)<099>}  {5}

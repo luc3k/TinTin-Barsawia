@@ -1,47 +1,5 @@
 #CLASS {walka} OPEN
 
-#ACTION {%1 swoje{go|j} %3 %S %S %S {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa cie|nieznacznie obija cie|zadaje ci lekkie obrazenia|siniaczy cie|zadaje ci spore obrazenia|ledwie tnie cie|ledwo nacina cie} w %8.$}
-{
-	#line gag;
-	#echo {<afa>-%4 %5 %6 -> @rodzaj_obrazen{%7} %3}
-}
-{5}
-
-#ACTION {^%1 swoje{go|j} %3 {nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz|lekko nakluwasz} %5, trafiajac {go|ja} w %7.$}
-{
-	#line gag;
-	#echo {<afa>-Ty -> @rodzaj_obrazen{%4} %5 @rodzaj_broni{%3}}
-}
-{5}
-
-#ACTION {^%1 uciekl{a|} ci.$}
-{
-	#line gag;
-	#echo {<efa>%1 <faa>uciekl%2 ci.<099>}
-}
-{5}
-
-#ACTION {^%1 {nie udaje sie trafic ciebie} %3.$}
-{
-	#line gag;
-	#echo {<afa>-%1 -> CHYBIA<170>[0/5]<099> %3}
-}
-{5}
-
-#ACTION {^%1 {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa cie|nieznacznie obija cie|zadaje ci lekkie obrazenia|siniaczy cie|zadaje ci spore obrazenia|ledwie tnie cie|ledwo nacina cie} %3, trafiajac cie w %4.$}
-{
-	#line gag;
-	#echo {<afa>-%1 -> @rodzaj_obrazen{%2} %3}
-}
-{5}
-
-#ACTION {^%1 {probuje cie trafic} %3, lecz tobie udaje sie uniknac tego ciosu.$}
-{
-	#line gag;
-	#echo {<afa>-%1 -> CHYBIA<170>[0/5]<099> %3}
-}
-{5}
-
 #ACTION {^%1 {w panice wybiega na|kica w panice na} %3.$}
 {
 	#line gag;
@@ -81,6 +39,17 @@
 }
 {5}
 
+#ACTION {^Gdzie chcesz sie przemknac?$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	}
+}
+{5}
+
 #ACTION {^Jest tu zbyt trudno sie schowac, wiec jestes widoczny z powrotem.$}
 {
 	#line gag;
@@ -105,20 +74,6 @@
 	#line gag;
 	#echo {<afa>%0<099>};
 	#variable ukrywanie 1
-}
-{5}
-
-#ACTION {^Pochylajac sie do przodu przenosisz ciezar ciala, %1 powstrzymujac cios %S %S %S %5.$}
-{
-	#line gag;
-	#echo {<afa>-Ty -> %1 UNIKASZ %2 %3 %4 @rodzaj_broni{%5}}
-}
-{5}
-
-#ACTION {^Unosisz %1 nad glowe, %2 powstrzymujac cios %3.$}
-{
-	#line gag;
-	#echo {<afa>-Ty -> %2 PARUJESZ %3 @rodzaj_broni{%1}}
 }
 {5}
 
@@ -155,14 +110,6 @@
 	#math {dzis_zabitych} {${dzis_zabitych}+1};
 	#math {postacie[$nazwa_postaci][zabici][%2][ilosc]} {${postacie[$nazwa_postaci][zabici][%2][ilosc]}+1};
 	save
-}
-{5}
-
-#ACTION {^{?i}{nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz|lekko nakluwasz} %S %S %S {[^,]+}, trafiajac {ja|go} w {[^.]+}.$}
-{
-	#line gag;
-	#nop @rodzaj_obrazen{%1} %2 %3 %4 @rodzaj_broni{%5}<afa>, trafiajac %6 w @rodzaj_miejsca{%7}.;
-	#echo {<afa>-Ty -> @rodzaj_obrazen{%1} %2 %3 %4 @rodzaj_broni{%5}}
 }
 {5}
 
@@ -238,6 +185,17 @@
 }
 {5}
 
+#ALIAS {/zabici}
+{
+	#echo {<afa>W swoich potyczkach zgladziles:<099>};
+	#foreach {${postacie[$nazwa_postaci][zabici][]}} {zabici_item}
+	{
+		#echo {$zabici_item w liczbie ${postacie[$nazwa_postaci][zabici][$zabici_item][ilosc]} sztuk}
+	};
+	#unvariable zabici_item
+}
+{5}
+
 #ALIAS {kk}
 {
 	kondycja wszystkich
@@ -263,7 +221,7 @@
 {
 	#switch {"%0"}
 	{
-		#case {"{?i}{czarn}{ym|ego|y} {matow}{ym|ego|y} {sztylet}{em|u|}"}
+		#case {"{?i}{czarn|ciemnoniebiesk|dlug}{im|ym|iego|ego|y} {wask|repliczn|matow}{im|ym|ego|y} {replik|mlot|sztylet}{a|iem|em|u|}"}
 		{
 			#return <afa>%0<099>
 		};
@@ -361,22 +319,38 @@
 }
 
 #SUBSTITUTE       {^%1 wpada w panike!$}  {<afa>%1 <afa>wpada w panike!<099>}          {4}
+#SUBSTITUTE       {%1 swoje{go|j} %3 %S %S %S {$ataki_wroga} w %8.$}                              {<afa>-%4 %5 %6 -> @rodzaj_obrazen{%7} @rodzaj_broni{%3}}                                {5}
 #SUBSTITUTE       {^%1 jest %2.}  {%1 jest @kondycja{%2}.}  {5}
 #SUBSTITUTE       {^%1 odstawiasz {prawa|lewa} noge, unikajac ciosu %3.$}                                   {<afa>-Ty -> %1 UNIKASZ %3}  {5}
 #SUBSTITUTE       {^%1 probuje trafic ciebie, jednak ty %2 zbijasz ten cios %3.$}                                           {<afa>-Ty -> %2 PARUJESZ %1 @rodzaj_broni{%3}}                     {5}
 #SUBSTITUTE       {^%1 przenosisz ciezar ciala na {prawa|lewa} noge i skrecajac sie w tulowiu omijasz cios %2.$}                                                                          {<afa>-Ty -> %1 UNIKASZ %3}  {5}
+#SUBSTITUTE       {^%1 swoje{go|j} %3 {$wlasne_ataki} %5, trafiajac {go|ja} w %7.$}                                             {<afa>-Ty -> @rodzaj_obrazen{%4} %5 @rodzaj_broni{%3}}                             {5}
+#SUBSTITUTE       {^%1 uciekl{a|} ci.$}  {<efa>%1 <faa>uciekl%2 ci.<099>}       {5}
+#SUBSTITUTE       {^%1 {$ataki_wroga} %3, trafiajac cie w %4.$}                         {<afa>-%1 -> @rodzaj_obrazen{%2} %3}           {5}
 #SUBSTITUTE       {^%1 {kucasz, unikajac ciosu|uchylasz glowe przed ciosem} %3.$}                                           {<afa>-Ty -> %1 UNIKASZ %3}  {5}
+#SUBSTITUTE       {^%1 {nie udaje sie trafic ciebie} %3.$}                    {<afa>-%1 -> CHYBIA<170>[0/5]<099> @rodzaj_broni{%3}}                            {5}
+#SUBSTITUTE       {^%1 {odchylasz sie do tylu, unikajac ciosu|schylasz sie przed ciosem} %3.$}                                                        {<afa>-Ty -> %1 UNIKASZ %2}  {5}
 #SUBSTITUTE       {^%1 {odskakujesz|oddalasz sie} od %3, unikajac jego ciosu.$}                                         {<afa>-Ty -> %1 UNIKASZ %3}  {5}
+#SUBSTITUTE       {^%1 {probuje cie trafic} %3, lecz tobie udaje sie uniknac tego ciosu.$}                                                    {<afa>-%1 -> CHYBIA<170>[0/5]<099> @rodzaj_broni{%3}}                            {5}
+#SUBSTITUTE       {^Nie udaje ci sie trafic %S %S %S %4.$}                    {<afa>-Ty -> CHYBIASZ[0/5] %1 %2 %3 %4}              {5}
 #SUBSTITUTE       {^Niezauwazony podkradasz sie do %1 i naglym ruchem wbijasz swoj %2 w plecy, %3.$}                                                              {<afa>-Ty -> @rodzaj_obrazen{%3} DZGASZ %1 @rodzaj_broni{%2}}                                    {5}
 #SUBSTITUTE       {^Okrecasz sie %1 na {lewej|prawej} nodze, unikajac ciosu %3.$}                                           {<afa>-Ty -> %1 UNIKASZ %3}  {5}
+#SUBSTITUTE       {^Pochylajac sie do przodu przenosisz ciezar ciala, %1 powstrzymujac cios %S %S %S %5.$}                                                                    {<afa>-Ty -> %1 UNIKASZ %2 %3 %4 @rodzaj_broni{%5}}                          {5}
+#SUBSTITUTE       {^Probujesz trafic %S %S %S %4, lecz ten uskakuje przed twoim ciosem.$}                                                   {<afa>-TY -> CHYBIASZ %1 %2 %3 @rodzaj_broni{%4}}                        {5}
 #SUBSTITUTE       {^Przechylajac sie na {prawo|lewo} %2 unikasz ciosu %2.$}                                     {<afa>-Ty -> %2 UNIKASZ %3}  {5}
 #SUBSTITUTE       {^Sciskasz mocniej %1 i zaczynasz sie skradac w kierunku %2.$}                                          {<afa>-Ty -> SKRADASZ %2 @rodzaj_broni{%1}<088>}                       {5}
 #SUBSTITUTE       {^Trafiasz %1 %S %S %S w %5, lecz caly impet uderzenia wyparowany zostaje przez %6.$}                                                                 {<afa>-%2 %3 %4 -> PARUJE %6}    {5}
+#SUBSTITUTE       {^Trafiasz %S %S %S %4 w %5, jednak twoj cios nie jest w stanie przebic sie przez %6.$}                                                                   {<afa>-%2 %3 %4 -> PARUJE %6}    {5}
+#SUBSTITUTE       {^Trafiasz %S %S %S %4 w %5, lecz twoj cios zatrzymuje sie na %6.$}                                               {<afa>-%1 %2 %3 -> PARUJE @rodzaj_broni{%4}}                   {5}
+#SUBSTITUTE       {^Unosisz %1 nad glowe, %2 powstrzymujac cios %3.$}                               {<afa>-Ty -> %2 PARUJESZ %3 @rodzaj_broni{%1}}                     {5}
 #SUBSTITUTE       {^Wykonujesz zamach %1, mierzac w %2, lecz ten paruje go %3.}                                         {<afa>-%2 -> PARUJE @rodzaj_broni{%3} @rodzaj_broni{%1}}                               {5}
 #SUBSTITUTE       {^Wyprowadzasz szybkie pchniecie %1 w %2, lecz ten zbija je z linii ataku %3.$}                                                           {<afa>-%2 -> PARUJE %3 @rodzaj_broni{%1}}                {5}
+#SUBSTITUTE       {^{?i}{$wlasne_ataki} %S %S %S {[^,]+}, trafiajac {ja|go} w {[^.]+}.$}                                                  {<afa>-Ty -> @rodzaj_obrazen{%1} %2 %3 %4 @rodzaj_broni{%5}}                                   {5}
 #SUBSTITUTE       {^{Jestes|Zdaje sie byc} %2.}         {%1 @kondycja{%2}.}  {5}
 #SUBSTITUTE       {^{Nieumyslnie|Powoli|Nieswiadomie|Nieumiejetnie} zbijasz %2 cios %3.$}                                                   {<afa>-Ty -> %1 PARUJESZ %3 @rodzaj_broni{%2}}                     {5}
+#VARIABLE         {ataki_wroga}  {obija cie|ledwo muska cie|rani cie|lekko rani cie|powaznie rani cie|lekko obija cie|lekko siniaczy cie|zadaje ci nieznaczne obrazenia|ledwie nakluwa cie|nieznacznie obija cie|zadaje ci lekkie obrazenia|siniaczy cie|zadaje ci spore obrazenia|ledwie tnie cie|ledwo nacina cie}
 #VARIABLE         {dzis_zabitych}  {0}
 #VARIABLE         {ukrywanie}  {0}
+#VARIABLE         {wlasne_ataki}  {nie udaje ci sie trafic|probujesz trafic|ledwo muskasz|ledwo nacinasz|ledwie nacinasz|ledwie tniesz|ledwie nakluwasz|zadajesz niewielkie obrazenia|zadajesz nieznaczne obrazenia|lekko ranisz|zadajesz lekkie obrazenia|lekko nacinasz|lekko obijasz|lekko klujesz|lekko tniesz|ranisz|klujesz|tniesz|obijasz|siniaczysz|nacinasz|nakluwasz|klujesz|nacinasz|bardzo mocno ranisz|bardzo mocno klujesz|bardzo mocno siniaczysz|bardzo mocno tniesz|bardzo mocno obijasz|bardzo gleboko nacinasz|mocno kaleczysz|bardzo ciezko ranisz|powaznie tniesz|bolesnie klujesz|powaznie ranisz|zadajesz bardzo ciezkie rany|zadajesz spore obrazenia|mocno nacinasz|zadajesz powazne obrazenia|masakrujesz|smiertelnie nacinasz|zadajesz smiertelne obrazenia|patroszysz|gleboko ranisz|bardzo gleboko klujesz|zadajesz ogromne obrazenia|z ogromna sila przebijasz|lekko nakluwasz}
 
 #CLASS {walka} CLOSE

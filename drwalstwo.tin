@@ -394,6 +394,17 @@
 }
 {5}
 
+#ALIAS {/drzewa}
+{
+	#echo {<afa>W swoich podrozach sciales:<099>};
+	#foreach {${postacie[$nazwa_postaci][drzewa][]}} {drzewa_item}
+	{
+		#showme {$drzewa_item w liczbie ${postacie[$nazwa_postaci][drzewa][$drzewa_item][ilosc]} sztuk}
+	};
+	#unvariable drzewa_item
+}
+{5}
+
 #ALIAS {/zet}
 {
 	zetnij %1;

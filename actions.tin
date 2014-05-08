@@ -16,6 +16,14 @@
 }
 {5}
 
+#ACTION {Od tej pory dane miedzy mudem a twoim klientem sa kompresowane (MCCP)}
+{
+	#variable komenda st2;
+	#echo {%0<faa>[$komenda]<099>};
+	#line gag
+}
+{5}
+
 #ACTION {^%1 zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
 {
 	#line gag;
