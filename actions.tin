@@ -24,6 +24,18 @@
 }
 {5}
 
+#ACTION {^%1 jest zbyt zmeczony by dalej cie niesc.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
+	#undelay %*
+}
+{5}
+
 #ACTION {^%1 zagradza ci droge mowiac: Stoj! Podaj swe imie i cel pobytu w miescie!$}
 {
 	#line gag;
@@ -85,6 +97,18 @@
 	};
 	#unvariable string;
 	#unvariable eq_item
+}
+{5}
+
+#ACTION {^Nie udaje ci sie zmusic %1 do jazdy.$}
+{
+	#line gag;
+	#echo {<fab>%0<099>};
+	#if {$map_state == 1}
+	{
+		#map undo
+	};
+	#undelay %*
 }
 {5}
 
@@ -271,6 +295,13 @@
 		#map undo
 	};
 	#undelay %*
+}
+{5}
+
+#ACTION {^{Wbijasz w ziemie maly palik i przywiazujesz do niego uzde|Pomocnik odprowadza twojego} %1{|w g lab stajni}.$}
+{
+	#variable postacie[$nazwa_postaci][kon] ${postacie[$nazwa_postaci][ustawienia][room_v]};
+	save
 }
 {5}
 

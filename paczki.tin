@@ -39,7 +39,7 @@
 #SUBSTITUTE       {^\d{.*}Magnusa Kanta{\s*}za %1$}             {<ffa>%0 <afa>Bree, piekarz, P:443<099>}               {5}
 #SUBSTITUTE       {^\d{.*}Mlynu pod Dorrath{\s*}za %1$}                 {<ffa>%0 <afa>Dorrath, P:5250<099>}          {5}
 #SUBSTITUTE       {^\d{.*}Nolagarda Kehmisa, Radnego Cechu Jubilerow{\s*}za %1$}                                          {<ffa>%0 <afa>Wielki Targ, P:4211<099>}              {5}
-#SUBSTITUTE       {^\d{.*}Oddzialu krolewskiej poczty w Wielkim Targu{\s*}za %1$}                                           {<ffa>%0 <afa><099>}  {5}
+#SUBSTITUTE       {^\d{.*}Oddzialu krolewskiej poczty w Wielkim Targu{\s*}za %1$}                                           {<ffa>%0 <afa>Wielki Targ, P:4185<099>}  {5}
 #SUBSTITUTE       {^\d{.*}Oddzialu poczty imperialnej w Vivane{\s*}za %1$}                                    {<ffa>%0 <afa>Vivane, P:3164<099>}         {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Igielniczce{\s*}za %1$}                      {<ffa>%0 <afa>Igielniczka, P:868<099>}             {5}
 #SUBSTITUTE       {^\d{.*}Piekarni w Wielkim Targu{\s*}za %1$}                        {<ffa>%0 <afa>Wielki Targ, P:4109<099>}              {5}

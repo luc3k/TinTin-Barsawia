@@ -491,7 +491,8 @@
 
 #ALIAS {st2}
 {
-	start2
+	start2;
+	/mapon
 }
 {5}
 

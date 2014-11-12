@@ -184,6 +184,6 @@
 }
 {5}
 
-#VARIABLE         {miesiace}  {Veltom|Charassa|Rua|Mawag|Gahmil|Raquas|Sollus|Borrum}
+#VARIABLE         {miesiace}  {Veltom|Charassa|Rua|Mawag|Gahmil|Raquas|Sollus|Borrum|Doddul}
 
 #CLASS {czas} CLOSE

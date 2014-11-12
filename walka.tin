@@ -221,7 +221,7 @@
 {
 	#switch {"%0"}
 	{
-		#case {"{?i}{czarn|ciemnoniebiesk|dlug}{im|ym|iego|ego|y} {wask|repliczn|matow}{im|ym|ego|y} {replik|mlot|sztylet}{a|iem|em|u|}"}
+		#case {"{?i}{czarn|ciemnoniebiesk|dlug|grub}{ej|a|im|ym|iego|ego|y} {brazow|wask|repliczn|matow}{ej|a|im|ym|ego|y} {replik|mlot|sztylet|gal(ae|)z}{i|a|iem|em|u|}"}
 		{
 			#return <afa>%0<099>
 		};
@@ -342,6 +342,7 @@
 #SUBSTITUTE       {^Trafiasz %1 %S %S %S w %5, lecz caly impet uderzenia wyparowany zostaje przez %6.$}                                                                 {<afa>-%2 %3 %4 -> PARUJE %6}    {5}
 #SUBSTITUTE       {^Trafiasz %S %S %S %4 w %5, jednak twoj cios nie jest w stanie przebic sie przez %6.$}                                                                   {<afa>-%2 %3 %4 -> PARUJE %6}    {5}
 #SUBSTITUTE       {^Trafiasz %S %S %S %4 w %5, lecz twoj cios zatrzymuje sie na %6.$}                                               {<afa>-%1 %2 %3 -> PARUJE @rodzaj_broni{%4}}                   {5}
+#SUBSTITUTE       {^Trafiasz %S %S %S %4 w %5, lecz twoj cios zeslizguje sie po %6.}                                              {<afa>-Ty -> %1 %2 %3 PARUJE %6}       {5}
 #SUBSTITUTE       {^Unosisz %1 nad glowe, %2 powstrzymujac cios %3.$}                               {<afa>-Ty -> %2 PARUJESZ %3 @rodzaj_broni{%1}}                     {5}
 #SUBSTITUTE       {^Wykonujesz zamach %1, mierzac w %2, lecz ten paruje go %3.}                                         {<afa>-%2 -> PARUJE @rodzaj_broni{%3} @rodzaj_broni{%1}}                               {5}
 #SUBSTITUTE       {^Wyprowadzasz szybkie pchniecie %1 w %2, lecz ten zbija je z linii ataku %3.$}                                                           {<afa>-%2 -> PARUJE %3 @rodzaj_broni{%1}}                {5}

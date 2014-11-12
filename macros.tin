@@ -1,5 +1,10 @@
 #CLASS {macros} OPEN
 
+#MACRO {\e\t}
+{
+	/u
+}
+
 #MACRO {\ea}
 {
 	#if {$szukanie_ziol == 0}
