@@ -598,5 +598,10 @@
 }
 {5}
 
+#ALIAS {/zaloz}
+{
+	zabezpiecz wszystko;
+}
+{5}
 
 #CLASS {aliases} CLOSE
